@@ -6,7 +6,7 @@
   const query=search.value.trim().toLocaleLowerCase();
   let count=0;
   for(const card of cards){
-   const match=(!query||card.textContent.toLocaleLowerCase().includes(query))&&fields.every(({name,node})=>!node.value||card.dataset[name]===node.value);
+   const match=(!query||[card.textContent,card.dataset.deity,card.dataset.scripture,card.dataset.theme].join(' ').toLocaleLowerCase().includes(query))&&fields.every(({name,node})=>!node.value||card.dataset[name]===node.value);
    card.hidden=!match;if(match)count++;
   }
   document.querySelector('#story-count').textContent=`${count} ${count===1?"story or preview":"stories & previews"}`;
