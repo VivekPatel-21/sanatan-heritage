@@ -9,7 +9,7 @@
    const match=(!query||card.textContent.toLocaleLowerCase().includes(query))&&fields.every(({name,node})=>!node.value||card.dataset[name]===node.value);
    card.hidden=!match;if(match)count++;
   }
-  document.querySelector('#story-count').textContent=`${count} story preview${count===1?'':'s'}`;
+  document.querySelector('#story-count').textContent=`${count} ${count===1?"story or preview":"stories & previews"}`;
   document.querySelector('#no-stories').hidden=count>0;
  };
  const reset=()=>{search.value='';fields.forEach(({node})=>node.value='');update();};
