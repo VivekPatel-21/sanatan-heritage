@@ -5,7 +5,7 @@ An illustrated guide to Sanatan Dharma, its divine forms, sacred literature and 
 ## Pages
 
 - Home, Understanding Sanatan Dharma, Gods & Goddesses, Sacred Texts & Scriptures
-- Story collection: six short previews and the complete Lalita and Bhandasura retelling
+- Story collection: six short previews and two complete retellings: Lalita and Bhandasura, and Shiva and Parvati
 - Lalita Tripurasundari introduction
 - Sources & References, with a unique source entry linked from every story card
 - Reading paths: Start here, Stories of courage, Enter the Ramayana
@@ -28,11 +28,11 @@ Open http://localhost:8080. In the Sites checkout, HTML and static output live i
 
 Keep narrative paragraphs short and pair them with relevant images. Identify previews as previews. Preserve differences between scriptural narratives and commentary. Source details belong on `sources.html`; story cards link to their specific entry. Link the first useful occurrence of glossary terms, avoiding repeated links. Keep project plans and messages to the site owner out of visitor copy.
 
-The complete story includes estimated reading time (approximately 200 words per minute), a character box, a tradition note, and previous/next links that clearly identify preview destinations. Curated paths contain only existing pages and episodes.
+The complete stories include estimated reading time (approximately 200 words per minute), a character box, a tradition note, and previous/next links that clearly identify preview destinations. Curated paths contain only existing pages and episodes.
 
 ## Images
 
-Story scenes: `bhagiratha-ganga.webp` and `hanuman-lanka.webp`. Several remaining cards intentionally use deity portraits rather than episode scenes; their alt text identifies them accordingly. Lalita artwork and its visible attribution marks are preserved. AI-generated illustrations are labeled on the site. `og.png` is the branded sharing card; Lalita detail pages use their own primary devotional artwork in metadata.
+Story scenes: `bhagiratha-ganga.webp`, `hanuman-lanka.webp`, and three Shiva–Parvati illustrations. Several remaining cards intentionally use deity portraits rather than episode scenes; their alt text identifies them accordingly. Lalita artwork and its visible attribution marks are preserved. AI-generated illustrations are labeled on the site. `og.png` is the branded sharing card; Lalita detail pages use their own primary devotional artwork in metadata.
 
 ## Hosting and discovery
 

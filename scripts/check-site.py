@@ -29,9 +29,9 @@ for name,p in pages.items():
  for key in ['og:url','og:image']:
   if not p.meta.get(key,'').startswith('https://sanatan-heritage.vivopatel1304.chatgpt.site/'):errors.append(f'{name}: invalid {key}')
  if p.meta.get('og:image') and not (root/urlsplit(p.meta['og:image']).path.lstrip('/')).exists():errors.append(f'{name}: missing preview image')
-assert (root/'stories.html').read_text().count('class="collection-source"')==7
-assert all('ref-'+slug in pages['sources.html'].ids for slug in ['shiva-poison','rama-exile','hanuman-lanka','govardhana','mahishasura','lalita-bhandasura','bhagiratha-ganga'])
+assert (root/'stories.html').read_text().count('class="collection-source"')==8
+assert all('ref-'+slug in pages['sources.html'].ids for slug in ['shiva-poison','rama-exile','hanuman-lanka','govardhana','mahishasura','lalita-bhandasura','bhagiratha-ganga','shiva-parvati'])
 ET.parse(root/'sitemap.xml')
 assert (root/'pagefind/pagefind.js').exists()
 if errors:raise SystemExit('\n'.join(errors))
-print(f'Passed: {len(pages)} pages; local files and fragments; metadata and images; seven card citations; sitemap; search bundle.')
+print(f'Passed: {len(pages)} pages; local files and fragments; metadata and images; eight card citations; sitemap; search bundle.')
