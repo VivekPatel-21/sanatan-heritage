@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{if(typeof PagefindUI==="function"){new PagefindUI({element:"#site-search",showSubResults:true,showImages:false});document.querySelector("#search-help").hidden=true;}else{document.querySelector("#search-help").textContent="Search could not load. Please refresh or browse the story collection and glossary.";}});

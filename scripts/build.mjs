@@ -1,0 +1,10 @@
+import { readdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
+const origin = 'https://sanatan-heritage.vivopatel1304.chatgpt.site';
+const siteDir=existsSync('dist/index.html')?'dist':'.';
+const pages = (await readdir(siteDir)).filter(name=>name.endsWith('.html')&&!['404.html','search.html'].includes(name)).sort();
+await writeFile(siteDir+'/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.map(name=>`<url><loc>${origin}/${name==='index.html'?'':name}</loc></url>`).join('')+'</urlset>\n');
+await rm(siteDir+'/pagefind',{recursive:true,force:true});
+const result=spawnSync(process.execPath,['node_modules/pagefind/lib/runner/bin.cjs','--site',siteDir],{stdio:'inherit'});
+if(result.status!==0)process.exit(result.status??1);
