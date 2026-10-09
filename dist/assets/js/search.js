@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{"function"==typeof PagefindUI?(new PagefindUI({element:"#site-search",showSubResults:!0,showImages:!1}),document.querySelector("#search-help").hidden=!0):document.querySelector("#search-help").textContent="Search could not load. Please refresh or browse the story collection and glossary."});

@@ -1,0 +1,1 @@
+export default { rules: { 'block-no-empty': true, 'color-no-invalid-hex': true, 'property-no-unknown': true, 'declaration-block-no-duplicate-properties': [true, { ignore: ['consecutive-duplicates-with-different-values'] }] } };

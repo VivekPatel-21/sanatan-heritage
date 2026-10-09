@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title><meta name="description" content="{{ description }}">
+{% if noindex %}<meta name="robots" content="noindex">{% endif %}
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/theme.js"></script>
+<link rel="stylesheet" href="/assets/css/style.css">
+{% if search %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endif %}
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="{{ ogType }}"><meta property="og:url" content="{{ canonical }}">
+<meta property="og:site_name" content="Sanatan Heritage"><meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
+<meta property="og:image:alt" content="{{ ogImageAlt }}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
+<script src="/assets/js/site.js" defer></script>
+{% for script in scripts %}<script src="{{ script }}" defer></script>{% endfor %}
+</head><body class="{{ bodyClass }}">
+<a class="skip" href="#main">Skip to content</a>
+{% if story %}<div class="reading-progress" role="progressbar" aria-label="Story reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>{% endif %}
+{% include "header.njk" %}
+{{ content | safe }}
+{% include "footer.njk" %}
+</body></html>

@@ -1,20 +1,10 @@
 # Sanatan Heritage
 
-An illustrated guide to Sanatan Dharma, its divine forms, sacred literature and stories. The site uses plain HTML, CSS and JavaScript, with a generated Pagefind search index.
+An illustrated guide to Sanatan Dharma, its divine forms, sacred texts, Sanskrit vocabulary and stories. The collection includes Lalita and Bhandasura and Shiva and Parvati, with chapter navigation, characters, tradition notes and references collected on a dedicated Sources page.
 
-## Pages
+## Run locally
 
-- Home, Understanding Sanatan Dharma, Gods & Goddesses, Sacred Texts & Scriptures
-- Story collection: six short previews and two complete retellings: Lalita and Bhandasura, and Shiva and Parvati
-- Lalita Tripurasundari introduction
-- Sources & References, with a unique source entry linked from every story card
-- Reading paths: Start here, Stories of courage, Enter the Ramayana
-- Sanskrit glossary, with Devanagari, transliteration and approximate pronunciation
-- Site-wide search and a custom 404 page
-
-## Local development
-
-Requires Node.js and Python 3.
+Install Node.js 22 or newer and Python 3, then run:
 
 ```sh
 npm ci
@@ -22,26 +12,37 @@ npm run build
 npm run serve
 ```
 
-Open http://localhost:8080. In the Sites checkout, HTML and static output live in `dist/`. In the GitHub mirror they live at the repository root; the build and serve scripts support both layouts. Edit the HTML, then rebuild after content changes. The build refreshes `sitemap.xml` and the Pagefind index. The generated `dist/pagefind/` files must accompany a static deployment; search requires HTTP serving rather than opening files directly.
+Open http://localhost:8080. Rebuild after editing source files. The site is static: search, filters, theme preferences and glossary cards run in the browser, without a backend.
 
-## Editorial conventions
+## Project structure
 
-Keep narrative paragraphs short and pair them with relevant images. Identify previews as previews. Preserve differences between scriptural narratives and commentary. Source details belong on `sources.html`; story cards link to their specific entry. Link the first useful occurrence of glossary terms, avoiding repeated links. Keep project plans and messages to the site owner out of visitor copy.
+- `src/*.njk`: page content and metadata, rendered by Eleventy.
+- `src/_includes/`: shared layout, header and footer.
+- `src/assets/images/`: image masters, including contributed artwork.
+- `src/assets/css/` and `src/assets/js/`: readable styles and interactions.
+- `src/data/glossary.json`: the single source of definitions for the glossary page and clickable cards.
+- `scripts/`: image optimization, minification, search indexing, validation and local serving.
+- `dist/`: generated, deployable site. Edit `src/`, not this folder.
 
-The complete stories include estimated reading time (approximately 200 words per minute), a character box, a tradition note, and previous/next links that clearly identify preview destinations. Curated paths contain only existing pages and episodes.
+The build creates WebP variants without enlarging originals, adds intrinsic dimensions and responsive image markup, minifies HTML/CSS/JS, regenerates the sitemap and builds the Pagefind index. Dependency files in `node_modules/` are ignored by Git. Commit the lockfile and rebuild output with changes.
 
-## Images
+## Contribute
 
-Story scenes: `bhagiratha-ganga.webp`, `hanuman-lanka.webp`, and three Shiva–Parvati illustrations. Several remaining cards intentionally use deity portraits rather than episode scenes; their alt text identifies them accordingly. Lalita artwork and its visible attribution marks are preserved. AI-generated illustrations are labeled on the site. `og.png` is the branded sharing card; Lalita detail pages use their own primary devotional artwork in metadata.
+Use a feature branch and a pull request. Follow the existing visual style, use descriptive image alt text, give each page a unique title and description, and link story references to entries in `sources.html`. Preserve distinctions between textual sources and interpretations in different traditions. Use artwork you have permission to share and record its provenance in Sources. Avoid publishing full copyrighted book scans or private account credentials.
 
-## Hosting and discovery
+Add pages as `.njk` files with the existing front matter and shared layout. Add images under `src/assets/images/`; use their `/assets/images/` paths in page content. Add a source entry and related story navigation for each new narrative. Menus and footers are edited once in the shared includes.
 
-Production origin: https://sanatan-heritage.vivopatel1304.chatgpt.site
+Before committing, run:
 
-The site remains owner-private. `robots.txt` disallows crawling while it is private. Open Graph/X metadata and the sitemap are prepared, but social-media crawlers and public search engines cannot read an authenticated private site. If the owner chooses public access, deliberately update the robots policy and review canonical/preview URLs. Do not change sharing automatically. `404.html` is intended for static hosts that support custom not-found pages.
+```sh
+npm run build
+npm run lint
+npm run check
+npm test
+```
 
-The Sites manifest is `.openai/hosting.json`. The GitHub mirror contains the same deployable files at the repository root, with developer files under `scripts/`. Do not include credentials, uploaded reference books or `node_modules` in version control. The existing GitHub `temple.webp` asset corresponds to the Sites `temple.png` image.
+GitHub Actions repeats these checks on pushes and pull requests: HTML/CSS linting, internal file and anchor checks, metadata and image checks, source citations, and keyboard/interaction tests. Review the resulting pages on narrow and wide screens before merging.
 
-## Extending the collection
+## Hosting
 
-For each new story, add a stable card ID, source entry, matching artwork, and metadata. Rebuild the search index and sitemap. Add full-story navigation only to available stories or clearly labeled previews. At about fifteen content pages, introduce shared header/footer templates to reduce repeated edits. Translation, audio, calendar, places, family printables and newsletter features are separate additions, not advertised as available on the site.
+Publish the contents of `dist/` at the domain root on a static host with `404.html` as its error page. The current deployment is private; `robots.txt` discourages indexing. Change the canonical domain in page metadata and the build script if moving hosts, and review indexing settings when changing the site's access policy. Social preview metadata is included, but crawlers may not preview private pages.

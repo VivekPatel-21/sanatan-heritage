@@ -1,0 +1,21 @@
+---
+{
+  "layout": "layout.njk",
+  "permalink": "glossary.html",
+  "title": "Glossary · Sanatan Heritage",
+  "description": "Sanskrit terms with Devanagari, transliteration and approximate pronunciation.",
+  "bodyClass": "references-page",
+  "canonical": "https://sanatan-heritage.vivopatel1304.chatgpt.site/glossary.html",
+  "ogType": "website",
+  "ogImage": "og.png",
+  "ogImageAlt": "Sanatan Heritage — Stories, Wisdom, Traditions",
+  "noindex": false,
+  "search": false,
+  "story": false,
+  "scripts": [
+    "/assets/js/directory.js"
+  ],
+  "sourceLink": "sources.html#glossary"
+}
+---
+<main data-pagefind-body="" id="main"><section class="reference-intro" id="top"><nav aria-label="Breadcrumb" class="breadcrumb"><a href="/index.html">Home</a><span>/</span><span>Glossary</span></nav><p class="eyebrow">WORDS &amp; THEIR WORLDS</p><h1>Glossary</h1><p>Sanskrit words encountered in the stories, with Devanagari and approximate pronunciation.</p></section><form class="directory-controls" data-directory-form="" role="search"><div><label for="directory-query">Search Sanskrit terms</label><input autocomplete="off" id="directory-query" placeholder="Term, Devanagari or meaning" type="search"/></div><button type="reset">Clear filters</button><p aria-live="polite" id="directory-count" role="status"></p></form><p hidden="" id="directory-empty">No matches. Try another word or clear the filters.</p><div aria-label="Glossary terms" class="glossary-index"><a href="#dharma">dharma</a><a href="#karma">karma</a><a href="#atman">ātman</a><a href="#brahman">brahman</a><a href="#moksha">mokṣa</a><a href="#bhakti">bhakti</a><a href="#shakti">śakti</a><a href="#deva">deva</a><a href="#devi">devī</a><a href="#tapas">tapas</a><a href="#yantra">yantra</a><a href="#purana">purāṇa</a></div><section class="glossary-grid section" aria-label="Glossary definitions">{% for term in glossary %}<article class="reader-panel" id="{{ term.id }}" data-directory-item data-category="all"><p class="devanagari" lang="sa">{{ term.devanagari }}</p><h2>{{ term.name }}</h2><p class="pronunciation">{{ term.pronunciation }}</p><p>{{ term.definition }}</p></article>{% endfor %}</section></main>

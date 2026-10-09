@@ -1,0 +1,86 @@
+[
+  {
+    "id": "dharma",
+    "name": "dharma",
+    "devanagari": "धर्म",
+    "pronunciation": "Say: DHAR-ma",
+    "definition": "Duty, ethical order and the way of living that sustains life; its meaning depends on context."
+  },
+  {
+    "id": "karma",
+    "name": "karma",
+    "devanagari": "कर्म",
+    "pronunciation": "Say: KAR-ma",
+    "definition": "Action, and the consequences of action in teachings about moral cause and effect."
+  },
+  {
+    "id": "atman",
+    "name": "Atman · ātman",
+    "devanagari": "आत्मन्",
+    "pronunciation": "Say: AAT-man",
+    "definition": "The Self; schools differ in their account of its relationship to ultimate reality."
+  },
+  {
+    "id": "brahman",
+    "name": "brahman",
+    "devanagari": "ब्रह्मन्",
+    "pronunciation": "Say: BRAH-man",
+    "definition": "Ultimate reality in Upanishadic and Vedantic thought. Brahman is distinct from Brahma, the creator deity."
+  },
+  {
+    "id": "moksha",
+    "name": "Moksha · mokṣa",
+    "devanagari": "मोक्ष",
+    "pronunciation": "Say: MOKE-sha",
+    "definition": "Liberation from samsara, the cycle of rebirth; its nature is understood differently across schools."
+  },
+  {
+    "id": "bhakti",
+    "name": "bhakti",
+    "devanagari": "भक्ति",
+    "pronunciation": "Say: BHAK-ti",
+    "definition": "Devotion and loving dedication to the Divine."
+  },
+  {
+    "id": "shakti",
+    "name": "Shakti · śakti",
+    "devanagari": "शक्ति",
+    "pronunciation": "Say: SHAK-ti",
+    "definition": "Power or energy; divine power, especially the Goddess in Shakta traditions."
+  },
+  {
+    "id": "deva",
+    "name": "deva",
+    "devanagari": "देव",
+    "pronunciation": "Say: DAY-va",
+    "definition": "A divine being or god; the feminine form is devi."
+  },
+  {
+    "id": "devi",
+    "name": "Devi · devī",
+    "devanagari": "देवी",
+    "pronunciation": "Say: DAY-vee",
+    "definition": "Goddess; also a title for the Divine Mother."
+  },
+  {
+    "id": "tapas",
+    "name": "tapas",
+    "devanagari": "तपस्",
+    "pronunciation": "Say: TA-pas",
+    "definition": "Spiritual discipline and austerity, associated with inward effort and transformation."
+  },
+  {
+    "id": "yantra",
+    "name": "yantra",
+    "devanagari": "यन्त्र",
+    "pronunciation": "Say: YAN-tra",
+    "definition": "A diagram or device; in worship, a geometric form associated with a deity and contemplation."
+  },
+  {
+    "id": "purana",
+    "name": "Purana · purāṇa",
+    "devanagari": "पुराण",
+    "pronunciation": "Say: pu-RAA-na",
+    "definition": "A genre of sacred narrative including divine stories, cosmology, genealogies and teachings."
+  }
+]
