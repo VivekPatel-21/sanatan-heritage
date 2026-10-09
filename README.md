@@ -1,6 +1,6 @@
 # Sanatan Heritage
 
-An illustrated guide to Sanatan Dharma, its divine forms, sacred texts, Sanskrit vocabulary and stories. The collection includes Lalita and Bhandasura and Shiva and Parvati, with chapter navigation, characters, tradition notes and references collected on a dedicated Sources page.
+An illustrated guide to Sanatan Dharma, its divine forms, sacred texts, Sanskrit vocabulary and stories. The collection includes Lalita and Bhandasura, Shiva and Parvati, and Shiva drinks Halahala, with chapter navigation, characters, tradition notes and references collected on a dedicated Sources page.
 
 ## Run locally
 

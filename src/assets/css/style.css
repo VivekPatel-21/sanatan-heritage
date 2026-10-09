@@ -44,3 +44,7 @@ button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,inpu
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 /* Glossary links remain legible within the dark editorial sections in either theme. */
 :is(.hero,.stories,.scripture-note,.deities-hero,.count-section,.scripture-hero,.scripture-agamas,.collection-hero,.tale-hero,.lalita-hero,.lalita-story-feature) .glossary-link{color:var(--gold)}
+/* Shiva's act of protection: ocean tones and a quiet devotional portrait. */
+.halahala-page .tale-hero{background:#183c43}.halahala-page .tale-hero-art{background:#10282e}.halahala-page .tale-hero-art img{max-height:620px}.halahala-page .halahala-portrait img{max-width:480px;max-height:560px;width:100%;height:auto;object-fit:contain}
+
+.reading-paths-page .reader-grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:600px){.reading-paths-page .reader-grid{grid-template-columns:1fr}}
