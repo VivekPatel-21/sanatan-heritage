@@ -1,1 +1,1 @@
-(()=>{let e;try{e=localStorage.getItem("sanatan-theme")}catch{}["light","dark"].includes(e)||(e=window.matchMedia?.("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.dataset.theme=e,document.documentElement.classList.add("js")})();
+(()=>{let t;try{t=localStorage.getItem("sanatan-theme")}catch{}["light","dark"].includes(t)||(t="light"),document.documentElement.dataset.theme=t,document.documentElement.classList.add("js")})();
