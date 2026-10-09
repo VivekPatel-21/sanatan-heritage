@@ -374,3 +374,171 @@ footer{padding:32px 24px;flex-wrap:wrap;gap:24px}.footer-links{align-items:flex-
 :is(.idea-grid,.path-list,.lalita-emblems) h3{font-family:var(--display);font-size:30px}
 :root[data-theme="dark"] .pagefind-ui{--pagefind-ui-primary:var(--accent);--pagefind-ui-text:var(--ink);--pagefind-ui-background:var(--surface);--pagefind-ui-border:var(--line);--pagefind-ui-tag:var(--surface-soft)}
 @media(max-width:760px){.deity-illustration{margin:-26px -26px 22px}.deity-illustration figcaption{font-size:23px;padding:15px 22px}.deity-illustration figcaption span{font-size:12px}.learn-content .article-section h2{font-size:34px}.lalita-story-feature figure{padding:18px 18px 0}}
+
+/* Taste Skill royal archive edition. Vermilion, indigo, emerald and gold are
+   intentional brand colors. Existing copy and every route remain intact. */
+:root{--ivory:#fff9f0;--surface:#fffcf7;--surface-soft:#f1e8d9;--ink:#2c2439;--muted:#655b6b;--line:#dbccb5;--accent:#a13223;--detail:#775729;--wine:#a13223;--deep:#231c43;--gold:#edc777;--royal:#29214f;--emerald:#184b40;--saffron:#9e651f}
+:root[data-theme="dark"]{--ivory:#141326;--surface:#1d1b34;--surface-soft:#28243e;--ink:#faf1e3;--muted:#c6bdd0;--line:#51435b;--accent:#f4aa91;--detail:#edc777;--royal:#29214f;--emerald:#184b40;--saffron:#edc777}
+h1,h2,h3{font-weight:550;letter-spacing:-.035em;line-height:1.1}
+em{color:var(--accent)}
+.section{max-width:1280px;padding:95px 48px}
+.site-header{max-width:1440px;padding:20px 48px;min-height:80px;border-bottom:0;gap:28px}
+.site-header .brand{font-size:27px;color:var(--ink)}
+.brand-mark{border-color:var(--accent);color:var(--accent);border-radius:0;width:36px;height:42px;font-family:var(--display)}
+.brand small{color:var(--muted);font-size:9px;letter-spacing:1.3px}
+.site-nav{gap:26px;font-size:13px}
+.site-nav a[aria-current="page"]::after{height:2px;background:var(--accent)}
+.header-actions button{border-radius:0;background:transparent;font-size:12px}
+.button{border-radius:0;padding:15px 25px;background:var(--accent);color:var(--ivory);font-size:14px;font-weight:650;border:1px solid var(--accent)}
+.button:hover{background:var(--ink);border-color:var(--ink);color:var(--ivory)}
+.eyebrow{font-size:12px;font-weight:650;letter-spacing:.06em;line-height:1.6}
+.section-heading h2{max-width:22ch}.section-heading>p{max-width:60ch}
+/* The homepage is a cinematic cover, with a calm, protected text plane. */
+.hero{position:relative;isolation:isolate;display:block;max-width:1440px;min-height:620px;padding:60px 70px;background:#29214f;color:#fff6e8;overflow:hidden}
+.hero-copy{position:relative;z-index:2;width:48%;padding:0;min-height:485px;justify-content:center}
+.hero h1{font-size:clamp(3.6rem,5.7vw,5.7rem);color:#fff6e8;max-width:12ch;line-height:1.06}
+.hero em{color:#edc777}
+.hero .eyebrow{color:#edc777;font-size:12px;letter-spacing:.07em}
+.hero-description{color:#eee3f0;font-size:17px;max-width:39ch;line-height:1.9;margin:28px 0 32px}
+.hero .glossary-link,.hero .text-link{color:#edc777}
+.hero .button{background:#edc777;border-color:#edc777;color:#29214f}
+.hero .button:hover{background:#fff6e8;border-color:#fff6e8;color:#29214f}
+.hero-actions{gap:25px;flex-wrap:wrap}
+.hero-note{border-color:#776183;margin-top:32px;padding-top:20px;color:#eee3f0}
+.hero-note span{color:#edc777}.hero-note p{color:#eee3f0}
+.hero-art{position:absolute;z-index:0;right:0;top:0;bottom:0;width:65%;display:block;border-radius:0;overflow:hidden}
+.hero-art img{position:absolute;height:100%;width:100%;object-fit:cover;object-position:53% center;border-radius:0}
+.hero-art::after{display:block;content:'';position:absolute;inset:0;background:linear-gradient(90deg,#29214f 0%,#29214fed 16%,#29214f60 45%,#29214f08 73%);pointer-events:none}
+.hero-art figcaption{position:absolute;z-index:1;left:auto;right:30px;bottom:25px;max-width:42%;padding:12px 16px;background:#231c43ed;color:#fff0d4;font-size:11px;letter-spacing:0;display:block;line-height:1.6}
+.hero-art figcaption span{display:block;font-size:10px;margin-top:5px;color:#edc777}
+.chapter-strip{max-width:1344px;padding:28px 0;border-top:0;border-bottom:1px solid var(--line)}
+.chapter-strip p{font-family:var(--display);font-size:25px}.chapter-strip span{color:var(--accent);font-size:12px}
+.intro{gap:100px;padding-bottom:45px}.intro-copy .lead{font-size:31px;line-height:1.45}
+.concepts{max-width:1184px;gap:40px;border:0;margin-bottom:90px}
+.concepts article{border-top:2px solid var(--accent);padding:26px 0!important}
+.concepts article:nth-child(2){border-top-color:var(--saffron)}.concepts article:nth-child(3){border-top-color:var(--emerald)}.concepts article:nth-child(4){border-top-color:var(--royal)}
+:root[data-theme="dark"] .concepts article:nth-child(3){border-top-color:#78bea3}:root[data-theme="dark"] .concepts article:nth-child(4){border-top-color:#baa8ec}
+.concepts h3{font-size:32px}.concept-number{font-size:12px;color:var(--muted)}
+.divine{background:var(--surface-soft);padding:85px max(48px,calc((100vw - 1184px)/2));gap:50px 90px}
+.divine-list h3{font-size:35px}.divine-list article>span{color:var(--accent)}
+.text-grid{grid-template-columns:1fr 1fr;gap:35px 65px}
+.text-grid article{border-top:1px solid var(--line);padding:26px 0 0}.text-grid h3{font-size:35px}.text-grid p{font-size:16px}
+.text-grid article:nth-child(2) h3{color:var(--saffron)}.text-grid article:nth-child(3) h3{color:var(--accent)}
+.stories{background:#184b40;color:#fff6e8;gap:100px;padding:80px max(48px,calc((100vw - 1184px)/2))}
+.stories :is(em,.eyebrow,.badge,.glossary-link){color:#edc777}
+.stories>div>p:last-child,.story-preview p{color:#e1ede5}
+.story-preview{border:0;border-left:1px solid #719382;padding:0 0 0 45px;background:transparent;box-shadow:none;border-radius:0}
+.story-preview h3{font-size:45px;color:#fff6e8}.story-preview .button{background:#edc777;color:#184b40;border-color:#edc777}
+.story-preview .button:hover{background:#fff6e8;border-color:#fff6e8;color:#184b40}.story-tags span{color:#e1ede5;border-color:#719382;border-radius:0}
+/* A family of royal covers, differentiated by subject rather than random colors. */
+.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero{--cover:#29214f;--cover-soft:#211a3c;max-width:1440px;background:var(--cover);color:#fff6e8;border-radius:0;border:0}
+.deities-hero{--cover:#29214f;--cover-soft:#211a3c;padding:52px 60px 60px;gap:80px}
+.scripture-hero{--cover:#184b40;--cover-soft:#103b32}
+.collection-hero{--cover:#913321;--cover-soft:#712619}
+.lalita-hero,.tale-page .tale-hero{--cover:#76253d;--cover-soft:#581b2d}
+.shiva-parvati-page .tale-hero{--cover:#184b40;--cover-soft:#103b32;background:var(--cover)}
+.halahala-page .tale-hero{--cover:#173f54;--cover-soft:#112f40;background:var(--cover)}
+.learn-hero{--cover:#29214f;--cover-soft:#211a3c}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) :is(h1,.breadcrumb){color:#fff6e8}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) :is(em,.eyebrow,.glossary-link){color:#edc777}
+:is(.deities-lead,.scripture-hero-copy>p:not(.eyebrow),.collection-hero p:not(.eyebrow),.tale-deck,.lalita-hero-lead,.lalita-hero>div>p:last-of-type,.learn-title>p:not(.eyebrow)){color:#f1e5de;line-height:1.8}
+:is(.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero){grid-template-columns:1.05fr 1fr;gap:60px;padding:45px 60px 50px}
+:is(.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) h1{font-size:clamp(3.25rem,5.1vw,5rem)}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) .button{background:#edc777;color:var(--cover);border-color:#edc777}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) .button:hover{background:#fff6e8;border-color:#fff6e8;color:var(--cover)}
+.deities-hero-note{border-color:#776183}.deities-hero-note>span,.deities-hero-note a{color:#edc777}.deities-hero-note p{color:#fff6e8;font-size:32px}
+:is(.scripture-cover,.collection-hero figure){border-radius:0}
+:is(.scripture-cover,.collection-hero figure) img{height:440px;border-radius:0}
+:is(.scripture-cover,.collection-hero figure) figcaption{color:#f1e5de;font-size:11px}
+.collection-path-link a{color:#edc777}.collection-hero .collection-path-link{margin-bottom:0}
+.tale-meta,.reading-meta{color:#f1e5de;border-color:#8f6575}
+.tale-meta{padding-top:20px;line-height:1.8}.reading-meta>span+span{border-color:#8f6575}
+.tale-hero-art,.shiva-parvati-page .tale-hero-art,.halahala-page .tale-hero-art{background:var(--cover-soft);padding:20px 20px 0;border-radius:0}
+.tale-hero-art img,.shiva-parvati-page .tale-hero-art img,.halahala-page .tale-hero-art img{height:475px;max-height:none;object-fit:contain}
+.tale-hero-art figcaption{color:#f1e5de;font-size:11px}.tale-deck{font-size:27px;line-height:1.45}
+.lalita-hero figure{background:var(--cover-soft);padding:20px 20px 0;border-radius:0}.lalita-hero figure img{height:475px;object-fit:contain}.lalita-hero figcaption{color:#f1e5de;font-size:11px}.lalita-sanskrit{color:#edc777}
+.learn-image{border-radius:0;min-height:410px}.learn-title>p:not(.eyebrow){font-size:28px;line-height:1.5}
+/* Gallery layouts: a lead story and two-column deity portraits. */
+.collection-controls,.directory-controls{background:transparent;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:25px 0}
+.directory-controls{max-width:1184px}.collection-controls input,.collection-controls select,.directory-controls input,.directory-controls select{border-radius:0;background:var(--surface);min-height:50px}
+.directory-controls button,.stories-page button{border-radius:0;background:var(--surface)}
+.collection-grid{grid-template-columns:1fr 1fr;gap:55px 42px}.collection-card{border:0;background:transparent}.collection-card figure,.collection-card img{border-radius:0}.collection-card img{height:340px}
+.collection-copy h3{font-size:35px}.collection-copy{padding-top:23px}.collection-card figcaption{font-size:11px}.collection-copy .collection-source{font-size:13px!important}
+.collection-grid .collection-card:first-child{grid-column:1/-1;display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center;margin-bottom:15px}
+.collection-grid .collection-card:first-child img{height:420px;object-position:center 22%}.collection-grid .collection-card:first-child .collection-copy{padding:0}.collection-grid .collection-card:first-child h3{font-size:48px;max-width:15ch}
+.deity-grid{grid-template-columns:1fr 1fr;gap:45px 38px}
+.deity-card{display:grid;grid-template-columns:190px minmax(0,1fr);column-gap:28px;padding:0;background:transparent;border:0;border-radius:0;align-content:start}
+.deity-illustration{grid-column:1;grid-row:1 / span 6;margin:0;background:transparent;border-radius:0;max-height:none;align-self:start}
+.deity-illustration img{height:260px;aspect-ratio:auto;object-fit:cover;object-position:center 20%}
+.deity-illustration figcaption{display:block;background:transparent;padding:15px 0 0;color:var(--ink);font-size:25px;line-height:1.3}.deity-illustration figcaption span{display:block;color:var(--muted);max-width:none;text-align:left;font-size:10px;line-height:1.6;padding-top:7px}
+.deity-card>:not(.deity-illustration){grid-column:2;min-width:0}.deity-card h3{font-size:35px}.deity-name{font-size:23px;margin-bottom:12px}.deity-card .eyebrow{font-size:11px;letter-spacing:.025em;margin-bottom:10px}.deity-card>p:not(.eyebrow){font-size:15px;line-height:1.9;margin:18px 0}.deity-card summary{font-size:14px}.deity-card details>div>p{font-size:15px}
+.count-section{background:#29214f;color:#fff6e8;padding:80px max(48px,calc((100vw - 1184px)/2));gap:85px}
+.count-section :is(.eyebrow,h2 em,.count-number,.glossary-link),.count-reading>a,.count-reading .cite{color:#edc777}
+.count-section>div>p:not(.eyebrow),.count-reading details p{color:#f1e5de}.count-reading{background:#211a3c;border:1px solid #776183;border-radius:0;padding:35px}.count-reading h3{color:#fff6e8}.count-reading details{border-color:#776183}
+.scripture-pair article{border-radius:0;border-top:3px solid var(--accent)}.scripture-pair article:nth-child(2){border-top-color:var(--saffron)}
+.scripture-card img,.scripture-card figure{border-radius:0}.scripture-card h3{font-size:38px}.scripture-card-copy{padding-top:26px}.scripture-card figcaption{font-size:11px}.scripture-library-grid{gap:55px 42px}
+.scripture-agamas{background:#29214f;color:#fff6e8;border-radius:0}.scripture-agamas :is(.eyebrow,em,a,.glossary-link){color:#edc777}.scripture-agamas p:not(.eyebrow){color:#f1e5de}.scripture-agamas figure{background:#211a3c}.scripture-agamas figcaption{color:#f1e5de}
+.reading-paths>a,.lalita-reading-grid>a{border-radius:0;border-top:3px solid var(--accent)}.reading-paths>a:nth-child(2),.lalita-reading-grid>a:nth-child(2){border-top-color:var(--saffron)}
+.reading-paths>a:nth-child(3),.lalita-reading-grid>a:nth-child(3){border-top-color:var(--emerald)}
+:root[data-theme="dark"] :is(.reading-paths,.lalita-reading-grid)>a:nth-child(3){border-top-color:#78bea3}
+.lalita-story-feature{background:#76253d;color:#fff6e8;border-radius:0}.lalita-story-feature :is(em,.eyebrow,.glossary-link){color:#edc777}.lalita-story-feature p:not(.eyebrow){color:#f1e5de}.lalita-story-feature figure{background:#581b2d}.lalita-story-feature figcaption{color:#f1e5de}.lalita-story-feature .button{background:#edc777;color:#76253d;border-color:#edc777}
+.lalita-chakra figure,.lalita-form img{border-radius:0}.lalita-vidya{border-top:1px solid var(--line)}
+/* Reader tools and references share the same refined publication system. */
+.tale-layout,.learn-layout,.reference-layout{max-width:1280px;padding-left:48px;padding-right:48px;gap:85px}.tale-layout{grid-template-columns:220px minmax(0,740px)}
+.tale-chapter{padding-bottom:35px}.tale-chapter h2{font-size:39px}.tale-chapter-heading>span{font-size:21px}.tale-body p{font-size:18px;line-height:1.95}
+.tale-inline{background:var(--surface-soft);border-radius:0;padding:24px 24px 0}.tale-inline figcaption{font-size:11px;line-height:1.7;text-align:left}.tale-inline.story-landscape{background:transparent;padding:0}.tale-inline.story-landscape img{padding:0}
+.tale-reflection{border-radius:0;border-left:3px solid var(--accent);background:var(--surface-soft)}
+.story-characters{max-width:1184px;border-radius:0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent;padding:30px 0}.story-characters h2{font-size:32px}
+.story-pagination a{border-radius:0;border-top:2px solid var(--accent)}.story-pagination a:nth-child(2){border-top-color:var(--saffron)}
+.reader-panel{background:var(--surface);border:0;border-top:3px solid var(--accent);border-radius:0;padding:30px}.reader-panel:nth-child(4n+2){border-top-color:var(--saffron)}.reader-panel:nth-child(4n+3){border-top-color:var(--emerald)}.reader-panel:nth-child(4n){border-top-color:var(--royal)}
+:root[data-theme="dark"] .reader-panel:nth-child(4n+3){border-top-color:#78bea3}:root[data-theme="dark"] .reader-panel:nth-child(4n){border-top-color:#baa8ec}
+.reader-panel h2{font-size:34px}.glossary-popover{border-radius:0;border-top:3px solid var(--accent)}
+.reference-intro{max-width:1280px;padding:55px 48px 45px;border-top:3px solid var(--accent)}.reference-intro h1{font-size:clamp(3rem,5vw,4.75rem)}
+.reference-section h2{font-size:35px}.reference-section-heading>a{font-size:14px}.reference-contents nav a{font-size:14px}
+.deity-next{max-width:1184px;padding:42px;background:var(--surface-soft);border-radius:0;border-top:3px solid var(--accent)}.deity-next a{border-radius:0}.deity-next h2{font-size:40px}
+.reading-progress span{background:var(--gold)}
+footer{max-width:1440px;padding:48px;border-top:1px solid var(--line)}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:12px 30px;font-size:13px}.brand-mark{box-shadow:none}
+@media(max-width:1200px){.site-header{padding:20px 32px}.site-header .brand{font-size:24px}.site-nav{gap:20px}.chapter-strip{margin:0 48px}.deity-card{grid-template-columns:155px minmax(0,1fr);column-gap:23px}.deity-illustration img{height:235px}.deity-card h3{font-size:31px}}
+@media(max-width:980px){
+.site-header{padding:18px 30px}.site-header .site-nav{border-radius:0}.hero{padding:45px 40px 40px;min-height:590px}.hero-copy{width:56%;min-height:490px}.hero h1{font-size:4.3rem}.hero-art{width:68%}.hero-description{font-size:16px}.hero-art figcaption{max-width:34%;right:18px}
+:is(.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero){padding:40px 30px;gap:35px;grid-template-columns:1fr 1fr}.deities-hero{padding:40px 30px;gap:40px}
+:is(.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) h1{font-size:3.5rem}.deities-hero-note p{font-size:27px}
+.section{padding:70px 30px}.intro{gap:50px}.divine,.stories,.count-section{padding:65px 30px;gap:45px}.concepts,.tradition-grid{margin-left:30px;margin-right:30px;gap:28px}
+.deity-grid{grid-template-columns:1fr;gap:42px}.deity-card{grid-template-columns:240px minmax(0,1fr);column-gap:35px}.deity-illustration img{height:300px}.deity-card h3{font-size:38px}.deity-card>p:not(.eyebrow){font-size:16px}
+.collection-grid{gap:42px 30px}.collection-grid .collection-card:first-child{gap:35px;grid-template-columns:1.2fr 1fr}.collection-grid .collection-card:first-child h3{font-size:40px}.collection-grid .collection-card:first-child img{height:360px}
+.tale-layout,.learn-layout,.reference-layout{padding-left:30px;padding-right:30px;gap:40px}.tale-layout{grid-template-columns:190px minmax(0,1fr)}.story-characters{margin:30px}.deity-next{margin:0 30px 55px}.directory-controls{margin:30px}
+}
+@media(max-width:760px){
+.site-header{padding:17px 22px;min-height:75px;gap:16px}.site-header .brand{font-size:22px;gap:9px}.site-header .brand-mark{width:30px;height:36px}.site-header .brand small{font-size:8px;letter-spacing:1px}.header-actions button{padding:8px;font-size:11px}
+.hero{display:flex;flex-direction:column;padding:0;min-height:0;overflow:visible}.hero-copy{width:100%;padding:40px 25px 33px;min-height:0;justify-content:flex-start}
+.hero h1{font-size:clamp(3.25rem,10vw,4.2rem);max-width:14ch;line-height:1.08}.hero .eyebrow{font-size:11px!important;letter-spacing:.04em!important}.hero-description{font-size:16px;max-width:44ch;margin:24px 0 28px}.hero-actions{gap:20px}.hero .button{padding:14px 20px}.hero-note{margin-top:27px}
+.hero-art{position:relative;width:100%;min-height:0;display:flex;flex-direction:column;height:auto}.hero-art img{position:static;height:310px;border-radius:0;object-fit:cover}.hero-art::after{display:none}
+.hero-art figcaption{position:static;max-width:none;background:#231c43;padding:16px 25px;font-size:11px;display:flex;justify-content:space-between;gap:18px}.hero-art figcaption span{margin:0;font-size:10px;max-width:110px;text-align:right}
+.chapter-strip{margin:0 25px;padding:25px 0}.chapter-strip p{font-size:22px;line-height:1.5}.chapter-strip>span{display:none}
+.section{padding:58px 25px}.intro,.divine,.stories,.count-section,.divine-context,.scripture-foundations,.lalita-mother,.lalita-vidya{grid-template-columns:1fr;gap:30px}.intro{padding-bottom:33px}.intro-copy .lead{font-size:28px}
+h2{font-size:2.5rem}.section-heading h2{max-width:24ch}.concepts{margin:0 25px 55px;grid-template-columns:1fr 1fr;gap:25px}.concepts article{padding:23px 0!important;border-top:2px solid var(--accent)!important}.concepts article:nth-child(2){border-top-color:var(--saffron)!important}.concepts article:nth-child(3){border-top-color:var(--emerald)!important}.concepts article:nth-child(4){border-top-color:var(--royal)!important}.concepts h3{font-size:29px}.concepts p{font-size:14px}
+:root[data-theme="dark"] .concepts article:nth-child(3){border-top-color:#78bea3!important}:root[data-theme="dark"] .concepts article:nth-child(4){border-top-color:#baa8ec!important}
+.divine,.stories,.count-section{padding:55px 25px}.story-preview{border-left:0;border-top:1px solid #719382;padding:30px 0 0}.story-preview h3{font-size:40px}.text-grid{grid-template-columns:1fr;gap:26px}.text-grid h3{font-size:32px}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero){display:grid;grid-template-columns:1fr;padding:35px 25px 40px;gap:33px}
+:is(.scripture-hero-copy,.collection-hero>div,.tale-hero-copy,.lalita-hero>div,.learn-title){padding:0}
+:is(.deities-hero,.scripture-hero,.collection-hero,.tale-hero,.lalita-hero,.learn-hero) h1{font-size:clamp(3rem,9.5vw,4rem);line-height:1.1}
+.breadcrumb{font-size:12px;margin-bottom:26px}.eyebrow{font-size:12px!important;letter-spacing:.025em!important}.deities-hero-note{border-left:0;border-top:1px solid #776183;padding:26px 0 0}.deities-hero-note p{font-size:26px}
+:is(.scripture-cover,.collection-hero figure) img{height:310px}.scripture-cover figcaption,.collection-hero figcaption{font-size:11px;line-height:1.6;flex-direction:column;gap:5px}
+.tradition-grid{margin:0 25px;grid-template-columns:1fr 1fr;gap:25px}.tradition-grid h3{font-size:25px}
+.directory-controls{margin:25px;padding:22px 0;gap:20px}.directory-controls>div{min-width:0;flex-basis:100%}
+.deity-grid{grid-template-columns:1fr;gap:42px}.deity-card{grid-template-columns:140px minmax(0,1fr);gap:0 22px;padding:0}.deity-illustration{margin:0;grid-row:1 / span 6}.deity-illustration img{height:215px}.deity-illustration figcaption{font-size:22px;padding:13px 0 0}.deity-illustration figcaption span{font-size:10px}.deity-name{font-size:21px;margin-bottom:11px}.deity-card h3{font-size:30px}.deity-card .eyebrow{font-size:11px!important}.deity-card>p:not(.eyebrow){font-size:14px;line-height:1.85;margin:15px 0}.deity-card details>div>p{font-size:14px}.deity-card summary{font-size:13px}
+.count-reading{padding:28px}.count-reading h3{font-size:28px}.count-number{font-size:60px}
+.collection-controls{grid-template-columns:1fr;padding:25px 0;gap:22px}.collection-controls button{justify-self:start}.collection-grid,.scripture-library-grid{grid-template-columns:1fr;gap:40px}
+.collection-card img{height:330px}.collection-copy h3{font-size:33px}.collection-copy .eyebrow{font-size:11px!important}.collection-copy .collection-source{font-size:13px!important}
+.collection-grid .collection-card:first-child{display:block;grid-column:auto;margin:0}.collection-grid .collection-card:first-child img{height:350px}.collection-grid .collection-card:first-child .collection-copy{padding:23px 0 0}.collection-grid .collection-card:first-child h3{font-size:39px;max-width:none}
+.scripture-card h3{font-size:34px}.scripture-card img{height:290px}.scripture-agamas,.lalita-story-feature{grid-template-columns:1fr;margin:0 25px}.scripture-agamas>div,.lalita-story-feature>div{padding:32px 25px}
+.tale-hero-art img,.shiva-parvati-page .tale-hero-art img,.halahala-page .tale-hero-art img{height:auto;max-height:550px}.tale-hero-art,.shiva-parvati-page .tale-hero-art,.halahala-page .tale-hero-art{padding:18px 18px 0}.tale-deck{font-size:26px;line-height:1.5}
+.lalita-hero figure{padding:18px 18px 0}.lalita-hero figure img{height:auto;max-height:550px}.lalita-hero figcaption{font-size:11px}.learn-image{min-height:330px}
+.tale-layout,.learn-layout,.reference-layout{grid-template-columns:1fr;padding:40px 25px 60px;gap:38px}.tale-contents,.contents,.reference-contents{position:static}.tale-contents nav{grid-template-columns:1fr 1fr;gap:0 18px}.tale-contents nav a{font-size:13px}
+.tale-chapter h2{font-size:33px}.tale-chapter-heading{gap:16px}.tale-chapter-heading>span{font-size:19px}.tale-body p{font-size:17px;line-height:1.95}.tale-inline{padding:18px 18px 0}.tale-inline img{height:auto;max-height:550px}.tale-inline.story-landscape{padding:0}
+.story-characters{margin:25px;padding:28px 0}.story-characters dl,.story-pagination{grid-template-columns:1fr}.tale-reflection{padding:28px}
+.reference-intro{padding:37px 25px 40px}.reference-intro h1{font-size:3.25rem}.reference-section h2{font-size:31px}.reader-grid,.glossary-grid{grid-template-columns:1fr;gap:25px}.reader-panel{padding:26px}.reader-panel h2{font-size:32px}
+.deity-next{margin:0 25px 45px;padding:32px 25px}.deity-next h2{font-size:35px}.deity-next a{font-size:13px}.lalita-vidya{padding:45px 25px}
+footer{padding:40px 25px;gap:26px;flex-direction:column;align-items:flex-start}.footer-links{align-items:start;gap:12px 25px}footer p{order:0;width:auto;margin:0}
+}
+@media(max-width:380px){.site-header .brand{font-size:19px}.site-header .brand small{font-size:7px}.header-actions button{font-size:11px;padding:7px 5px}.deity-card{grid-template-columns:1fr}.deity-illustration{grid-row:auto;grid-column:1;margin-bottom:22px}.deity-illustration img{height:auto;aspect-ratio:1}.deity-card>:not(.deity-illustration){grid-column:1}.hero h1{font-size:3.2rem}}
