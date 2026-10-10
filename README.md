@@ -26,6 +26,10 @@ Open http://localhost:8080. Rebuild after editing source files. The site is stat
 
 The build creates WebP variants without enlarging originals, adds intrinsic dimensions and responsive image markup, minifies HTML/CSS/JS, regenerates the sitemap and builds the Pagefind index. Dependency files in `node_modules/` are ignored by Git. Commit the lockfile and rebuild output with changes.
 
+## Visual system
+
+`src/assets/css/style.css` starts with semantic tokens for the ivory light edition and obsidian dark edition, shared spacing, the heading scale, borders and motion. Cormorant Garamond and Manrope are self-hosted. Artwork uses square gallery frames; controls use 3px corners. Glass treatment is limited to the navigation, with an opaque fallback. Image entrances and hover zoom respect reduced motion, and text remains visible without JavaScript. Hero images load eagerly at high priority; images below the cover load lazily.
+
 ## Contribute
 
 Use a feature branch and a pull request. Follow the existing visual style, use descriptive image alt text, give each page a unique title and description, and link story references to entries in `sources.html`. Preserve distinctions between textual sources and interpretations in different traditions. Use artwork you have permission to share and record its provenance in Sources. Avoid publishing full copyrighted book scans or private account credentials.

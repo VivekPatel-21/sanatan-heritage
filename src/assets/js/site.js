@@ -36,6 +36,17 @@
     const schedule = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(update); } };
     window.addEventListener('scroll', schedule, { passive: true }); window.addEventListener('resize', schedule); update();
   }
+  // A short, one-time entrance for artwork; text remains visible throughout.
+  if (typeof IntersectionObserver === 'function' && typeof matchMedia === 'function' && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const artwork = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('art-entered');
+        artwork.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.collection-card figure, .scripture-card figure, .tale-inline, .deity-illustration').forEach(figure => artwork.observe(figure));
+  }
   const links = [...document.querySelectorAll('.glossary-link')];
   if (!links.length) return;
   fetch('/data/glossary.json').then(response => { if (!response.ok) throw new Error('Glossary unavailable'); return response.json(); }).then(terms => {

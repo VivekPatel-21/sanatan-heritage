@@ -39,7 +39,9 @@ for (const name of pages) {
     if (!variants) return;
     const largest = variants.at(-1);
     image.attr({ src: largest.path, width: String(largest.width), height: String(largest.height), decoding: 'async' });
-    if (!image.closest('.hero,.tale-hero,.collection-hero,.scripture-hero,.lalita-hero').length) image.attr('loading', 'lazy');
+    const isHero = image.closest('.hero,.tale-hero,.collection-hero,.scripture-hero,.lalita-hero,.learn-hero').length;
+    image.attr('loading', isHero ? 'eager' : 'lazy');
+    if (isHero) image.attr('fetchpriority', 'high');
     image.attr('srcset', variants.map(variant => `${variant.path} ${variant.width}w`).join(', '));
     image.attr('sizes', image.closest('.deity-card,.collection-card,.story-card').length ? '(max-width: 680px) 90vw, (max-width: 1050px) 45vw, 360px' : '(max-width: 760px) 100vw, 50vw');
   });
