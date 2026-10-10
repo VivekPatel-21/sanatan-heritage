@@ -32,6 +32,10 @@ Use a feature branch and a pull request. Follow the existing visual style, use d
 
 Add pages as `.njk` files with the existing front matter and shared layout. Add images under `src/assets/images/`; use their `/assets/images/` paths in page content. Add a source entry and related story navigation for each new narrative. Menus and footers are edited once in the shared includes.
 
+Use each photograph or artwork in only one visible placement across the site. Responsive sizes of that placement are generated automatically; do not create renamed copies or alternate crops to reuse it elsewhere. The site check rejects byte-identical image reuse. Review subjects visually as well, especially deity iconography. Captions distinguish contributed devotional artwork, temple photographs and AI-generated illustrations.
+
+Contributed image masters: `temple-photograph.webp` comes from IMG_4273.JPG; `temple-shikhara.webp` from IMG_3634.JPG; `lalita-lotus-contributed.webp` from IMG_3594.JPG; and `lalita-kameshvara-contributed.webp` from IMG_3632.JPG. These were supplied by the site owner. Temple identities are left unspecified pending confirmation.
+
 Before committing, run:
 
 ```sh

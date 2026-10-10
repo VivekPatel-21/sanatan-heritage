@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 import xml.etree.ElementTree as ET
 import json
+import hashlib
 project=Path(__file__).resolve().parents[1]
 root=project/'dist' if (project/'dist/index.html').exists() else project
 class Page(HTMLParser):
@@ -19,6 +20,7 @@ class Page(HTMLParser):
    if key in a:self.links.append(a[key])
   if tag=='meta':self.meta[a.get('property',a.get('name',''))]=a.get('content')
 pages={f.name:Page(f.read_text()) for f in root.glob('*.html')};errors=[]
+image_placements={}
 for name,p in pages.items():
  if p.h1!=1:errors.append(f'{name}: expected one h1')
  if len(p.ids)!=len(set(p.ids)):errors.append(f'{name}: duplicate IDs')
@@ -29,6 +31,11 @@ for name,p in pages.items():
   if not (root/target).exists():errors.append(f'{name}: missing {target}')
   elif u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:errors.append(f'{name}: missing anchor {link}')
  for image in p.images:
+  image_path=root/image.get('src','').lstrip('/')
+  if image_path.is_file():
+   digest=hashlib.sha256(image_path.read_bytes()).hexdigest()
+   if digest in image_placements:errors.append(f'{name}: repeated artwork also used in {image_placements[digest]}')
+   else:image_placements[digest]=name
   if not image.get('alt','').strip():errors.append(f'{name}: image needs descriptive alt')
   if not image.get('width') or not image.get('height'):errors.append(f'{name}: image needs intrinsic dimensions')
   for candidate in image.get('srcset','').split(','):
@@ -47,4 +54,4 @@ for term in json.loads((root/'data/glossary.json').read_text()):
 ET.parse(root/'sitemap.xml')
 assert (root/'pagefind/pagefind.js').exists()
 if errors:raise SystemExit('\n'.join(errors))
-print(f'Passed: {len(pages)} pages; local files and fragments; metadata and images; eight card citations; sitemap; search bundle.')
+print(f'Passed: {len(pages)} pages; {len(image_placements)} unique image placements; local files and fragments; metadata and images; eight card citations; sitemap; search bundle.')
