@@ -1,1 +1,0 @@
-(()=>{let t;try{t=localStorage.getItem("sanatan-theme")}catch{}["light","dark"].includes(t)||(t="light"),document.documentElement.dataset.theme=t,document.documentElement.classList.add("js")})();
