@@ -18,6 +18,7 @@
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
 <script src="/assets/js/site.js" defer></script>
+{% if story %}<script src="/assets/js/reader.js" defer></script>{% endif %}
 {% for script in scripts %}<script src="{{ script }}" defer></script>{% endfor %}
 </head><body class="{{ bodyClass }}">
 <a class="skip" href="#main">Skip to content</a>

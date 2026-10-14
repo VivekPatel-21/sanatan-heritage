@@ -9,7 +9,7 @@
    const match=(!query||[card.textContent,card.dataset.deity,card.dataset.scripture,card.dataset.theme].join(' ').toLocaleLowerCase().includes(query))&&fields.every(({name,node})=>!node.value||card.dataset[name]===node.value);
    card.hidden=!match;if(match)count++;
   }
-  document.querySelector('#story-count').textContent=`${count} ${count===1?"story or preview":"stories & previews"}`;
+  document.querySelector('#story-count').textContent=`${count} ${count===1?"full story":"full stories"}`;
   document.querySelector('#no-stories').hidden=count>0;
  };
  const reset=()=>{search.value='';fields.forEach(({node})=>node.value='');update();};

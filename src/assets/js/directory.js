@@ -15,7 +15,7 @@
     });
     document.querySelector('#directory-count').textContent = `${count} of ${cards.length} ${category ? 'divine forms' : 'terms'}`;
     document.querySelector('#directory-empty').hidden = count !== 0;
-    document.querySelectorAll('.glossary-index a').forEach(link => { link.hidden = document.getElementById(link.hash.slice(1))?.hidden ?? false; });
+    document.querySelectorAll('.glossary-index a, .deity-index a').forEach(link => { link.hidden = document.getElementById(link.hash.slice(1))?.hidden ?? false; });
   };
   form.addEventListener('submit', event => event.preventDefault());
   form.addEventListener('input', update);
