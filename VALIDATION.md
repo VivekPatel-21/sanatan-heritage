@@ -34,3 +34,11 @@ Extracted project can be rebuilt with npm ci && npm run build. Build output need
 - Fresh rendered Chrome run passed 138 scenarios across all 23 pages at 375, 768 and 1440 CSS pixels in both themes. No overflow, clipped captions, broken images or JavaScript runtime errors. Shared keyboard/focus, reduced motion/transparency, no-JavaScript navigation, search and 720 CSS-pixel reflow checks passed.
 - Staged-file audit checked paths and common credential signatures; no private reference directories, uploads, books, credentials, dependencies, hosting metadata, generated output or QA artifacts were staged. This scan does not constitute a guarantee against every possible secret format.
 - Native browser zoom, screen-reader and specialist iconography audits remain unverified. Existing GitHub history is the new branch's ancestry; no force-push or deployment is part of this task.
+
+## Typography revision — 20 October 2026
+
+- Build, HTML/CSS lint, site checks and interface tests passed after replacing the active typography. Site remains 23 pages, 21 indexed pages and 53 unique visible images.
+- Chrome passed 138 page/width/theme scenarios with no horizontal overflow, clipped captions, broken images or JavaScript runtime errors. Shared keyboard/focus, reduced-motion/transparency, live search, no-JavaScript content and reflow checks passed.
+- Eight additional homepage/reader scenarios checked Literata headings and story text, Source Sans 3 body text, and native font loading including Latin diacritics and Devanagari. No failed font requests. Desktop/mobile homepage previews and the story interior were visually inspected.
+- Font binaries are valid WOFF2, hosted locally with upstream OFL licenses. FONT_SOURCES.json records source URLs, file sizes and SHA-256 hashes. CSS/preloads use the new families; old font assets are not requested by current styles.
+- Native browser zoom, real-device rendering and screen-reader audit remain unverified. Temporary font-loading script and screenshots are under ignored `.qa/`. No commit, push or deployment was performed for this revision.

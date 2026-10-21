@@ -86,3 +86,10 @@ Owner-approved eight-chapter reader follows Valmiki Ramayana Bala Kanda 40–44.
 ## Photographic homepage hero — 11 October 2026
 
 Owner approved a full-screen photographic hero using contributed IMG_9684.JPG. The temple remains unidentified. Imported as home-temple-photograph.webp, with responsive variants up to 2400 pixels and full-cover sizes; original photo remains untouched. Replaced the earlier corridor artwork placement, retaining the one-visible-placement rule and 53 total placements. Centered requested heading and Explore Now button, retained introductory copy and story shortcut, glass navigation overlays the hero. Image scale 1.15 with vertical movement bounded to 24 pixels; interpolation uses an on-demand animation loop, reset offscreen/on resize/in a hidden tab. Fine mouse pointers only; reduced motion and touch receive a still image. Short screens and enlarged text can grow the hero to preserve content. No gyroscope permissions or external services.
+
+
+## Typography revision — 20 October 2026
+
+The owner explicitly requested replacing every existing font and moving away from a generic/template impression. Literata now supplies headings and story prose; Source Sans 3 supplies explanatory text, menus, controls and captions. Noto Serif Devanagari supplies existing Sanskrit/Hindi labels. Heading weight, tracking, optical sizing, mobile scale and reading rhythm were retuned; repeated heading emphasis is upright rather than italic. Colours, images, narrative content and existing navigation are retained.
+
+Fonts are unmodified WOFF2 subsets downloaded from Google Fonts, hosted locally and accompanied by upstream SIL OFL licenses. FONT_SOURCES.json records URLs, byte sizes and hashes. No runtime font-service requests are introduced. Previous font binaries are retained as unused historical assets; current CSS and preloads do not reference them. No commit, push, deployment or new-page work is included in this change.

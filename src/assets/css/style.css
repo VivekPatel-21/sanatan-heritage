@@ -26,8 +26,8 @@
   --glass-shadow: 0 12px 32px -20px rgb(73 53 31 / 35%);
   --frame-edge: rgb(128 99 34 / 30%);
   --frame-shadow: 0 12px 30px -15px rgb(73 53 31 / 30%);
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Literata', Georgia, serif;
+  --font-sans: 'Source Sans 3', system-ui, -apple-system, sans-serif;
   --space-1: .25rem;
   --space-2: .5rem;
   --space-3: .75rem;
@@ -42,9 +42,9 @@
   --page-width: 82rem;
   --content-width: 74rem;
   --reading-width: 65ch;
-  --type-h1: clamp(3rem, 5.4vw, 5.75rem);
-  --type-h2: clamp(2.25rem, 3.6vw, 3.75rem);
-  --type-h3: clamp(1.875rem, 2.4vw, 2.625rem);
+  --type-h1: clamp(2.5rem, 4.7vw, 5rem);
+  --type-h2: clamp(2rem, 3.2vw, 3.25rem);
+  --type-h3: clamp(1.5rem, 2.1vw, 2.1rem);
   --type-h4: 1.75rem;
   --type-h5: 1.5rem;
   --type-h6: 1.25rem;
@@ -106,27 +106,85 @@
 }
 
 @font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('/assets/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2');
-  font-weight: 300 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('/assets/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2');
-  font-weight: 300 700;
+  font-family: 'Literata';
   font-style: italic;
+  font-weight: 200 900;
   font-display: swap;
+  src: url(/assets/fonts/literata-latin-ext-italic.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: 'Manrope';
-  src: url('/assets/fonts/manrope-latin-wght-normal.woff2') format('woff2');
-  font-weight: 200 800;
-  font-style: normal;
+  font-family: 'Literata';
+  font-style: italic;
+  font-weight: 200 900;
   font-display: swap;
+  src: url(/assets/fonts/literata-latin-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/literata-latin-ext-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/literata-latin-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Noto Serif Devanagari';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/assets/fonts/noto-serif-devanagari-devanagari-normal.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-latin-ext-italic.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-latin-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-latin-ext-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(/assets/fonts/source-sans-3-latin-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* Page structures and existing interaction states */
@@ -6334,4 +6392,33 @@ footer p {
   .home-page .immersive-hero .hero-backdrop { position: static; }
   .home-page .immersive-hero .hero-backdrop img { width: 100%; height: auto; max-height: 80mm; object-fit: contain; transform: none; box-shadow: none; }
   .home-page .immersive-hero::before,.hero-scroll { display: none; }
+}
+
+/* Owner-requested typography revision: book typography with a clear UI voice. */
+:root { font-synthesis: none; }
+body { font-size: 1.0625rem; line-height: 1.75; font-optical-sizing: auto; }
+h1,h2,h3,h4,h5,h6 { font-weight: 400; letter-spacing: -.025em; line-height: 1.25; }
+h1 em,h2 em,h3 em { font-style: normal; }
+.site-header .brand { font-size: 1.35rem; font-weight: 500; letter-spacing: -.035em; }
+.brand small { letter-spacing: .1em; }
+.site-nav { font-size: .9375rem; }
+.eyebrow,.badge { font-weight: 600; letter-spacing: .085em; }
+.hero-description,.tale-deck { font-family: var(--font-sans); }
+.tale-body { font-family: var(--font-serif); }
+.tale-chapter p { font-size: 1.0625rem; line-height: 1.95; }
+.tale-body :is(.reader-tools,figcaption,.eyebrow,.story-pagination),.tale-contents { font-family: var(--font-sans); }
+.tale-body .tale-chapter-heading h2 { font-size: clamp(1.65rem,2.5vw,2.4rem); line-height: 1.3; }
+.tale-reflection p { font-size: 1rem; line-height: 1.95; }
+.tale-hero h1 { font-size: clamp(2.5rem,4.7vw,5rem); letter-spacing: -.03em; line-height: 1.2; }
+[lang='sa'],[lang='hi'],.devanagari { font-family: 'Noto Serif Devanagari',var(--font-serif); line-height: 1.8; }
+@media screen {
+  .home-page .immersive-hero h1 { font-size: clamp(2.5rem,5.2vw,5.25rem); line-height: 1.2; letter-spacing: -.035em; }
+  .home-page .immersive-hero .hero-copy { max-width: 68rem; }
+  .home-page .immersive-hero .eyebrow { text-align: center; }
+}
+@media screen and (max-width:760px) {
+  .site-header .brand { font-size: 1.0625rem; letter-spacing: -.035em; gap: .45rem; }
+  .site-header .brand small { letter-spacing: .04em; }
+  .tale-chapter p { font-size: 1rem; line-height: 1.9; }
+  .home-page .immersive-hero h1 { font-size: clamp(2.15rem,6.9vw,3.5rem); line-height: 1.25; }
 }

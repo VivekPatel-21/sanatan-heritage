@@ -2,7 +2,7 @@
 
 ## Identity
 
-Preserve the **obsidian-and-gold** identity: dark mode uses #0d0d0d and antique gold #d4af37; the approved default light edition uses warm ivory with darker accessible gold. Cormorant Garamond supplies cultural/editorial headings, Manrope supplies crisp readable body and interface text. This is a two-theme identity; do not change default to dark just because obsidian is named in the handoff request.
+Preserve the **obsidian-and-gold** identity: dark mode uses #0d0d0d and antique gold #d4af37; the approved default light edition uses warm ivory with darker accessible gold. The owner-approved 20 October 2026 revision uses Literata for headings and story prose, Source Sans 3 for body/interface text, and Noto Serif Devanagari for Sanskrit/Hindi labels. This is a two-theme identity; do not change default to dark just because obsidian is named in the handoff request.
 
 The authoritative implementation is src/assets/css/style.css. This specification records the shipped design, not the user's earlier sample CSS verbatim.
 
@@ -31,15 +31,15 @@ Light shadow: `0 18px 48px -22px rgb(73 53 31 / 25%)`; dark shadow: `0 20px 48px
 
 | Element | Scale |
 |---|---|
-| h1 | clamp(3rem, 5.4vw, 5.75rem) |
-| h2 | clamp(2.25rem, 3.6vw, 3.75rem) |
-| h3 | clamp(1.875rem, 2.4vw, 2.625rem) |
+| h1 | clamp(2.5rem, 4.7vw, 5rem) |
+| h2 | clamp(2rem, 3.2vw, 3.25rem) |
+| h3 | clamp(1.5rem, 2.1vw, 2.1rem) |
 | h4 / h5 / h6 | 1.75 / 1.5 / 1.25rem |
-| Heading default | Serif, weight 500, line-height about 1.15 |
-| Body default | Manrope, 1rem, generous 1.8 line-height |
+| Heading default | Literata, weight 400, line-height about 1.25; upright emphasis |
+| Body default | Source Sans 3, 1.0625rem, 1.75 line-height |
 | Reader | About 1.0625rem / 1.95 desktop; 1rem / 1.9 mobile |
 
-Fonts are local WOFF2, font-display swap. Cormorant normal/italic variable weights 300–700; Manrope normal 200–800. Preserve OFL licenses. Latin-only font files do not prove Devanagari/Gujarati coverage; appropriate script fonts must be researched before translation work.
+Fonts are local WOFF2 with font-display swap and optical sizing. Literata and Source Sans 3 include normal/italic variable weights 200–900, Latin and extended-Latin subsets. Noto Serif Devanagari covers Devanagari at weights 400–600. Two regular Latin files are preloaded; other subsets/styles load on demand. Keep the three upstream OFL licenses and FONT_SOURCES.json. Gujarati coverage is not claimed.
 
 Spacing scale: 0.25, 0.5, 0.75, 1, 1.5, 2, 3, 4, 6rem. Gutter clamp(1.25rem,4vw,4rem), section spacing clamp(3.75rem,7vw,7rem), max page 82rem, content 74rem, reader 65ch. Art has square gallery frames; control corners 3px.
 

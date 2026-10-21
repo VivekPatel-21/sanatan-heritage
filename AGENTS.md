@@ -11,7 +11,7 @@ Preserve approved designs unless the user explicitly approves a change. A reques
 ## Non-negotiable editorial and visual constraints
 
 - Keep the name Sanatan Heritage. Preserve existing information during appearance work. Never invent scripture citations, transcript messages, attachment contents, temple identities or validation results.
-- Preserve Cormorant Garamond headings and Manrope body, self-hosted font licenses, the default warm ivory edition and obsidian/gold dark edition. The approved style is an editorial heritage journal with gallery-like artwork, restrained terracotta/indigo accents and readable typography.
+- Preserve the owner-approved 20 October 2026 typography: Literata headings/story prose, Source Sans 3 body/interface text and Noto Serif Devanagari for Sanskrit/Hindi script, with self-hosted font licenses, the default warm ivory edition and obsidian/gold dark edition. The approved style is an editorial heritage journal with gallery-like artwork, restrained terracotta/indigo accents and readable typography.
 - Use each artwork or photograph in only **one visible placement across the entire website**. Renaming, recompressing or cropping the same underlying image does not make it unique. Responsive derivatives for one placement are allowed; social metadata does not constitute another visible placement.
 - Check deity iconography and anatomy visually. Lalita is not interchangeable with Durga. Respect the noose, goad, sugarcane bow and five flower arrows when depicting Lalita. Quarantined/rejected references are not approved site assets.
 - Captions and alt text must truthfully distinguish contributed devotional artwork, actual photographs and AI-generated interpretations. Unknown temple names remain unspecified.
