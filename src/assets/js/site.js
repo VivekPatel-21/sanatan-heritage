@@ -1,10 +1,16 @@
 (() => {
   const themeButton = document.querySelector('.theme-toggle');
+  let themeTimer;
   const updateThemeLabel = () => {
     const dark = document.documentElement.dataset.theme === 'dark';
     if (themeButton) { themeButton.textContent = dark ? 'Light mode' : 'Dark mode'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); }
   };
   themeButton?.addEventListener('click', () => {
+    if (typeof matchMedia === 'function' && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      clearTimeout(themeTimer);
+      document.documentElement.classList.add('theme-changing');
+      themeTimer = setTimeout(() => document.documentElement.classList.remove('theme-changing'), 320);
+    }
     const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = theme;
     try { localStorage.setItem('sanatan-theme', theme); } catch { /* Preference still works for this visit. */ }
@@ -13,10 +19,20 @@
   updateThemeLabel();
   const menu = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  const closeMenu = () => { menu?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); };
+  const header = document.querySelector('.site-header');
+  const updateHeaderOffset = () => {
+    if (!header) return;
+    const bounds = header.getBoundingClientRect();
+    document.documentElement.style.setProperty('--header-offset', `${bounds.height + Math.max(0, bounds.top) + 24}px`);
+  };
+  if (typeof ResizeObserver === 'function' && header) new ResizeObserver(updateHeaderOffset).observe(header);
+  window.addEventListener('resize', updateHeaderOffset);
+  updateHeaderOffset();
+  const closeMenu = () => { menu?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); updateHeaderOffset(); };
   menu?.addEventListener('click', () => {
     const open = menu.getAttribute('aria-expanded') !== 'true';
     menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open);
+    updateHeaderOffset();
   });
   nav?.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
   document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });

@@ -17,7 +17,7 @@ for (const name of await readdir('src/assets/images')) {
   const metadata = await sharp(original).metadata();
   if (name === 'og.png') { await sharp(original).png({ compressionLevel: 9 }).toFile(path.join(directory, name)); continue; }
   const outputName = name.replace(/\.(png|webp)$/, '.webp');
-  const widths = [...new Set([480, 768, 1200, Math.min(metadata.width, 1600)].filter(width => width <= metadata.width))].sort((a,b) => a-b);
+  const widths = [...new Set([480, 768, 960, 1200, ...(name === "home-temple-photograph.webp" ? [1600, 2000] : []), Math.min(metadata.width, name === "home-temple-photograph.webp" ? 2400 : 1600)].filter(width => width <= metadata.width))].sort((a,b) => a-b);
   const variants = [];
   for (const width of widths) {
     const largest = width === widths.at(-1);
@@ -43,7 +43,14 @@ for (const name of pages) {
     image.attr('loading', isHero ? 'eager' : 'lazy');
     if (isHero) image.attr('fetchpriority', 'high');
     image.attr('srcset', variants.map(variant => `${variant.path} ${variant.width}w`).join(', '));
-    image.attr('sizes', image.closest('.deity-card,.collection-card,.story-card').length ? '(max-width: 680px) 90vw, (max-width: 1050px) 45vw, 360px' : '(max-width: 760px) 100vw, 50vw');
+    const isReader = image.closest('.tale-inline').length;
+    const isLeadCard = image.closest('.collection-card').is(':first-child');
+    const sizes = image.closest(".hero-backdrop").length ? "(max-aspect-ratio: 4160/1877) 255vh, 115vw" : isReader ? '(max-width: 760px) 92vw, (max-width: 1100px) calc(92vw - 13rem), 65ch'
+      : isLeadCard ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(51vw - 2rem), 630px'
+      : image.closest('.deity-card,.collection-card,.scripture-card').length ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(46vw - 1.5rem), 570px'
+      : image.closest('.family-art').length ? '(max-width: 760px) 92vw, 65ch'
+      : '(max-width: 760px) 92vw, (max-width: 1312px) calc(46vw - 2rem), 550px';
+    image.attr('sizes', sizes);
   });
   if (!['glossary.html','sources.html','search.html','404.html'].includes(name)) {
     const used = new Set($('.glossary-link').toArray().map(el => $(el).attr('href')?.split('#')[1]));

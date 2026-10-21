@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /
-
-Sitemap: https://sanatan-heritage.vivopatel1304.chatgpt.site/sitemap.xml
