@@ -1,0 +1,13 @@
+{
+  "generator": "Built-in OpenAI image generation",
+  "assets": [
+    {
+      "file": "shivaratri-vigil-journal.webp",
+      "prompt": "Use case: illustration-story. Landscape 1536x1024 editorial heritage-journal illustration for a Maha Shivaratri section. A quiet Indian Shiva shrine at night, a simple polished dark stone Shiva linga on its traditional yoni pedestal, bilva leaves and a few flowers placed respectfully, brass oil lamps glowing in foreground, subtle stone columns, deep indigo night and warm antique gold light, restrained vermilion details. No humanlike deity, no people, no text or lettering, no watermark. Finely painted natural textures, contemplative museum-quality cultural illustration. Entire sacred object clearly framed, no sensational effects, no claim of a particular real temple."
+    },
+    {
+      "file": "hanuman-jayanti-reading-journal.webp",
+      "prompt": "Use case: illustration-story. Landscape 1536x1024 editorial cultural illustration for Hanuman Jayanti: an intimate Indian temple courtyard in soft morning light with a small multigenerational group sitting on clean woven mats and respectfully reading an open devotional book on a low wooden reading stand. A brass lamp and marigold flowers beside the stand, muted saffron clothing, warm sandstone, leafy courtyard shade, restrained antique gold, terracotta and indigo. No deity image or statue, no readable lettering or invented scripture, no watermark. Finely painted observational natural textures, anatomically natural people and hands, calm joyful devotional community atmosphere. This is an illustrative imagined gathering, not a photo or specific temple."
+    }
+  ]
+}

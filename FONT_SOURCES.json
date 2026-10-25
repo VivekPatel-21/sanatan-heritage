@@ -1,0 +1,88 @@
+{
+  "retrieved": "2026-10-20",
+  "license": "SIL Open Font License 1.1; accompanying upstream license files retained",
+  "stylesheet": "https://fonts.googleapis.com/css2?family=Literata%3Aital%2Copsz%2Cwght%400%2C7..72%2C200..900%3B1%2C7..72%2C200..900&family=Source+Sans+3%3Aital%2Cwght%400%2C200..900%3B1%2C200..900&family=Noto+Serif+Devanagari%3Awght%40400..600&display=swap",
+  "assets": [
+    {
+      "file": "literata-latin-ext-italic.woff2",
+      "family": "Literata",
+      "subset": "latin-ext",
+      "style": "italic",
+      "source": "https://fonts.gstatic.com/s/literata/v40/or3nQ6P12-iJxAIgLYT1FrkdmgPn.woff2",
+      "bytes": 91424,
+      "sha256": "09e48237261b84a90f2d6011c050d10d4bacd060cd884a10fe4edf69c0bf3870"
+    },
+    {
+      "file": "literata-latin-italic.woff2",
+      "family": "Literata",
+      "subset": "latin",
+      "style": "italic",
+      "source": "https://fonts.gstatic.com/s/literata/v40/or3nQ6P12-iJxAIgLYT1Frcdmg.woff2",
+      "bytes": 113180,
+      "sha256": "97bc5aa317653eb249d66782c8533e5f1bd7d27a97b5265155a3d1700e785b7b"
+    },
+    {
+      "file": "literata-latin-ext-normal.woff2",
+      "family": "Literata",
+      "subset": "latin-ext",
+      "style": "normal",
+      "source": "https://fonts.gstatic.com/s/literata/v40/or3hQ6P12-iJxAIgLYT-JrUFng.woff2",
+      "bytes": 89668,
+      "sha256": "1160835f4cdae6a86572ed501c13b62b341480cc7c13fc88ba0c21efdf1fcd73"
+    },
+    {
+      "file": "literata-latin-normal.woff2",
+      "family": "Literata",
+      "subset": "latin",
+      "style": "normal",
+      "source": "https://fonts.gstatic.com/s/literata/v40/or3hQ6P12-iJxAIgLYTwJrU.woff2",
+      "bytes": 110080,
+      "sha256": "29de894c768689feef6ab4ef274a9a16d19bfc5b0c3cbfcdac80ef220816210c"
+    },
+    {
+      "file": "noto-serif-devanagari-devanagari-normal.woff2",
+      "family": "Noto Serif Devanagari",
+      "subset": "devanagari",
+      "style": "normal",
+      "source": "https://fonts.gstatic.com/s/notoserifdevanagari/v34/x3dNcl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4Hh2dGyFzPLcQPVbnRH-xEMqTN.woff2",
+      "bytes": 126864,
+      "sha256": "bab9ee27c0141b4ccfcbea74684d4707ac97d4eaf0640ec1663c6e161b9eeb1f"
+    },
+    {
+      "file": "source-sans-3-latin-ext-italic.woff2",
+      "family": "Source Sans 3",
+      "subset": "latin-ext",
+      "style": "italic",
+      "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLY1HY.woff2",
+      "bytes": 59496,
+      "sha256": "6fe10a66ec416f77a26309b645471d032ad8175063bb605b886e9b7e57efaaa8"
+    },
+    {
+      "file": "source-sans-3-latin-italic.woff2",
+      "family": "Source Sans 3",
+      "subset": "latin",
+      "style": "italic",
+      "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LY.woff2",
+      "bytes": 28460,
+      "sha256": "5fbc14d56cea35e60596c72ca969b349443c6a536f74e11748eed8b3a396e61d"
+    },
+    {
+      "file": "source-sans-3-latin-ext-normal.woff2",
+      "family": "Source Sans 3",
+      "subset": "latin-ext",
+      "style": "normal",
+      "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3wEaZfrc.woff2",
+      "bytes": 60088,
+      "sha256": "a85a7459bdb3cdc1136751e151a506bae653fc29ada3ca86237477df6f1b59e6"
+    },
+    {
+      "file": "source-sans-3-latin-normal.woff2",
+      "family": "Source Sans 3",
+      "subset": "latin",
+      "style": "normal",
+      "source": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2",
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5"
+    }
+  ]
+}

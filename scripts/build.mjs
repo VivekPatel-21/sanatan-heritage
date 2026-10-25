@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { readdir, readFile, writeFile, rm, mkdir, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import sharp from 'sharp';
@@ -10,6 +10,11 @@ const origin = 'https://sanatan-heritage.vivopatel1304.chatgpt.site';
 const run = args => { const result = spawnSync(process.execPath, args, { stdio: 'inherit' }); if (result.status !== 0) process.exit(result.status ?? 1); };
 await rm('dist', { recursive: true, force: true });
 run(['node_modules/@11ty/eleventy/cmd.cjs']);
+await mkdir('dist/assets/vendor', { recursive:true });
+for (const name of ['three.module.js','three.core.js']) await copyFile('node_modules/three/build/'+name,'dist/assets/vendor/'+name);
+await copyFile('node_modules/gsap/dist/gsap.min.js','dist/assets/vendor/gsap.min.js');
+await copyFile('node_modules/three/LICENSE','dist/assets/vendor/THREE-LICENSE.txt');
+await copyFile('node_modules/gsap/README.md','dist/assets/vendor/GSAP-NOTICE.md');
 const directory = 'dist/assets/images';
 const images = new Map();
 for (const name of await readdir('src/assets/images')) {
@@ -17,7 +22,7 @@ for (const name of await readdir('src/assets/images')) {
   const metadata = await sharp(original).metadata();
   if (name === 'og.png') { await sharp(original).png({ compressionLevel: 9 }).toFile(path.join(directory, name)); continue; }
   const outputName = name.replace(/\.(png|webp)$/, '.webp');
-  const widths = [...new Set([480, 768, 1200, Math.min(metadata.width, 1600)].filter(width => width <= metadata.width))].sort((a,b) => a-b);
+  const widths = [...new Set([480, 768, 960, 1200, ...(name === "home-temple-photograph.webp" ? [1600, 2000] : []), Math.min(metadata.width, name === "home-temple-photograph.webp" ? 2400 : 1600)].filter(width => width <= metadata.width))].sort((a,b) => a-b);
   const variants = [];
   for (const width of widths) {
     const largest = width === widths.at(-1);
@@ -30,20 +35,42 @@ for (const name of await readdir('src/assets/images')) {
 }
 const glossary = JSON.parse(await readFile('src/data/glossary.json', 'utf8'));
 const aliases = glossary.flatMap(term => [...new Set([term.id, ...term.name.split(' · ')])].map(alias => ({ alias, id: term.id })));
+const storyCatalog = JSON.parse(await readFile('src/data/stories.json','utf8'));
+const readingCatalog = { stories:[], pages:{} };
 const pages = (await readdir('dist')).filter(name => name.endsWith('.html')).sort();
 for (const name of pages) {
   const $ = load(await readFile(`dist/${name}`, 'utf8'));
-  $('.site-nav a').each((_, el) => { if ($(el).attr('href') === `/${name}`) $(el).attr('aria-current', 'page'); });
+  const pathName = `/${name}`;
+  const storyInfo = Object.values(storyCatalog).find(item => item.href === pathName);
+  const pageTitle = storyInfo?.title || $('title').text().split('·')[0].trim();
+  $('head').append($('<meta>').attr({ 'data-pagefind-meta':'title[content]', content:pageTitle }));
+  const minutes = storyInfo?.minutes || Math.max(1,Math.ceil($('main').text().trim().split(/\s+/).length/200));
+  readingCatalog.pages[pathName] = { title:pageTitle, minutes };
+  if (storyInfo) readingCatalog.stories.push({ ...storyInfo, chapters:$('.tale-chapter[id]').toArray().map(el=>({id:$(el).attr('id'),title:$(el).find('h2').first().text()})) });
+  $('.site-nav a').each((_, el) => {
+    const href = $(el).attr('href');
+    if (href === `/${name}`) $(el).attr('aria-current', 'page');
+    else if (href === '/stories.html' && $('script[src="/assets/js/reader.js"]').length) $(el).attr('aria-current', 'true');
+    else if (href === '/deities.html' && name === 'lalita.html') $(el).attr('aria-current', 'true');
+  });
+  $('.footer-directory a').each((_, el) => { if ($(el).attr('href') === `/${name}`) $(el).attr('aria-current', 'page'); });
   $('img').each((_, el) => {
     const image = $(el); const variants = images.get(image.attr('src'));
     if (!variants) return;
     const largest = variants.at(-1);
     image.attr({ src: largest.path, width: String(largest.width), height: String(largest.height), decoding: 'async' });
-    const isHero = image.closest('.hero,.tale-hero,.collection-hero,.scripture-hero,.lalita-hero,.learn-hero').length;
+    const isHero = image.closest('.exhibit-visual,.museum-object,.hero,.tale-hero,.collection-hero,.scripture-hero,.lalita-hero,.learn-hero').length;
     image.attr('loading', isHero ? 'eager' : 'lazy');
     if (isHero) image.attr('fetchpriority', 'high');
     image.attr('srcset', variants.map(variant => `${variant.path} ${variant.width}w`).join(', '));
-    image.attr('sizes', image.closest('.deity-card,.collection-card,.story-card').length ? '(max-width: 680px) 90vw, (max-width: 1050px) 45vw, 360px' : '(max-width: 760px) 100vw, 50vw');
+    const isReader = image.closest('.tale-inline').length;
+    const isLeadCard = image.closest('.collection-card').is(':first-child');
+    const sizes = image.closest('.exhibit-visual,.museum-object').length ? '(max-width: 700px) 100vw, 80vw' : image.closest('.museum-doorway').length ? '(max-width: 700px) 90vw, 30vw' : image.closest('.home-panorama').length ? '(max-width: 1320px) 94vw, 1216px' : image.closest('.gallery-photograph').length ? '(max-width: 900px) 92vw, (max-width: 1440px) 57vw, 800px' : isReader ? '(max-width: 760px) 92vw, (max-width: 1100px) calc(92vw - 13rem), 65ch'
+      : isLeadCard ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(51vw - 2rem), 630px'
+      : image.closest('.deity-card,.collection-card,.scripture-card').length ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(46vw - 1.5rem), 570px'
+      : image.closest('.family-art').length ? '(max-width: 760px) 92vw, 65ch'
+      : '(max-width: 760px) 92vw, (max-width: 1312px) calc(46vw - 2rem), 550px';
+    image.attr('sizes', sizes);
   });
   if (!['glossary.html','sources.html','search.html','404.html'].includes(name)) {
     const used = new Set($('.glossary-link').toArray().map(el => $(el).attr('href')?.split('#')[1]));
@@ -73,13 +100,20 @@ for (const name of pages) {
   }
   await writeFile(`dist/${name}`, await minifyHTML($.html(), { collapseWhitespace: true, removeComments: true, keepClosingSlash: false, removeRedundantAttributes: true }));
 }
-const css = new CleanCSS({ level: 1 }).minify(await readFile('src/assets/css/style.css','utf8'));
+await writeFile('dist/data/reading-catalog.json',JSON.stringify(readingCatalog));
+const css = new CleanCSS({ level: 1 }).minify((await readFile('src/assets/css/style.css','utf8')) + '\n' + (await readFile('src/assets/css/refinements.css','utf8')) + '\n' + (await readFile('src/assets/css/art-direction.css','utf8')) + '\n' + (await readFile('src/assets/css/features.css','utf8')));
 if (css.errors.length) throw new Error(css.errors.join('\n'));
 await writeFile('dist/assets/css/style.css', css.styles);
+await rm('dist/assets/css/refinements.css', { force: true });
+await rm('dist/assets/css/art-direction.css', { force: true });
+await rm('dist/assets/css/features.css', { force: true });
+const museumCSS = new CleanCSS({ level:1 }).minify(await readFile('src/assets/css/home-museum.css','utf8'));
+if (museumCSS.errors.length) throw new Error(museumCSS.errors.join('\n'));
+await writeFile('dist/assets/css/home-museum.css',museumCSS.styles);
 for (const name of await readdir('src/assets/js')) {
   const result = await minifyJS(await readFile(`src/assets/js/${name}`, 'utf8'));
   await writeFile(`dist/assets/js/${name}`, result.code);
 }
-await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
+await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
 run(['node_modules/pagefind/lib/runner/bin.cjs', '--site', 'dist']);
 console.log(`Built ${pages.length} pages, responsive WebP images, minified assets and search index.`);

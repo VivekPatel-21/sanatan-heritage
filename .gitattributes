@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.woff2 binary
+*.pf_fragment binary
+*.pf_index binary
+*.pf_meta binary
+*.wasm binary

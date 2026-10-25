@@ -1,0 +1,13 @@
+{
+  "tool": "built-in imagegen",
+  "assets": [
+    {
+      "file": "src/assets/images/museum-dhruva-meditation.webp",
+      "prompt": "Create one landscape editorial painting for Sanatan Heritage museum website chapter about Dhruva. A young Indian royal child Dhruva in simple modest saffron cloth seated peacefully in meditation beside a river in a lush sacred forest, full figure, two anatomically correct arms and hands resting in lap. No other figures, no deities, no palace. Classical Indian miniature-inspired finely painted natural textures with restrained antique gold, forest green and indigo, luminous early morning, calm dignified devotional narrative. Wide 3:2 composition, no text, no lettering, no halo, no circle, no border, not photorealistic. This is clearly a respectful artistic interpretation of meditation, not a historical photograph."
+    },
+    {
+      "file": "src/assets/images/museum-manuscript-doorway.webp",
+      "prompt": "Create one landscape still life illustration for a luxury Sanatan Heritage digital museum opening third chapter: an inviting study of three closed cloth-wrapped manuscript bundles on a dark carved wood desk beside one small brass oil lamp, with warm golden lamplight across deep indigo and muted terracotta cloth and dark background. Refined painterly realism, tactile paper edges and fabric, elegant quiet museum editorial composition, complete objects all within frame, wide 3:2. No readable text, no letters, no sacred diagrams, no figures, no halo, no circles, no ornate border. This is an imagined manuscript study, not a real ancient artifact photograph. Distinct low eye level composition with diagonal arrangement, rich but restrained detail."
+    }
+  ]
+}

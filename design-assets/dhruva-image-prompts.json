@@ -1,0 +1,21 @@
+{
+  "generator": "Built-in OpenAI image generation",
+  "assets": [
+    {
+      "file": "dhruva-card.webp",
+      "prompt": "Use case illustration-story. Landscape 1536x1024 finely painted Indian devotional editorial artwork. A young Indian boy Dhruva about five years old with short black hair and simple saffron dhoti walking away from a distant imagined palace toward a green forest path, seen in profile, determined but peaceful, warm sunrise, no danger, no other figures. Two arms and two legs natural anatomy. Parchment earth tones, indigo shadows, antique gold, museum publication quality. Inspired by Bhagavata Purana 4.8.24. No words, no letters, no watermark. This is imagined narrative illustration, not historical reconstruction."
+    },
+    {
+      "file": "dhruva-narada.webp",
+      "prompt": "Use case illustration-story. Landscape 1536x1024 finely painted Indian devotional editorial artwork. Narada, kindly adult Indian sage in ochre robes with simple topknot, sitting on a stone beside a forest path, a traditional vina resting beside him, gently teaching young Indian boy Dhruva age five, short black hair, saffron dhoti, who stands listening with joined hands. Exactly two people, each exactly two arms, natural hands and anatomy. Quiet leafy forest, filtered morning light, restrained gold terracotta and indigo palette. Inspired by Bhagavata Purana 4.8, Narada's guidance. No text no letters no watermark. Respectful imagined setting."
+    },
+    {
+      "file": "dhruva-madhuvana.webp",
+      "prompt": "Use case illustration-story. Landscape 1536x1024 finely painted Indian devotional editorial artwork. Dhruva, an Indian boy about five with short black hair and simple saffron dhoti, sitting quietly cross-legged in meditation on a woven grass mat beneath trees beside the Yamuna in an imagined Madhuvana grove. Peaceful, healthy, no emaciation, no breath-holding visualization, two arms two legs, hands resting naturally on knees. Wide river landscape with abundant foliage and soft morning mist, tiny warm flowers and restrained antique gold light, indigo green shadows. Narrative illustration inspired by Bhagavata Purana 4.8, not ritual instructions or a photograph. No lettering no watermark."
+    },
+    {
+      "file": "dhruva-vishnu.webp",
+      "prompt": "Use case illustration-story. Landscape 1536x1024 respectful finely painted Indian devotional illustration. Child Dhruva age five, short black hair and saffron dhoti, stands with joined hands on the left in a forest clearing before Vishnu on the right. Vishnu blue complexion, serene young face, gold crown, yellow silk dhoti, forest flower garland, exactly FOUR distinct arms and exactly TWO legs. Four hands clearly hold one conch, one chakra discus, one mace and one lotus. Each object separately visible and anatomically clean; do not add extra limbs. Dhruva has exactly TWO arms and TWO legs. Gentle gold radiance in forest, refined terracotta indigo colors, devotional museum publication quality. Scene inspired by Bhagavata Purana 4.8.45–51 and4.9.1–3. No text no lettering no watermark, not historical photograph."
+    }
+  ]
+}

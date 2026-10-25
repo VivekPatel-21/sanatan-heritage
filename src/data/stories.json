@@ -1,0 +1,56 @@
+{
+  "lalita": {
+    "title": "Lalita and Bhandasura",
+    "href": "/lalita-bhandasura.html",
+    "minutes": 6,
+    "format": "Full story"
+  },
+  "parvati": {
+    "title": "Shiva and Parvati",
+    "href": "/shiva-parvati.html",
+    "minutes": 6,
+    "format": "Full story"
+  },
+  "halahala": {
+    "title": "Shiva drinks Halahala",
+    "href": "/shiva-halahala.html",
+    "minutes": 5,
+    "format": "Full story"
+  },
+  "hanuman": {
+    "title": "Hanuman’s journey to Lanka",
+    "href": "/hanuman-lanka.html",
+    "minutes": 6,
+    "format": "Full story"
+  },
+  "govardhana": {
+    "title": "Krishna and Govardhana",
+    "href": "/krishna-govardhana.html",
+    "minutes": 5,
+    "format": "Full story"
+  },
+  "rama": {
+    "title": "Rama’s exile",
+    "href": "/rama-exile.html",
+    "minutes": 6,
+    "format": "Full story"
+  },
+  "mahishasura": {
+    "title": "Devi and Mahishasura",
+    "href": "/devi-mahishasura.html",
+    "minutes": 5,
+    "format": "Full story"
+  },
+  "bhagiratha": {
+    "title": "Bhagiratha and the Ganga",
+    "href": "/bhagiratha-ganga.html",
+    "minutes": 5,
+    "format": "Full story"
+  },
+  "dhruva": {
+    "title": "Dhruva’s search for the Divine",
+    "href": "/dhruva.html",
+    "minutes": 7,
+    "format": "Full story"
+  }
+}

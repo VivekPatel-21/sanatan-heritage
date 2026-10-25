@@ -2,12 +2,14 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
+{% if redirectTo %}<meta http-equiv="refresh" content="0;url={{ redirectTo }}">{% endif %}
 {% if noindex %}<meta name="robots" content="noindex">{% endif %}
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/favicon.png" type="image/png">
 <script src="/assets/js/theme.js"></script>
-<link rel="preload" href="/assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/source-sans-3-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/literata-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
+{% if museumLayout %}<link rel="stylesheet" href="/assets/css/home-museum.css">{% endif %}
 {% if search %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endif %}
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}">
@@ -17,7 +19,9 @@
 <meta property="og:image:alt" content="{{ ogImageAlt }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
+<script src="/assets/js/reading-state.js" defer></script>
 <script src="/assets/js/site.js" defer></script>
+{% if story %}<script src="/assets/js/reader.js" defer></script>{% endif %}
 {% for script in scripts %}<script src="{{ script }}" defer></script>{% endfor %}
 </head><body class="{{ bodyClass }}">
 <a class="skip" href="#main">Skip to content</a>

@@ -1,0 +1,23 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "path": "src/assets/images/varanasi-riverfront-journal.webp",
+      "prompt": "Use case: illustration-story. Create a wide 3:2 editorial watercolor and gouache illustration for a premium Indian heritage journal. Scene: an imagined Varanasi-inspired riverfront on the Ganga at dawn, broad sandstone ghats descending into water, a few small wooden boats, layered riverside buildings receding into mist, warm parchment, muted terracotta and indigo, delicate ink architecture. This is an artist's interpretation, not a photograph or an accurate map. No identifiable famous shrine, no signage, no text, no collage, no border. Respectful quiet atmosphere, no bathing closeups or funeral scenes.",
+      "captionPolicy": "AI-generated illustration; architecture is interpretive, not documentary.",
+      "visiblePlacements": 1
+    },
+    {
+      "path": "src/assets/images/rameswaram-corridor-journal.webp",
+      "prompt": "Use case: illustration-story. Wide 3:2 editorial gouache illustration for an Indian heritage journal: an imagined stone-pillared South Indian temple corridor inspired by Rameswaram, rhythmic carved pillars, long perspective and a soft shaft of daylight, warm limestone, restrained terracotta, indigo shadows, tiny distant visitors. Architecture is illustrative rather than documentation of a specific sanctum. No deity statue, no signage, no text, no border, no collage, no photography. Fine hand-painted cultural publication style.",
+      "captionPolicy": "AI-generated illustration; architecture is interpretive, not documentary.",
+      "visiblePlacements": 1
+    },
+    {
+      "path": "src/assets/images/navaratri-garba-journal.webp",
+      "prompt": "Use case: illustration-story. Wide 3:2 refined editorial gouache and watercolor illustration of a Gujarati Navaratri garba gathering in a courtyard at dusk. Adult women and men wearing modest traditional chaniya choli and kediyu in restrained vermilion, royal indigo, ivory and antique gold, circling a small illuminated garbo clay lamp vessel. Modest welcoming community scale, natural human anatomy, broad clear silhouettes, graceful rhythmic movement, strings of small warm lights, textured paper. No deity figures, no text, no banners, no border, no collage. Museum-publication quality, contemplative joyful devotion.",
+      "captionPolicy": "AI-generated illustration; architecture is interpretive, not documentary.",
+      "visiblePlacements": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "generator": "Built-in OpenAI image generation",
+  "assets": [
+    {
+      "file": "museum-temple-opening.webp",
+      "prompt": "Use case: stylized-concept. Asset type: luxury Sanatan Heritage homepage hero artwork. A single complete imagined Indian sandstone temple tower and entrance, viewed front three-quarter at human eye level, isolated in a vast near-black charcoal studio-like night space. Entire architectural silhouette and base visible, no cropped top. Sculpted sandstone with deep relief, warm antique gold raking light from upper right, beautiful detailed stone texture, soft black shadows with visible structure, refined museum exhibition photography aesthetic. Subject occupies right 60 percent of wide 1536x1024 composition; left 40 percent near-black negative space. No people, no deity statues, no writing, no signage, no watermark, no logo, no decorative glow ring. An artistic imagined temple, not a recognizable real monument or archaeological evidence."
+    },
+    {
+      "file": "museum-vishnu-gallery.webp",
+      "prompt": "Use case: stylized-concept. Asset type: Sanatan Heritage Divine Forms gallery doorway. A respectful complete bronze-inspired standing Vishnu sculpture in a dark warm museum niche. Exactly four arms: one hand holds conch, one chakra discus, one mace, one lotus; each anatomically distinct and clearly connected. Exactly two legs, complete feet and lotus pedestal visible, crown visible with breathing space above. Serene face, traditional crown, garland and flowing garment, finely worked aged dark bronze and restrained gold highlights. Frontal portrait composition 1024x1536. Gentle museum lighting reveals every attribute, no chopped limbs, no text, no signs, no watermark. This is newly imagined devotional artwork, not a photograph of a real ancient object."
+    },
+    {
+      "file": "museum-story-grove.webp",
+      "prompt": "Use case: illustration-story. Asset type: Sanatan Heritage story-collection doorway. An intimate finely painted Indian heritage illustration of an elder storyteller seated beneath an ancient banyan tree sharing a story with three attentive listeners, one child and two adults. All people fully clothed, natural hands and anatomy, warm late-afternoon light, distant quiet river, muted terracotta, indigo and antique gold. Vertical 1024x1536 composition, subjects complete, generous natural space around them, painterly detail rather than fantasy effects. Imagined scene, no identifiable scripture event. No writing, text, symbols or watermark."
+    },
+    {
+      "file": "museum-scripture-study.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: Sanatan Heritage sacred scripture library doorway. Editorial still life of a closed traditional cloth-wrapped manuscript bundle with aged unlettered palm-leaf edges, a second closed red cloth bound volume, a simple brass oil lamp beside them, on a dark teak reading desk. No open pages or readable writing. Soft side light, warm muted antique gold and ivory, deep indigo shadows, tactile linen and wood, restrained luxury library photography aesthetic. Vertical 1024x1536 composition. No deity figures, no text, no lettering, no watermark. AI-generated illustrative still life, no claim to a real historical manuscript."
+    }
+  ]
+}

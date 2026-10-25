@@ -1,0 +1,38 @@
+import {readFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {JSDOM} from 'jsdom';
+const html=await readFile('dist/index.html','utf8');
+assert.ok(html.includes('data-pagefind-body'));
+assert.ok(!html.includes('content="noindex"'));
+const redirect=await readFile('dist/museum-preview.html','utf8');
+assert.ok(redirect.includes('http-equiv="refresh"'));
+assert.ok(!redirect.includes('<video'));
+const script=await readFile('src/assets/js/home-museum.js','utf8');
+async function setup(reduce=false,blocked=false){
+  const dom=new JSDOM(html,{url:'https://sanatan-heritage.test/',runScripts:'outside-only',pretendToBeVisual:true});
+  const {window}=dom;let paused=true,playCalls=0,visible;
+  const changes=new Map();
+  window.matchMedia=()=>({matches:reduce,addEventListener(type,fn){changes.set('reduce',fn);}});
+  window.IntersectionObserver=class{constructor(callback){visible=callback;}observe(){}};
+  Object.defineProperty(window.HTMLMediaElement.prototype,'paused',{get:()=>paused});
+  window.HTMLMediaElement.prototype.play=function(){playCalls++;if(blocked)return Promise.reject(new Error('Autoplay blocked'));paused=false;this.dispatchEvent(new window.Event('play'));return Promise.resolve();};
+  window.HTMLMediaElement.prototype.pause=function(){paused=true;this.dispatchEvent(new window.Event('pause'));};
+  window.eval(script);await new Promise(resolve=>setImmediate(resolve));
+  return {dom,d:window.document,window,visible,changes,calls:()=>playCalls};
+}
+const t=await setup();
+const video=t.d.querySelector('.museum-film video'),button=t.d.querySelector('.museum-video-toggle');
+assert.equal(video.paused,false);assert.equal(video.muted,true);assert.equal(video.loop,true);assert.equal(button.textContent,'Pause video');
+button.click();assert.equal(video.paused,true);assert.equal(button.textContent,'Play video');
+t.visible([{isIntersecting:false}]);t.visible([{isIntersecting:true}]);assert.equal(video.paused,true,'Explicit pause survives leaving and entering viewport');
+button.click();assert.equal(video.paused,false);
+t.visible([{isIntersecting:false}]);assert.equal(video.paused,true);t.visible([{isIntersecting:true}]);assert.equal(video.paused,false);
+assert.equal(t.d.querySelectorAll('.museum-chapter').length,2);
+assert.ok([...t.d.querySelectorAll('.museum-chapter')].every(el=>!el.hidden));
+assert.ok(t.d.querySelector('.museum-chapter a[href="/scriptures.html"]'));
+assert.ok(!t.d.querySelector('.exhibit-grid,.exhibit-pin,.exhibit-transport,.exhibit-motion'));
+assert.ok(!t.d.querySelector('.museum-chapter').textContent.includes('Dhruva'));
+const r=await setup(true);assert.equal(r.calls(),0,'Reduced motion does not autoplay');r.d.querySelector('.museum-video-toggle').click();assert.equal(r.calls(),1,'Explicit playback remains available');
+const b=await setup(false,true);assert.equal(b.d.querySelector('.museum-video-toggle').textContent,'Play video','Blocked autoplay leaves usable play control and poster');
+for(const item of [t,r,b])item.dom.window.close();
+console.log('Passed: background playback, manual pause persistence, offscreen pause/resume, reduced-motion opt-in, blocked-autoplay fallback, and sequential sections.');

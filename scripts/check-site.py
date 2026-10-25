@@ -19,20 +19,23 @@ class Page(HTMLParser):
   for key in ['href','src']:
    if key in a:self.links.append(a[key])
   if tag=='meta':self.meta[a.get('property',a.get('name',''))]=a.get('content')
-pages={f.name:Page(f.read_text()) for f in root.glob('*.html')};errors=[]
+pages={f.name:Page(f.read_text(encoding="utf-8")) for f in root.glob('*.html')};errors=[]
 image_placements={}
 for name,p in pages.items():
  if p.h1!=1:errors.append(f'{name}: expected one h1')
  if len(p.ids)!=len(set(p.ids)):errors.append(f'{name}: duplicate IDs')
  for link in p.links:
   u=urlsplit(link)
+  if u.netloc and not u.scheme:errors.append(f'{name}: protocol-relative link {link}')
   if u.scheme or u.netloc:continue
-  target=unquote(u.path).lstrip('/') or name
+  target=('index.html' if u.path=='/' else unquote(u.path).lstrip('/')) or name
   if not (root/target).exists():errors.append(f'{name}: missing {target}')
   elif u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:errors.append(f'{name}: missing anchor {link}')
  for image in p.images:
   image_path=root/image.get('src','').lstrip('/')
-  if image_path.is_file():
+  # The owner-approved shared logo is branding, not a narrative artwork placement.
+  shared_logo=image.get('src')=='/assets/brand/sanatan-heritage-logo.webp' and 'brand-logo' in image.get('class','').split()
+  if image_path.is_file() and not shared_logo:
    digest=hashlib.sha256(image_path.read_bytes()).hexdigest()
    if digest in image_placements:errors.append(f'{name}: repeated artwork also used in {image_placements[digest]}')
    else:image_placements[digest]=name
@@ -42,16 +45,17 @@ for name,p in pages.items():
    if candidate.strip() and not (root/candidate.strip().split()[0].lstrip('/')).exists():errors.append(f'{name}: missing responsive image')
  if not {'header','nav','main','footer'}.issubset(p.landmarks):errors.append(f'{name}: missing landmarks')
  if len(p.title)!=1:errors.append(f'{name}: expected a page title')
+ if any(link.startswith('/reference-assets/') or link.startswith('/conversation/') for link in p.links):errors.append(f'{name}: private handoff link')
  for key in ['viewport','description','og:title','og:description','og:url','og:image','twitter:card']:
   if not p.meta.get(key):errors.append(f'{name}: missing {key}')
  for key in ['og:url','og:image']:
   if not p.meta.get(key,'').startswith('https://sanatan-heritage.vivopatel1304.chatgpt.site/'):errors.append(f'{name}: invalid {key}')
  if p.meta.get('og:image') and not (root/urlsplit(p.meta['og:image']).path.lstrip('/')).exists():errors.append(f'{name}: missing preview image')
-assert (root/'stories.html').read_text().count('class="collection-source"')==8
-assert all('ref-'+slug in pages['sources.html'].ids for slug in ['shiva-poison','rama-exile','hanuman-lanka','govardhana','mahishasura','lalita-bhandasura','bhagiratha-ganga','shiva-parvati'])
-for term in json.loads((root/'data/glossary.json').read_text()):
+assert (root/'stories.html').read_text(encoding="utf-8").count('class="collection-source"')==len(json.loads((root/'data/stories.json').read_text(encoding='utf-8')))
+assert all('ref-'+slug in pages['sources.html'].ids for slug in ['shiva-poison','rama-exile','hanuman-lanka','govardhana','mahishasura','lalita-bhandasura','bhagiratha-ganga','shiva-parvati','dhruva'])
+for term in json.loads((root/'data/glossary.json').read_text(encoding="utf-8")):
  if term['id'] not in pages['glossary.html'].ids:errors.append(f"Missing glossary entry: {term['id']}")
 ET.parse(root/'sitemap.xml')
 assert (root/'pagefind/pagefind.js').exists()
 if errors:raise SystemExit('\n'.join(errors))
-print(f'Passed: {len(pages)} pages; {len(image_placements)} unique image placements; local files and fragments; metadata and images; eight card citations; sitemap; search bundle.')
+print(f'Passed: {len(pages)} pages; {len(image_placements)} unique image placements; local files and fragments; metadata and images; story card citations; sitemap; search bundle.')

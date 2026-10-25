@@ -1,0 +1,254 @@
+[
+  {
+    "id": "hanuman",
+    "title": "Courage in service",
+    "description": "Follow Hanuman from the ocean shore to Sita and back to Rama.",
+    "story": {
+      "title": "Hanuman’s journey to Lanka",
+      "href": "/hanuman-lanka.html"
+    },
+    "deity": {
+      "title": "Meet Hanuman",
+      "href": "/deities.html#hanuman"
+    },
+    "scripture": {
+      "title": "Enter the Ramayana",
+      "href": "/scriptures.html#epics"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      }
+    ],
+    "source": "/sources.html#hanuman-lanka"
+  },
+  {
+    "id": "halahala",
+    "title": "Compassion that protects",
+    "description": "Explore Shiva’s response to the poison of the ocean.",
+    "story": {
+      "title": "Shiva drinks Halahala",
+      "href": "/shiva-halahala.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Deva · divine being",
+        "href": "/glossary.html#deva"
+      },
+      {
+        "title": "Purana · sacred narrative",
+        "href": "/glossary.html#purana"
+      }
+    ],
+    "source": "/sources.html#shiva-halahala"
+  },
+  {
+    "id": "lalita",
+    "title": "Protection and renewal",
+    "description": "Meet Lalita in the Shakta setting of the Lalita Mahatmya.",
+    "story": {
+      "title": "Lalita and Bhandasura",
+      "href": "/lalita-bhandasura.html"
+    },
+    "deity": {
+      "title": "Meet Lalita",
+      "href": "/lalita.html"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      },
+      {
+        "title": "Yantra · sacred diagram",
+        "href": "/glossary.html#yantra"
+      }
+    ],
+    "source": "/sources.html#lalita-bhandasura"
+  },
+  {
+    "id": "parvati",
+    "title": "Devotion with a voice",
+    "description": "Follow Parvati’s resolve in the Shiva Purana’s account.",
+    "story": {
+      "title": "Shiva and Parvati",
+      "href": "/shiva-parvati.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Tapas · spiritual discipline",
+        "href": "/glossary.html#tapas"
+      },
+      {
+        "title": "Brahman · ultimate reality",
+        "href": "/glossary.html#brahman"
+      }
+    ],
+    "source": "/sources.html#shiva-parvati"
+  },
+  {
+    "id": "govardhana",
+    "title": "Shelter and humility",
+    "description": "Follow Krishna and the people of Vraja through the Govardhana story.",
+    "story": {
+      "title": "Krishna and Govardhana",
+      "href": "/krishna-govardhana.html"
+    },
+    "deity": {
+      "title": "Meet Krishna",
+      "href": "/deities.html#krishna"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Deva · divine being",
+        "href": "/glossary.html#deva"
+      }
+    ],
+    "source": "/sources.html#krishna-govardhana"
+  },
+  {
+    "id": "rama",
+    "title": "Duty and companionship",
+    "description": "Follow Rama, Sita and Lakshmana as life in Ayodhya gives way to exile.",
+    "story": {
+      "title": "Rama’s exile",
+      "href": "/rama-exile.html"
+    },
+    "deity": {
+      "title": "Meet Rama",
+      "href": "/deities.html#rama"
+    },
+    "scripture": {
+      "title": "Enter the Ramayana",
+      "href": "/scriptures.html#epics"
+    },
+    "terms": [
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Itihasa · epic narrative",
+        "href": "/glossary.html#itihasa"
+      }
+    ],
+    "source": "/sources.html#rama-exile"
+  },
+  {
+    "id": "mahishasura",
+    "title": "A radiance united",
+    "description": "Follow the Goddess’s encounter with Mahishasura in the Devi Mahatmya.",
+    "story": {
+      "title": "Devi and Mahishasura",
+      "href": "/devi-mahishasura.html"
+    },
+    "deity": {
+      "title": "Meet Durga",
+      "href": "/deities.html#durga"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      },
+      {
+        "title": "Asura · a class of beings",
+        "href": "/glossary.html#asura"
+      }
+    ],
+    "source": "/sources.html#devi-mahishasura"
+  },
+  {
+    "id": "bhagiratha",
+    "title": "A vow across generations",
+    "description": "Follow Bhagiratha’s resolve and the descent of the Ganga.",
+    "story": {
+      "title": "Bhagiratha and the Ganga",
+      "href": "/bhagiratha-ganga.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Enter the Ramayana",
+      "href": "/scriptures.html#epics"
+    },
+    "terms": [
+      {
+        "title": "Tapas · spiritual discipline",
+        "href": "/glossary.html#tapas"
+      },
+      {
+        "title": "Itihasa · epic narrative",
+        "href": "/glossary.html#itihasa"
+      }
+    ],
+    "source": "/sources.html#bhagiratha-ganga"
+  },
+  {
+    "id": "dhruva",
+    "title": "A resolve transformed by devotion",
+    "description": "Follow Dhruva from the palace to Madhuvana and back home.",
+    "story": {
+      "title": "Dhruva’s search for the Divine",
+      "href": "/dhruva.html"
+    },
+    "deity": {
+      "title": "Meet Vishnu",
+      "href": "/deities.html#vishnu"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Tapas · discipline",
+        "href": "/glossary.html#tapas"
+      }
+    ],
+    "source": "/sources.html#dhruva"
+  }
+]

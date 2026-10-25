@@ -82,5 +82,53 @@
     "devanagari": "पुराण",
     "pronunciation": "Say: pu-RAA-na",
     "definition": "A genre of sacred narrative including divine stories, cosmology, genealogies and teachings."
+  },
+  {
+    "id": "jyotirlinga",
+    "name": "Jyotirlinga · jyotirliṅga",
+    "devanagari": "ज्योतिर्लिङ्ग",
+    "pronunciation": "Say: JYOH-tir-LING-ga",
+    "definition": "A radiant form of Shiva’s linga, associated with sacred shrines. The Shiva Purana’s Kotirudra Samhita names twelve principal jyotirlingas.",
+    "source": "glossary-jyotirlinga"
+  },
+  {
+    "id": "itihasa",
+    "name": "Itihasa · itihāsa",
+    "devanagari": "इतिहास",
+    "pronunciation": "Say: i-ti-HAA-sa",
+    "definition": "Traditional narrative of the past; in this guide, the epic literature of the Ramayana and Mahabharata. Itihasa is named alongside Purana in Chandogya Upanishad 7.1.2.",
+    "source": "glossary-itihasa"
+  },
+  {
+    "id": "brahmastra",
+    "name": "Brahmastra · brahmāstra",
+    "devanagari": "ब्रह्मास्त्र",
+    "pronunciation": "Say: brah-MAAS-tra",
+    "definition": "A divine weapon associated with Brahma. In Sundara Kanda 48, Indrajit uses Brahma’s weapon to bind Hanuman.",
+    "source": "glossary-brahmastra"
+  },
+  {
+    "id": "linga",
+    "name": "Linga · liṅga",
+    "devanagari": "लिङ्ग",
+    "pronunciation": "Say: LING-ga",
+    "definition": "An emblem or sign; in Shaiva worship, the linga is a sacred form through which Shiva is worshipped.",
+    "source": "glossary-linga"
+  },
+  {
+    "id": "avatar",
+    "name": "Avatar · avatāra",
+    "devanagari": "अवतार",
+    "pronunciation": "Say: a-va-TAA-ra",
+    "definition": "A divine descent or manifestation, especially in traditions of Vishnu. Bhagavad Gita 4.6–8 discusses Krishna’s manifestation and its purpose.",
+    "source": "glossary-avatar"
+  },
+  {
+    "id": "asura",
+    "name": "Asura · asura",
+    "devanagari": "असुर",
+    "pronunciation": "Say: A-su-ra",
+    "definition": "A class of beings who may cooperate with or oppose the devas in sacred narratives. In Bhagavata Purana 8.7, devas and asuras take part in the ocean churning.",
+    "source": "glossary-asura"
   }
 ]
