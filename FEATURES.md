@@ -1,5 +1,7 @@
 # Features and approval status
 
+Latest additions (24 October 2026): beginner journey, Hindi introduction/two condensed story adaptations/Hindi search, synthetic browser read-aloud, contact/correction email drafts, privacy explanation, library backup/import/clear, source-verified journal context, responsive shrine tracking and centralized launch configuration. The site has 34 routes and nine full English readers. Reviewed recordings and independent Hindi editorial review remain outstanding; no account sync, dynamic tithi calendar or newsletter service has been added. Details: IMPLEMENTATION_REPORT.md and VALIDATION.md. Historical rows below describe earlier milestones.
+
 “Implemented” describes source present in this snapshot. It is not a claim that every browser/device was visually tested. “Proposed” is a wishlist, not permission to build immediately.
 
 | Feature | Status | Notes |

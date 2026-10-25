@@ -1,3 +1,23 @@
+# Premium reading update — 24 October 2026
+
+Delivered the owner-approved improvements while retaining the existing visual identity, typography, imagery policy and static Eleventy architecture:
+
+- Replaced repeated homepage destination copy with a beginner route, family reading and Hindi entry points. Added a three-step beginner journey and quick reading choices in the story collection.
+- Added Hindi introduction plus condensed Dhruva and Halahala adaptations, explicit English/Hindi links, remembered language choice and a separate functioning Hindi search. Source links and the distinction from direct scripture translation are visible.
+- Added optional chapter read-aloud controls with play/pause/stop, speed, English/Hindi voice preference, cancellation safety and visible transcripts. Browser speech is labeled synthetic; reviewed recorded narration is not claimed.
+- Added a contact/correction page that opens an email draft to shreembala@gmail.com, and a reading/privacy explanation. No inbox backend or unsolicited message sending is involved.
+- Added library backup download, validated atomic import/merge and explicit clear-history control. Existing saved/completed entries are preserved on import; unknown pages/chapters and malformed/oversized files are rejected.
+- Expanded Shivaratri, Kashi and Rameswaram context using rendered pages from supplied Skanda Purana parts 1, 10 and 8, with detailed references on Sources. No book scans are published.
+- Centralized launch origin/indexing configuration for canonical/social/language metadata, robots and sitemap. Current private audience and crawler restriction are preserved.
+- Reframed the golden shrine using measured source keyframes and responsive transform geometry. Selected a clean 12-second loop to avoid the original's severely cropped closing seconds. Video payloads are about 5.35 MB desktop / 2.45 MB mobile; poster compression and preload improve initial loading. Reduced motion/data-saving choices, native no-JS controls, pause and offscreen handling remain.
+- Fixed outdated browser assertions for solid reader controls, current story count and current homepage links. Added library/speech regression tests, targeted browser QA and a repeatable local performance measurement script. Local preview supports video byte ranges.
+
+Initial slow-network lab measurements showed substantial video-element layout shifts. Switching reframing to transforms, reserving opening/header/control space and prioritizing the poster reduced CLS to 0.0075/0.0118/0.0076 at 375/768/1440px. LCP was approximately 3.0 seconds under 150ms latency and 200kB/s download with a cold cache and reduced motion. This is a local lab measurement, not field Core Web Vitals; INP was not measured. No video was requested under reduced motion.
+
+Current automated checks pass; see VALIDATION.md for final coverage and limits. GitHub main is the required ongoing source destination. The separate Sites source repository preserves the existing private hosting identity.
+
+## Earlier implementation notes
+
 # Reading and discovery update — 21 October 2026
 
 All nine approved priorities are delivered, preserving the approved design, supplied logo and existing narrative prose.

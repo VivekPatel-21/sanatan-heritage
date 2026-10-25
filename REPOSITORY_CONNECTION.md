@@ -1,5 +1,11 @@
 # GitHub connection — 13 October 2026
 
+## Current connection — 24 October 2026
+
+The extracted project is now a Git checkout with origin https://github.com/VivekPatel-21/sanatan-heritage.git and active branch main, tracking origin/main. The owner explicitly authorized direct main updates and requests that all verified future changes be kept on GitHub. The initial upload preserved remote history in commit 57d361f. Subsequent task commits extend it normally; never force-push. Command-line Git authentication is available on this machine. Private conversation material, PDFs, QA files, generated output and session metadata remain ignored. The hosting Site has a separate source repository and private deployment workflow; a GitHub push alone is not a deployment.
+
+## Earlier connection record
+
 The owner requested connecting this local project to `VivekPatel-21/sanatan-heritage`, preserving local work and GitHub history, and opening a pull request.
 
 The extracted project had no `.git` directory. GitHub's default branch was `main`, at `caa8726008cdbad7e5a5766f5e086d7d13ff1888`. Its history includes the earlier illustrated stories, source references, asset pipeline and editorial design refinements. The archived Site history recorded in REPOSITORY_HISTORY.txt is a separate historical summary, not a recovered Git object database.

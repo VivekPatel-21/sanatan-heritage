@@ -1,4 +1,4 @@
-import { readdir, mkdir, writeFile } from 'node:fs/promises';
+import { readdir, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 const { chromium } = await import(process.env.SANATAN_PLAYWRIGHT_PATH ? pathToFileURL(process.env.SANATAN_PLAYWRIGHT_PATH).href : 'playwright');
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
@@ -64,7 +64,7 @@ const anchorClearance = await page.evaluate(()=>document.querySelector('#ring').
 if (anchorClearance < 0) throw new Error('Chapter anchor is covered by floating navigation');
 await page.waitForFunction(()=>document.querySelector('.tale-contents a[href="#ring"]').getAttribute('aria-current')==='location');
 const glass = await page.locator('.reader-tools').evaluate(el=>({blur:getComputedStyle(el).backdropFilter,radius:getComputedStyle(el).borderRadius}));
-if (glass.blur==='none' || glass.radius==='0px') throw new Error('Reader glass finishing missing');
+if (glass.blur!=='none' || glass.radius==='0px') throw new Error('Approved solid reader controls missing');
 const cdp = await context.newCDPSession(page);
 await cdp.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-transparency',value:'reduce'}]});
 const solidFallback = await page.locator('.reader-tools').evaluate(el=>getComputedStyle(el).backdropFilter==='none' && getComputedStyle(el).backgroundColor.startsWith('rgb('));
@@ -87,16 +87,17 @@ await page.emulateMedia({ media:'screen',reducedMotion:'reduce' });
 await page.goto('http://127.0.0.1:8080/stories.html');
 const reducedMotion = await page.locator('.collection-card img').first().evaluate(el=>getComputedStyle(el).transitionDuration);
 await page.goto('http://127.0.0.1:8080/index.html');
-await page.locator('.button').first().hover();
-if ((await page.locator('.button').first().evaluate(el=>getComputedStyle(el).transform))!=='none') throw new Error('Reduced-motion button still lifts');
-await page.locator('.text-link').focus();
-if ((await page.locator('.text-link').evaluate(el=>getComputedStyle(el).outlineStyle))==='none') throw new Error('Keyboard focus outline missing');
+await page.locator('.museum-film-link').hover();
+if ((await page.locator('.museum-film-link').evaluate(el=>getComputedStyle(el).transform))!=='none') throw new Error('Reduced-motion link still moves');
+await page.locator('.museum-film-link').focus();
+if ((await page.locator('.museum-film-link').evaluate(el=>getComputedStyle(el).outlineStyle))==='none') throw new Error('Keyboard focus outline missing');
 await page.setViewportSize({width:720,height:450});
 await page.goto('http://127.0.0.1:8080/index.html');
 const zoomEquivalentOverflow = await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
 const zoomFailures = [];
 for (const route of pages) {
   await page.goto(`http://127.0.0.1:8080/${route}`);
+  if(route==='museum-preview.html')await page.waitForURL(url=>url.pathname==='/'||url.pathname==='/index.html');
   const overflow = await page.evaluate(() => {
     return document.documentElement.scrollWidth > innerWidth + 1;
   });
@@ -105,7 +106,8 @@ for (const route of pages) {
 const noScriptContext = await browser.newContext({javaScriptEnabled:false,viewport:{width:375,height:900}});
 const noScriptPage = await noScriptContext.newPage();
 await noScriptPage.goto('http://127.0.0.1:8080/stories.html');
-if (!(await noScriptPage.getByRole('navigation',{name:'Main navigation'}).isVisible()) || await noScriptPage.locator('.collection-card').count()!==8) throw new Error('No-JavaScript navigation/content missing');
+const storyCount=Object.keys(JSON.parse(await readFile('src/data/stories.json','utf8'))).length;
+if (!(await noScriptPage.getByRole('navigation',{name:'Main navigation'}).isVisible()) || await noScriptPage.locator('.collection-card').count()!==storyCount) throw new Error('No-JavaScript navigation/content missing');
 await noScriptContext.close();
 const report = { results, runtimeErrors, searchResults, reducedMotion, anchorClearance, glass, solidFallback, zoomEquivalentOverflow, zoomFailures, note:'720 CSS-pixel reflow on every page approximates 200% browser zoom from 1440px. Native browser zoom and screen-reader audit not claimed.' };
 await writeFile('.qa/browser-report.json',JSON.stringify(report,null,2));

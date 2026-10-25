@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 import json
 import hashlib
 project=Path(__file__).resolve().parents[1]
+origin=json.loads((project/'src/data/site.json').read_text(encoding='utf-8'))['origin']
 root=project/'dist' if (project/'dist/index.html').exists() else project
 class Page(HTMLParser):
  def __init__(self,text):
@@ -49,7 +50,7 @@ for name,p in pages.items():
  for key in ['viewport','description','og:title','og:description','og:url','og:image','twitter:card']:
   if not p.meta.get(key):errors.append(f'{name}: missing {key}')
  for key in ['og:url','og:image']:
-  if not p.meta.get(key,'').startswith('https://sanatan-heritage.vivopatel1304.chatgpt.site/'):errors.append(f'{name}: invalid {key}')
+  if not p.meta.get(key,'').startswith(origin+'/'):errors.append(f'{name}: invalid {key}')
  if p.meta.get('og:image') and not (root/urlsplit(p.meta['og:image']).path.lstrip('/')).exists():errors.append(f'{name}: missing preview image')
 assert (root/'stories.html').read_text(encoding="utf-8").count('class="collection-source"')==len(json.loads((root/'data/stories.json').read_text(encoding='utf-8')))
 assert all('ref-'+slug in pages['sources.html'].ids for slug in ['shiva-poison','rama-exile','hanuman-lanka','govardhana','mahishasura','lalita-bhandasura','bhagiratha-ganga','shiva-parvati','dhruva'])

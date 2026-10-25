@@ -39,6 +39,29 @@
       try { localStorage.removeItem(`sanatan-bookmark:${path}`); } catch { available = false; }
       return persist();
     },
+    exportBackup: () => ({format:'sanatan-heritage-reading-library',version:1,exportedAt:new Date().toISOString(),items:window.SHReading.all()}),
+    importBackup(raw,catalog) {
+      if(raw?.format!=='sanatan-heritage-reading-library'||raw.version!==1||!raw.items||typeof raw.items!=='object'||Array.isArray(raw.items))throw new Error('Choose a Sanatan Heritage library backup (version 1).');
+      const entries=Object.entries(raw.items);
+      if(entries.length>500)throw new Error('This backup contains too many entries.');
+      const next={...items};
+      for(const [path,value] of entries){
+        if(!validPath(path)||!catalog.pages[path]||!value||typeof value!=='object'||Array.isArray(value))throw new Error('This backup contains an unrecognised page or entry. Nothing was imported.');
+        const chapters=catalog.stories.find(story=>story.href===path)?.chapters||[];
+        for(const field of ['chapter','bookmark'])if(value[field]!=null&&!chapters.some(chapter=>chapter.id===value[field]))throw new Error('This backup contains an unrecognised chapter. Nothing was imported.');
+        const incoming=clean({version:1,items:{[path]:value}})[path];
+        const current=items[path]||{};
+        const newer=(incoming.updatedAt||0)>(current.updatedAt||0)?incoming:current;
+        const older=newer===incoming?current:incoming;
+        next[path]={...older,...newer,saved:!!(current.saved||incoming.saved),completed:!!(current.completed||incoming.completed),bookmark:newer.bookmark||older.bookmark||null,updatedAt:Date.now()};
+      }
+      items=next;
+      return {count:entries.length,persisted:persist()};
+    },
+    clear() {
+      for(const path of Object.keys(items)){try{localStorage.removeItem(`sanatan-bookmark:${path}`);}catch{/* persist reports storage availability. */}}
+      items={};return persist();
+    },
     available: () => available
   };
   window.addEventListener('storage', event => {

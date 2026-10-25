@@ -1,5 +1,16 @@
 # Handoff validation — 2026-10-10 UTC
 
+## Current verification — 24 October 2026
+
+- Node 24.22.1; clean locked dependencies installed. Build succeeds: 34 routes, 29 indexed pages across English/Hindi. HTML/CSS lint passes. Static checks pass with 66 unique narrative image placements, local files/anchors, story citations, metadata, sitemap and search bundles.
+- All four interaction suites pass: original UI, reading persistence/migration, video behavior and new backup/speech tests. Import tests verify atomic rejection and preserving existing saved/completed states.
+- Targeted browser checks pass: 44 shrine-framing samples through the 12-second loop at 375/768/1440/2560px, no uncovered video edges, real library download/import, invalid-file recovery, Hindi search, contact controls and HTTP video range responses.
+- Slow cold-load local lab: 150ms latency, 200kB/s download, reduced motion, widths 375/768/1440. LCP 3012/2976/2996ms; CLS 0.0075/0.0118/0.0076. No MP4 requests in these reduced-motion cases. These are lab observations, not deployed field Core Web Vitals; INP is unmeasured.
+- Relevant supplied Skanda Purana pages for the three journal additions were rendered and visually read. Hindi adaptations and synthetic voices have not received independent fluent/human pronunciation review. Real-device Safari, native 200% browser zoom and assistive-technology certification are not claimed.
+- The complete browser matrix is being finalized; final result will be added below before handoff.
+
+## Historical packaging validation
+
 - Repository source was clean at cd04b377ded488ed6077e6f59c09a6b3eac94094. Every tracked file was copied byte-for-byte, including 194 dist/ files. No website edits, GitHub writes or deployment were made for this task.
 - npm run lint passed: 14 HTML pages and stylesheet validation.
 - npm run check passed: 14 pages, 42 unique visible image placements, internal files/fragments, metadata/images, eight card citations, sitemap and search bundle.

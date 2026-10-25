@@ -1,5 +1,5 @@
 /* Approved museum homepage. Other content pages do not load this file. */
-.museum-home { --museum-background: var(--bg-page); --museum-text: var(--text-primary); --museum-muted: var(--text-muted); --museum-gold: var(--accent-gold); --museum-rule: var(--border-gold-subtle); background: var(--bg-page); }
+.museum-home { --museum-header-height: 109px; --museum-background: var(--bg-page); --museum-text: var(--text-primary); --museum-muted: var(--text-muted); --museum-gold: var(--accent-gold); --museum-rule: var(--border-gold-subtle); background: var(--bg-page); }
 .museum-main { overflow: clip; }
 .museum-main h1,.museum-main h2,.museum-main h3 { font-family: var(--font-serif); font-weight: 400; letter-spacing: -.045em; }
 .museum-main h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); line-height: 1.18; }
@@ -143,8 +143,9 @@
 .museum-object figcaption { display: block; font-size: .6875rem; }
 @media (width >= 1001px) { .museum-object { right: 0; } }
 /* Full-bleed film followed by two independent editorial sections. */
-.museum-film { position: relative; isolation: isolate; min-height: max(640px,calc(100svh - var(--museum-header-height,94px))); display: flex; align-items: center; background: var(--bg-page); color: #fff9ed; overflow: hidden; }
-.museum-film-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; z-index: -2; }
+.museum-film { position: relative; isolation: isolate; min-height: max(640px,calc(100svh - var(--museum-header-height,94px))); display: flex; align-items: center; background: var(--bg-page) url('/assets/images/ambaji-enhanced-poster.webp') 57.6% 48.3% / cover; color: #fff9ed; overflow: hidden; }
+.museum-film-video { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 57.6% 48.3%; z-index: -2; }
+.js .museum-film-video { inset: 0 auto auto 0; height: auto; aspect-ratio: 16 / 9; object-fit: fill; transform-origin: 0 0; visibility: hidden; }
 .museum-film-shade { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg,rgb(12 17 15 / 82%) 0%,rgb(12 17 15 / 64%) 32%,rgb(12 17 15 / 8%) 75%),linear-gradient(0deg,rgb(12 17 15 / 62%),transparent 30%); }
 [data-theme="dark"] .museum-film-shade { background: linear-gradient(90deg,rgb(8 12 11 / 88%) 0%,rgb(8 12 11 / 69%) 32%,rgb(8 12 11 / 18%) 75%),linear-gradient(0deg,rgb(8 12 11 / 74%),transparent 35%); }
 .museum-film-content { width: 100%; max-width: 1440px; margin: auto; padding: clamp(3rem,6vh,6rem) clamp(1.25rem,5.3vw,6rem) 7rem; }
@@ -159,6 +160,7 @@
 .museum-film-footer { position: absolute; inset: auto 0 0; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.25rem clamp(1.25rem,5.3vw,6rem); color: #fff9ed; font-size: .6875rem; line-height: 1.6; }
 .museum-video-toggle { border: 1px solid rgb(255 249 237 / 65%); border-radius: 0; background: rgb(12 17 15 / 65%); color: #fff9ed; min-height: 44px; min-width: 104px; padding: .6rem 1rem; font: 400 .8125rem var(--font-sans); cursor: pointer; }
 .museum-video-toggle:hover { background: rgb(12 17 15 / 90%); }
+.museum-video-toggle[hidden] { display: block; visibility: hidden; }
 .museum-film a:focus-visible,.museum-film button:focus-visible { outline: 2px solid #fff9ed; outline-offset: 6px; }
 .museum-chapter { max-width: 1440px; margin: auto; padding: clamp(4rem,8vw,8rem) clamp(1.25rem,5.3vw,6rem); display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem,7vw,7rem); align-items: center; scroll-margin-top: var(--museum-header-height,94px); }
 .museum-chapter figure { margin: 0; }
@@ -173,8 +175,9 @@
 .museum-chapter-destinations a { display: flex; justify-content: space-between; padding-block: 1rem; border-bottom: 1px solid var(--border-subtle); color: var(--text-primary); text-decoration: none; }
 .museum-chapter-destinations span { color: var(--accent-gold); }
 @media (width <= 1000px) {
+  .museum-home { --museum-header-height: 167px; }
   .museum-film { min-height: max(720px,calc(100svh - var(--museum-header-height,94px))); align-items: end; }
-  .museum-film-video { object-position: 62% 50%; }
+  .museum-film-video { object-position: 57.6% 48.3%; }
   .museum-film-shade,[data-theme="dark"] .museum-film-shade { background: linear-gradient(0deg,rgb(8 12 11 / 92%) 0%,rgb(8 12 11 / 76%) 35%,rgb(8 12 11 / 12%) 80%); }
   .museum-film-content { margin: 0; padding-top: 14rem; padding-bottom: 7rem; }
   .museum-film h1 { font-size: clamp(2.8rem,7vw,4.5rem); max-width: 16ch; }
@@ -183,6 +186,7 @@
   .museum-chapter { gap: 2rem; }
 }
 @media (width <= 700px) {
+  .museum-home { --museum-header-height: 86px; }
   .museum-film { min-height: max(700px,calc(100svh - var(--museum-header-height,78px))); }
   .museum-film-content { padding-top: 17rem; }
   .museum-film h1 { font-size: clamp(2.65rem,10.5vw,4rem); line-height: 1.1; }

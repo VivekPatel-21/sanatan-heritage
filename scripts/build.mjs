@@ -6,7 +6,9 @@ import { load } from 'cheerio';
 import { minify as minifyHTML } from 'html-minifier-terser';
 import CleanCSS from 'clean-css';
 import { minify as minifyJS } from 'terser';
-const origin = 'https://sanatan-heritage.vivopatel1304.chatgpt.site';
+const site = JSON.parse(await readFile('src/data/site.json','utf8'));
+const origin = new URL(site.origin).origin;
+if(!origin.startsWith('https://') || site.origin !== origin)throw new Error('site.origin must be an HTTPS origin with no path or trailing slash.');
 const run = args => { const result = spawnSync(process.execPath, args, { stdio: 'inherit' }); if (result.status !== 0) process.exit(result.status ?? 1); };
 await rm('dist', { recursive: true, force: true });
 run(['node_modules/@11ty/eleventy/cmd.cjs']);
@@ -40,6 +42,18 @@ const readingCatalog = { stories:[], pages:{} };
 const pages = (await readdir('dist')).filter(name => name.endsWith('.html')).sort();
 for (const name of pages) {
   const $ = load(await readFile(`dist/${name}`, 'utf8'));
+  const canonical=origin+(name==='index.html'?'/':'/'+name);
+  $('link[rel="canonical"]').attr('href',canonical);
+  $('meta[property="og:url"]').attr('content',canonical);
+  $('meta[property="og:locale"]').attr('content',$('html').attr('lang')==='hi'?'hi_IN':'en_US');
+  for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]']){
+    const image=$(selector);image.attr('content',origin+new URL(image.attr('content')).pathname);
+  }
+  const alternate={ 'understanding.html':'hindi.html','hindi.html':'understanding.html','shiva-halahala.html':'shiva-halahala-hindi.html','shiva-halahala-hindi.html':'shiva-halahala.html','dhruva.html':'dhruva-hindi.html','dhruva-hindi.html':'dhruva.html' }[name];
+  if(alternate){
+    $('head').append($('<link>').attr({rel:'alternate',hreflang:$('html').attr('lang'),href:canonical}));
+    $('head').append($('<link>').attr({rel:'alternate',hreflang:$('html').attr('lang')==='hi'?'en':'hi',href:origin+'/'+alternate}));
+  }
   const pathName = `/${name}`;
   const storyInfo = Object.values(storyCatalog).find(item => item.href === pathName);
   const pageTitle = storyInfo?.title || $('title').text().split('·')[0].trim();
@@ -101,6 +115,7 @@ for (const name of pages) {
   await writeFile(`dist/${name}`, await minifyHTML($.html(), { collapseWhitespace: true, removeComments: true, keepClosingSlash: false, removeRedundantAttributes: true }));
 }
 await writeFile('dist/data/reading-catalog.json',JSON.stringify(readingCatalog));
+await writeFile('dist/robots.txt',`User-agent: *\n${site.indexable?'Allow: /':'Disallow: /'}\n\nSitemap: ${origin}/sitemap.xml\n`);
 const css = new CleanCSS({ level: 1 }).minify((await readFile('src/assets/css/style.css','utf8')) + '\n' + (await readFile('src/assets/css/refinements.css','utf8')) + '\n' + (await readFile('src/assets/css/art-direction.css','utf8')) + '\n' + (await readFile('src/assets/css/features.css','utf8')));
 if (css.errors.length) throw new Error(css.errors.join('\n'));
 await writeFile('dist/assets/css/style.css', css.styles);
@@ -114,6 +129,6 @@ for (const name of await readdir('src/assets/js')) {
   const result = await minifyJS(await readFile(`src/assets/js/${name}`, 'utf8'));
   await writeFile(`dist/assets/js/${name}`, result.code);
 }
-await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
+await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','search-hindi.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
 run(['node_modules/pagefind/lib/runner/bin.cjs', '--site', 'dist']);
 console.log(`Built ${pages.length} pages, responsive WebP images, minified assets and search index.`);

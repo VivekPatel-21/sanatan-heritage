@@ -2,7 +2,7 @@
   const state=window.SHReading;
   if(!state)return;
   fetch('/data/reading-catalog.json').then(r=>{if(!r.ok)throw new Error();return r.json();}).then(catalog=>{
-    document.querySelectorAll('.reader-panel').forEach(panel=>{
+    [...document.querySelectorAll('.reader-panel')].filter(panel=>panel.querySelector('ol.reading-steps')).forEach(panel=>{
       const steps=[...panel.querySelectorAll('.reading-steps>li')].map(li=>({li,link:li.querySelector('a')}));
       const summary=document.createElement('p');summary.className='path-summary';summary.setAttribute('role','status');summary.setAttribute('aria-live','polite');
       const progress=document.createElement('progress');progress.max=steps.length;progress.setAttribute('aria-label',panel.querySelector('h2').textContent+' progress');

@@ -8,3 +8,4 @@
 *.pf_index binary
 *.pf_meta binary
 *.wasm binary
+*.mp4 binary

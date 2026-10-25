@@ -63,3 +63,47 @@
 @media print {
   .library-controls,.library-entry-actions button,.path-completion,.path-next,.path-feedback,.page-completion { display: none; }
 }
+
+/* Reading additions retain the journal's typography and quiet ruled surfaces. */
+.language-toggle { display: inline-flex; align-items: center; min-height: 44px; padding: .35rem .5rem; color: var(--text-primary); font-size: .875rem; text-decoration: underline; text-underline-offset: .3em; }
+.language-edition { max-width: 82rem; margin: 1.5rem auto 0; padding-inline: clamp(1.25rem,4vw,4rem); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: var(--text-muted); font-size: .875rem; }
+.language-edition a { color: var(--accent-terracotta); min-height: 44px; display: inline-flex; align-items: center; }
+.contact-layout { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); align-items: start; gap: 3rem; }
+#contact-draft { display: grid; gap: .75rem; margin-top: 2rem; }
+#contact-draft label { font-weight: 600; margin-top: .75rem; }
+#contact-draft :is(input,select,textarea) { width: 100%; max-width: 100%; min-height: 44px; padding: .75rem; border: 1px solid var(--border-subtle); border-radius: 3px; background: var(--bg-surface); color: var(--text-primary); font: inherit; }
+#contact-draft textarea { resize: vertical; }
+#contact-draft .button { justify-self: start; }
+.library-transfer { margin-top: 3rem; }
+.library-transfer label { display: block; margin-top: 1.5rem; margin-bottom: .75rem; }
+.library-transfer :is(button,input) { max-width: 100%; min-height: 44px; font: inherit; }
+.library-transfer button,.listen-controls button { background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-subtle); padding: .65rem 1rem; border-radius: 3px; cursor: pointer; }
+.library-transfer summary,.read-aloud summary { cursor: pointer; min-height: 44px; padding-block: .75rem; }
+.read-aloud { border-block: 1px solid var(--border-subtle); padding: .5rem 0 1rem; margin: 0 0 2.5rem; font-family: var(--font-sans); }
+.read-aloud>p { font-size: .875rem; line-height: 1.7; color: var(--text-muted); }
+.listen-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.listen-controls label { font-size: .875rem; }
+.listen-controls select { max-width: 100%; min-width: 0; min-height: 44px; padding: .5rem; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-subtle); font: inherit; font-size: .875rem; }
+.listen-controls button { min-height: 44px; font: inherit; font-size: .875rem; }
+.listen-controls button:disabled { opacity: .55; cursor: default; }
+.hindi-reading { max-width: 70rem; margin-inline: auto; }
+.hindi-reading>.reader-panel { margin-bottom: 2rem; }
+.hindi-reading .tale-body { max-width: 48rem; margin-inline: auto; }
+.hindi-page :is(p,li,dd) { line-height: 2; }
+.hindi-page :is(h1,h2,h3) { line-height: 1.6; }
+.hindi-page main :is(h1,h2,h3,p,li,dd,dt,summary,label,select,button) { font-family: 'Noto Serif Devanagari',serif; }
+.hindi-page .tale-chapter { scroll-margin-top: 9rem; }
+.hindi-page .read-aloud { font-family: 'Noto Serif Devanagari',serif; }
+.footer-bottom { flex-wrap: wrap; gap: 1rem 2rem; }
+.quick-reading { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; padding-block: 1rem; border-block: 1px solid var(--border-subtle); margin-block: 2rem; }
+.quick-reading a { display: inline-flex; align-items: center; min-height: 44px; }
+.journal-reading-route { border-top: 1px solid var(--border-subtle); padding-top: 2rem; margin-top: 3rem; }
+@media (width <= 760px) {
+  .contact-layout { grid-template-columns: minmax(0,1fr); gap: 2rem; }
+  .listen-controls select:first-of-type { flex: 1 1 100%; }
+  .hindi-page .reference-intro h1 { font-size: clamp(2rem,8vw,3rem); }
+  .language-toggle { font-size: .8125rem; padding-inline: .25rem; }
+}
+@media print {
+  .read-aloud,.library-transfer,#contact-draft,.language-edition { display: none; }
+}

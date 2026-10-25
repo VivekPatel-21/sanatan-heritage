@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const help = document.querySelector('#search-help');
   try {
     if (typeof PagefindUI !== 'function') throw new Error('Search unavailable');
-    const ui = new PagefindUI({ element: '#site-search', showSubResults: false, showImages: false });
+    const hi=document.documentElement.lang==='hi';
+    const ui = new PagefindUI({ element: '#site-search', showSubResults: false, showImages: false, ...(hi?{translations:{placeholder:'यहाँ खोजें',clear_search:'खोज मिटाएँ',load_more:'और परिणाम',search_label:'हिन्दी में खोजें',zero_results:'[SEARCH_TERM] के लिए कोई परिणाम नहीं मिला',many_results:'[COUNT] परिणाम मिले',one_result:'एक परिणाम मिला',searching:'खोज जारी है…'}}:{}) });
     const query = new URLSearchParams(location.search).get('q');
     if (query) ui.triggerSearch(query.slice(0, 200));
     const root = document.querySelector('#site-search');
@@ -22,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('popstate',()=>ui.triggerSearch(new URLSearchParams(location.search).get('q')||''));
     help.hidden = true;
   } catch {
-    help.textContent = 'Search could not load. Please refresh or browse the story collection and glossary.';
+    help.textContent = document.documentElement.lang==='hi'?'खोज उपलब्ध नहीं है। ऊपर दिए गए लिंक से हिन्दी पृष्ठ पढ़ें।':'Search could not load. Please refresh or browse the story collection and glossary.';
   }
 });

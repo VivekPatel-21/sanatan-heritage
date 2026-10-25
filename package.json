@@ -20,7 +20,7 @@
     "serve": "node scripts/serve.mjs",
     "lint": "htmlhint \"dist/*.html\" && stylelint \"src/assets/css/*.css\"",
     "check": "node scripts/check.mjs",
-    "test": "node scripts/test-ui.mjs && node scripts/test-reading.mjs && node scripts/test-exhibit.mjs"
+    "test": "node scripts/test-ui.mjs && node scripts/test-reading.mjs && node scripts/test-exhibit.mjs && node scripts/test-enhancements.mjs"
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
