@@ -14,7 +14,7 @@ Delivered the owner-approved improvements while retaining the existing visual id
 
 Initial slow-network lab measurements showed substantial video-element layout shifts. Switching reframing to transforms, reserving opening/header/control space and prioritizing the poster reduced CLS to 0.0075/0.0118/0.0076 at 375/768/1440px. LCP was approximately 3.0 seconds under 150ms latency and 200kB/s download with a cold cache and reduced motion. This is a local lab measurement, not field Core Web Vitals; INP was not measured. No video was requested under reduced motion.
 
-Current automated checks pass; see VALIDATION.md for final coverage and limits. GitHub main is the required ongoing source destination. The separate Sites source repository preserves the existing private hosting identity.
+All 204 full browser scenarios and subsequent keyboard/search/reflow/no-JavaScript checks pass, alongside automated checks and the 44 targeted shrine-framing samples. See VALIDATION.md for coverage and limits. Implementation is committed on GitHub main in 327524a; validation documentation follows in a separate commit. GitHub main is the required ongoing source destination. The separate Sites source repository preserves the existing private hosting identity.
 
 ## Earlier implementation notes
 

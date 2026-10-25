@@ -7,7 +7,7 @@
 - Targeted browser checks pass: 44 shrine-framing samples through the 12-second loop at 375/768/1440/2560px, no uncovered video edges, real library download/import, invalid-file recovery, Hindi search, contact controls and HTTP video range responses.
 - Slow cold-load local lab: 150ms latency, 200kB/s download, reduced motion, widths 375/768/1440. LCP 3012/2976/2996ms; CLS 0.0075/0.0118/0.0076. No MP4 requests in these reduced-motion cases. These are lab observations, not deployed field Core Web Vitals; INP is unmeasured.
 - Relevant supplied Skanda Purana pages for the three journal additions were rendered and visually read. Hindi adaptations and synthetic voices have not received independent fluent/human pronunciation review. Real-device Safari, native 200% browser zoom and assistive-technology certification are not claimed.
-- The complete browser matrix is being finalized; final result will be added below before handoff.
+- Complete Chrome matrix passed: 34 routes × 3 widths (375/768/1440) × 2 themes = 204 scenarios, with no horizontal overflow, clipped captions, broken images or runtime JavaScript errors. Subsequent checks passed for keyboard menu/focus, persisted reader controls, anchor clearance, actual search results, print output, reduced motion, 720px reflow on every route (a 200%-zoom approximation), and no-JavaScript navigation/story availability. The old preview redirect was explicitly awaited during reflow testing.
 
 ## Historical packaging validation
 
