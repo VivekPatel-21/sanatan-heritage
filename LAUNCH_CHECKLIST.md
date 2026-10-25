@@ -13,3 +13,7 @@ When the owner supplies a production domain and explicitly requests a public lau
 5. Measure cold-load performance on the deployed domain and real devices. Local lab results do not certify field Core Web Vitals or actual Safari/iOS/Android behavior.
 
 The contact page opens an email draft; it does not claim a message has been submitted. No contact-service subscription is needed. Read-aloud uses optional browser speech; reviewed recorded narration is still dependent on recordings or an available paid generation service. Hindi is a condensed editorial adaptation, pending fluent independent editorial review. Private PDFs and source-review images must remain outside the tracked/public site.
+
+## Verified private release — 24 October 2026
+
+Published successfully to https://sanatan-heritage.vivopatel1304.chatgpt.site using the existing owner-private audience. Site source commit: f59c796abd08c443faf2c3ec16cc7ed50b408adf. Saved version: appgprj_6ac5cd85e9cc8191924154bf8e6945ce~appgver_479b08f70b548191bf008c6b8d111a1e. Deployment: appgdep_6add73c765cc8191a8733a6c27acbbb9, native status succeeded. GitHub implementation commit: 327524a; completed browser validation: 24b8d92. The deployment archive contains only the verified static build and hosting manifest, with no book scans or private source-review files. This release record is source documentation; it does not change website output.
