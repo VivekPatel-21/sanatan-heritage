@@ -45,14 +45,9 @@ for (const name of pages) {
   const canonical=origin+(name==='index.html'?'/':'/'+name);
   $('link[rel="canonical"]').attr('href',canonical);
   $('meta[property="og:url"]').attr('content',canonical);
-  $('meta[property="og:locale"]').attr('content',$('html').attr('lang')==='hi'?'hi_IN':'en_US');
+  $('meta[property="og:locale"]').attr('content','en_US');
   for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]']){
     const image=$(selector);image.attr('content',origin+new URL(image.attr('content')).pathname);
-  }
-  const alternate={ 'understanding.html':'hindi.html','hindi.html':'understanding.html','shiva-halahala.html':'shiva-halahala-hindi.html','shiva-halahala-hindi.html':'shiva-halahala.html','dhruva.html':'dhruva-hindi.html','dhruva-hindi.html':'dhruva.html' }[name];
-  if(alternate){
-    $('head').append($('<link>').attr({rel:'alternate',hreflang:$('html').attr('lang'),href:canonical}));
-    $('head').append($('<link>').attr({rel:'alternate',hreflang:$('html').attr('lang')==='hi'?'en':'hi',href:origin+'/'+alternate}));
   }
   const pathName = `/${name}`;
   const storyInfo = Object.values(storyCatalog).find(item => item.href === pathName);
@@ -129,6 +124,6 @@ for (const name of await readdir('src/assets/js')) {
   const result = await minifyJS(await readFile(`src/assets/js/${name}`, 'utf8'));
   await writeFile(`dist/assets/js/${name}`, result.code);
 }
-await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','search-hindi.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
+await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
 run(['node_modules/pagefind/lib/runner/bin.cjs', '--site', 'dist']);
 console.log(`Built ${pages.length} pages, responsive WebP images, minified assets and search index.`);

@@ -4,7 +4,6 @@ The owner-approved October 21 discovery/readability priorities are implemented; 
 
 ## Next formats
 
-- Hindi editions of key pages and readers, with fluent editorial review, language navigation and accurate Sanskrit handling; Gujarati can follow if wanted.
 - Reviewed story narration with permission for voices/music, transcripts, accessible player controls and listening-position persistence.
 - Family adaptations for the six stories beyond the two current companions, preserving distinctions from the complete narrative.
 

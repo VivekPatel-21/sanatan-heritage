@@ -1,14 +1,15 @@
 # Premium reading update — 24 October 2026
 
+Subsequent owner instruction: removed the entire Hindi section, its language navigation/search/preferences/narration, and Hindi review requirements. English reading, English speech, the video, library tools and sourced journals are retained. The current site has 30 routes; removal validation is recorded in VALIDATION.md.
+
 Delivered the owner-approved improvements while retaining the existing visual identity, typography, imagery policy and static Eleventy architecture:
 
-- Replaced repeated homepage destination copy with a beginner route, family reading and Hindi entry points. Added a three-step beginner journey and quick reading choices in the story collection.
-- Added Hindi introduction plus condensed Dhruva and Halahala adaptations, explicit English/Hindi links, remembered language choice and a separate functioning Hindi search. Source links and the distinction from direct scripture translation are visible.
-- Added optional chapter read-aloud controls with play/pause/stop, speed, English/Hindi voice preference, cancellation safety and visible transcripts. Browser speech is labeled synthetic; reviewed recorded narration is not claimed.
+- Replaced repeated homepage destination copy with a beginner route, family reading and reading-path entry points. Added a three-step beginner journey and quick reading choices in the story collection.
+- Added optional chapter read-aloud controls with play/pause/stop, speed, English voice preference, cancellation safety and visible transcripts. Browser speech is labeled synthetic; reviewed recorded narration is not claimed.
 - Added a contact/correction page that opens an email draft to shreembala@gmail.com, and a reading/privacy explanation. No inbox backend or unsolicited message sending is involved.
 - Added library backup download, validated atomic import/merge and explicit clear-history control. Existing saved/completed entries are preserved on import; unknown pages/chapters and malformed/oversized files are rejected.
 - Expanded Shivaratri, Kashi and Rameswaram context using rendered pages from supplied Skanda Purana parts 1, 10 and 8, with detailed references on Sources. No book scans are published.
-- Centralized launch origin/indexing configuration for canonical/social/language metadata, robots and sitemap. Current private audience and crawler restriction are preserved.
+- Centralized launch origin/indexing configuration for canonical/social metadata, robots and sitemap. Current private audience and crawler restriction are preserved.
 - Reframed the golden shrine using measured source keyframes and responsive transform geometry. Selected a clean 12-second loop to avoid the original's severely cropped closing seconds. Video payloads are about 5.35 MB desktop / 2.45 MB mobile; poster compression and preload improve initial loading. Reduced motion/data-saving choices, native no-JS controls, pause and offscreen handling remain.
 - Fixed outdated browser assertions for solid reader controls, current story count and current homepage links. Added library/speech regression tests, targeted browser QA and a repeatable local performance measurement script. Local preview supports video byte ranges.
 
@@ -52,7 +53,7 @@ Exact prompts: design-assets/journal-illustration-prompts.json. Provenance: ARTW
 
 ## Remaining proposals
 
-Reviewed Hindi editions, optional Gujarati, accessible reviewed audio narration, six further family adaptations, a location-aware tithi calendar, an interactive sacred-places map and an optional newsletter. Calendar/map/newsletter need separate scope and provider/editorial choices. Continue source review as stories are added.
+Optional audio narration, six further family adaptations, a location-aware tithi calendar, an interactive sacred-places map and an optional newsletter. Calendar/map/newsletter need separate scope and provider/editorial choices. Continue source review as stories are added.
 
 This task publishes Sites source and the owner-private site; it does not update the separate GitHub repository.
 

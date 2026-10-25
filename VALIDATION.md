@@ -1,12 +1,18 @@
 # Handoff validation — 2026-10-10 UTC
 
-## Current verification — 24 October 2026
+## Hindi section removal — 24 October 2026
+
+Owner requested removal of the entire Hindi section. Removed its four pages, language links/preference script, Hindi narration branch, language alternatives and translation-specific styling. The current build has 30 routes and 26 English search entries. Existing Sanskrit/Devanagari content and accurate book-edition names remain intact.
+
+Build, HTML/CSS lint, static checks (66 unique image placements), and all four interaction suites pass. Responsive visual review and 36 representative page/theme/viewport checks passed at 375/768/1440px. English read-aloud and live English search passed. The 44-sample video/reading/contact browser suite passed, including checks that all removed Hindi URLs return 404 and no language navigation remains. Removing an empty CSS block after lint produced exactly the same minified bundle as the verified build. No unrelated design changes were made.
+
+## Previous premium-release verification — 24 October 2026
 
 - Node 24.22.1; clean locked dependencies installed. Build succeeds: 34 routes, 29 indexed pages across English/Hindi. HTML/CSS lint passes. Static checks pass with 66 unique narrative image placements, local files/anchors, story citations, metadata, sitemap and search bundles.
 - All four interaction suites pass: original UI, reading persistence/migration, video behavior and new backup/speech tests. Import tests verify atomic rejection and preserving existing saved/completed states.
 - Targeted browser checks pass: 44 shrine-framing samples through the 12-second loop at 375/768/1440/2560px, no uncovered video edges, real library download/import, invalid-file recovery, Hindi search, contact controls and HTTP video range responses.
 - Slow cold-load local lab: 150ms latency, 200kB/s download, reduced motion, widths 375/768/1440. LCP 3012/2976/2996ms; CLS 0.0075/0.0118/0.0076. No MP4 requests in these reduced-motion cases. These are lab observations, not deployed field Core Web Vitals; INP is unmeasured.
-- Relevant supplied Skanda Purana pages for the three journal additions were rendered and visually read. Hindi adaptations and synthetic voices have not received independent fluent/human pronunciation review. Real-device Safari, native 200% browser zoom and assistive-technology certification are not claimed.
+- Relevant supplied Skanda Purana pages for the three journal additions were rendered and visually read. Real-device Safari, native 200% browser zoom and assistive-technology certification are not claimed.
 - Complete Chrome matrix passed: 34 routes × 3 widths (375/768/1440) × 2 themes = 204 scenarios, with no horizontal overflow, clipped captions, broken images or runtime JavaScript errors. Subsequent checks passed for keyboard menu/focus, persisted reader controls, anchor clearance, actual search results, print output, reduced motion, 720px reflow on every route (a 200%-zoom approximation), and no-JavaScript navigation/story availability. The old preview redirect was explicitly awaited during reflow testing.
 
 ## Historical packaging validation

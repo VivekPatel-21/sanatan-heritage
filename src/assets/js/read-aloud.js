@@ -1,8 +1,7 @@
 (() => {
   const chapters=[...document.querySelectorAll('.tale-chapter[id]')];
   if(!chapters.length)return;
-  const hi=document.documentElement.lang==='hi';
-  const words=hi?{title:'कहानी सुनें',note:'यह आपके ब्राउज़र की कृत्रिम आवाज़ है। उच्चारण और आवाज़ की उपलब्धता अलग हो सकती है। नीचे दिया गया लिखित पाठ पढ़ते रहें।',chapter:'अध्याय',play:'सुनें',pause:'रोकें',resume:'जारी रखें',stop:'बन्द करें',speed:'गति',ready:'सुनने के लिए अध्याय चुनें।',unavailable:'इस ब्राउज़र में वाचन उपलब्ध नहीं है। नीचे कहानी पढ़ें।'}:{title:'Listen to the story',note:'Optional synthetic browser speech. Voice quality and Sanskrit pronunciation vary; this is not a reviewed recording. The written chapters below are the transcript.',chapter:'Chapter',play:'Play',pause:'Pause',resume:'Resume',stop:'Stop',speed:'Speed',ready:'Choose a chapter, then press Play.',unavailable:'Read-aloud is unavailable in this browser. The complete written story remains below.'};
+  const words={title:'Listen to the story',note:'Optional synthetic browser speech. Voice quality and Sanskrit pronunciation vary; this is not a reviewed recording. The written chapters below are the transcript.',chapter:'Chapter',play:'Play',pause:'Pause',resume:'Resume',stop:'Stop',speed:'Speed',ready:'Choose a chapter, then press Play.',unavailable:'Read-aloud is unavailable in this browser. The complete written story remains below.'};
   const details=document.createElement('details');details.className='read-aloud';details.setAttribute('data-pagefind-ignore','');
   const summary=document.createElement('summary');summary.textContent=words.title;
   const note=document.createElement('p');note.textContent=words.note;
@@ -28,15 +27,15 @@
     if(!active)return;
     if(chunkIndex>=queue.length){
       chapterIndex++;
-      if(chapterIndex>=chapters.length){reset();status.textContent=hi?'कहानी का वाचन पूरा हुआ।':'You have reached the end of the story.';return;}
+      if(chapterIndex>=chapters.length){reset();status.textContent='You have reached the end of the story.';return;}
       select.value=String(chapterIndex);loadChapter();
     }
     const generation=token,utterance=new SpeechSynthesisUtterance(queue[chunkIndex]);
-    utterance.lang=hi?'hi-IN':'en-IN';utterance.rate=Number(speed.value);
+    utterance.lang='en-IN';utterance.rate=Number(speed.value);
     const voices=synth.getVoices();
-    utterance.voice=voices.find(v=>v.lang.toLowerCase()===utterance.lang.toLowerCase()&&v.localService)||voices.find(v=>v.lang.toLowerCase()===utterance.lang.toLowerCase())||voices.find(v=>v.lang.toLowerCase().startsWith(hi?'hi':'en'))||null;
+    utterance.voice=voices.find(v=>v.lang.toLowerCase()===utterance.lang.toLowerCase()&&v.localService)||voices.find(v=>v.lang.toLowerCase()===utterance.lang.toLowerCase())||voices.find(v=>v.lang.toLowerCase().startsWith('en'))||null;
     utterance.onend=()=>{if(generation!==token)return;chunkIndex++;speak();};
-    utterance.onerror=event=>{if(generation!==token||event.error==='canceled'||event.error==='interrupted')return;reset();status.textContent=hi?'वाचन उपलब्ध नहीं है। कृपया लिखित पाठ पढ़ें।':'Speech could not continue. Try Play again or read the written chapter below.';};
+    utterance.onerror=event=>{if(generation!==token||event.error==='canceled'||event.error==='interrupted')return;reset();status.textContent='Speech could not continue. Try Play again or read the written chapter below.';};
     // Retain a reference until the utterance finishes (required by some browsers).
     details.currentUtterance=utterance;synth.speak(utterance);
   }

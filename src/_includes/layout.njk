@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang or 'en' }}"><head>
+<html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
 {% if redirectTo %}<meta http-equiv="refresh" content="0;url={{ redirectTo }}">{% endif %}
@@ -21,14 +21,12 @@
 <meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
 <script src="/assets/js/reading-state.js" defer></script>
 <script src="/assets/js/site.js" defer></script>
-<script src="/assets/js/language.js" defer></script>
 {% if story %}<script src="/assets/js/reader.js" defer></script><script src="/assets/js/read-aloud.js" defer></script>{% endif %}
 {% for script in scripts %}<script src="{{ script }}" defer></script>{% endfor %}
 </head><body class="{{ bodyClass }}">
 <a class="skip" href="#main">Skip to content</a>
 {% if story %}<div class="reading-progress" role="progressbar" aria-label="Story reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>{% endif %}
 {% include "header.njk" %}
-{% if englishHref %}<nav class="language-edition" aria-label="भाषा"><span>हिन्दी रूपान्तरण</span><a href="{{ englishHref }}" lang="en" data-language="en">Read in English →</a></nav>{% elif page.url == '/understanding.html' %}<nav class="language-edition" aria-label="Reading language"><span>English edition</span><a href="/hindi.html" lang="hi" data-language="hi">हिन्दी में पढ़ें →</a></nav>{% elif page.url == '/shiva-halahala.html' %}<nav class="language-edition" aria-label="Reading language"><span>English edition</span><a href="/shiva-halahala-hindi.html" lang="hi" data-language="hi">हिन्दी रूपान्तरण →</a></nav>{% elif page.url == '/dhruva.html' %}<nav class="language-edition" aria-label="Reading language"><span>English edition</span><a href="/dhruva-hindi.html" lang="hi" data-language="hi">हिन्दी रूपान्तरण →</a></nav>{% endif %}
 {{ content | safe }}
 {% include "footer.njk" %}
 </body></html>

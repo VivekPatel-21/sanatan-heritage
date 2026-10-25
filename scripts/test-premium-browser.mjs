@@ -34,11 +34,11 @@ try{
   await page.locator('#library-import').setInputFiles('.qa/library-roundtrip.json');await page.waitForFunction(()=>SHReading.get('/hanuman-lanka.html').saved===true);
   await page.locator('#library-import').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from('{bad json')});await page.waitForFunction(()=>document.querySelector('#library-transfer-status').textContent.includes('not valid JSON'));
   assert.equal(await page.evaluate(()=>SHReading.get('/hanuman-lanka.html').saved),true);
-  await page.goto('http://127.0.0.1:8080/hindi.html');assert.equal(await page.locator('html').getAttribute('lang'),'hi');await page.screenshot({path:'.qa/hindi-mobile.png',fullPage:true});
-  await page.goto('http://127.0.0.1:8080/search-hindi.html?q=ध्रुव');await page.locator('.pagefind-ui__result-link[href$="dhruva-hindi.html"]').waitFor({timeout:15000});
+  for(const route of ['hindi.html','dhruva-hindi.html','shiva-halahala-hindi.html','search-hindi.html']){const response=await page.request.get('http://127.0.0.1:8080/'+route);assert.equal(response.status(),404);}
+  await page.goto('http://127.0.0.1:8080/');assert.equal(await page.locator('[data-language],.language-toggle,.language-edition,a[href*="hindi.html"]').count(),0);
   await page.goto('http://127.0.0.1:8080/contact.html');await page.locator('#contact-message').fill('A source correction to discuss.');assert.equal(await page.locator('#contact-draft').evaluate(form=>form.checkValidity()),true);assert.equal(await page.locator('a[href="mailto:shreembala@gmail.com"]').count(),1);await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'.qa/contact-mobile.png',fullPage:true});
   const response=await page.request.get('http://127.0.0.1:8080/assets/video/ambaji-centered-mobile.mp4',{headers:{Range:'bytes=0-1023'}});assert.equal(response.status(),206);assert.equal((await response.body()).length,1024);
   assert.deepEqual(errors,[]);
-  await writeFile('.qa/premium-browser-report.json',JSON.stringify({framing,libraryRoundTrip:true,invalidImportPreservesState:true,hindiSearch:true,contact:true,videoRanges:true,errors},null,2));
-  console.log(`Passed: ${framing.length} shrine-framing samples across four viewport sizes; library download/import; invalid import; Hindi search; contact; video range delivery.`);
+  await writeFile('.qa/premium-browser-report.json',JSON.stringify({framing,libraryRoundTrip:true,invalidImportPreservesState:true,removedLanguageRoutes:true,contact:true,videoRanges:true,errors},null,2));
+  console.log(`Passed: ${framing.length} shrine-framing samples across four viewport sizes; library download/import; invalid import; removed-language routes; contact; video range delivery.`);
 }finally{await browser.close();}

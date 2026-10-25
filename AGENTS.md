@@ -22,7 +22,7 @@ Preserve approved designs unless the user explicitly approves a change. A reques
 
 ## Engineering workflow
 
-The owner authorized implementation of the reviewed premium/readability improvements on 24 October 2026. Keep verified website changes committed and pushed to GitHub `main` as part of each task. Preserve history; never force-push. Use shreembala@gmail.com as the public corrections contact. Keep current hosting audience and indexing until a launch domain/access decision is provided. New religious claims still require the owner's books or exact book links.
+The owner authorized implementation of the reviewed premium/readability improvements on 24 October 2026. They subsequently requested removal of the entire Hindi section, including translated pages, Hindi search, narration and review requirements. Do not reintroduce it unless explicitly requested. Keep verified website changes committed and pushed to GitHub `main` as part of each task. Preserve history; never force-push. Use shreembala@gmail.com as the public corrections contact. Keep current hosting audience and indexing until a launch domain/access decision is provided. New religious claims still require the owner's books or exact book links.
 
 This is a static Eleventy/Nunjucks site, not a React application. Preserve the architecture unless migration is approved. Edit src/, includes, data and scripts; dist/ is generated. Keep package-lock.json. Do not install every optional reference skill or add an animation framework by default.
 

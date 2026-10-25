@@ -35,5 +35,5 @@ buttons[2].click();assert.ok(cancelled>0);
 const count=spoken.length;spoken[0].onend();assert.equal(spoken.length,count,'A cancelled callback cannot restart narration');
 const select=dom.window.document.querySelector('#listen-chapter');select.value='2';select.dispatchEvent(new dom.window.Event('change'));buttons[0].click();assert.match(spoken.at(-1).text,/Halahala/);
 dom.window.close();
-const unsupported=new JSDOM(await readFile('dist/dhruva-hindi.html','utf8'),{runScripts:'outside-only'});unsupported.window.eval(speechScript);assert.ok(unsupported.window.document.querySelector('.read-aloud p[role="status"]').textContent.includes('उपलब्ध नहीं'));assert.ok(!unsupported.window.document.querySelector('.listen-controls'));unsupported.window.close();
+const unsupported=new JSDOM(await readFile('dist/dhruva.html','utf8'),{runScripts:'outside-only'});unsupported.window.eval(speechScript);assert.ok(unsupported.window.document.querySelector('.read-aloud p[role="status"]').textContent.includes('unavailable'));assert.ok(!unsupported.window.document.querySelector('.listen-controls'));unsupported.window.close();
 console.log('Passed: library backup round-trip, non-destructive merge, atomic invalid imports, clear history, speech chapter selection/pause/stop, stale callback protection and unsupported-speech fallback.');
