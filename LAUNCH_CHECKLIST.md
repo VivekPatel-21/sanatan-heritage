@@ -2,13 +2,13 @@
 
 The owner authorized the premium reading improvements and ongoing GitHub main updates on 24 October 2026. The public corrections email is shreembala@gmail.com.
 
-`src/data/site.json` is the central production origin and indexing configuration. The build applies it consistently to canonical URLs, Open Graph/Twitter images and URLs, robots.txt and sitemap.xml. The current origin and crawler restriction are preserved. The hosting audience is configured at the host; robots.txt is not access control.
+`src/data/site.json` is the central production origin and indexing configuration. Eleventy renders canonical/social URLs and JSON-LD directly from it. The public canonical origin is https://www.shreembala.com, verified as the apex domain's redirect target. Public indexing is enabled. Vercel automatically deploys GitHub main as confirmed by the owner. The separate ChatGPT Site remains private. See docs/PRODUCTION.md for deployment and header configuration, CI verification and unresolved asset permissions.
 
-When the owner supplies a production domain and explicitly requests a public launch:
+For future production-domain changes:
 
 1. Set `origin` to the HTTPS origin without a trailing slash. The site expects hosting at the domain root.
 2. Set `indexable` to true only for the intended public launch.
-3. Run build, lint, check, tests and browser checks. Deploy the generated `dist/` through the existing host workflow; uploading source to GitHub alone does not deploy it.
+3. Run build, lint, check, tests and browser checks. The existing Vercel Git integration deploys main using vercel.json; CI verifies the expected production revision after its checks pass.
 4. Confirm HTTPS, 404 handling, byte-range video delivery, canonical URLs, the sitemap, social previews and actual audience settings on the host.
 5. Measure cold-load performance on the deployed domain and real devices. Local lab results do not certify field Core Web Vitals or actual Safari/iOS/Android behavior.
 

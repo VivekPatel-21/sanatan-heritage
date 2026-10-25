@@ -1,5 +1,19 @@
 ---
-{"layout":"layout.njk","permalink":"reading-library.html","title":"Your reading library · Sanatan Heritage","description":"Return to saved stories, resume a chapter and take your reading library to another browser.","bodyClass":"references-page library-page","canonical":"https://sanatan-heritage.vivopatel1304.chatgpt.site/reading-library.html","ogType":"website","ogImage":"og.png","ogImageAlt":"Sanatan Heritage — Stories, Wisdom, Traditions","sourceLink":"sources.html#stories","scripts":["/assets/js/reading-library.js","/assets/js/library-backup.js"]}
+{
+  "layout": "layout.njk",
+  "permalink": "reading-library.html",
+  "title": "Your reading library · Sanatan Heritage",
+  "description": "Return to saved stories, resume a chapter and take your reading library to another browser.",
+  "bodyClass": "references-page library-page",
+  "ogType": "website",
+  "ogImage": "og.png",
+  "ogImageAlt": "Sanatan Heritage — Stories, Wisdom, Traditions",
+  "sourceLink": "sources.html#stories",
+  "scripts": [
+    "/assets/js/reading-library.js",
+    "/assets/js/library-backup.js"
+  ]
+}
 ---
 <main id="main"><section class="reference-intro"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/index.html">Home</a><span>/</span><span>Your reading library</span></nav><p class="eyebrow">RETURN TO A STORY</p><h1>Your reading library</h1><p>Saved stories, chapter bookmarks and the stories you have marked as read. Your library stays in this browser; it is not synced between devices.</p></section>
 <section class="section reading-library" aria-label="Personal reading library"><div class="library-controls" hidden><label for="library-view">Show <select id="library-view"><option value="all">All your stories</option><option value="progress">Continue reading</option><option value="saved">Saved &amp; bookmarked</option><option value="completed">Marked as read</option></select></label><p id="library-count" role="status" aria-live="polite"></p></div><p id="library-status" role="status" aria-live="polite"></p><div id="library-list"></div><div id="library-empty" hidden><h2>A place for your next chapter.</h2><p>Open a story and begin reading, save a story, or bookmark a chapter. It will appear here.</p><a href="/stories.html">Find a story →</a></div>

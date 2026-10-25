@@ -1,12 +1,16 @@
 # Known issues and verification limits
 
+## Public production — 25 October 2026
+
+Production is https://www.shreembala.com on Vercel, connected to GitHub main; the separate ChatGPT Site remains private. Canonical origin/indexing, direct-render metadata, JPEG previews, security headers, structured data and CI browser/axe checks are now configured in source. Some contributed assets still need owner permission checks; docs/ASSET_RIGHTS_REVIEW.csv records the outstanding evidence without claiming clearance. Large legacy CSS extraction and historical-document reorganization remain separate maintenance work.
+
 ## Current status — 24 October 2026
 
 The older handoff list below is historical and is superseded where noted here. There are now 30 routes and nine complete English story readers. The supplied Skanda volumes are available locally and three journal additions were checked against rendered source pages. Other volumes were not exhaustively reviewed. Private PDFs are not website assets.
 
 Build, HTML/CSS lint, static checks and interaction tests pass. Targeted Chrome tests cover 44 shrine-framing samples at 375/768/1440/2560px, library backup/import (including invalid-file recovery), contact and video byte ranges. Full browser regression results are recorded in VALIDATION.md when complete.
 
-Remaining limits: physical phone/Safari and screen-reader testing, reviewed recorded narration, comprehensive source/iconography/rights review and production field performance. Browser speech is explicitly synthetic. The paid recorded-speech service was unavailable on the connected plan. The current Site remains owner-private; a production domain and public indexing decision are still needed for public launch. Root-relative routes require domain-root hosting. The 12-second film edit intentionally excludes the source's tightly cropped final seconds.
+Remaining limits: physical phone/Safari and screen-reader testing, reviewed recorded narration, comprehensive source/iconography/rights review and production field performance. Browser speech is explicitly synthetic. The paid recorded-speech service was unavailable on the connected plan. Root-relative routes require domain-root hosting. The 12-second film edit intentionally excludes the source's tightly cropped final seconds.
 
 ## Historical handoff notes
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta id="browser-theme" name="theme-color" content="{{ site.themeColors.light }}" data-light="{{ site.themeColors.light }}" data-dark="{{ site.themeColors.dark }}">
+<link rel="manifest" href="/site.webmanifest">
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
 {% if redirectTo %}<meta http-equiv="refresh" content="0;url={{ redirectTo }}">{% endif %}
 {% if noindex %}<meta name="robots" content="noindex">{% endif %}
@@ -15,10 +17,12 @@
 <meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="{{ ogType }}"><meta property="og:url" content="{{ canonical }}">
 <meta property="og:site_name" content="Sanatan Heritage"><meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
+<meta property="og:image" content="{{ socialImage }}">
+<meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{{ ogImageAlt }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="https://sanatan-heritage.vivopatel1304.chatgpt.site/assets/images/{{ ogImage }}">
+<meta name="twitter:description" content="{{ description }}"><meta name="twitter:image" content="{{ socialImage }}"><meta name="twitter:image:alt" content="{{ ogImageAlt }}">
+<script type="application/ld+json">{{ structuredData | jsonScript | safe }}</script>
 <script src="/assets/js/reading-state.js" defer></script>
 <script src="/assets/js/site.js" defer></script>
 {% if story %}<script src="/assets/js/reader.js" defer></script><script src="/assets/js/read-aloud.js" defer></script>{% endif %}

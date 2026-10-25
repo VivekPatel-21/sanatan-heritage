@@ -1,5 +1,6 @@
 {
-  "origin": "https://sanatan-heritage.vivopatel1304.chatgpt.site",
-  "indexable": false,
-  "contactEmail": "shreembala@gmail.com"
+  "origin": "https://www.shreembala.com",
+  "indexable": true,
+  "contactEmail": "shreembala@gmail.com",
+  "themeColors": {"light":"#f2e7d6","dark":"#1b1e29"}
 }

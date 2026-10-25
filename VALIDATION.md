@@ -1,5 +1,13 @@
 # Handoff validation — 2026-10-10 UTC
 
+## Production configuration and accessibility — 25 October 2026
+
+The canonical origin is now https://www.shreembala.com (verified apex redirect, Vercel host; owner confirms main auto-deploy). Eleventy renders origin-dependent metadata directly from site.json. Tests verify all 30 canonical/social/schema pages, 1200×630 JPEG previews below 300 KB (maximum 135,448 bytes), manifest/icons, theme metadata, robots and security-header output. No inline event handlers remain.
+
+The new CI-compatible Playwright/axe suite covers 180 page/theme/width combinations plus six search/keyboard tests and six theme-color persistence tests. All page and search tests passed; the six theme tests passed after correcting test setup to avoid resetting storage on reload. No WCAG A/AA axe violations were reported in the tested states. The suite checks actual CSP violation events, image/overflow/caption errors and runtime errors. This is automated coverage, not a human screen-reader or real-device certification.
+
+An actual label-in-name mismatch on the theme toggle was corrected without changing its visible text. Search result counts now update a persistent polite live region, verified for both matching and empty results. Build, lint, static and unit checks pass. Compatible updates resolved the three dependency advisories; the latest npm audit reports zero known vulnerabilities. Current browser traces and reports remain ignored under .qa/.
+
 ## Hindi section removal — 24 October 2026
 
 Owner requested removal of the entire Hindi section. Removed its four pages, language links/preference script, Hindi narration branch, language alternatives and translation-specific styling. The current build has 30 routes and 26 English search entries. Existing Sanskrit/Devanagari content and accurate book-edition names remain intact.

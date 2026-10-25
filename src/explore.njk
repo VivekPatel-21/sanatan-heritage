@@ -1,5 +1,18 @@
 ---
-{"layout":"layout.njk","permalink":"explore.html","title":"Connected heritage · Sanatan Heritage","description":"Follow connections between illustrated stories, divine forms, scriptures and Sanskrit vocabulary.","bodyClass":"references-page explore-page","canonical":"https://sanatan-heritage.vivopatel1304.chatgpt.site/explore.html","ogType":"website","ogImage":"og.png","ogImageAlt":"Sanatan Heritage — Stories, Wisdom, Traditions","sourceLink":"sources.html#stories","scripts":["/assets/js/explorer.js"]}
+{
+  "layout": "layout.njk",
+  "permalink": "explore.html",
+  "title": "Connected heritage · Sanatan Heritage",
+  "description": "Follow connections between illustrated stories, divine forms, scriptures and Sanskrit vocabulary.",
+  "bodyClass": "references-page explore-page",
+  "ogType": "website",
+  "ogImage": "og.png",
+  "ogImageAlt": "Sanatan Heritage — Stories, Wisdom, Traditions",
+  "sourceLink": "sources.html#stories",
+  "scripts": [
+    "/assets/js/explorer.js"
+  ]
+}
 ---
 <main id="main" data-pagefind-body><section class="reference-intro"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/index.html">Home</a><span>/</span><span>Connected heritage</span></nav><p class="eyebrow">FOLLOW A THREAD</p><h1>One story.<br><em>A wider world.</em></h1><p>Choose a question, then follow the connections. Each doorway leads to a page you can read now.</p></section>
 <section class="section explorer"><div class="explorer-controls" hidden><label for="journey-choice">What draws you in?</label><select id="journey-choice"><option value="all">All journeys</option>{% for journey in journeys %}<option value="{{ journey.id }}">{{ journey.title }}</option>{% endfor %}</select><p id="journey-status" role="status" aria-live="polite"></p></div>

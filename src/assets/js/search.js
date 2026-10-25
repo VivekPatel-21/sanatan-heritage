@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = new URLSearchParams(location.search).get('q');
     if (query) ui.triggerSearch(query.slice(0, 200));
     const root = document.querySelector('#site-search');
+    const status=document.querySelector('#search-status');
+    const announce=()=>{
+      if(status)status.textContent=root.querySelector('.pagefind-ui__message')?.textContent.trim().replace(/\s+/g,' ')||'';
+    };
+    const observer=new MutationObserver(announce);
+    observer.observe(root,{childList:true,subtree:true,characterData:true});announce();
     let timer;
     const sync = () => {
       clearTimeout(timer);

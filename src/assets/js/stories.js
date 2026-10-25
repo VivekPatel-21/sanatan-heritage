@@ -1,4 +1,5 @@
 (() => {
+ document.querySelector('form.collection-controls')?.addEventListener('submit',event=>event.preventDefault());
  const search=document.querySelector('#story-search');
  const fields=['deity','scripture','theme'].map(name=>({name,node:document.querySelector('#'+name+'-filter')}));
  const cards=[...document.querySelectorAll('.collection-card')];

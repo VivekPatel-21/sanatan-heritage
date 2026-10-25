@@ -6,9 +6,8 @@ import { load } from 'cheerio';
 import { minify as minifyHTML } from 'html-minifier-terser';
 import CleanCSS from 'clean-css';
 import { minify as minifyJS } from 'terser';
-const site = JSON.parse(await readFile('src/data/site.json','utf8'));
-const origin = new URL(site.origin).origin;
-if(!origin.startsWith('https://') || site.origin !== origin)throw new Error('site.origin must be an HTTPS origin with no path or trailing slash.');
+import {site} from './site-config.mjs';
+const origin=site.origin;
 const run = args => { const result = spawnSync(process.execPath, args, { stdio: 'inherit' }); if (result.status !== 0) process.exit(result.status ?? 1); };
 await rm('dist', { recursive: true, force: true });
 run(['node_modules/@11ty/eleventy/cmd.cjs']);
@@ -42,13 +41,13 @@ const readingCatalog = { stories:[], pages:{} };
 const pages = (await readdir('dist')).filter(name => name.endsWith('.html')).sort();
 for (const name of pages) {
   const $ = load(await readFile(`dist/${name}`, 'utf8'));
-  const canonical=origin+(name==='index.html'?'/':'/'+name);
-  $('link[rel="canonical"]').attr('href',canonical);
-  $('meta[property="og:url"]').attr('content',canonical);
-  $('meta[property="og:locale"]').attr('content','en_US');
-  for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]']){
-    const image=$(selector);image.attr('content',origin+new URL(image.attr('content')).pathname);
-  }
+  const source=await readFile(`src/${name.replace(/\.html$/,'.njk')}`,'utf8');
+  const metadata=JSON.parse(source.match(/^---\s*\n([\s\S]*?)\n---/)[1]);
+  const hero=metadata.story?$('.tale-hero img').first().attr('src'):null;
+  const original=hero?`src${hero}`:`src/assets/images/${metadata.ogImage}`;
+  const socialFile=`dist/assets/social/${name.replace(/\.html$/,'.jpg')}`;
+  await mkdir('dist/assets/social',{recursive:true});
+  await sharp(original).rotate().resize(1200,630,{fit:'contain',background:site.themeColors.light}).flatten({background:site.themeColors.light}).jpeg({quality:78,mozjpeg:true}).toFile(socialFile);
   const pathName = `/${name}`;
   const storyInfo = Object.values(storyCatalog).find(item => item.href === pathName);
   const pageTitle = storyInfo?.title || $('title').text().split('·')[0].trim();
@@ -111,6 +110,12 @@ for (const name of pages) {
 }
 await writeFile('dist/data/reading-catalog.json',JSON.stringify(readingCatalog));
 await writeFile('dist/robots.txt',`User-agent: *\n${site.indexable?'Allow: /':'Disallow: /'}\n\nSitemap: ${origin}/sitemap.xml\n`);
+for(const size of [192,512])await sharp('src/assets/brand/sanatan-heritage-logo.webp').resize(size,size,{fit:'contain'}).png().toFile(`dist/assets/brand/icon-${size}.png`);
+await writeFile('dist/site.webmanifest',JSON.stringify({id:'/',name:'Sanatan Heritage',short_name:'Sanatan Heritage',description:'Stories, wisdom and traditions of Sanatan Dharma.',lang:'en',start_url:'/',scope:'/',display:'minimal-ui',background_color:site.themeColors.light,theme_color:site.themeColors.light,icons:[192,512].map(size=>({src:`/assets/brand/icon-${size}.png`,sizes:`${size}x${size}`,type:'image/png',purpose:'any'}))}));
+const security=JSON.parse(await readFile('vercel.json','utf8')).headers[0].headers;
+await writeFile('dist/_headers','/*\n'+security.map(({key,value})=>`  ${key}: ${value}`).join('\n')+'\n');
+const revision=process.env.VERCEL_GIT_COMMIT_SHA||process.env.GITHUB_SHA||spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).stdout.trim();
+await writeFile('dist/release.json',JSON.stringify({revision,origin}));
 const css = new CleanCSS({ level: 1 }).minify((await readFile('src/assets/css/style.css','utf8')) + '\n' + (await readFile('src/assets/css/refinements.css','utf8')) + '\n' + (await readFile('src/assets/css/art-direction.css','utf8')) + '\n' + (await readFile('src/assets/css/features.css','utf8')));
 if (css.errors.length) throw new Error(css.errors.join('\n'));
 await writeFile('dist/assets/css/style.css', css.styles);

@@ -1,5 +1,7 @@
 # Premium reading update — 24 October 2026
 
+25 October production fixes: canonical origin is centralized at www.shreembala.com and rendered directly by Eleventy; every page has a lightweight JPEG social preview, JSON-LD and theme/manifest metadata. vercel.json defines the existing Git-connected deployment and tested security headers. Playwright/axe now run in CI across both themes and three widths; a follow-up job verifies Vercel's exact production revision and headers. Search announcements and the theme button's accessible name were corrected. Public asset permissions remain unresolved for some contributions and are tracked in docs/ASSET_RIGHTS_REVIEW.csv. See docs/PRODUCTION.md and VALIDATION.md. No Hindi features were restored.
+
 Subsequent owner instruction: removed the entire Hindi section, its language navigation/search/preferences/narration, and Hindi review requirements. English reading, English speech, the video, library tools and sourced journals are retained. The current site has 30 routes; removal validation is recorded in VALIDATION.md.
 
 Delivered the owner-approved improvements while retaining the existing visual identity, typography, imagery policy and static Eleventy architecture:

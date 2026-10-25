@@ -51,4 +51,6 @@ Recommend improvements grounded in this site's actual readers and sacred storyte
 
 ## Privacy and archive contents
 
+On 25 October 2026 the owner confirmed public production at shreembala.com, which redirects to https://www.shreembala.com, hosted on Vercel and connected to GitHub main for automatic deployment. Use that canonical origin and public indexing configuration. Keep the separate ChatGPT Site owner-private. Some contributed assets still need public permission checks; do not claim rights are cleared. Record evidence in docs/ASSET_RIGHTS_REVIEW.csv. Do not reintroduce the Hindi section.
+
 The existing live site is owner-private. Do not make it public without explicit approval. reference-assets/ and conversation/ are handoff material, never build inputs or publish targets. `.openai/hosting.json` is historical hosting metadata, not credentials; reuse only with an intentional existing-Site workflow. No account credentials, node_modules or .git were packaged. A new Codex session may require its own GitHub/hosting connection. Do not infer authorization from an old connection identifier.

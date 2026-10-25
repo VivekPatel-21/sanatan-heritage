@@ -3,7 +3,9 @@
   let themeTimer;
   const updateThemeLabel = () => {
     const dark = document.documentElement.dataset.theme === 'dark';
-    if (themeButton) { themeButton.textContent = dark ? 'Light mode' : 'Dark mode'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); }
+    const browserTheme=document.querySelector('#browser-theme');
+    if(browserTheme)browserTheme.content=browserTheme.dataset[dark?'dark':'light'];
+    if (themeButton) { themeButton.textContent = dark ? 'Light mode' : 'Dark mode'; themeButton.setAttribute('aria-label', `${themeButton.textContent} — Switch to ${dark ? 'light' : 'dark'} theme`); }
   };
   themeButton?.addEventListener('click', () => {
     if (typeof matchMedia === 'function' && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
