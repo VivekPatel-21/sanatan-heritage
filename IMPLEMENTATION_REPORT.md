@@ -100,3 +100,9 @@ Browser QA limitation: the managed review browser has WebGL explicitly disabled.
 Added regression coverage for chapter boundaries, keyboard focus, pause, runtime reduced-motion changes and the non-WebGL fallback. Existing UI, reading-state and static checks remain required. No comprehensive accessibility or true 200% browser zoom certification is claimed.
 
 Final verification: full production rebuild, HTML/CSS lint, link/metadata/image checks and all three interaction suites passed after the final changes. Source index.njk remains byte-identical to the approved homepage. Preview stays noindex and excluded from search/sitemap. Eight browser width/theme cases rendered the software 3D model without overflow or broken images; GPU rendering remains unverified because WebGL is disabled in the review browser.
+
+## Creation cosmology article — 25 October 2026
+
+Added creation-universe.html, an original introduction to Sarga and Visarga using the owner-supplied Bhagavata, Brahmanda and Linga editions. Detailed references and differences among accounts are centralized on Sources. Two unique conceptual illustrations have explicit AI captions and provenance records. Linked from Stories, Scriptures and Explore; the full narrative catalogue remains nine stories. The informational page receives Article structured data.
+
+Build, HTML/CSS lint, static checks and all five interaction/metadata suites passed: 31 routes, 27 indexed pages and 68 unique visible image placements. Targeted Chrome review passed six width/theme combinations (375/768/1440, light/dark), anchor clearance, search discovery and no-JavaScript content. Mobile light and desktop dark full-page renders were visually inspected. Private books and QA images remain excluded from Git and publication.

@@ -701,5 +701,27 @@
     "origin": "Built-in OpenAI image generation; design-assets/museum-preview-prompts.json",
     "permission": "Owner-authorized museum homepage design preview",
     "review": "Assistant visual review of full subject, human/deity limb counts and attributes; no historic object identity or specialist certification claimed"
+  },
+  {
+    "asset": "creation-cosmic-egg.webp",
+    "visiblePlacement": "creation-universe.njk",
+    "alt": "An imagined golden cosmic egg suspended above still indigo waters",
+    "caption": "THE COSMIC EGG · AI-GENERATED CONCEPTUAL ILLUSTRATION, NOT A LITERAL RECONSTRUCTION",
+    "origin": "Built-in Imagegen; see design-assets/creation-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for the owner-authorized page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and subject; no specialist review claimed",
+    "identity": "An imagined golden cosmic egg suspended above still indigo waters"
+  },
+  {
+    "asset": "creation-living-world.webp",
+    "visiblePlacement": "creation-universe.njk",
+    "alt": "An imagined dawn landscape with a river, trees, a lotus, two deer and birds",
+    "caption": "LIFE TAKING FORM · AI-GENERATED CONCEPTUAL LANDSCAPE, NOT A SCENE QUOTED FROM THE TEXT",
+    "origin": "Built-in Imagegen; see design-assets/creation-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for the owner-authorized page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and subject; no specialist review claimed",
+    "identity": "An imagined dawn landscape with a river, trees, a lotus, two deer and birds"
   }
 ]

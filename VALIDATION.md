@@ -67,3 +67,7 @@ Extracted project can be rebuilt with npm ci && npm run build. Build output need
 - Eight additional homepage/reader scenarios checked Literata headings and story text, Source Sans 3 body text, and native font loading including Latin diacritics and Devanagari. No failed font requests. Desktop/mobile homepage previews and the story interior were visually inspected.
 - Font binaries are valid WOFF2, hosted locally with upstream OFL licenses. FONT_SOURCES.json records source URLs, file sizes and SHA-256 hashes. CSS/preloads use the new families; old font assets are not requested by current styles.
 - Native browser zoom, real-device rendering and screen-reader audit remain unverified. Temporary font-loading script and screenshots are under ignored `.qa/`. No commit, push or deployment was performed for this revision.
+
+## Creation cosmology article — 25 October 2026
+
+Production build, HTML/CSS lint, static checks and five interaction/metadata suites passed: 31 pages, 27 search-indexed pages, 68 unique visible image placements. All 198 Playwright/axe checks passed across 375/768/1440 widths in light and dark themes. Targeted article review also passed search discovery, contents-anchor clearance and six-chapter content without JavaScript. Two full-page theme/width renders were visually inspected. Real-device, screen-reader and native browser zoom certification remain outside this automated review.

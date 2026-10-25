@@ -88,7 +88,21 @@
 .quick-reading { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; padding-block: 1rem; border-block: 1px solid var(--border-subtle); margin-block: 2rem; }
 .quick-reading a { display: inline-flex; align-items: center; min-height: 44px; }
 .journal-reading-route { border-top: 1px solid var(--border-subtle); padding-top: 2rem; margin-top: 3rem; }
+.cosmology-definitions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; margin-block: 2rem; font-family: var(--font-sans); }
+.cosmology-definitions>div { border-top: 2px solid var(--accent-gold); padding: 1.25rem 0; }
+.cosmology-definitions dt { font-size: 1.4rem; font-family: var(--font-serif); margin-bottom: .75rem; }
+.cosmology-definitions dt span { display: block; color: var(--accent-terracotta); font-size: 1rem; }
+.cosmology-definitions dd { margin: 0; line-height: 1.8; }
+.cosmology-source { font: .875rem/1.7 var(--font-sans); color: var(--accent-terracotta); text-underline-offset: .25em; }
+.cosmology-comparison { margin-block: 2rem; font: .9375rem/1.8 var(--font-sans); }
+.cosmology-comparison table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cosmology-comparison caption { text-align: left; font-weight: 600; margin-bottom: 1rem; }
+.cosmology-comparison :is(th,td) { text-align: left; vertical-align: top; border-bottom: 1px solid var(--border-subtle); padding: 1rem .75rem 1rem 0; overflow-wrap: anywhere; }
+.cosmology-comparison th:first-child { width: 32%; }
+.cosmology-invitation { border-block: 1px solid var(--border-subtle); background: var(--bg-panel); }
+.cosmology-invitation h2 { margin-top: .5rem; }
 @media (width <= 760px) {
+  .cosmology-definitions { grid-template-columns: minmax(0,1fr); gap: 0; }
   .contact-layout { grid-template-columns: minmax(0,1fr); gap: 2rem; }
   .listen-controls select:first-of-type { flex: 1 1 100%; }
 }

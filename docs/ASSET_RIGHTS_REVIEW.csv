@@ -69,3 +69,5 @@ src/assets/brand/sanatan-heritage-logo.webp,shared branding,Owner-contributed,Ow
 src/assets/video/ambaji-centered-desktop.mp4,homepage film,Owner-contributed,Owner / supplied source,No public permission evidence supplied in this session,needs-owner-confirmation,
 src/assets/video/ambaji-centered-mobile.mp4,homepage film,Owner-contributed,Owner / supplied source,No public permission evidence supplied in this session,needs-owner-confirmation,
 src/assets/images/ambaji-enhanced-poster.webp,homepage film,Owner-contributed,Owner / supplied source,No public permission evidence supplied in this session,needs-owner-confirmation,
+creation-cosmic-egg.webp,creation-universe.njk,Built-in Imagegen; design-assets/creation-image-prompts.json,AI-generated conceptual interpretation,Generated for owner-authorized page,generation-provenance-recorded,No supplied photograph or book scan reproduced
+creation-living-world.webp,creation-universe.njk,Built-in Imagegen; design-assets/creation-image-prompts.json,AI-generated conceptual interpretation,Generated for owner-authorized page,generation-provenance-recorded,No supplied photograph or book scan reproduced
