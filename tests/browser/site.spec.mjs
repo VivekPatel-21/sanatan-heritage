@@ -81,3 +81,18 @@ test('festival directory supports search, kind filters, URL restoration and empt
   await page.reload();await expect(query).toHaveValue('Ratha Yatra');await expect(kind).toHaveValue('temple');await expect(page.locator('#calendar-ratha-yatra')).toBeVisible();
   await page.locator('#calendar-ratha-yatra a[href^="/sources.html#"]').click();await expect(page).toHaveURL(/sources.html#festival-ratha-yatra$/);
 });
+
+test('one festival entry holds the expanded information and legacy links open it',async({page})=>{
+  await page.goto('/festivals.html');
+  for(const name of ['Maha Shivaratri','Navaratri','Hanuman Jayanti'])await expect(page.getByRole('heading',{name,exact:true})).toHaveCount(1);
+  await expect(page.locator('[data-festival-entry]')).toHaveCount(31);
+  const entry=page.locator('#calendar-deepavali');const disclosure=entry.locator('.festival-details');
+  await disclosure.locator('summary').focus();await page.keyboard.press('Enter');await expect(disclosure).toHaveAttribute('open','');
+  expect(await disclosure.locator('p').count()).toBeGreaterThanOrEqual(2);
+  const audit=await new AxeBuilder({page}).include('#calendar-deepavali').withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();expect(audit.violations).toEqual([]);
+  await page.keyboard.press('Space');await expect(disclosure).not.toHaveAttribute('open','');
+  await page.goto('/festivals.html?festival=Deepavali#shivaratri-telling');
+  await expect(page.locator('#calendar-shivaratri')).toBeVisible();await expect(page.locator('#calendar-shivaratri details')).toHaveAttribute('open','');
+  await expect(page.locator('#shivaratri-telling')).toBeVisible();await expect(page.locator('#festival-query')).toHaveValue('');
+  await page.locator('.journal-index a[href="#navaratri"]').click();await expect(page.locator('#calendar-navaratri details')).toHaveAttribute('open','');
+});

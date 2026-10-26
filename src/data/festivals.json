@@ -4,20 +4,22 @@
     "title": "Maha Shivaratri",
     "kind": "festival",
     "label": "Festival",
-    "summary": "A night of devotion to Shiva, with worship and vigils in many communities. The detailed feature below distinguishes several sacred associations and a telling from the Skanda Purana.",
+    "summary": "A night of devotion to Shiva, marked by worship and vigils in many communities. Its sacred associations include protection, transformation and divine grace.",
     "keywords": "Shiva Mahashivratri Shivratri",
     "source": "/sources.html#festivals",
-    "feature": "#shivaratri"
+    "legacyAnchor": "shivaratri",
+    "detailTemplate": "festivals/shivaratri.njk"
   },
   {
     "id": "navaratri",
     "title": "Navaratri",
     "kind": "festival",
     "label": "Festival",
-    "summary": "Nine nights of devotion to the Goddess, with distinct regional expressions including garba, Durga Puja and golu. The feature below introduces this diversity.",
+    "summary": "Nine nights of devotion to the Goddess, with distinct regional expressions including garba, Durga Puja and golu.",
     "keywords": "Navratri Durga Devi Garba Golu",
     "source": "/sources.html#festivals",
-    "feature": "#navaratri"
+    "legacyAnchor": "navaratri",
+    "detailTemplate": "festivals/navaratri.njk"
   },
   {
     "id": "hanuman-jayanti",
@@ -27,7 +29,8 @@
     "summary": "A celebration of Hanuman’s birth and devotion. Regional calendars and temple traditions give the observance different dates and forms.",
     "keywords": "Hanuman birth Anjaneya",
     "source": "/sources.html#festivals",
-    "feature": "#hanuman-jayanti"
+    "legacyAnchor": "hanuman-jayanti",
+    "detailTemplate": "festivals/hanuman-jayanti.njk"
   },
   {
     "id": "deepavali",
@@ -36,10 +39,20 @@
     "label": "Festival of lights",
     "summary": "In the Karttika account, the festival of lights includes evening worship of Lakshmi, offerings and the lighting of lamps. The chapter places this celebration within a multi-day festival sequence.",
     "source": "/sources.html#festival-deepavali",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.9.72–93, printed pp. 99–100; supplied PDF pp. 105–106.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.9.72–97, printed pp. 99–100; supplied PDF pp. 105–106.",
     "timing": "",
     "keywords": "Dipavali Diwali Deepavali Lakshmi lamps lights",
-    "note": "This is one textual account within the wider diversity of Deepavali traditions; it does not establish one exclusive origin for every regional celebration."
+    "note": "This is one textual account within the wider diversity of Deepavali traditions; it does not establish one exclusive origin for every regional celebration.",
+    "details": [
+      {
+        "heading": "Lakshmi and the night of lamps",
+        "text": "The Karttika account describes a decorated place of worship for Lakshmi, with flowers, fresh shoots and food offerings. A hymn in the same passage associates her radiance with the Sun, Moon, fire and the flame of a lamp. Light is therefore part of the chapter’s devotional language as well as its festive setting."
+      },
+      {
+        "heading": "A celebration beyond the home",
+        "text": "The description extends illumination to temples, courtyards, houses, riverbanks and other shared places. Streets are decorated with cloth and flowers, and the following verses include feeding hungry people. The account brings worship, public celebration and generosity together within the wider festival-of-lights sequence."
+      }
+    ]
   },
   {
     "id": "naraka-chaturdashi",
@@ -51,7 +64,17 @@
     "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.9.27–47, printed pp. 95–97; supplied PDF pp. 101–103.",
     "timing": "",
     "keywords": "Diwali Naraka Yama lamps",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "The fourteenth-day observance",
+        "text": "This part of the Skanda Purana moves from early bathing to offerings of water and lamps associated with Yama. It describes the bathing observance in the company of close relatives, giving the occasion a family setting as well as a ritual one."
+      },
+      {
+        "heading": "Its place in the festival sequence",
+        "text": "The chapter treats the fourteenth day, the new-moon celebration and the opening of Karttika as related but distinct moments. Naraka Chaturdashi’s emphasis on bathing, remembrance and lamp offerings should therefore remain visible when reading it beside the Lakshmi worship described for Deepavali."
+      }
+    ]
   },
   {
     "id": "bali-pratipada",
@@ -60,10 +83,20 @@
     "label": "Festival",
     "summary": "The first bright day of Karttika is associated here with Bali and the gift granted by Vishnu as Vamana. Worship, gifts, songs and storytelling give the occasion a festive character.",
     "source": "/sources.html#festival-bali-pratipada",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.10.1–8, 39–48, printed pp. 101–105; supplied PDF pp. 107–111.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.10.1–8, 39–55, printed pp. 101–105; supplied PDF pp. 107–111.",
     "timing": "",
     "keywords": "Bali Vamana Vishnu Diwali",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "The remembrance of Bali",
+        "text": "The chapter connects this day with Bali’s gift of the earth and his own head to Vishnu as Vamana. In its account, the pleased Lord grants a festival to Bali. Later verses describe an annual day and night on earth belonging to the king of the Danavas."
+      },
+      {
+        "heading": "Worship and shared celebration",
+        "text": "The text presents an adorned image of Bali and describes worship in the company of family and other people. Flowers and food offerings accompany the celebration; dances and story recitals enliven the night. The opening of Karttika becomes a time when a sacred narrative is remembered through gathering, giving and celebration."
+      }
+    ]
   },
   {
     "id": "govardhana-puja",
@@ -75,7 +108,17 @@
     "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.10.23–26, printed p. 103; supplied PDF p. 109.",
     "timing": "",
     "keywords": "Krishna Govardhan cows",
-    "note": "The inspected editorial note identifies the hill near Mathura and Krishna’s raising of it. The festival passage and the full Govardhana narrative remain distinct."
+    "note": "The inspected editorial note identifies the hill near Mathura and Krishna’s raising of it. The festival passage and the full Govardhana narrative remain distinct.",
+    "details": [
+      {
+        "heading": "The hill and the pastoral world",
+        "text": "The chapter honours Govardhana alongside cows and bulls. It describes cows being adorned and bulls being relieved of burdens, while the accompanying invocation addresses Govardhana as a protector of the herds. Animals and the landscape have a direct place in the occasion’s devotional focus."
+      },
+      {
+        "heading": "The Krishna connection",
+        "text": "The supplied edition’s note identifies the hill near Mathura and recalls Krishna sheltering the cows, calves and people of Vraja beneath it during Indra’s rain. This gives readers a connection to the Govardhana story, while the festival verses themselves concentrate on worship and the pastoral community."
+      }
+    ]
   },
   {
     "id": "yama-dvitiya",
@@ -84,10 +127,20 @@
     "label": "Family observance",
     "summary": "The account remembers Yama being welcomed by his sister Yamuna. A brother visiting and sharing food in his sister’s home, with gifts and affection, gives the observance its family focus.",
     "source": "/sources.html#festival-yama-dvitiya",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.11.15–24, 34–40, printed pp. 108–109; supplied PDF pp. 114–115.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.11.15–24, 28–40, printed pp. 108–109; supplied PDF pp. 114–115.",
     "timing": "The second bright day of Karttika.",
     "keywords": "Yama Yamuna brother sister family",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "Yama at Yamuna’s home",
+        "text": "The story centres on Yamuna welcoming and feeding her brother Yama in her own house. The second bright day of Karttika is remembered through that meeting. The chapter gives a sacred narrative to an occasion whose visible expression is hospitality between a sister and brother."
+      },
+      {
+        "heading": "Food, affection and gifts",
+        "text": "The observance is described through a brother eating food offered by his sister and honouring her with gifts of garments. The text also includes listening to the occasion’s story. A meal, a visit and the retelling of a family relationship become connected expressions of remembrance."
+      }
+    ]
   },
   {
     "id": "vatsa-dvadashi",
@@ -99,7 +152,17 @@
     "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.9.1–16, printed pp. 92–94; supplied PDF pp. 98–100.",
     "timing": "",
     "keywords": "cow calf Vatsadvadashi",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "Honouring the cow and calf",
+        "text": "The passage describes a cow and her calf together beneath the shade of a banyan tree. Sandal-paste and flower garlands accompany their worship. Its focus is the pair, rather than the cow alone, within a sacred calendar that gives pastoral life a prominent place."
+      },
+      {
+        "heading": "Lamps at the beginning of the season",
+        "text": "The account then turns to an evening offering of light, or nirajana, and the lighting of many lamps. These details place the observance within the wider approach to the festival-of-lights period. The cow-and-calf worship and the evening lamps provide its distinctive introductory themes."
+      }
+    ]
   },
   {
     "id": "tulasi-vivaha",
@@ -108,10 +171,20 @@
     "label": "Wedding festival",
     "summary": "The text describes an annual wedding celebration joining Tulasi with Hari. Evening worship, offerings and the language of a marriage ceremony shape its devotional atmosphere.",
     "source": "/sources.html#festival-tulasi-vivaha",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.31.4–13, 16–25, printed pp. 177–178; supplied PDF pp. 183–184.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.31.4–25, printed pp. 177–178; supplied PDF pp. 183–184.",
     "timing": "A Karttika celebration in this passage.",
     "keywords": "Tulsi Tulasi marriage wedding Vishnu Hari",
-    "note": "This chapter places its celebration on bright Karttika Navami. The directory retains the seasonal context without imposing that tithi as a universal present-day schedule or silently replacing it with Ekadashi."
+    "note": "This chapter places its celebration on bright Karttika Navami. The directory retains the seasonal context without imposing that tithi as a universal present-day schedule or silently replacing it with Ekadashi.",
+    "details": [
+      {
+        "heading": "A sacred wedding",
+        "text": "The chapter describes the marriage of Tulasi and Hari as a celebration repeated each year. The image of Vishnu is brought near Tulasi with music and sacred recitation. The language of welcome, offerings and marriage shapes the gathering, and the text particularly emphasizes celebration in the evening."
+      },
+      {
+        "heading": "The atmosphere of the ceremony",
+        "text": "Cloth, auspicious sounds and the offering of food appear within the account’s wedding setting. Tulasi is spoken of with the care given to a daughter who has been nurtured. The night continues with marriage festivities, making the occasion a devotional celebration expressed through the familiar language of a family wedding."
+      }
+    ]
   },
   {
     "id": "kusmanda-navami",
@@ -120,10 +193,20 @@
     "label": "Seasonal observance",
     "summary": "The bright ninth day of Karttika is marked here by gifts of kusmanda gourds and a festival for Krishna. It illustrates how seasonal produce and charitable giving enter the sacred calendar.",
     "source": "/sources.html#festival-kusmanda-navami",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.31.1–3, printed p. 177; supplied PDF p. 183.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.31.1–4, printed p. 177; supplied PDF p. 183.",
     "timing": "",
     "keywords": "Kushmanda gourd Krishna charity",
-    "note": "No modern Amla Navami or Akshaya Navami identification is inferred from these verses."
+    "note": "No modern Amla Navami or Akshaya Navami identification is inferred from these verses.",
+    "details": [
+      {
+        "heading": "A seasonal gift",
+        "text": "The short passage singles out the bright ninth day of Karttika and the charitable gift of a kusmanda gourd. It also names a festival for Krishna on that day. Seasonal produce enters the account through an act of giving rather than through a long description of a public procession."
+      },
+      {
+        "heading": "The scope of this entry",
+        "text": "These verses form the opening of a chapter that then turns to Tulasi’s marriage. Keeping the gourd gift and Krishna festival together preserves the emphasis of this particular Navami passage. Its focus here is devotion and charity within Karttika’s sequence of observances."
+      }
+    ]
   },
   {
     "id": "bhishma-panchaka",
@@ -135,7 +218,17 @@
     "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.32.1–8, 22–25, 56–57, printed pp. 180–184; supplied PDF pp. 186–190.",
     "timing": "",
     "keywords": "Bhishma Pancaka Vishnu five days",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "The story remembered",
+        "text": "The chapter recalls Bhishma teaching about duty, liberation and charitable gifts while lying on the bed of arrows, with the Pandavas and Krishna listening. It also remembers Arjuna bringing Ganga’s water when Bhishma asked for a drink. That act of relief becomes part of the explanation for offerings made in Bhishma’s memory."
+      },
+      {
+        "heading": "Five days of devotion",
+        "text": "The vrata extends from Karttika’s bright Ekadashi to the full moon. The account combines remembrance of Bhishma with worship of Vishnu, restraint and concluding acts of giving. Its five-day span offers a concentrated observance within the broader month of Karttika."
+      }
+    ]
   },
   {
     "id": "prabodhini-ekadashi",
@@ -147,7 +240,17 @@
     "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.33.1–2, 10–17, 26–30, printed pp. 184–186; supplied PDF pp. 190–192.",
     "timing": "The bright eleventh of Karttika.",
     "keywords": "Haribodhini Prabodhini Vishnu awakening Chaturmasya",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "The awakening of Hari",
+        "text": "Prabodhini, also called Haribodhini in the supplied edition, marks Vishnu’s awakening and the close of the four-month devotional season. The chapter describes the Lord being awakened with a conch, drums, flutes, other instruments, songs and dance. The return from sacred sleep is given a joyful, audible expression."
+      },
+      {
+        "heading": "The night vigil",
+        "text": "The vigil includes readings from the Puranas, lamps, flowers, food offerings and charitable gifts. The chapter also names truthfulness and restraint among its qualities. Devotional attention is expressed through storytelling, music and conduct, as well as through the act of remaining awake in worship."
+      }
+    ]
   },
   {
     "id": "vaikuntha-chaturdashi",
@@ -156,10 +259,20 @@
     "label": "Sacred-day observance",
     "summary": "A Varanasi account joins devotion to Vishnu and Shiva through the story of a thousand lotus offerings. Its observance brings the two forms of worship into one sacred occasion.",
     "source": "/sources.html#festival-vaikuntha-chaturdashi",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.35.1–5, 20–26, printed pp. 192–194; supplied PDF pp. 198–200.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.35.1–26, printed pp. 192–194; supplied PDF pp. 198–200.",
     "timing": "The bright fourteenth of Karttika.",
     "keywords": "Vishnu Shiva Varanasi lotus",
-    "note": "Vaikuntha Chaturdashi is kept distinct from the separately named Vaikuntha Ekadashi, which these passages do not verify."
+    "note": "Vaikuntha Chaturdashi is kept distinct from the separately named Vaikuntha Ekadashi, which these passages do not verify.",
+    "details": [
+      {
+        "heading": "Vishnu’s lotus offering",
+        "text": "The Varanasi narrative describes Vishnu worshipping Shiva with a thousand lotuses, one for each divine name. Shiva tests his devotion by making one lotus disappear. Determined to complete the offering, the lotus-eyed Vishnu offers one of his own eyes in its place, and Shiva is pleased by his devotion."
+      },
+      {
+        "heading": "A shared sacred occasion",
+        "text": "The chapter gives this Karttika Chaturdashi its name through Vishnu’s arrival from Vaikuntha and his worship of Vishveshvara. Its observance then joins worship of Vishnu with worship of Shiva. The story presents devotion between the two deities as central to this particular sacred day."
+      }
+    ]
   },
   {
     "id": "kartika-purnima",
@@ -168,10 +281,20 @@
     "label": "Full-moon observance",
     "summary": "The full moon brings a formal conclusion to the Karttika vow in this account. Worship, gifts and sharing food mark the completion of the month’s devotional effort.",
     "source": "/sources.html#festival-kartika-purnima",
-    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.34.16–25, printed pp. 190–191; supplied PDF pp. 196–197.",
+    "reference": "Skanda Purana, Part 6, Vaishnava-khanda, Karttikamasa-mahatmya, II.iv.34.5–25, printed pp. 190–191; supplied PDF pp. 196–197.",
     "timing": "",
     "keywords": "Karttika Kartika full moon Purnima",
-    "note": "This passage supports the conclusion of the Karttika vrata. It is not used here as evidence for every modern Dev Diwali celebration."
+    "note": "This passage supports the conclusion of the Karttika vrata. It is not used here as evidence for every modern Dev Diwali celebration.",
+    "details": [
+      {
+        "heading": "Bringing the vow to completion",
+        "text": "In this account, the full moon completes the month’s Karttika vrata through its udyapana, the formal concluding observance. The closing acts include worship, offerings and gifts according to the devotee’s means. The emphasis falls on completing a period of sustained devotion with care and gratitude."
+      },
+      {
+        "heading": "A conclusion shared with others",
+        "text": "The chapter describes honouring the teacher and other participants, asking forgiveness, and finally taking food with friends and the teacher. These social acts accompany the conclusion of the vow. The full-moon gathering gives the month-long observance a communal ending as well as a devotional one."
+      }
+    ]
   },
   {
     "id": "akshaya-tritiya",
@@ -183,7 +306,17 @@
     "reference": "Skanda Purana, Part 7, Vaishnava-khanda, Vaishakhamasa-mahatmya, II.vii.23.1–6, 42–46, printed pp. 120, 123; supplied PDF pp. 126, 129. Compare Part 5, Purushottama-ksetra-mahatmya, II.ii.46.2–23, printed pp. 250–251; PDF pp. 254–255.",
     "timing": "The bright third day of Vaishakha.",
     "keywords": "Akshaya Tritiya Vishnu charity sandalwood sandal paste",
-    "note": "The two textual contexts are identified separately. Modern commercial customs are not inferred from either passage."
+    "note": "The two textual contexts are identified separately. Modern commercial customs are not inferred from either passage.",
+    "details": [
+      {
+        "heading": "Devotion and generosity in Vaishakha",
+        "text": "The Vaishakha account places Akshaya Tritiya on the bright third lunar day and associates it with worship of Madhusudana, a name of Vishnu. Holy bathing, listening to sacred narrative and charitable giving are its introductory themes. The chapter treats the day as a meaningful occasion for acts of devotion and generosity."
+      },
+      {
+        "heading": "A temple celebration with sandal-paste",
+        "text": "The separate Purushottama account gives the day a seasonal temple setting. The Lord is honoured with cooling, fragrant sandal-paste, accompanied by worship, music and offerings. Read together, the two passages show both a sacred day of giving and a particular temple celebration, with each account retaining its own emphasis."
+      }
+    ]
   },
   {
     "id": "snana-yatra",
@@ -195,7 +328,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.31.23–34, printed p. 183; supplied PDF p. 187.",
     "timing": "",
     "keywords": "Jagannath bath bathing Snanayatra",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "A festival of ceremonial care",
+        "text": "The bathing scene belongs to the Purushottama temple account, where devotion is expressed through attention to the deity’s embodied presence. Hari is bathed with fragrant water on the Jyestha full moon. The same passage names Balabhadra and Subhadra, keeping the observance within this particular sacred setting."
+      },
+      {
+        "heading": "The setting described in the text",
+        "text": "The chapter gives careful attention to the place prepared for the bathing: an open, shaded setting surrounded by trees, with a canopy and cooling air from the sea. These details help a reader picture the festival’s atmosphere. Water, fragrance, shade and the gathered worshippers all form part of the account’s expression of reverence."
+      }
+    ]
   },
   {
     "id": "ratha-yatra",
@@ -207,7 +350,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.33.28–41, printed p. 197; supplied PDF p. 201; II.ii.34.1–11, printed p. 203; PDF p. 207.",
     "timing": "The second bright day of Ashadha.",
     "keywords": "Rath Yatra Rathayatra chariot Jagannath Gundica Balabhadra Subhadra",
-    "note": "“Rama” in this part of the supplied translation refers to Balabhadra. This card describes the Purushottama festival account rather than every regional chariot procession."
+    "note": "“Rama” in this part of the supplied translation refers to Balabhadra. This card describes the Purushottama festival account rather than every regional chariot procession.",
+    "details": [
+      {
+        "heading": "A sacred journey through the community",
+        "text": "The movement toward the Gundicha pavilion brings worship into the processional route. The chapter describes a cleaned and level path, sandal-scented water, seasonal flowers, banners and many kinds of musical performance. Preparation of the route is part of the celebration itself, giving the journey a carefully arranged public setting."
+      },
+      {
+        "heading": "Jagannath, Balabhadra and Subhadra",
+        "text": "This account concerns the deities of Purushottama and the journey associated with the Gundicha pavilion. Songs, drums, flowers and devotional cries accompany the procession. The name Rama in this portion of the supplied translation refers to Balabhadra. Keeping that identification clear helps the reader follow the text without confusing this festival with a different narrative."
+      }
+    ]
   },
   {
     "id": "nirjala-ekadashi",
@@ -219,7 +372,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.32.70–74, printed p. 194; supplied PDF p. 198.",
     "timing": "",
     "keywords": "Nirjala Ekadashi Jyestha",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "Its place in the Jyestha observances",
+        "text": "The named Ekadashi appears near the conclusion of the chapter’s Jyestha-panchaka discussion. That larger context includes worship and acts of giving. The passage singles out the Ekadashi falling within the period and gives its demanding observance particular devotional importance."
+      },
+      {
+        "heading": "Understanding the chapter’s praise",
+        "text": "The text expresses this importance through comparisons with the merit of many other Ekadashi observances. Such comparisons belong to the chapter’s religious language of praise. For a reader, they show how a single sacred day can become a concentrated focus of commitment within a wider calendar of devotion."
+      }
+    ]
   },
   {
     "id": "devashayani-ekadashi",
@@ -231,7 +394,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.36.1–2, 18–26, printed pp. 209–210; supplied PDF pp. 213–214.",
     "timing": "",
     "keywords": "Shayani Sayani Vishnu sleep Chaturmasya",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "The beginning of the sacred sleeping season",
+        "text": "The Purushottama account presents the bright eleventh of Ashadha as the Lord’s retiring to sleep. This opens a four-month period that ends with the bright Ekadashi of Karttika. The festival therefore gives the rainy-season calendar a devotional beginning and a clearly described relationship to the awakening observance later in the year."
+      },
+      {
+        "heading": "An intimate form of temple devotion",
+        "text": "The chapter describes a pavilion and a carefully prepared bed, with soft cloth, a pillow, fragrance and decoration. These images express care through the familiar gesture of making a place for rest. The supplied note identifies the observance as Shayani Ekadashi and places it among Jagannath’s temple festivals."
+      }
+    ]
   },
   {
     "id": "chaturmasya",
@@ -243,7 +416,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.36.1–18, printed pp. 209–210; supplied PDF pp. 213–214.",
     "timing": "",
     "keywords": "Chaturmas Caturmasya four months Vishnu",
-    "note": "Chaturmasya is a devotional season, not a separate single-day festival. Its opening observance is listed independently for readers searching by name."
+    "note": "Chaturmasya is a devotional season, not a separate single-day festival. Its opening observance is listed independently for readers searching by name.",
+    "details": [
+      {
+        "heading": "A season rather than one festival day",
+        "text": "Chaturmasya provides the longer span within which several individual observances sit. In this account it begins with the bright Ekadashi of Ashadha and continues to the corresponding Ekadashi of Karttika. The opening sleep festival and the eventual awakening give the season its devotional rhythm."
+      },
+      {
+        "heading": "The importance of remaining in devotion",
+        "text": "The Purushottama chapter repeatedly emphasizes staying in the sacred place, seeing the Lord and continuing worship through the rainy months. Its focus is sustained attention across time. Reading the season in this way helps distinguish its continuing devotional character from the particular ceremonies that mark its beginning or later stages."
+      }
+    ]
   },
   {
     "id": "parshva-parivartana",
@@ -255,7 +438,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.39.16–31, printed pp. 230–231; supplied PDF pp. 234–235.",
     "timing": "The bright eleventh of Bhadrapada.",
     "keywords": "Parsva Paryayana Parivartana Vishnu",
-    "note": "The passage names Parsva Paryayana. The entry preserves that identification rather than merging every local Ekadashi name."
+    "note": "The passage names Parsva Paryayana. The entry preserves that identification rather than merging every local Ekadashi name.",
+    "details": [
+      {
+        "heading": "A turning within Chaturmasya",
+        "text": "The festival belongs to the same sacred sleeping season that begins in Ashadha. Here, on the bright eleventh of Bhadrapada, the account turns to Vishnu’s change of resting position. Approaching the bedchamber, bowing and offering worship give this moment its intimate devotional character."
+      },
+      {
+        "heading": "Rest and the care of the cosmos",
+        "text": "The accompanying prayer connects the Lord’s waking, dreaming and sleeping with the movement and protection of the universe. This gives the small gesture of turning in sleep a much wider theological meaning within the chapter. The passage names the observance Parsva Paryayana; the directory retains its place within that particular temple account."
+      }
+    ]
   },
   {
     "id": "pravarana",
@@ -267,7 +460,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.40.1–19, printed pp. 235–236; supplied PDF pp. 239–240.",
     "timing": "The bright sixth of Margashirsha.",
     "keywords": "winter clothing blankets covering Jagannath",
-    "note": "This is the Purushottama winter covering festival; the name is not used here to identify a Buddhist observance."
+    "note": "This is the Purushottama winter covering festival; the name is not used here to identify a Buddhist observance.",
+    "details": [
+      {
+        "heading": "Preparing for winter",
+        "text": "The covering festival treats the arrival of colder weather as an occasion for care of the deities. Consecrated cloths are brought from the pavilion in a procession with flags, flowers, singing, instrumental music and dance. The account then describes covering the deities while leaving their faces visible."
+      },
+      {
+        "heading": "Care that extends beyond the shrine",
+        "text": "The chapter also includes gifts of blankets and other protection against cold to people in need. Temple service and charitable giving appear together in the description. This makes the observance a useful example of how a seasonal festival can join ceremonial beauty with practical attention to the conditions of other people’s lives."
+      }
+    ]
   },
   {
     "id": "pushya-snana",
@@ -279,7 +482,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.41.1–23, printed pp. 237–238; supplied PDF pp. 241–242.",
     "timing": "",
     "keywords": "Pausha Pushya bathing winter Jagannath",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "A full-moon festival in winter",
+        "text": "The account locates the festival in Pausha when the full moon coincides with the Pushya constellation. Its preparations extend across several days, so the bathing is the culmination of a sequence of worship. Night-time songs, dance and other services form part of the setting described before the morning rites."
+      },
+      {
+        "heading": "The image, the mirror and the water",
+        "text": "One distinctive detail is the worship of Purushottama reflected in a mirror before the ceremonial bathing. The description then turns to an unbroken flow of water and further offerings. These elements show the ceremony’s visual and sensory richness, while keeping the explanation within the particular Purushottama passage being read."
+      }
+    ]
   },
   {
     "id": "makara-sankranti",
@@ -288,10 +501,20 @@
     "label": "Solar transition & temple festival",
     "summary": "The Sun’s entry into Capricorn is marked with worship in the Purushottama festival cycle. Newly prepared rice offerings, lights, music and a procession connect the turning of sacred time with temple devotion.",
     "source": "/sources.html#festival-makara-sankranti",
-    "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.42.1–15, 22–34, printed pp. 239–241; supplied PDF pp. 243–245.",
+    "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.42.1–34, printed pp. 239–241; supplied PDF pp. 243–245.",
     "timing": "",
     "keywords": "Makar Sankranti Uttarayana Sun rice harvest",
-    "note": "The passage’s solar transition is not equated here with an exact modern astronomical solstice or a fixed Gregorian date."
+    "note": "The passage’s solar transition is not equated here with an exact modern astronomical solstice or a fixed Gregorian date.",
+    "details": [
+      {
+        "heading": "A turning point in sacred time",
+        "text": "The Purushottama account connects the Sun’s entry into Capricorn with Uttarayana, the northern transit, and with temple worship. Its festival scene includes the shrine’s deities, a movable image, a palanquin and a procession accompanied by lights and music. The turning of the year is thus given a visible devotional expression."
+      },
+      {
+        "heading": "Fresh grain as an offering",
+        "text": "Newly prepared rice has a prominent place in the description. The chapter presents the grain with ingredients including curds, ghee, sugar, coconut and ginger, and joins the offering to a prayer for the nourishment and protection of the world. These details belong to this temple-cycle account rather than a description of every regional Sankranti celebration."
+      }
+    ]
   },
   {
     "id": "dola-yatra",
@@ -303,7 +526,17 @@
     "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.43.1–8, 13–20, 33–39, printed pp. 241–244; supplied PDF pp. 245–248. The Holi association is explicit in the note on printed p. 242 / PDF p. 246.",
     "timing": "",
     "keywords": "Holi Dolayatra Dolotsava Krishna Govinda colours colors swing",
-    "note": "This is a particular temple account of the Holi season, not an assertion that every Holi celebration follows this rite."
+    "note": "This is a particular temple account of the Holi season, not an assertion that every Holi celebration follows this rite.",
+    "details": [
+      {
+        "heading": "Govinda on the swing",
+        "text": "The passage describes a decorated pavilion and a seat for Govinda, followed by worship and the movement of the deity toward the place of the swing. Musical instruments, conch-shells, lamps, flags and showers of flowers give the celebration its lively setting. A fire observance is described before the main swing festival."
+      },
+      {
+        "heading": "Colour within a particular temple account",
+        "text": "Later verses include scented coloured powders, and the supplied editorial note associates the scene with Krishna’s Holi play. The text offers one way to explore the relationship between spring, joyful worship and the festival’s visual abundance. Its specific sequence should remain visible alongside the wider variety of celebrations associated with the Holi season."
+      }
+    ]
   },
   {
     "id": "damanaka",
@@ -312,10 +545,20 @@
     "label": "Spring temple festival",
     "summary": "The account names a spring festival centred on the fragrant damanaka plant and its offering in worship. The passage presents it as one of the temple’s seasonal yatras.",
     "source": "/sources.html#festival-damanaka",
-    "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.45.1–4 and continuation, printed pp. 248–249; supplied PDF pp. 252–253.",
+    "reference": "Skanda Purana, Part 5, Vaishnava-khanda, Purushottama-ksetra-mahatmya, II.ii.45.1–16, printed pp. 248–249; supplied PDF pp. 252–253.",
     "timing": "",
     "keywords": "Damanabhanjika Damanaka spring plant",
-    "note": ""
+    "note": "",
+    "details": [
+      {
+        "heading": "A fragrant plant at the centre of spring worship",
+        "text": "The chapter calls this spring celebration Damanabhanjika and places the fragrant damanaka plant at its centre. The account speaks of bringing the plant with its root during the bright fortnight of Chaitra. The plant is treated as an offering with a sacred narrative attached to it, giving seasonal growth a place in temple devotion."
+      },
+      {
+        "heading": "A festival carried through the night",
+        "text": "The continuation describes the offering in the Lord’s presence, followed by singing and dancing through the remaining night and worship again after sunrise. Fragrance, movement and the passage from night into morning give the celebration its distinctive atmosphere within the sequence of Purushottama yatras."
+      }
+    ]
   },
   {
     "id": "shiva-lunar-observances",
@@ -327,7 +570,17 @@
     "reference": "Linga Purana, Part I, I.83.1–4, 52–54, printed pp. 411, 416; supplied PDF pp. 417, 422.",
     "timing": "",
     "keywords": "Shiva Ashtami Chaturdashi lunar vrata",
-    "note": "These recurring observances are not all labeled Maha Shivaratri or Pradosha. The directory does not reproduce the chapter’s detailed ascetic prescriptions."
+    "note": "These recurring observances are not all labeled Maha Shivaratri or Pradosha. The directory does not reproduce the chapter’s detailed ascetic prescriptions.",
+    "details": [
+      {
+        "heading": "A recurring lunar rhythm",
+        "text": "The Linga Purana presents these observances as part of a year-long pattern of worship. The eighth and fourteenth lunar days recur in both fortnights, giving devotion a regular place within the month. The chapter is concerned with a continuing vrata rather than a single annual celebration."
+      },
+      {
+        "heading": "The ethical character of the vow",
+        "text": "Its concluding verses place nonviolence, truthfulness, non-stealing, forgiveness and mercy alongside the observance’s ritual disciplines. The passage therefore joins the repeated act of worship to the devotee’s conduct over time. The description here keeps that connection visible while leaving the chapter’s detailed ascetic regimen within its original textual setting."
+      }
+    ]
   },
   {
     "id": "uma-maheshvara",
@@ -339,7 +592,17 @@
     "reference": "Linga Purana, Part I, I.84.1–8, printed pp. 416–417; supplied PDF pp. 422–423.",
     "timing": "",
     "keywords": "Uma Mahesvara Maheshvara Parvati Shiva",
-    "note": "This is a recurring year-long vrata in the inspected passage, not one universally fixed annual festival date."
+    "note": "This is a recurring year-long vrata in the inspected passage, not one universally fixed annual festival date.",
+    "details": [
+      {
+        "heading": "Honouring Uma and Shiva together",
+        "text": "The chapter opens by presenting a holy rite of Uma-Maheshvara and describes worship of an image of the two together. Its year-long framework includes full-moon and new-moon occasions as well as the eighth and fourteenth lunar days. Repetition across the lunar calendar is central to the observance’s form."
+      },
+      {
+        "heading": "Worship, completion and giving",
+        "text": "The passage brings the continuing vow toward a conclusion through gifts, feeding and a procession to Rudra’s temple. These elements give the observance both a devotional centre and an act of completion shared with others. Its form brings repeated acts of worship into a longer commitment, with a marked conclusion at the end of the year."
+      }
+    ]
   },
   {
     "id": "amavasya-ancestors",
@@ -351,7 +614,17 @@
     "reference": "Brahmanda Purana, Part I, I.2.28.1–9, printed pp. 277–278; supplied PDF pp. 285–286.",
     "timing": "",
     "keywords": "new moon Amavasya ancestors Pitrs shraddha",
-    "note": "The body of the passage explicitly describes monthly shraddha, despite the English chapter subtitle’s annual wording. This is not silently relabeled Pitru Paksha or Mahalaya."
+    "note": "The body of the passage explicitly describes monthly shraddha, despite the English chapter subtitle’s annual wording. This is not silently relabeled Pitru Paksha or Mahalaya.",
+    "details": [
+      {
+        "heading": "Pururavas and the new moon",
+        "text": "The Brahmanda Purana gives this observance a narrative setting through Pururavas. On the new moon he pays respects to the Sun and Moon, and the passage describes his intention to perform monthly shraddha for the Pitrs, the ancestors. The lunar cycle provides the recurring moment for this act of remembrance."
+      },
+      {
+        "heading": "The Moon and the ancestors",
+        "text": "The chapter connects the Moon’s changing form with its account of ancestral beings. Within this sacred narrative, nourishment from the Moon is associated with the Pitrs, and Pururavas waits on their behalf before performing shraddha. The new moon becomes part of a recurring relationship between the worshipper and the ancestors, revisited through the monthly rhythm."
+      }
+    ]
   },
   {
     "id": "rama-navami-observance",
@@ -362,6 +635,16 @@
     "source": "/sources.html#festival-rama-navami-observance",
     "reference": "Skanda Purana, Part 7, Vaishnava-khanda, Ayodhya-mahatmya, II.viii.10.18–25, printed pp. 217–218; supplied PDF pp. 223–224.",
     "keywords": "Rama Navami Ayodhya charity",
-    "note": "The inspected passage specifies Navami but does not name the month or bright/dark fortnight. No further calendar precision is inferred."
+    "note": "The inspected passage specifies Navami but does not name the month or bright/dark fortnight. No further calendar precision is inferred.",
+    "details": [
+      {
+        "heading": "A passage within Ayodhya’s sacred geography",
+        "text": "The Ayodhya-mahatmya describes a sequence of sacred places and identifies a place of Rama’s birth within that account. In this setting, the ninth lunar day becomes an occasion for a holy vow. The passage joins remembrance of the birthplace with holy bathing, worship and charitable gifts."
+      },
+      {
+        "heading": "The occasion named in the account",
+        "text": "The passage names Navami without specifying a month or a bright or dark fortnight. Its emphasis falls on the relationship between a sacred place, a lunar occasion and acts of devotion and giving. The account offers a way to understand how remembrance of Rama is connected with pilgrimage and generosity."
+      }
+    ]
   }
 ]

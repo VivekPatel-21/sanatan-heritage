@@ -156,3 +156,15 @@ html:not(.js) .site-header { position: relative; }
   .festival-directory { grid-template-columns: minmax(0,1fr); }
   .festival-filters label { width: 100%; }
 }
+.festival-directory { align-items: start; }
+.festival-details { margin-top: 1.25rem; border-block: 1px solid var(--border-subtle); }
+.festival-details > summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 44px; padding-block: .75rem; font: .9375rem var(--font-sans); color: var(--accent-terracotta); cursor: pointer; list-style: none; }
+.festival-details > summary::-webkit-details-marker { display: none; }
+.festival-details[open] > summary > span[aria-hidden] { transform: rotate(45deg); }
+.festival-detail-body { padding-bottom: 1.5rem; }
+.festival-detail-body h4 { margin: 1.75rem 0 .75rem; font-size: 1.2rem; }
+.festival-detail-body .journal-illustration { margin-block: 1.25rem; }
+.festival-detail-body .journal-facts { margin-block: 1rem; }
+.festival-detail-body .journal-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.festival-entry .festival-source { margin-top: .5rem; }
+.festival-entry:has(> .festival-details[open]) { grid-column: 1/-1; width: 100%; max-width: 48rem; justify-self: center; }

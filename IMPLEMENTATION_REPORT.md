@@ -126,3 +126,9 @@ The no-JavaScript visual review exposed the expanded fallback header remaining s
 Reduced the complete shared logo to 48px in both header/footer on desktop and 40px on mobile; compacted the header to fit. The original square artwork remains contained and uncropped.
 
 Expanded Festivals from three entries to a 31-entry searchable sacred-calendar directory while retaining the three illustrated dossiers. The 28 additions are sourced only from the supplied Skanda, Linga and Brahmanda editions, with per-entry references rendered centrally from src/data/festivals.json. Festivals, temple celebrations, recurring vratas and the Chaturmasya season carry distinct labels. Search and kind filters restore from the URL, announce result counts, recover from empty results and leave the full directory available without JavaScript. Exact source scope and calendar qualifications are recorded in docs/FESTIVAL_EXPANSION_REVIEW.md.
+
+## Unified festival readings — 25 October 2026
+
+Removed the separate three-feature section and integrated its illustrations, original explanations and related links into the corresponding festival entries. There is now one collection of the same 31 entries. Each entry has a native expandable reading area; the 28 newer entries gained two short, source-checked sections on meaning, customs, narrative or seasonal context. Expanded entries span the grid at a comfortable reading width. Sources remain centralized, with citation ranges extended where richer details required it.
+
+Preserved existing festival and telling anchors. Hash navigation reveals the relevant entry and clears filters only when needed to display a linked target. Search includes the fuller content; filters and counts still operate on the one collection. Native disclosure controls keep the details available without JavaScript.

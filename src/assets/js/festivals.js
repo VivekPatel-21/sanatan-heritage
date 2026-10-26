@@ -14,5 +14,16 @@
   form.addEventListener('submit',event=>event.preventDefault());form.addEventListener('input',()=>update());
   form.addEventListener('reset',()=>{query.value='';type.value='all';update();});
   document.querySelector('[data-festival-reset]')?.addEventListener('click',()=>{form.reset();query.focus();});
-  window.addEventListener('popstate',()=>{readURL();update(false);});readURL();update(false);form.hidden=false;
+  function revealHash(){
+    let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
+    const target=id?document.getElementById(id):null;const entry=target?.closest('[data-festival-entry]');
+    if(!entry)return;
+    if(entry.hidden){query.value='';type.value='all';update();}
+    entry.querySelector('.festival-details').open=true;
+    requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+  }
+  window.addEventListener('popstate',()=>{readURL();update(false);revealHash();});
+  window.addEventListener('hashchange',revealHash);
+  document.addEventListener('click',event=>{const link=event.target.closest('a[href^="#"]');if(link&&link.hash===location.hash)revealHash();});
+  readURL();update(false);form.hidden=false;revealHash();
 })();
