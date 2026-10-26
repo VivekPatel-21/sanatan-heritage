@@ -745,5 +745,27 @@
     "permission": "Generated for owner-requested page; no third-party image reproduced",
     "review": "Assistant visual review of complete composition; conceptual landscape, no deity iconography or specialist certification",
     "identity": "An imagined crystal-lit cavern with a still pool, plants and golden pavilions"
+  },
+  {
+    "asset": "manus-cycles-of-time.webp",
+    "visiblePlacement": "manus-manvantaras.njk",
+    "alt": "An imagined mountain valley and winding river beneath a sky of golden star trails",
+    "caption": "THE PASSAGE OF AGES · AI-GENERATED CONCEPTUAL PAINTING, NOT A COSMIC CLOCK",
+    "origin": "Built-in Imagegen; see design-assets/manus-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of complete landscape and empty pavilion; no deity or human depiction; no specialist certification",
+    "identity": "An imagined mountain valley and winding river beneath a sky of golden star trails"
+  },
+  {
+    "asset": "manus-sustaining-world.webp",
+    "visiblePlacement": "manus-manvantaras.njk",
+    "alt": "An imagined cultivated river valley with terraced fields, irrigation channels and an empty pavilion",
+    "caption": "SUSTAINING A WORLD · AI-GENERATED CONCEPTUAL LANDSCAPE, NOT A SPECIFIC MANU’S REALM",
+    "origin": "Built-in Imagegen; see design-assets/manus-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of complete landscape and empty pavilion; no deity or human depiction; no specialist certification",
+    "identity": "An imagined cultivated river valley with terraced fields, irrigation channels and an empty pavilion"
   }
 ]

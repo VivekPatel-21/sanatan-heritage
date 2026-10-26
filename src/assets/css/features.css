@@ -133,4 +133,7 @@
 .realm-list h3 span { display: block; margin-top: .3rem; font: .8125rem var(--font-sans); color: var(--text-muted); }
 .realm-list p { margin: 0; }
 .site-header .nav-group:nth-child(-n+2) .nav-dropdown { left: 0; right: auto; }
-
+.manu-comparison th:first-child { width: 55%; }
+.manu-present { background: var(--bg-sage); }
+.manu-present :is(th,td) { padding-left: .5rem; }
+html:not(.js) .site-header { position: relative; }

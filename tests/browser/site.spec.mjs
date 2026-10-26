@@ -62,6 +62,8 @@ test('header and Fourteen Lokas remain usable without JavaScript',async({browser
   const context=await browser.newContext({javaScriptEnabled:false,viewport:info.project.use.viewport,colorScheme:info.project.use.colorScheme});
   const page=await context.newPage();await page.goto('/fourteen-lokas.html');
   await expect(page.locator('h1')).toContainText('Fourteen');
+  await page.locator('.tale-chapter').last().scrollIntoViewIfNeeded();
+  expect(await page.locator('.site-header').evaluate(el=>el.getBoundingClientRect().bottom)).toBeLessThanOrEqual(0);
   const discover=page.locator('.nav-group').first();await discover.locator('summary').click();
   await expect(discover.locator('a[href="/creation-universe.html"]')).toBeVisible();
   await discover.locator('a[href="/creation-universe.html"]').click();await expect(page).toHaveURL(/creation-universe.html$/);await context.close();
