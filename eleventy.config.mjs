@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import {site,absoluteUrl,pagePath,socialPath,structuredData} from './scripts/site-config.mjs';
 export default async function (config) {
   config.addGlobalData('site',site);
+  config.addGlobalData('navigation',JSON.parse(await readFile('src/data/navigation.json','utf8')));
   config.addGlobalData('eleventyComputed',{
     canonical:data=>absoluteUrl(pagePath(data)),
     socialImage:data=>absoluteUrl(socialPath(data)),

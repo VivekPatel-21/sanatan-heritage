@@ -30,7 +30,16 @@
   if (typeof ResizeObserver === 'function' && header) new ResizeObserver(updateHeaderOffset).observe(header);
   window.addEventListener('resize', updateHeaderOffset);
   updateHeaderOffset();
-  const closeMenu = () => { menu?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); updateHeaderOffset(); };
+  const groups = [...document.querySelectorAll('.nav-group')];
+  const closeGroups = (except) => groups.forEach(group => { if (group !== except) group.open = false; });
+  groups.forEach(group => group.addEventListener('toggle', () => { if (group.open) closeGroups(group); }));
+  nav?.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    const group = event.target.closest('.nav-group[open]');
+    if (group) { group.open = false; group.querySelector('summary').focus(); event.stopPropagation(); }
+  });
+  nav?.addEventListener('focusout', event => { if (event.relatedTarget && !nav.contains(event.relatedTarget)) closeGroups(); });
+  const closeMenu = () => { closeGroups(); menu?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('is-open'); updateHeaderOffset(); };
   menu?.addEventListener('click', () => {
     const open = menu.getAttribute('aria-expanded') !== 'true';
     menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open);

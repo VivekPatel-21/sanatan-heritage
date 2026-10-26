@@ -723,5 +723,27 @@
     "permission": "Generated for the owner-authorized page; no third-party image reproduced",
     "review": "Assistant visual review of composition and subject; no specialist review claimed",
     "identity": "An imagined dawn landscape with a river, trees, a lotus, two deer and birds"
+  },
+  {
+    "asset": "lokas-cosmic-horizons.webp",
+    "visiblePlacement": "fourteen-lokas.njk",
+    "alt": "Imagined luminous horizons rising above a mountain landscape into a starry sky",
+    "caption": "WORLDS WITHIN A COSMOS · AI-GENERATED CONCEPTUAL ART, NOT AN EXACT MAP",
+    "origin": "Built-in Imagegen; see design-assets/lokas-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of complete composition; conceptual landscape, no deity iconography or specialist certification",
+    "identity": "Imagined luminous horizons rising above a mountain landscape into a starry sky"
+  },
+  {
+    "asset": "lokas-subterranean-gardens.webp",
+    "visiblePlacement": "fourteen-lokas.njk",
+    "alt": "An imagined crystal-lit cavern with a still pool, plants and golden pavilions",
+    "caption": "AN IMAGINED SUBTERRANEAN REALM · AI-GENERATED CONCEPTUAL ART, NOT A SPECIFIC LOKA",
+    "origin": "Built-in Imagegen; see design-assets/lokas-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of complete composition; conceptual landscape, no deity iconography or specialist certification",
+    "identity": "An imagined crystal-lit cavern with a still pool, plants and golden pavilions"
   }
 ]

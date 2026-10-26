@@ -71,3 +71,11 @@ Extracted project can be rebuilt with npm ci && npm run build. Build output need
 ## Creation cosmology article — 25 October 2026
 
 Production build, HTML/CSS lint, static checks and five interaction/metadata suites passed: 31 pages, 27 search-indexed pages, 68 unique visible image placements. All 198 Playwright/axe checks passed across 375/768/1440 widths in light and dark themes. Targeted article review also passed search discovery, contents-anchor clearance and six-chapter content without JavaScript. Two full-page theme/width renders were visually inspected. Real-device, screen-reader and native browser zoom certification remain outside this automated review.
+
+## Fourteen Lokas and header directory — 25 October 2026
+
+- Production build, HTML/CSS lint, static checks and all five interaction/metadata suites passed: 32 routes, 28 indexed pages and 70 unique visible image placements.
+- Initial full Chrome/axe run passed 214 of 216 scenarios and found the leftmost tablet dropdowns outside the viewport. Both leftmost panels were aligned to their left edge. An outside-click test was also corrected to use uncovered page space rather than a heading behind the dropdown.
+- After the final CSS fix, lint/static checks and all 12 header keyboard, open-panel accessibility, destination coverage and no-JavaScript scenarios passed across 375/768/1440 widths in both themes. The other 204 page/interaction scenarios had passed in the full run; the final fix only affects open dropdown positioning.
+- Six article/theme/width reviews passed with exactly 14 realm entries, two intact illustrations, no horizontal overflow and contents-anchor clearance. Search finds the new guide. Additional 2x CSS zoom reflow passed; this is not native browser zoom certification. Mobile light/desktop dark article renders and mobile/tablet/desktop menu renders were visually reviewed.
+- Source Sanskrit/explanation pages were inspected privately. No PDF, scan, QA extract or dependencies are staged. Real-device, assistive-technology and specialist religious review are not claimed.

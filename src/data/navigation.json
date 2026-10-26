@@ -1,0 +1,143 @@
+[
+  {
+    "label": "Discover",
+    "links": [
+      {
+        "url": "/index.html",
+        "label": "Home"
+      },
+      {
+        "url": "/start-here.html",
+        "label": "Start here"
+      },
+      {
+        "url": "/understanding.html",
+        "label": "Understanding Sanatan Dharma"
+      },
+      {
+        "url": "/festivals.html",
+        "label": "Festivals"
+      },
+      {
+        "url": "/places.html",
+        "label": "Sacred places"
+      },
+      {
+        "url": "/explore.html",
+        "label": "Sacred explorer"
+      },
+      {
+        "url": "/creation-universe.html",
+        "label": "Creation of the universe"
+      },
+      {
+        "url": "/fourteen-lokas.html",
+        "label": "The Fourteen Lokas"
+      }
+    ]
+  },
+  {
+    "label": "The Divine",
+    "links": [
+      {
+        "url": "/deities.html",
+        "label": "Gods & Goddesses"
+      },
+      {
+        "url": "/lalita.html",
+        "label": "Lalita Tripurasundari"
+      }
+    ]
+  },
+  {
+    "label": "Stories",
+    "links": [
+      {
+        "url": "/stories.html",
+        "label": "All stories"
+      },
+      {
+        "url": "/lalita-bhandasura.html",
+        "label": "Lalita & Bhandasura"
+      },
+      {
+        "url": "/shiva-parvati.html",
+        "label": "Shiva & Parvati"
+      },
+      {
+        "url": "/shiva-halahala.html",
+        "label": "Shiva drinks Halahala"
+      },
+      {
+        "url": "/hanuman-lanka.html",
+        "label": "Hanuman’s journey"
+      },
+      {
+        "url": "/krishna-govardhana.html",
+        "label": "Krishna & Govardhana"
+      },
+      {
+        "url": "/rama-exile.html",
+        "label": "Rama’s exile"
+      },
+      {
+        "url": "/devi-mahishasura.html",
+        "label": "Devi & Mahishasura"
+      },
+      {
+        "url": "/bhagiratha-ganga.html",
+        "label": "Bhagiratha & the Ganga"
+      },
+      {
+        "url": "/dhruva.html",
+        "label": "Dhruva"
+      }
+    ]
+  },
+  {
+    "label": "Read & learn",
+    "links": [
+      {
+        "url": "/scriptures.html",
+        "label": "Sacred scriptures"
+      },
+      {
+        "url": "/glossary.html",
+        "label": "Glossary"
+      },
+      {
+        "url": "/reading-paths.html",
+        "label": "Reading paths"
+      },
+      {
+        "url": "/reading-library.html",
+        "label": "Your reading library"
+      },
+      {
+        "url": "/family.html",
+        "label": "Read together"
+      },
+      {
+        "url": "/sources.html",
+        "label": "Sources & references"
+      }
+    ]
+  },
+  {
+    "label": "About",
+    "links": [
+      {
+        "url": "/about.html",
+        "label": "About Sanatan Heritage"
+      },
+      {
+        "url": "/contact.html",
+        "label": "Contact"
+      },
+      {
+        "url": "/privacy.html",
+        "label": "Privacy"
+      }
+    ]
+  }
+]

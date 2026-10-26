@@ -34,3 +34,35 @@ test('mobile browser theme metadata follows the chosen theme',async({page})=>{
   await page.locator('.theme-toggle').click();await expect(meta).not.toHaveAttribute('content',initial);
   const chosen=await meta.getAttribute('content');await page.reload();await expect(meta).toHaveAttribute('content',chosen);
 });
+
+test('header disclosures cover every public page and support keyboard dismissal',async({page})=>{
+  await page.goto('/fourteen-lokas.html');
+  const menu=page.locator('.menu-toggle');if(await menu.isVisible())await menu.click();
+  const destinations=await page.locator('#site-nav a').evaluateAll(links=>links.map(a=>a.getAttribute('href')));
+  for(const route of routes.filter(r=>!['404.html','museum-preview.html'].includes(r)))expect(destinations).toContain('/'+route);
+  const groups=page.locator('.nav-group');
+  for(let index=0;index<await groups.count();index++){
+    const group=groups.nth(index);const summary=group.locator('summary');
+    await summary.focus();await page.keyboard.press('Enter');await expect(group).toHaveAttribute('open','');
+    expect(await page.locator('.nav-group[open]').count()).toBe(1);
+    const bounds=await group.locator('.nav-dropdown').boundingBox();const size=page.viewportSize();
+    expect(bounds.x).toBeGreaterThanOrEqual(0);expect(bounds.x+bounds.width).toBeLessThanOrEqual(size.width+1);
+    const audit=await new AxeBuilder({page}).include('.site-header').withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();expect(audit.violations).toEqual([]);
+    await page.keyboard.press('Tab');await expect(group.locator('a').first()).toBeFocused();
+    await page.keyboard.press('Escape');await expect(group).not.toHaveAttribute('open','');await expect(summary).toBeFocused();
+  }
+  await groups.first().locator('summary').click();
+  const headerBottom=await page.locator('.site-header').evaluate(el=>el.getBoundingClientRect().bottom);
+  await page.mouse.click(2,Math.min(page.viewportSize().height-2,headerBottom+24));await expect(groups.first()).not.toHaveAttribute('open','');
+  if(await menu.isVisible())await menu.click();
+  await groups.first().locator('summary').click();await page.locator('#site-nav a[href="/creation-universe.html"]').click();await expect(page).toHaveURL(/creation-universe.html$/);
+});
+
+test('header and Fourteen Lokas remain usable without JavaScript',async({browser},info)=>{
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:info.project.use.viewport,colorScheme:info.project.use.colorScheme});
+  const page=await context.newPage();await page.goto('/fourteen-lokas.html');
+  await expect(page.locator('h1')).toContainText('Fourteen');
+  const discover=page.locator('.nav-group').first();await discover.locator('summary').click();
+  await expect(discover.locator('a[href="/creation-universe.html"]')).toBeVisible();
+  await discover.locator('a[href="/creation-universe.html"]').click();await expect(page).toHaveURL(/creation-universe.html$/);await context.close();
+});
