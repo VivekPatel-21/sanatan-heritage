@@ -68,3 +68,16 @@ test('header and Fourteen Lokas remain usable without JavaScript',async({browser
   await expect(discover.locator('a[href="/creation-universe.html"]')).toBeVisible();
   await discover.locator('a[href="/creation-universe.html"]').click();await expect(page).toHaveURL(/creation-universe.html$/);await context.close();
 });
+
+test('festival directory supports search, kind filters, URL restoration and empty recovery',async({page})=>{
+  await page.goto('/festivals.html?festival=Diwali');
+  const query=page.locator('#festival-query');const kind=page.locator('#festival-kind');
+  await expect(query).toHaveValue('Diwali');await expect(page.locator('#calendar-deepavali')).toBeVisible();
+  await expect(page.locator('#festival-count')).toContainText('calendar entries');
+  await query.fill('zzzxnomatchingfestival');await expect(page.locator('#festival-empty')).toBeVisible();
+  await page.locator('[data-festival-reset]').click();await expect(query).toBeFocused();await expect(query).toHaveValue('');await expect(kind).toHaveValue('all');
+  expect(await page.locator('[data-festival-entry]:visible').count()).toBe(await page.locator('[data-festival-entry]').count());
+  await query.fill('Ratha Yatra');await kind.selectOption('temple');await expect(page.locator('#calendar-ratha-yatra')).toBeVisible();
+  await page.reload();await expect(query).toHaveValue('Ratha Yatra');await expect(kind).toHaveValue('temple');await expect(page.locator('#calendar-ratha-yatra')).toBeVisible();
+  await page.locator('#calendar-ratha-yatra a[href^="/sources.html#"]').click();await expect(page).toHaveURL(/sources.html#festival-ratha-yatra$/);
+});

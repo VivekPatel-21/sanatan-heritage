@@ -3,7 +3,7 @@
   "layout": "layout.njk",
   "permalink": "festivals.html",
   "title": "Festivals & living traditions · Sanatan Heritage",
-  "description": "Explore Maha Shivaratri, Navaratri and Hanuman Jayanti through stories, devotion and regional traditions.",
+  "description": "Explore Hindu festivals, temple celebrations and recurring vratas through a searchable directory with source references and regional context.",
   "bodyClass": "references-page heritage-journal-page",
   "ogType": "website",
   "ogImage": "og.png",
@@ -11,7 +11,7 @@
   "noindex": false,
   "search": false,
   "story": false,
-  "scripts": [],
+  "scripts": ["/assets/js/festivals.js"],
   "sourceLink": "sources.html#festivals"
 }
 ---
@@ -20,8 +20,16 @@
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/index.html">Home</a><span>/</span><span>Festivals</span></nav>
     <p class="eyebrow">THE LIVING TRADITIONS JOURNAL</p>
     <h1>Stories remembered.<br><em>Traditions lived.</em></h1>
-    <p>Prayer, music, storytelling and shared celebration bring sacred narratives into community life. Explore three festivals through their meanings and the different ways they are cherished.</p>
-    <nav class="journal-index" aria-label="Festival dossiers"><a href="#shivaratri">Maha Shivaratri</a><a href="#navaratri">Navaratri</a><a href="#hanuman-jayanti">Hanuman Jayanti</a></nav>
+    <p>Prayer, music, storytelling and shared celebration bring sacred narratives into community life. Explore {{ festivals.length }} festivals and observances, then read three detailed features on the traditions they bring to life.</p>
+    <nav class="journal-index" aria-label="Festival dossiers"><a href="#festival-directory">Browse all {{ festivals.length }} entries</a><a href="#shivaratri">Maha Shivaratri</a><a href="#navaratri">Navaratri</a><a href="#hanuman-jayanti">Hanuman Jayanti</a></nav>
+  </section>
+  <section class="section festival-directory-section" id="festival-directory" aria-labelledby="festival-directory-title">
+    <div class="festival-directory-intro"><p class="eyebrow">EXPLORE THE SACRED CALENDAR</p><h2 id="festival-directory-title">Festivals, journeys<br><em>and observances.</em></h2><p>Browse major celebrations, temple festival cycles and recurring vratas. New textual contexts are drawn from the supplied Puranas and identified with their own setting. Lunar dates and practices vary between traditions; this is a reading guide rather than a dated event calendar.</p></div>
+    <form class="festival-filters" data-festival-form role="search" aria-label="Filter the festival directory" hidden><label for="festival-query">Find a festival<input id="festival-query" type="search" maxlength="200" placeholder="Search by name, deity or theme"></label><label for="festival-kind">Kind of observance<select id="festival-kind"><option value="all">All entries</option><option value="festival">Festivals</option><option value="temple">Temple celebrations</option><option value="observance">Vratas &amp; recurring observances</option></select></label><button type="reset">Reset filters</button></form>
+    <p class="festival-count" id="festival-count" role="status" aria-live="polite">{{ festivals.length }} calendar entries</p>
+    <div class="festival-directory">{% for festival in festivals %}<article class="festival-entry" id="calendar-{{ festival.id }}" data-festival-entry data-kind="{{ festival.kind }}" data-keywords="{{ festival.keywords }}"><p class="eyebrow">{{ festival.label }}</p><h3>{{ festival.title }}</h3><p>{{ festival.summary }}</p>{% if festival.timing %}<p class="festival-timing"><strong>In this account:</strong> {{ festival.timing }}</p>{% endif %}{% if festival.feature %}<p><a href="{{ festival.feature }}">Read the detailed feature →</a></p>{% endif %}<a href="{{ festival.source }}">Text &amp; context →</a></article>{% endfor %}</div>
+    <div class="festival-empty" id="festival-empty" hidden><h3>No matching entries</h3><p>Try another name or clear the filters.</p><button type="button" data-festival-reset>Show all entries</button></div>
+    <noscript><p>All entries are available below. Search and filters are optional browser enhancements.</p></noscript>
   </section>
   <div class="section heritage-dossiers">
     <article class="reader-panel heritage-dossier" id="shivaratri">

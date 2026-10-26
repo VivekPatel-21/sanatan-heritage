@@ -120,3 +120,9 @@ Added manus-manvantaras.html using only the owner-supplied Bhagavata Volume 1. T
 Added two distinct conceptual paintings with truthful captions and recorded generation provenance. Linked the article from the Discover dropdown, Stories, Scriptures, footer, creation guide and Lokas guide. The nine-story narrative catalogue remains unchanged. No private book scan is published.
 
 The no-JavaScript visual review exposed the expanded fallback header remaining sticky over the article. Its fallback position is now relative, so it scrolls away while preserving dropdown stacking. A browser regression check scrolls to the reader’s final section and verifies the header has left the viewport before returning to open a dropdown and follow a link. This passed at all three widths in both themes.
+
+## Compact logo and expanded festivals — 25 October 2026
+
+Reduced the complete shared logo to 48px in both header/footer on desktop and 40px on mobile; compacted the header to fit. The original square artwork remains contained and uncropped.
+
+Expanded Festivals from three entries to a 31-entry searchable sacred-calendar directory while retaining the three illustrated dossiers. The 28 additions are sourced only from the supplied Skanda, Linga and Brahmanda editions, with per-entry references rendered centrally from src/data/festivals.json. Festivals, temple celebrations, recurring vratas and the Chaturmasya season carry distinct labels. Search and kind filters restore from the URL, announce result counts, recover from empty results and leave the full directory available without JavaScript. Exact source scope and calendar qualifications are recorded in docs/FESTIVAL_EXPANSION_REVIEW.md.

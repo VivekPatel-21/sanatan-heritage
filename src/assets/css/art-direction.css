@@ -281,10 +281,10 @@
 }
 /* Owner-supplied complete logo; preserve its square artwork and embedded lettering. */
 .site-header .brand-image,.site-footer .brand-image { display: inline-flex; width: auto; padding: 0; border: 0; background: transparent; flex: 0 0 auto; }
-.site-header .brand-image .brand-logo { display: block; width: 5rem; height: 5rem; object-fit: contain; border: 0; box-shadow: none; border-radius: 0; }
-.site-header:has(.brand-image) { padding-block: .5rem; }
-.site-footer .brand-image .brand-logo { display: block; width: 9rem; height: 9rem; object-fit: contain; border: 0; box-shadow: none; border-radius: 0; }
+.site-header .brand-image .brand-logo { display: block; width: 3rem; height: 3rem; object-fit: contain; border: 0; box-shadow: none; border-radius: 0; }
+.site-header:has(.brand-image) { padding-block: .5rem; min-height: 4rem; }
+.site-footer .brand-image .brand-logo { display: block; width: 3rem; height: 3rem; object-fit: contain; border: 0; box-shadow: none; border-radius: 0; }
 @media screen and (max-width:760px) {
-  .site-header .brand-image .brand-logo { width: 4rem; height: 4rem; }
-  .site-header:has(.brand-image) { padding-block: .4rem; }
+  .site-header .brand-image .brand-logo,.site-footer .brand-image .brand-logo { width: 2.5rem; height: 2.5rem; }
+  .site-header:has(.brand-image) { padding-block: .4rem; min-height: 3.5rem; }
 }

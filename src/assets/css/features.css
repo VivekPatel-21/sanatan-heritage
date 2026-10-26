@@ -137,3 +137,22 @@
 .manu-present { background: var(--bg-sage); }
 .manu-present :is(th,td) { padding-left: .5rem; }
 html:not(.js) .site-header { position: relative; }
+.festival-directory-section { padding-top: 0; }
+.festival-directory-intro { max-width: 48rem; margin-bottom: 2rem; }
+.festival-filters { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; padding-block: 1.5rem; border-block: 1px solid var(--border-subtle); margin-bottom: 1rem; }
+.festival-filters label { display: grid; gap: .5rem; font: .875rem var(--font-sans); }
+.festival-filters label:first-child { flex: 1 1 18rem; }
+.festival-filters :is(input,select) { width: 100%; min-height: 44px; border: 1px solid var(--border-subtle); background: var(--bg-surface); color: var(--text-primary); padding: .7rem; font: 1rem var(--font-sans); }
+.festival-filters button,.festival-empty button { min-height: 44px; padding: .7rem 1rem; border: 1px solid var(--border-subtle); background: var(--bg-panel); color: var(--text-primary); font: .9375rem var(--font-sans); cursor: pointer; }
+.festival-count { font: .875rem var(--font-sans); color: var(--text-muted); }
+.festival-directory { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 3rem; }
+.festival-entry { padding: 2rem 0; border-top: 1px solid var(--border-subtle); min-width: 0; }
+.festival-entry h3 { font-size: 1.65rem; margin: .5rem 0 1rem; }
+.festival-entry p { line-height: 1.85; }
+.festival-entry .festival-timing { font: .875rem/1.7 var(--font-sans); color: var(--text-muted); }
+.festival-entry a { display: inline-flex; align-items: center; min-height: 44px; font: .875rem var(--font-sans); text-underline-offset: .25em; }
+.festival-entry[hidden],.festival-filters[hidden],.festival-empty[hidden] { display: none; }
+@media (width <= 760px) {
+  .festival-directory { grid-template-columns: minmax(0,1fr); }
+  .festival-filters label { width: 100%; }
+}
