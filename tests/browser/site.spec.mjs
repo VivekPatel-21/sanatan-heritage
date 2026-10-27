@@ -96,3 +96,12 @@ test('one festival entry holds the expanded information and legacy links open it
   await expect(page.locator('#shivaratri-telling')).toBeVisible();await expect(page.locator('#festival-query')).toHaveValue('');
   await page.locator('.journal-index a[href="#navaratri"]').click();await expect(page.locator('#calendar-navaratri details')).toHaveAttribute('open','');
 });
+
+test('rishi profiles connect stories, family links and wider narrative context',async({page})=>{
+  await page.goto('/dhruva.html');await page.locator('.rishi-connection a[href="/great-rishis.html#narada"]').click();await expect(page).toHaveURL(/great-rishis.html#narada$/);
+  await page.locator('#narada .rishi-reading-links a[href="/shiva-parvati.html"]').click();await expect(page).toHaveURL(/shiva-parvati.html$/);
+  await page.locator('.rishi-connection a[href="/great-rishis.html#narada"]').click();await expect(page).toHaveURL(/great-rishis.html#narada$/);
+  await page.locator('.tale-contents a[href="#bhrigu"]').click();await page.locator('#bhrigu .rishi-reading-links a[href="#markandeya"]').click();await expect(page).toHaveURL(/#markandeya$/);
+  await page.locator('#markandeya .rishi-reading-links a[href="/fourteen-lokas.html"]').click();await expect(page).toHaveURL(/fourteen-lokas.html$/);
+  await page.goto('/rama-exile.html');await expect(page.locator('.rishi-connection')).toContainText('wider Ramayana');await page.locator('.rishi-connection a[href$="#atri"]').click();await expect(page).toHaveURL(/great-rishis.html#atri$/);
+});

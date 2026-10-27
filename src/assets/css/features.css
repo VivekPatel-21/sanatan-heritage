@@ -168,3 +168,10 @@ html:not(.js) .site-header { position: relative; }
 .festival-detail-body .journal-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
 .festival-entry .festival-source { margin-top: .5rem; }
 .festival-entry:has(> .festival-details[open]) { grid-column: 1/-1; width: 100%; max-width: 48rem; justify-self: center; }
+.rishi-introduction { padding-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); }
+.rishis-page .tale-chapter-heading h2 small { display: block; margin-top: .65rem; color: var(--text-muted); font: .9375rem/1.7 var(--font-sans); }
+.rishi-reading-links { display: grid; gap: .75rem; margin: 1.75rem 0; font-family: var(--font-sans); }
+.rishi-reading-links a { display: block; padding: .75rem 0; border-top: 1px solid var(--border-subtle); font-size: 1rem; line-height: 1.6; text-decoration: none; }
+.rishi-reading-links a:hover { text-decoration: underline; text-underline-offset: .25em; }
+.rishi-reading-links small { display: block; color: var(--text-muted); font-size: .6875rem; letter-spacing: .06em; line-height: 1.7; margin-bottom: .4rem; }
+.story-connection-links .rishi-connection { grid-column: 1/-1; }

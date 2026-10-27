@@ -767,5 +767,27 @@
     "permission": "Generated for owner-requested page; no third-party image reproduced",
     "review": "Assistant visual review of complete landscape and empty pavilion; no deity or human depiction; no specialist certification",
     "identity": "An imagined cultivated river valley with terraced fields, irrigation channels and an empty pavilion"
+  },
+  {
+    "asset": "rishis-riverside-hermitage.webp",
+    "visiblePlacement": "great-rishis.njk",
+    "alt": "An imagined forest hermitage beside a river, with woven seats and a wrapped manuscript",
+    "caption": "A PLACE OF LEARNING · AI-GENERATED CONCEPTUAL HERMITAGE, NOT AN IDENTIFIED HISTORICAL SITE",
+    "origin": "Built-in Imagegen; see design-assets/rishis-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review: complete setting; three ordinary human figures in teaching scene with coherent two-arm anatomy; no deity portrait or specialist certification",
+    "identity": "An imagined forest hermitage beside a river, with woven seats and a wrapped manuscript"
+  },
+  {
+    "asset": "rishis-teaching-gathering.webp",
+    "visiblePlacement": "great-rishis.njk",
+    "alt": "An imagined elderly teacher and two adult students seated beside a manuscript under a banyan tree",
+    "caption": "LISTENING AND LEARNING · AI-GENERATED CONCEPTUAL GATHERING; THE FIGURES ARE NOT IDENTIFIED PORTRAITS",
+    "origin": "Built-in Imagegen; see design-assets/rishis-image-prompts.json",
+    "creator": "AI-generated conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review: complete setting; three ordinary human figures in teaching scene with coherent two-arm anatomy; no deity portrait or specialist certification",
+    "identity": "An imagined elderly teacher and two adult students seated beside a manuscript under a banyan tree"
   }
 ]

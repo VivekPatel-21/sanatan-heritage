@@ -81,7 +81,14 @@
         "href": "/glossary.html#yantra"
       }
     ],
-    "source": "/sources.html#lalita-bhandasura"
+    "source": "/sources.html#lalita-bhandasura",
+    "rishiLabel": "A sage in this story",
+    "rishis": [
+      {
+        "title": "Meet Narada",
+        "href": "/great-rishis.html#narada"
+      }
+    ]
   },
   {
     "id": "parvati",
@@ -109,7 +116,14 @@
         "href": "/glossary.html#brahman"
       }
     ],
-    "source": "/sources.html#shiva-parvati"
+    "source": "/sources.html#shiva-parvati",
+    "rishiLabel": "A sage in this story",
+    "rishis": [
+      {
+        "title": "Meet Narada",
+        "href": "/great-rishis.html#narada"
+      }
+    ]
   },
   {
     "id": "govardhana",
@@ -165,7 +179,18 @@
         "href": "/glossary.html#itihasa"
       }
     ],
-    "source": "/sources.html#rama-exile"
+    "source": "/sources.html#rama-exile",
+    "rishiLabel": "Sages in the wider Ramayana",
+    "rishis": [
+      {
+        "title": "Vashishtha: counsel in the royal household",
+        "href": "/great-rishis.html#vashishtha"
+      },
+      {
+        "title": "Atri: a later forest welcome",
+        "href": "/great-rishis.html#atri"
+      }
+    ]
   },
   {
     "id": "mahishasura",
@@ -249,6 +274,13 @@
         "href": "/glossary.html#tapas"
       }
     ],
-    "source": "/sources.html#dhruva"
+    "source": "/sources.html#dhruva",
+    "rishiLabel": "A sage in this story",
+    "rishis": [
+      {
+        "title": "Meet Narada",
+        "href": "/great-rishis.html#narada"
+      }
+    ]
   }
 ]

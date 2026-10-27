@@ -132,3 +132,9 @@ Expanded Festivals from three entries to a 31-entry searchable sacred-calendar d
 Removed the separate three-feature section and integrated its illustrations, original explanations and related links into the corresponding festival entries. There is now one collection of the same 31 entries. Each entry has a native expandable reading area; the 28 newer entries gained two short, source-checked sections on meaning, customs, narrative or seasonal context. Expanded entries span the grid at a comfortable reading width. Sources remain centralized, with citation ranges extended where richer details required it.
 
 Preserved existing festival and telling anchors. Hash navigation reveals the relevant entry and clears filters only when needed to display a linked target. Search includes the fuller content; filters and counts still operate on the one collection. Native disclosure controls keep the details available without JavaScript.
+
+## Great Rishis — 26 October 2026
+
+Added great-rishis.html with source-checked profiles of Narada, Vashishtha, Atri, Bhrigu and Markandeya. Clear connection labels distinguish direct appearances in existing readers, wider Ramayana settings, a Bhagavata family line and related cosmological subjects. Detailed references remain on Sources; docs/RISHIS_SOURCE_REVIEW.md records scope and safeguards. Two unique, truthfully captioned conceptual paintings depict an imagined hermitage and unnamed teaching gathering.
+
+Linked the guide from the shared header/footer, Stories, Scriptures, creation and Manvantara guides. Optional journey metadata adds return links in the Dhruva, Shiva/Parvati, Lalita and Rama story connection sections without inserting the sages into existing condensed story text. The full narrative catalogue remains nine stories.
