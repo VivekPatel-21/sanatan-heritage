@@ -138,3 +138,6 @@ Preserved existing festival and telling anchors. Hash navigation reveals the rel
 Added great-rishis.html with source-checked profiles of Narada, Vashishtha, Atri, Bhrigu and Markandeya. Clear connection labels distinguish direct appearances in existing readers, wider Ramayana settings, a Bhagavata family line and related cosmological subjects. Detailed references remain on Sources; docs/RISHIS_SOURCE_REVIEW.md records scope and safeguards. Two unique, truthfully captioned conceptual paintings depict an imagined hermitage and unnamed teaching gathering.
 
 Linked the guide from the shared header/footer, Stories, Scriptures, creation and Manvantara guides. Optional journey metadata adds return links in the Dhruva, Shiva/Parvati, Lalita and Rama story connection sections without inserting the sages into existing condensed story text. The full narrative catalogue remains nine stories.
+
+## 26 October 2026 — Kapila and Devahuti
+Added a six-chapter illustrated full reader from the owner-supplied Bhagavata Purana 3.24–33, with source boundaries, a distinct devotional Sankhya framing, a collection card, header/footer links, a connected journey and three unique AI-generated illustrations. Artwork provenance and permission status are recorded. The separate Ramayana Kapila episode is identified without conflation. See docs/KAPILA_SOURCE_REVIEW.md.

@@ -282,5 +282,33 @@
         "href": "/great-rishis.html#narada"
       }
     ]
+  },
+  {
+    "id": "kapila",
+    "title": "The self and the changing world",
+    "description": "Follow Devahuti's questions and Kapila's teaching on discernment, devotion and freedom.",
+    "story": {
+      "title": "Kapila and Devahuti",
+      "href": "/kapila-devahuti.html"
+    },
+    "deity": {
+      "title": "Meet Vishnu",
+      "href": "/deities.html#vishnu"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Atman · self",
+        "href": "/glossary.html#atman"
+      },
+      {
+        "title": "Moksha · liberation",
+        "href": "/glossary.html#moksha"
+      }
+    ],
+    "source": "/sources.html#kapila-devahuti"
   }
 ]

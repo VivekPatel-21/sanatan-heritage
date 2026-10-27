@@ -789,5 +789,38 @@
     "permission": "Generated for owner-requested page; no third-party image reproduced",
     "review": "Assistant visual review: complete setting; three ordinary human figures in teaching scene with coherent two-arm anatomy; no deity portrait or specialist certification",
     "identity": "An imagined elderly teacher and two adult students seated beside a manuscript under a banyan tree"
+  },
+  {
+    "asset": "kapila-devahuti-dialogue.webp",
+    "visiblePlacement": "kapila-devahuti.njk",
+    "alt": "An imagined Devahuti listening to adult Kapila beneath a tree beside a lake",
+    "caption": "THE CONVERSATION · AI-GENERATED DEVOTIONAL INTERPRETATION; FIGURES AND SETTING ARE IMAGINED",
+    "origin": "Built-in Imagegen; see design-assets/kapila-image-prompts.json",
+    "creator": "AI-generated narrative or conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
+    "identity": "Imagined mother–son teaching scene at a lakeside hermitage"
+  },
+  {
+    "asset": "kapila-witnessing-self.webp",
+    "visiblePlacement": "kapila-devahuti.njk",
+    "alt": "An imagined empty hermitage terrace with a clay lamp, manuscript and lotus beside a reflective lake",
+    "caption": "STILLNESS AND REFLECTION · AI-GENERATED CONCEPTUAL IMAGE, NOT A HISTORICAL PLACE",
+    "origin": "Built-in Imagegen; see design-assets/kapila-image-prompts.json",
+    "creator": "AI-generated narrative or conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
+    "identity": "Empty lakeside terrace with lamp, manuscript and lotus"
+  },
+  {
+    "asset": "kapila-hermitage-path.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "An imagined path toward a lakeside forest hermitage",
+    "caption": "AI-GENERATED CONCEPTUAL LANDSCAPE",
+    "origin": "Built-in Imagegen; see design-assets/kapila-image-prompts.json",
+    "creator": "AI-generated narrative or conceptual interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
+    "identity": "Tree-lined path to an imagined lakeside hermitage"
   }
 ]

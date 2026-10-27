@@ -58,5 +58,5 @@ search.window.eval(await readFile('src/assets/js/search.js','utf8'));search.wind
 assert.equal(options.showSubResults,false);assert.equal(search.window.document.querySelector('#site-search input').value,'Hanuman');
 const input=search.window.document.querySelector('#site-search input');input.value='Ganga';input.dispatchEvent(new search.window.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,250));assert.equal(new URLSearchParams(search.window.location.search).get('q'),'Ganga');
 for(const dom of [reader,paths,library,legacy,corrupt,blocked,shared,directory,unknown,search])dom.window.close();
-assert.equal(catalog.stories.length,9);assert.ok(catalog.stories.every(story=>story.chapters.length>0));
+assert.equal(catalog.stories.length,10);assert.ok(catalog.stories.every(story=>story.chapters.length>0));
 console.log('Passed: reader/library/path persistence, legacy bookmark migration, corrupt and blocked storage, keyboard focus after library actions, shared filters, and search URL restoration/update.');

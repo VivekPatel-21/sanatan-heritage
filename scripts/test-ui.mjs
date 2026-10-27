@@ -40,7 +40,7 @@ collectionDoc.querySelector('#scripture-filter').value = 'Shiva Purana';
 collectionDoc.querySelector('#scripture-filter').dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelector('#no-stories').hidden, false);
 collectionDoc.querySelector('#empty-reset').click();
-assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 9);
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 10);
 assert.equal(collectionDoc.activeElement, collectionDoc.querySelector('#story-search'));
 collection.window.close();
 
@@ -57,7 +57,7 @@ const choice = explorer.window.document.querySelector('#journey-choice');
 choice.value = 'hanuman'; choice.dispatchEvent(new explorer.window.Event('change'));
 assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 1);
 choice.value = 'all'; choice.dispatchEvent(new explorer.window.Event('change'));
-assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 9);
+assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 10);
 explorer.window.close();
 
 const readerDoc = story.window.document;

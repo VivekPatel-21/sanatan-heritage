@@ -1,0 +1,23 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-26",
+  "purpose": "Three unique, visibly separate illustrations for the Kapila and Devahuti reader and its collection card",
+  "assets": [
+    {
+      "asset": "kapila-devahuti-dialogue.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-6a67c08f-11cf-45e4-8d97-4c5fa3d9ef1d.png",
+      "brief": "Respectful imagined adult Kapila and Devahuti in conversation at a lakeside hermitage; editorial miniature-influenced gouache; two coherent human figures; no claim of portrait or historical site."
+    },
+    {
+      "asset": "kapila-witnessing-self.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-42b6ee8b-d16a-4327-9cce-c7d2d6312f39.png",
+      "brief": "Empty contemplative terrace, lamp, manuscript, lotus and still reflective lake as a metaphor for discernment; no persons or identified site."
+    },
+    {
+      "asset": "kapila-hermitage-path.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-a676dd96-946c-47b3-9218-3f61aafc8f0d.png",
+      "brief": "Unique story card landscape: tree-lined path toward a modest imagined lakeside hermitage; no figures, text or historical identification."
+    }
+  ],
+  "conversion": "Sharp WebP quality 88, effort 5; 1536 × 1024 source pixels"
+}

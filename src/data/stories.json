@@ -52,5 +52,11 @@
     "href": "/dhruva.html",
     "minutes": 7,
     "format": "Full story"
+  },
+  "kapila": {
+    "title": "Kapila and Devahuti",
+    "href": "/kapila-devahuti.html",
+    "minutes": 7,
+    "format": "Full story"
   }
 }

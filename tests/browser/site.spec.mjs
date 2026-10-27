@@ -105,3 +105,17 @@ test('rishi profiles connect stories, family links and wider narrative context',
   await page.locator('#markandeya .rishi-reading-links a[href="/fourteen-lokas.html"]').click();await expect(page).toHaveURL(/fourteen-lokas.html$/);
   await page.goto('/rama-exile.html');await expect(page.locator('.rishi-connection')).toContainText('wider Ramayana');await page.locator('.rishi-connection a[href$="#atri"]').click();await expect(page).toHaveURL(/great-rishis.html#atri$/);
 });
+
+test('Kapila and Devahuti can be found, read and traced to the supplied edition',async({page})=>{
+  await page.goto('/stories.html?scripture=Bhagavata+Purana');
+  await expect(page.locator('#story-kapila-devahuti')).toBeVisible();
+  await page.locator('#story-kapila-devahuti .tale-card-link').click();
+  await expect(page).toHaveURL(/kapila-devahuti.html$/);
+  await expect(page.locator('.tale-chapter')).toHaveCount(6);
+  await page.locator('.tale-contents a[href="#sankhya"]').click();
+  await expect(page).toHaveURL(/#sankhya$/);
+  await expect(page.locator('#sankhya')).toContainText(/prakriti/i);
+  await page.locator('.tale-meta a[href="/sources.html#kapila-devahuti"]').click();
+  await expect(page).toHaveURL(/sources.html#kapila-devahuti$/);
+  await expect(page.locator('#kapila-devahuti')).toContainText('3.25.5–20');
+});
