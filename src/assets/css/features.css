@@ -199,4 +199,13 @@ html:not(.js) .site-header { position: relative; }
 .video-index strong { color: var(--text-primary); font: 1rem var(--font-sans); }
 .video-index small { color: var(--text-muted); font: .75rem var(--font-sans); }
 .video-index a:hover strong { text-decoration: underline; text-underline-offset: .25em; }
-@media (width <= 700px) { .work-entry { grid-template-columns: minmax(0,1fr); gap: 1rem; } .work-entry img { max-height: 20rem; } .video-index a { grid-template-columns: 2rem 1fr; } .video-index small { grid-column: 2; } }
+@media (width <= 760px) {
+  .jay-bhole-page .tale-layout { grid-template-columns: minmax(0,1fr); gap: 2.5rem; }
+  .jay-bhole-page .tale-contents { position: static; width: 100%; }
+  .jay-bhole-page .tale-contents nav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .work-entry { grid-template-columns: minmax(0,1fr); gap: 1rem; }
+  .work-entry img { max-height: 20rem; }
+  .video-index a { grid-template-columns: 2rem 1fr; }
+  .video-index small { grid-column: 2; }
+}
+@media (width <= 420px) { .jay-bhole-page .tale-contents nav { grid-template-columns: minmax(0,1fr); } }

@@ -144,6 +144,11 @@ test('Jay Bhole Group archive exposes its confirmed works and official links',as
   await expect(page.locator('#works')).toContainText('Panch Dhatu');
   await expect(page.locator('#witness')).toContainText('Vidhushekhara Bharati');
   await expect(page.locator('#videos a')).toHaveCount(4);
+  await expect(page.locator('#videos')).toContainText('51 Shaktipeeth Stuti');
+  await expect(page.locator('#videos')).toContainText('Sri Yantra Stuti');
+  await expect(page.locator('#videos')).toContainText('Jay Adhya Shakti Aarti');
+  await expect(page.locator('#contact')).not.toContainText('Chintan Patel');
+  await expect(page.locator('#contact')).not.toContainText('Kailash Dewani');
   await expect(page.locator('a[href="https://www.jaybholegroup.com/"]').first()).toBeVisible();
   await expect(page.locator('a[href="mailto:info@jaybholegroup.com"]')).toBeVisible();
 });
