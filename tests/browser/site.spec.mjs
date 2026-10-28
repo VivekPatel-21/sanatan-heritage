@@ -119,3 +119,21 @@ test('Kapila and Devahuti can be found, read and traced to the supplied edition'
   await expect(page).toHaveURL(/sources.html#kapila-devahuti$/);
   await expect(page.locator('#kapila-devahuti')).toContainText('3.25.5–20');
 });
+
+test('the Avadhuta guide presents all twenty-four teachers in order with source links',async({page})=>{
+  await page.goto('/stories.html');
+  await page.locator('a[href="/avadhuta-teachers.html"]').last().click();
+  await expect(page).toHaveURL(/avadhuta-teachers.html$/);
+  const teachers=page.locator('.teacher-list > li');
+  await expect(teachers).toHaveCount(24);
+  await expect(teachers.first()).toContainText('Earth');
+  await expect(teachers.last()).toContainText('Wasp and captive insect');
+  await expect(page.locator('.teacher-list[start="1"] > li')).toHaveCount(8);
+  await expect(page.locator('.teacher-list[start="9"] > li')).toHaveCount(9);
+  await expect(page.locator('.teacher-list[start="18"] > li')).toHaveCount(7);
+  await page.locator('.tale-contents a[href="#body-teacher"]').click();
+  await expect(page).toHaveURL(/#body-teacher$/);
+  await expect(page.locator('#body-teacher')).toContainText('outside the numbered list');
+  await page.locator('.tale-meta a[href="/sources.html#avadhuta-teachers"]').click();
+  await expect(page.locator('#avadhuta-teachers')).toContainText('11.7.33–35');
+});

@@ -4,6 +4,7 @@ export default async function (config) {
   config.addGlobalData('site',site);
   config.addGlobalData('navigation',JSON.parse(await readFile('src/data/navigation.json','utf8')));
   config.addGlobalData('festivals',JSON.parse(await readFile('src/data/festivals.json','utf8')));
+  config.addGlobalData('avadhutaTeachers',JSON.parse(await readFile('src/data/avadhutaTeachers.json','utf8')));
   config.addGlobalData('eleventyComputed',{
     canonical:data=>absoluteUrl(pagePath(data)),
     socialImage:data=>absoluteUrl(socialPath(data)),

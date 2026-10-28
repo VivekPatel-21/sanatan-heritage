@@ -822,5 +822,27 @@
     "permission": "Generated for owner-requested page; no third-party image reproduced",
     "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
     "identity": "Tree-lined path to an imagined lakeside hermitage"
+  },
+  {
+    "asset": "avadhuta-learning-from-nature.webp",
+    "visiblePlacement": "avadhuta-teachers.njk",
+    "alt": "An imagined unnamed wanderer looking over a river, trees and mountains at dawn",
+    "caption": "A WORLD TO LEARN FROM · AI-GENERATED CONCEPTUAL WANDERER AND LANDSCAPE, NOT A NAMED PORTRAIT OR SITE",
+    "origin": "Built-in Imagegen; see design-assets/avadhuta-image-prompts.json",
+    "creator": "AI-generated conceptual or narrative interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
+    "identity": "Unnamed wanderer in an imagined river and mountain landscape"
+  },
+  {
+    "asset": "avadhuta-arrow-maker.webp",
+    "visiblePlacement": "avadhuta-teachers.njk",
+    "alt": "An imagined arrow maker absorbed in shaping a shaft while a small procession passes in the background",
+    "caption": "THE ARROW MAKER’S ATTENTION · AI-GENERATED NARRATIVE INTERPRETATION, NOT A HISTORICAL PORTRAIT",
+    "origin": "Built-in Imagegen; see design-assets/avadhuta-image-prompts.json",
+    "creator": "AI-generated conceptual or narrative interpretation",
+    "permission": "Generated for owner-requested page; no third-party image reproduced",
+    "review": "Assistant visual review of composition and anatomy; no specialist iconography certification",
+    "identity": "Imagined arrow maker and distant procession"
   }
 ]

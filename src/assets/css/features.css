@@ -175,3 +175,13 @@ html:not(.js) .site-header { position: relative; }
 .rishi-reading-links a:hover { text-decoration: underline; text-underline-offset: .25em; }
 .rishi-reading-links small { display: block; color: var(--text-muted); font-size: .6875rem; letter-spacing: .06em; line-height: 1.7; margin-bottom: .4rem; }
 .story-connection-links .rishi-connection { grid-column: 1/-1; }
+.teacher-list { list-style: none; counter-reset: teacher; margin: 2rem 0; padding: 0; }
+.teacher-list > li { counter-increment: teacher; position: relative; min-width: 0; padding: 1.25rem 0 1.4rem 3.25rem; border-top: 1px solid var(--border-subtle); scroll-margin-top: 7rem; }
+.teacher-list > li::before { content: counter(teacher,decimal-leading-zero); position: absolute; top: 1.55rem; left: 0; color: var(--accent-gold); font: .875rem var(--font-sans); }
+.teacher-list[start="9"] { counter-reset: teacher 8; }
+.teacher-list[start="18"] { counter-reset: teacher 17; }
+.teacher-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem; }
+.teacher-heading h3 { margin: 0; font-size: clamp(1.25rem,2vw,1.5rem); }
+.teacher-heading small { color: var(--text-muted); font: .8125rem var(--font-sans); white-space: nowrap; }
+.teacher-list p { margin: .55rem 0 0; line-height: 1.75; }
+.avadhuta-page .tale-chapter > .reader-note { margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 2px solid var(--accent-gold); background: var(--bg-panel); }
