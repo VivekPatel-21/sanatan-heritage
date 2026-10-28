@@ -137,3 +137,13 @@ test('the Avadhuta guide presents all twenty-four teachers in order with source 
   await page.locator('.tale-meta a[href="/sources.html#avadhuta-teachers"]').click();
   await expect(page.locator('#avadhuta-teachers')).toContainText('11.7.33–35');
 });
+
+test('Jay Bhole Group archive exposes its confirmed works and official links',async({page})=>{
+  await page.goto('/jay-bhole-group.html');
+  await expect(page.locator('.work-entry')).toHaveCount(6);
+  await expect(page.locator('#works')).toContainText('Panch Dhatu');
+  await expect(page.locator('#witness')).toContainText('Vidhushekhara Bharati');
+  await expect(page.locator('#videos a')).toHaveCount(4);
+  await expect(page.locator('a[href="https://www.jaybholegroup.com/"]').first()).toBeVisible();
+  await expect(page.locator('a[href="mailto:info@jaybholegroup.com"]')).toBeVisible();
+});

@@ -185,3 +185,18 @@ html:not(.js) .site-header { position: relative; }
 .teacher-heading small { color: var(--text-muted); font: .8125rem var(--font-sans); white-space: nowrap; }
 .teacher-list p { margin: .55rem 0 0; line-height: 1.75; }
 .avadhuta-page .tale-chapter > .reader-note { margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 2px solid var(--accent-gold); background: var(--bg-panel); }
+.jay-bhole-mark img { object-fit: contain; padding: 1.25rem; background: #fff; }
+.jay-bhole-works { max-width: 58rem; }
+.work-entry { display: grid; grid-template-columns: minmax(12rem, .85fr) minmax(0,1fr); gap: 2rem; align-items: center; padding: 2rem 0; border-top: 1px solid var(--border-subtle); }
+.work-entry figure { margin: 0; }
+.work-entry img { display: block; width: 100%; max-height: 24rem; object-fit: contain; background: var(--bg-panel); }
+.work-entry figcaption,.tale-inline figcaption { margin-top: .55rem; color: var(--text-muted); font: .6875rem/1.5 var(--font-sans); letter-spacing: .06em; }
+.work-entry h3 { margin: .35rem 0 .65rem; font-size: clamp(1.35rem,2vw,1.8rem); }
+.work-entry p:last-child { line-height: 1.75; }
+.video-index { display: grid; gap: 0; margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); }
+.video-index a { display: grid; grid-template-columns: 2.5rem 1fr auto; gap: .75rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--border-subtle); text-decoration: none; }
+.video-index span { color: var(--accent-gold); font: .8125rem var(--font-sans); }
+.video-index strong { color: var(--text-primary); font: 1rem var(--font-sans); }
+.video-index small { color: var(--text-muted); font: .75rem var(--font-sans); }
+.video-index a:hover strong { text-decoration: underline; text-underline-offset: .25em; }
+@media (width <= 700px) { .work-entry { grid-template-columns: minmax(0,1fr); gap: 1rem; } .work-entry img { max-height: 20rem; } .video-index a { grid-template-columns: 2rem 1fr; } .video-index small { grid-column: 2; } }
