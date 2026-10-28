@@ -1,0 +1,13 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-28",
+  "purpose": "Four unique reader illustrations and one separate collection-card illustration for The Birth of Ganesha",
+  "assets": [
+    {"asset":"ganesha-birth-card.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-74eb560f-3bad-4c5a-8b51-554a3ae50b25.png","brief":"Symbolic Kailasa threshold with mouse, modakas, guardian staff, durva and hibiscus; no deity portrait."},
+    {"asset":"ganesha-birth-reader.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-aee3917b-7e6a-4df9-9d5d-aeca3d2c0ca7.png","brief":"Restored elephant-headed young Ganesha reunited with Parvati and Shiva on an imagined Kailasa terrace."},
+    {"asset":"parvati-creates-guardian.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-e195a24b-3519-48ec-9eeb-03539bcd7b87.png","brief":"Parvati blesses her newly created human-headed son and gives him garments, ornaments and a staff."},
+    {"asset":"ganesha-at-the-door.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-2e042903-e011-407f-8981-0ae3ccc886b6.png","brief":"Non-graphic threshold confrontation: the human-headed guardian faces Shiva, Nandi and the ganas."},
+    {"asset":"ganesha-restored.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-5c168bd3-4886-4cca-a665-614591a96fa0.png","brief":"Non-graphic restoration ceremony: elephant-headed Ganesha awakens as Parvati approaches and sacred water is offered."}
+  ],
+  "conversion": "Sharp WebP quality 88, effort 5; 1536 × 1024 output assets"
+}
