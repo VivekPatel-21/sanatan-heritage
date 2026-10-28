@@ -1,0 +1,33 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-28",
+  "purpose": "Four unique reader illustrations and one separate collection-card illustration for Devi and Shumbha–Nishumbha",
+  "assets": [
+    {
+      "asset": "shumbha-nishumbha-card.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-03b0fa84-6db4-48d1-bf0d-d8c0e55ff918.png",
+      "brief": "Unique symbolic collection card: a lion, bell and red banner on an imagined Himalayan ridge as seven lights converge into one."
+    },
+    {
+      "asset": "devi-shumbha-nishumbha-reader.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-5c004d8c-fbb9-4192-8b90-7187714b67d7.png",
+      "brief": "Chandika with her lion on a luminous Himalayan peak; surrounding feminine presences suggest the divine energies without claiming an exhaustive iconographic chart."
+    },
+    {
+      "asset": "chamunda-chanda-munda.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-05ffaf86-161b-4904-bc8c-dd0434f7ea9b.png",
+      "brief": "Non-graphic devotional interpretation of fierce Kali / Chamunda advancing while the army of Chanda and Munda recoils; Ambika and her lion remain visible."
+    },
+    {
+      "asset": "raktabija-divine-energies.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-92f5ca1b-0d2f-4107-88ee-438a2ef03665.png",
+      "brief": "Chandika, Chamunda and the divine feminine energies confront stylised multiplying forms of Raktabija; crimson droplets are symbolic and non-graphic."
+    },
+    {
+      "asset": "devi-shumbha-final-duel.webp",
+      "original": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-f3b0c409-3211-4707-85d0-e74ad741f004.png",
+      "brief": "Non-graphic airborne final contest between Chandika and Shumbha above an imagined Himalayan landscape as storm clouds clear."
+    }
+  ],
+  "conversion": "Sharp WebP quality 88, effort 5; 1536 × 1024 output assets"
+}
