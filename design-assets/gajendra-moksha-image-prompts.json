@@ -1,0 +1,13 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-28",
+  "purpose": "Four unique reader illustrations and one separate collection-card illustration for Gajendra Moksha",
+  "assets": [
+    {"asset":"gajendra-moksha-reader.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-ec56bc66-01f5-4862-830c-cd9a499d7d5b.png","brief":"Vishnu arrives on Garuda as Gajendra raises a lotus; crocodile visible without graphic injury."},
+    {"asset":"gajendra-trikuta-lake.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-4fea04d4-b9b3-46b7-8f0c-81e440ca5c28.png","brief":"Gajendra and the herd bathe at the lotus lake beneath three imagined peaks."},
+    {"asset":"gajendra-prayer.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-2424a03a-82d8-4f95-992d-eec4ac0d1351.png","brief":"Non-graphic long struggle; Gajendra raises a lotus while the herd watches."},
+    {"asset":"gajendra-rescued.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-b1775035-1768-436e-8dc6-0358355b4082.png","brief":"Vishnu blesses the rescued natural elephant Gajendra beside Garuda."},
+    {"asset":"gajendra-moksha-card.webp","original":"C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-db549409-981f-4d4b-a3bb-13476acce21e.png","brief":"Symbolic lotus, elephant trunk, conch, chakra, footprints and Garuda-shaped light; no deity portrait."}
+  ],
+  "conversion": "Sharp WebP quality 88, effort 5; 1536 × 1024 output assets"
+}

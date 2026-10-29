@@ -35,6 +35,12 @@
     "minutes": 5,
     "format": "Full story"
   },
+  "gajendra": {
+    "title": "Gajendra Moksha",
+    "href": "/gajendra-moksha.html",
+    "minutes": 7,
+    "format": "Full story"
+  },
   "rama": {
     "title": "Rama’s exile",
     "href": "/rama-exile.html",
