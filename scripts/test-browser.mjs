@@ -7,7 +7,7 @@ const page = await context.newPage();
 await mkdir('.qa', { recursive: true });
 const pages = (await readdir('dist')).filter(file => file.endsWith('.html'));
 const results = [];
-const important = new Set(['index.html','stories.html','deities.html','hanuman-lanka.html','krishna-govardhana.html','rama-exile.html','devi-mahishasura.html','devi-shumbha-nishumbha.html','bhagiratha-ganga.html','ganesha-birth.html','gajendra-moksha.html','glossary.html','family.html','explore.html']);
+const important = new Set(['index.html','stories.html','deities.html','hanuman-lanka.html','krishna-govardhana.html','rama-exile.html','devi-mahishasura.html','devi-shumbha-nishumbha.html','bhagiratha-ganga.html','ganesha-birth.html','gajendra-moksha.html','varaha-earth.html','glossary.html','family.html','explore.html']);
 const runtimeErrors = [];
 page.on('pageerror', error => runtimeErrors.push(String(error)));
 for (const width of [375,768,1440]) {

@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-28",
+  "prompts": {
+    "varaha-rescue-reader": "Use case: illustration-story. Create a landscape 1536x1024 respectful classical Indian devotional painting for an illustrated Bhagavata Purana story. Varaha, Vishnu's gigantic divine boar form, full natural boar body with exactly four hooved legs, deep blue charcoal bristled fur, two white tusks, luminous compassionate eyes, rises from cosmic indigo waters bearing the rescued Earth as a small fertile rounded land-world balanced upon the tusks. Golden dawn and fine spray, distant sages in clouds. Varaha is animal-bodied in this textual scene, no human torso or arms, no weapons, no extra limbs, no cartoon, no gore, no text. Refined hand-painted pigments, muted ivory and antique gold, epic but calm, anatomically coherent and clear.",
+    "varaha-hiranyaksha": "Use case: illustration-story. Landscape 1536x1024 classical Indian devotional narrative painting: Varaha, Vishnu in an enormous natural boar-bodied form with deep blue fur, four hooved legs, white tusks and compassionate eyes, stands at the edge of cosmic waters facing Hiranyaksha, a powerful crowned asura warrior with exactly two human arms holding a single mace, richly ornamented ancient Indian attire. A small fertile Earth is safely established on distant calm waters under a protective glow, not carried in this confrontation. Dynamic anticipation, no strike or injury, no blood, no monster stereotype, respectful sacred story, no writing. Warm gold light and muted indigo, miniature painting detail, clear distinct anatomy, no extra limbs.",
+    "varaha-rescue-card": "Use case: illustration-story. Landscape 1536x1024 symbolic devotional still life for a Varaha story collection card. A single carved dark stone boar-head relief with two white tusks, supporting a small green earthen sphere, sits above stylized indigo ocean waves, with a small conch and antique brass oil lamp in foreground. Original imagined sacred artwork, not a real antiquity. Close composition, textured hand-painted Indian gouache and tempera, warm ivory, ochre, antique gold, deep blue, elegant quiet gallery presentation. No people, no text, no labels, no watermark, no map borders."
+  },
+  "assets": {
+    "varaha-rescue-reader.webp": "exec-91c74b4f-3c3d-4228-93e9-db8fedb6a565.png",
+    "varaha-hiranyaksha.webp": "exec-98208196-de7d-4bf4-899d-2a5321b8e869.png",
+    "varaha-rescue-card.webp": "exec-d66ccc13-eb53-4c00-8f6b-3d030955af53.png"
+  },
+  "conversion": "Sharp WebP quality 85; 1536x1024"
+}
