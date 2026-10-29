@@ -189,6 +189,7 @@ html:not(.js) .site-header { position: relative; }
 .jay-bhole-works { max-width: 58rem; }
 .work-entry { display: grid; grid-template-columns: minmax(12rem, .85fr) minmax(0,1fr); gap: 2rem; align-items: center; padding: 2rem 0; border-top: 1px solid var(--border-subtle); }
 .work-entry figure { margin: 0; }
+.work-entry figcaption { position: static; inset: auto; display: block; }
 .work-entry img { display: block; width: 100%; max-height: 24rem; object-fit: contain; background: var(--bg-panel); }
 .work-entry figcaption,.tale-inline figcaption { margin-top: .55rem; color: var(--text-muted); font: .6875rem/1.5 var(--font-sans); letter-spacing: .06em; }
 .work-entry h3 { margin: .35rem 0 .65rem; font-size: clamp(1.35rem,2vw,1.8rem); }
