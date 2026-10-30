@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-30",
+  "prompts": {
+    "jatayu-sacrifice-reader": "Landscape devotional painting: the aged vulture king Jatayu spreads his wings before Ravana's airborne golden chariot while Sita reaches toward her defender; non-graphic Dandaka forest sunset.",
+    "rama-jatayu": "Landscape devotional painting: two-armed Rama gently supports the exhausted but dignified Jatayu while two-armed Lakshmana kneels nearby in a forest clearing; solemn and non-graphic.",
+    "jatayu-sacrifice-card": "Symbolic landscape still life: a large vulture feather, broken golden chariot wheel and snapped bow with forest flowers in dawn light; no people and no violence."
+  },
+  "assets": {
+    "jatayu-sacrifice-reader.webp": "exec-be4646f2-3632-4774-b4d5-1aff10311396.png",
+    "rama-jatayu.webp": "exec-2f1452ed-960e-4d70-8039-5c2c83fe2984.png",
+    "jatayu-sacrifice-card.webp": "exec-e87e0c03-c387-4077-a238-d1f60de8c1be.png"
+  },
+  "conversion": "Sharp WebP quality 85; maximum width 1536"
+}

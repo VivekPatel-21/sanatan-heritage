@@ -345,5 +345,33 @@
         "href": "/great-rishis.html#markandeya"
       }
     ]
+  },
+  {
+    "id": "jatayu",
+    "title": "Courage in the service of dharma",
+    "description": "Follow Jatayu from a promise at Panchavati to the message that directs Rama’s search.",
+    "story": {
+      "title": "Jatayu’s Sacrifice",
+      "href": "/jatayu-sacrifice.html"
+    },
+    "deity": {
+      "title": "Meet Rama",
+      "href": "/deities.html#rama"
+    },
+    "scripture": {
+      "title": "Explore the Ramayana",
+      "href": "/scriptures.html#epics"
+    },
+    "terms": [
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Karma · action",
+        "href": "/glossary.html#karma"
+      }
+    ],
+    "source": "/sources.html#jatayu-sacrifice"
   }
 ]

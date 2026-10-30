@@ -5,7 +5,7 @@ const terms = JSON.parse(await readFile('src/data/glossary.json', 'utf8'));
 async function page(name) {
   const dom = new JSDOM(await readFile(`dist/${name}.html`, 'utf8'), { url: `https://sanatan-heritage.test/${name}.html`, runScripts: 'outside-only', pretendToBeVisual: true });
   dom.window.fetch = async () => ({ ok: true, json: async () => terms });
-  for (const script of ['theme','reading-state','site',...(['glossary','deities'].includes(name) ? ['directory'] : []), ...(name === 'stories' ? ['stories'] : []), ...(name === 'explore' ? ['explorer'] : []), ...(['lalita-bhandasura','shiva-parvati','shiva-halahala','hanuman-lanka','krishna-govardhana','rama-exile','devi-mahishasura','devi-shumbha-nishumbha','bhagiratha-ganga','ganesha-birth','gajendra-moksha','varaha-earth','prahlada-narasimha','vamana-king-bali','markandeya-shiva'].includes(name) ? ['reader'] : [])]) dom.window.eval(await readFile(`src/assets/js/${script}.js`, 'utf8'));
+  for (const script of ['theme','reading-state','site',...(['glossary','deities'].includes(name) ? ['directory'] : []), ...(name === 'stories' ? ['stories'] : []), ...(name === 'explore' ? ['explorer'] : []), ...(['lalita-bhandasura','shiva-parvati','shiva-halahala','hanuman-lanka','krishna-govardhana','rama-exile','jatayu-sacrifice','devi-mahishasura','devi-shumbha-nishumbha','bhagiratha-ganga','ganesha-birth','gajendra-moksha','varaha-earth','prahlada-narasimha','vamana-king-bali','markandeya-shiva'].includes(name) ? ['reader'] : [])]) dom.window.eval(await readFile(`src/assets/js/${script}.js`, 'utf8'));
   await new Promise(resolve => setImmediate(resolve));
   return dom;
 }
@@ -40,7 +40,7 @@ collectionDoc.querySelector('#scripture-filter').value = 'Shiva Purana';
 collectionDoc.querySelector('#scripture-filter').dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelector('#no-stories').hidden, false);
 collectionDoc.querySelector('#empty-reset').click();
-assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 17);
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 18);
 assert.equal(collectionDoc.activeElement, collectionDoc.querySelector('#story-search'));
 collection.window.close();
 
@@ -57,7 +57,7 @@ const choice = explorer.window.document.querySelector('#journey-choice');
 choice.value = 'hanuman'; choice.dispatchEvent(new explorer.window.Event('change'));
 assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 1);
 choice.value = 'all'; choice.dispatchEvent(new explorer.window.Event('change'));
-assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 11);
+assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 12);
 explorer.window.close();
 
 const readerDoc = story.window.document;
