@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-29",
+  "prompts": {
+    "prahlada-narasimha-reader": "Use case: illustration-story. Landscape devotional narrative painting for the story hero: an ancient palace hall at twilight, a carved pillar split by divine light, four-armed Narasimha emerging with chakra and conch, one hand protecting young Prahlada, Hiranyakashipu recoiling with a mace. No injury, blood or corpse; classical Indian gouache and tempera in the site's ivory, gold, indigo and terracotta editorial palette.",
+    "prahlada-classmates": "Use case: illustration-story. Landscape narrative painting of young Prahlada teaching seven classmates in an ancient palace gurukula, palm-leaf manuscripts nearby and a subtle lotus glow suggesting inward remembrance. Child-safe, calm and anatomically coherent; no adult or visible deity.",
+    "prahlada-narasimha-card": "Use case: illustration-story. Symbolic landscape still life: a single carved stone pillar split at an amber-violet twilight threshold, restrained golden lion aureole within, with a lotus and child's tulsi mala at the base. No people, combat, weapons, text or watermark."
+  },
+  "assets": {
+    "prahlada-narasimha-reader.webp": "exec-42356272-3373-4f34-87f0-a297337cb3d5.png",
+    "prahlada-classmates.webp": "exec-f69a98dc-b532-4434-98ed-fb6475319641.png",
+    "prahlada-narasimha-card.webp": "exec-b8e655b6-af2c-4676-9098-b7363b5997b3.png"
+  },
+  "conversion": "Sharp WebP quality 85; 1536x1024"
+}
