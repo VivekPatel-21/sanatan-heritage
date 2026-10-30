@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-29",
+  "prompts": {
+    "markandeya-shiva-reader": "Landscape devotional story painting: young Markandeya embraces a Shiva linga while two-armed Shiva manifests protectively and Yama stands at the threshold with a lowered noose; non-graphic twilight temple scene with correct Shaiva markers.",
+    "markandeya-devotion": "Landscape devotional painting: young Markandeya kneels before a flower-covered Shiva linga in a quiet forest hermitage before dawn; calm resolve, no visible deity.",
+    "markandeya-shiva-card": "Symbolic landscape still life: a Shiva linga, lamp, flowers and rudraksha within a pool of golden light while Yama's noose rests outside the boundary; no people."
+  },
+  "assets": {
+    "markandeya-shiva-reader.webp": "exec-84fb0378-7f53-4315-97aa-87f5d6078304.png",
+    "markandeya-devotion.webp": "exec-956c8268-9ec1-43bc-adc1-98a714749c1b.png",
+    "markandeya-shiva-card.webp": "exec-67642b46-8711-4853-ae2e-bd96ec024bcf.png"
+  },
+  "conversion": "Sharp WebP quality 85; maximum width 1536"
+}

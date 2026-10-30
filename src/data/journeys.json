@@ -310,5 +310,40 @@
       }
     ],
     "source": "/sources.html#kapila-devahuti"
+  },
+  {
+    "id": "markandeya",
+    "title": "Devotion in the presence of death",
+    "description": "Follow Markandeya from the knowledge of a brief life to refuge at the linga.",
+    "story": {
+      "title": "Markandeya and Shiva",
+      "href": "/markandeya-shiva.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Linga · sign of Shiva",
+        "href": "/glossary.html#linga"
+      }
+    ],
+    "source": "/sources.html#markandeya-shiva",
+    "rishiLabel": "The sage in this story",
+    "rishis": [
+      {
+        "title": "Meet Markandeya",
+        "href": "/great-rishis.html#markandeya"
+      }
+    ]
   }
 ]
