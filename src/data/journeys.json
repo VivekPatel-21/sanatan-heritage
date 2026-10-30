@@ -154,6 +154,34 @@
     "source": "/sources.html#krishna-govardhana"
   },
   {
+    "id": "kaliya",
+    "title": "Strength guided by mercy",
+    "description": "Follow Krishna into Kaliya’s poisoned lake and the restoration of the Yamuna.",
+    "story": {
+      "title": "Krishna and Kaliya",
+      "href": "/krishna-kaliya.html"
+    },
+    "deity": {
+      "title": "Meet Krishna",
+      "href": "/deities.html#krishna"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Avatar · divine descent",
+        "href": "/glossary.html#avatar"
+      }
+    ],
+    "source": "/sources.html#krishna-kaliya"
+  },
+  {
     "id": "rama",
     "title": "Duty and companionship",
     "description": "Follow Rama, Sita and Lakshmana as life in Ayodhya gives way to exile.",

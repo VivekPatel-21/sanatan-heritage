@@ -9,7 +9,7 @@ const baseUrl = `http://127.0.0.1:${port}`;
 await mkdir('.qa', { recursive: true });
 const pages = (await readdir('dist')).filter(file => file.endsWith('.html'));
 const results = [];
-const important = new Set(['index.html','stories.html','deities.html','lalita.html','hanuman-lanka.html','krishna-govardhana.html','rama-exile.html','jatayu-sacrifice.html','devi-mahishasura.html','devi-shumbha-nishumbha.html','bhagiratha-ganga.html','ganesha-birth.html','gajendra-moksha.html','varaha-earth.html','prahlada-narasimha.html','vamana-king-bali.html','markandeya-shiva.html','glossary.html','family.html','explore.html']);
+const important = new Set(['index.html','stories.html','deities.html','lalita.html','hanuman-lanka.html','krishna-govardhana.html','krishna-kaliya.html','rama-exile.html','jatayu-sacrifice.html','devi-mahishasura.html','devi-shumbha-nishumbha.html','bhagiratha-ganga.html','ganesha-birth.html','gajendra-moksha.html','varaha-earth.html','prahlada-narasimha.html','vamana-king-bali.html','markandeya-shiva.html','glossary.html','family.html','explore.html']);
 const runtimeErrors = [];
 page.on('pageerror', error => runtimeErrors.push(String(error)));
 for (const width of [375,768,1440]) {

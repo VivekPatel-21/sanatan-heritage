@@ -1,0 +1,22 @@
+{
+  "page": "Krishna and Kaliya — The Serpent of the Yamuna",
+  "created": "2026-10-30",
+  "generator": "OpenAI Imagegen",
+  "assets": [
+    {
+      "file": "src/assets/images/krishna-kaliya-reader.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-0da4753d-0f0b-4c3a-a881-644f4d6fa86f.png",
+      "prompt": "Respectful landscape devotional painting of youthful two-armed Krishna dancing upon Kaliya’s cobra hoods in the Yamuna, with a kadamba tree and Vraja watching from the bank; sacred, non-graphic and without text."
+    },
+    {
+      "file": "src/assets/images/krishna-kaliya-mercy.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-351f15df-3c1d-4197-a0d2-fc02abd6d0fd.png",
+      "prompt": "Respectful landscape devotional painting of Krishna showing mercy to the humbled Kaliya as the Nagapatnis and their children pray, with restored water and luminous footprint marks; non-graphic and without text."
+    },
+    {
+      "file": "src/assets/images/krishna-kaliya-card.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-6b932074-6b5d-4cf1-8bb0-17d65c56c7dd.png",
+      "prompt": "Symbolic landscape still life with peacock feather, flute, kadamba leaves, jasmine, golden footprint motif and a peaceful cobra shadow receding beneath clear Yamuna water; no people or text."
+    }
+  ]
+}
