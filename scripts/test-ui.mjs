@@ -5,7 +5,7 @@ const terms = JSON.parse(await readFile('src/data/glossary.json', 'utf8'));
 async function page(name) {
   const dom = new JSDOM(await readFile(`dist/${name}.html`, 'utf8'), { url: `https://sanatan-heritage.test/${name}.html`, runScripts: 'outside-only', pretendToBeVisual: true });
   dom.window.fetch = async () => ({ ok: true, json: async () => terms });
-  for (const script of ['theme','reading-state','site',...(['glossary','deities'].includes(name) ? ['directory'] : []), ...(name === 'stories' ? ['stories'] : []), ...(name === 'explore' ? ['explorer'] : []), ...(['lalita-bhandasura','shiva-parvati','shiva-halahala','hanuman-lanka','krishna-govardhana','rama-exile','devi-mahishasura','devi-shumbha-nishumbha','bhagiratha-ganga','ganesha-birth','gajendra-moksha','varaha-earth','prahlada-narasimha'].includes(name) ? ['reader'] : [])]) dom.window.eval(await readFile(`src/assets/js/${script}.js`, 'utf8'));
+  for (const script of ['theme','reading-state','site',...(['glossary','deities'].includes(name) ? ['directory'] : []), ...(name === 'stories' ? ['stories'] : []), ...(name === 'explore' ? ['explorer'] : []), ...(['lalita-bhandasura','shiva-parvati','shiva-halahala','hanuman-lanka','krishna-govardhana','rama-exile','devi-mahishasura','devi-shumbha-nishumbha','bhagiratha-ganga','ganesha-birth','gajendra-moksha','varaha-earth','prahlada-narasimha','vamana-king-bali'].includes(name) ? ['reader'] : [])]) dom.window.eval(await readFile(`src/assets/js/${script}.js`, 'utf8'));
   await new Promise(resolve => setImmediate(resolve));
   return dom;
 }
@@ -40,7 +40,7 @@ collectionDoc.querySelector('#scripture-filter').value = 'Shiva Purana';
 collectionDoc.querySelector('#scripture-filter').dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelector('#no-stories').hidden, false);
 collectionDoc.querySelector('#empty-reset').click();
-assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 15);
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 16);
 assert.equal(collectionDoc.activeElement, collectionDoc.querySelector('#story-search'));
 collection.window.close();
 

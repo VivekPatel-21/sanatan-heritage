@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in Imagegen",
+  "date": "2026-10-29",
+  "prompts": {
+    "vamana-bali-reader": "Vamana as a traditionally presented youthful brahmachari with parasol, staff and water pot; King Bali confirms the gift with consecration water in the yajna pavilion; non-violent devotional landscape.",
+    "trivikrama-cosmic-step": "Four-armed Trivikrama with shankha, chakra, gada and padma spanning earth and heaven; Brahma honours the raised foot; Bali watches below; coherent devotional anatomy.",
+    "vamana-three-steps-card": "Wide symbolic still life with brahmachari parasol, staff, kamandalu, one golden water vessel and exactly three luminous footprints meeting an indigo cosmic opening."
+  },
+  "assets": {
+    "vamana-bali-reader.webp": "exec-64ce08bc-b074-4970-bd87-b3522d0f3bf8.png",
+    "trivikrama-cosmic-step.webp": "exec-7f4ffcb7-9efd-4789-8555-f5461a2211c4.png",
+    "vamana-three-steps-card.webp": "exec-8d90cdd9-e140-4e7f-a819-527c281ac24f.png"
+  },
+  "conversion": "Sharp WebP quality 85; 1536x1024"
+}
