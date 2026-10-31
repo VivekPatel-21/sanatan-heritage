@@ -57,7 +57,7 @@ const choice = explorer.window.document.querySelector('#journey-choice');
 choice.value = 'hanuman'; choice.dispatchEvent(new explorer.window.Event('change'));
 assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 1);
 choice.value = 'all'; choice.dispatchEvent(new explorer.window.Event('change'));
-assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 15);
+assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 21);
 explorer.window.close();
 
 const readerDoc = story.window.document;

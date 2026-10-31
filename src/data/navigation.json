@@ -56,6 +56,10 @@
         "label": "Gods & Goddesses"
       },
       {
+        "url": "/avatars.html",
+        "label": "Vishnu's avatars"
+      },
+      {
         "url": "/lalita.html",
         "label": "Lalita Tripurasundari"
       }
@@ -164,6 +168,14 @@
       {
         "url": "/scriptures.html",
         "label": "Sacred scriptures"
+      },
+      {
+        "url": "/mahapuranas.html",
+        "label": "The eighteen Mahapuranas"
+      },
+      {
+        "url": "/philosophy.html",
+        "label": "Foundational philosophy"
       },
       {
         "url": "/glossary.html",

@@ -457,5 +457,83 @@
       }
     ],
     "source": "/sources.html#jatayu-sacrifice"
+  },
+  {
+    "id": "ganesha",
+    "title": "A boundary, a loss and a new beginning",
+    "description": "Follow Ganesha from Parvati's doorway to restoration and his place at the beginning of worship.",
+    "story": { "title": "The Birth of Ganesha", "href": "/ganesha-birth.html" },
+    "deity": { "title": "Meet Ganesha", "href": "/deities.html#ganesha" },
+    "scripture": { "title": "Explore the Shiva Purana", "href": "/mahapuranas.html#shiva" },
+    "terms": [
+      { "title": "Shakti · divine power", "href": "/glossary.html#shakti" },
+      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" }
+    ],
+    "source": "/sources.html#ganesha-birth"
+  },
+  {
+    "id": "gajendra",
+    "title": "Surrender when strength is exhausted",
+    "description": "Follow Gajendra from a struggle in the lake to an appeal that Vishnu answers.",
+    "story": { "title": "Gajendra Moksha", "href": "/gajendra-moksha.html" },
+    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
+      { "title": "Moksha · liberation", "href": "/glossary.html#moksha" }
+    ],
+    "source": "/sources.html#gajendra-moksha"
+  },
+  {
+    "id": "shumbha",
+    "title": "Many powers, one Goddess",
+    "description": "Follow the Goddess through the conflicts with Chanda, Munda, Raktabija, Shumbha and Nishumbha.",
+    "story": { "title": "Devi and Shumbha–Nishumbha", "href": "/devi-shumbha-nishumbha.html" },
+    "deity": { "title": "Meet Devi", "href": "/deities.html#devi" },
+    "scripture": { "title": "Meet the Markandeya Purana", "href": "/mahapuranas.html#markandeya" },
+    "terms": [
+      { "title": "Devi · the Goddess", "href": "/glossary.html#devi" },
+      { "title": "Shakti · divine power", "href": "/glossary.html#shakti" }
+    ],
+    "source": "/sources.html#devi-shumbha-nishumbha"
+  },
+  {
+    "id": "varaha",
+    "title": "The Earth raised from the waters",
+    "description": "Follow Varaha into the cosmic waters, through the confrontation with Hiranyaksha and the restoration of Earth.",
+    "story": { "title": "Varaha · The Rescue of the Earth", "href": "/varaha-earth.html" },
+    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#varaha" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" },
+      { "title": "Purana · sacred narrative", "href": "/glossary.html#purana" }
+    ],
+    "source": "/sources.html#varaha-earth"
+  },
+  {
+    "id": "prahlada",
+    "title": "Devotion that tyranny cannot command",
+    "description": "Follow Prahlada's steadfast devotion and Narasimha's manifestation at the threshold.",
+    "story": { "title": "Prahlada and Narasimha", "href": "/prahlada-narasimha.html" },
+    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#narasimha" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
+      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" }
+    ],
+    "source": "/sources.html#prahlada-narasimha"
+  },
+  {
+    "id": "vamana",
+    "title": "A promise measured across the cosmos",
+    "description": "Follow Vamana's request, Bali's gift and the revelation of Trivikrama.",
+    "story": { "title": "Vamana and King Bali", "href": "/vamana-king-bali.html" },
+    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#vamana" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
+      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" }
+    ],
+    "source": "/sources.html#vamana-king-bali"
   }
 ]
