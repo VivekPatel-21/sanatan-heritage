@@ -1,0 +1,22 @@
+{
+  "page": "Daksha Yajna and Sati",
+  "created": "2026-10-30",
+  "generator": "OpenAI Imagegen",
+  "assets": [
+    {
+      "file": "src/assets/images/daksha-yajna-sati-reader.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-46bbb47e-9779-451e-8414-9f58b267034c.png",
+      "prompt": "Respectful landscape devotional painting of Sati arriving at Daksha’s yajna, welcomed by her mother and sisters while Daksha turns away beside the altar; dignified, tense and non-graphic."
+    },
+    {
+      "file": "src/assets/images/daksha-yajna-restoration.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-3c3c50b1-8b2a-43c4-b229-974578e9503d.png",
+      "prompt": "Respectful landscape devotional painting of compassionate Shiva accepting the repentance of goat-headed Daksha beside the restored yajna, with Brahma and sages present; no gore."
+    },
+    {
+      "file": "src/assets/images/daksha-yajna-sati-card.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-2c9ad1ab-afdc-4ca2-95c2-863ab72b7f9a.png",
+      "prompt": "Symbolic still life with rudraksha, white lotus, extinguished lamp, repaired copper yajna vessel, red sari border, trident shadow and a small returning flame; no people or text."
+    }
+  ]
+}

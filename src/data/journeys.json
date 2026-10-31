@@ -154,6 +154,34 @@
     "source": "/sources.html#krishna-govardhana"
   },
   {
+    "id": "daksha",
+    "title": "Pride, grief and restoration",
+    "description": "Follow Sati into Daksha’s assembly and the long path from exclusion to reconciliation.",
+    "story": {
+      "title": "Daksha Yajna and Sati",
+      "href": "/daksha-yajna-sati.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Tapas · spiritual discipline",
+        "href": "/glossary.html#tapas"
+      }
+    ],
+    "source": "/sources.html#daksha-yajna-sati"
+  },
+  {
     "id": "kaliya",
     "title": "Strength guided by mercy",
     "description": "Follow Krishna into Kaliya’s poisoned lake and the restoration of the Yamuna.",
