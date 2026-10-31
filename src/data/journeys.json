@@ -210,6 +210,34 @@
     "source": "/sources.html#krishna-kaliya"
   },
   {
+    "id": "kartikeya",
+    "title": "Many bearers, one protective purpose",
+    "description": "Follow Kartikeya’s radiance through fire, mountain, river and six foster mothers to his homecoming at Kailasa.",
+    "story": {
+      "title": "The Birth of Kartikeya",
+      "href": "/kartikeya-birth.html"
+    },
+    "deity": {
+      "title": "Meet Shiva’s family",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Puranas",
+      "href": "/scriptures.html#puranas"
+    },
+    "terms": [
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      },
+      {
+        "title": "Deva · divine being",
+        "href": "/glossary.html#deva"
+      }
+    ],
+    "source": "/sources.html#kartikeya-birth"
+  },
+  {
     "id": "rama",
     "title": "Duty and companionship",
     "description": "Follow Rama, Sita and Lakshmana as life in Ayodhya gives way to exile.",

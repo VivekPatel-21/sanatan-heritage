@@ -1,0 +1,22 @@
+{
+  "page": "The Birth of Kartikeya",
+  "created": "2026-10-30",
+  "generator": "OpenAI Imagegen",
+  "assets": [
+    {
+      "file": "src/assets/images/kartikeya-birth-reader.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-88e19668-03ea-41aa-977e-58c36636285e.png",
+      "prompt": "Respectful landscape devotional painting of the radiant infant Kartikeya resting safely among Himalayan reeds beside Ganga, with exactly six Krittika foster mothers gathering in wonder; sacred dawn, non-graphic, no text."
+    },
+    {
+      "file": "src/assets/images/kartikeya-homecoming.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-bdb23a89-67f2-44b5-85d2-0587283b70d7.png",
+      "prompt": "Respectful landscape devotional painting of youthful Kartikeya with vel and peacock reunited with Shiva and Parvati at Kailasa, exactly six Krittika mothers nearby; celebratory sunrise, no text."
+    },
+    {
+      "file": "src/assets/images/kartikeya-birth-card.webp",
+      "source": "C:/Users/vivop/.codex/generated_images/01a170a0-27a6-7072-925b-a7410fc2aa58/exec-601f045d-e00d-40dc-aa50-58ed1d2b07c1.png",
+      "prompt": "Symbolic devotional still life of one golden vel spear, exactly six white lotuses, a peacock feather, copper lamp, sara reeds and Himalayan water at dawn; no people or text."
+    }
+  ]
+}
