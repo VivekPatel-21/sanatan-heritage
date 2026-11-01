@@ -535,5 +535,18 @@
       { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" }
     ],
     "source": "/sources.html#vamana-king-bali"
+  },
+  {
+    "id": "matsya",
+    "title": "Care that carries a world forward",
+    "description": "Follow Manu from sheltering a tiny fish to carrying life and sacred knowledge through the cosmic flood.",
+    "story": { "title": "Matsya Avatara · The Great Cosmic Flood", "href": "/matsya-flood.html" },
+    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#matsya" },
+    "scripture": { "title": "Meet the Matsya Purana", "href": "/mahapuranas.html#matsya" },
+    "terms": [
+      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" },
+      { "title": "Manvantara · a Manu's age", "href": "/manus-manvantaras.html#manu-and-age" }
+    ],
+    "source": "/sources.html#matsya-flood"
   }
 ]
