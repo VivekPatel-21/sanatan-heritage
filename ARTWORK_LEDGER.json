@@ -948,6 +948,28 @@
     "identity": "Young Prahlada seated among classmates in a palace school, speaking beside palm-leaf manuscripts as a soft lotus-shaped light glows behind him"
   },
   {
+    "asset": "prithu-earth-hero.webp",
+    "visiblePlacement": "prithu-earth.njk",
+    "alt": "King Prithu standing with his bow lowered before Mother Earth in the form of a radiant cow between barren ground and renewed green fields",
+    "caption": "PRITHU AND MOTHER EARTHAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "King Prithu standing with his bow lowered before Mother Earth in the form of a radiant cow between barren ground and renewed green fields"
+  },
+  {
+    "asset": "prithu-earth-abundance.webp",
+    "visiblePlacement": "prithu-earth.njk",
+    "alt": "Mother Earth as a radiant cow with a calf as grain, herbs and golden light flow symbolically into a bronze vessel held by King Prithu before renewed fields",
+    "caption": "THE RETURN OF SEEDS AND HERBS · AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Mother Earth as a radiant cow with a calf as grain, herbs and golden light flow symbolically into a bronze vessel held by King Prithu before renewed fields"
+  },
+  {
     "asset": "rama-exile-reader.webp",
     "visiblePlacement": "rama-exile.njk",
     "alt": "Rama with joined palms before his sorrowful father Dasharatha in an imagined palace chamber",
@@ -1353,6 +1375,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "One luminous arrow passing through three aligned fortified cities of gold, silver and dark iron beneath a trident and crescent moon"
+  },
+  {
+    "asset": "prithu-earth-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A royal bow laid beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A royal bow laid beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields"
   },
   {
     "asset": "markandeya-shiva-card.webp",

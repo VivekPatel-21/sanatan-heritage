@@ -561,5 +561,18 @@
       { "title": "Asura · a class of beings", "href": "/glossary.html#asura" }
     ],
     "source": "/sources.html#tripura-destruction"
+  },
+  {
+    "id": "prithu",
+    "title": "Prosperity through stewardship",
+    "description": "Follow Prithu from inherited disorder to an agreement with Mother Earth that restores seeds, cultivation and shared prosperity.",
+    "story": { "title": "King Prithu and Mother Earth", "href": "/prithu-earth.html" },
+    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
+    "scripture": { "title": "Meet the Vishnu Purana", "href": "/mahapuranas.html#vishnu" },
+    "terms": [
+      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
+      { "title": "Purushartha · aims of life", "href": "/philosophy.html#purusharthas" }
+    ],
+    "source": "/sources.html#prithu-earth"
   }
 ]
