@@ -548,5 +548,18 @@
       { "title": "Manvantara · a Manu's age", "href": "/manus-manvantaras.html#manu-and-age" }
     ],
     "source": "/sources.html#matsya-flood"
+  },
+  {
+    "id": "tripura",
+    "title": "Power gathered into one purpose",
+    "description": "Follow the three moving cities, the cosmic chariot and Shiva's single arrow from impossible strength to restored balance.",
+    "story": { "title": "Shiva as Tripurantaka", "href": "/tripura-destruction.html" },
+    "deity": { "title": "Meet Shiva", "href": "/deities.html#shiva" },
+    "scripture": { "title": "Explore the Shiva Purana", "href": "/mahapuranas.html#shiva" },
+    "terms": [
+      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
+      { "title": "Asura · a class of beings", "href": "/glossary.html#asura" }
+    ],
+    "source": "/sources.html#tripura-destruction"
   }
 ]

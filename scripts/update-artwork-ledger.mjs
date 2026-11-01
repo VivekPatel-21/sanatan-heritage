@@ -4,7 +4,7 @@ const file = 'ARTWORK_LEDGER.json';
 let previous = [];
 try { previous = JSON.parse(await readFile(file, 'utf8')); } catch { /* First ledger. */ }
 const saved = new Map(previous.map(item => [item.asset, item]));
-const newAssets = new Set(['hanuman-lanka-reader.webp', 'hanuman-ashoka.webp', 'family-hanuman.webp', 'krishna-govardhana-reader.webp', 'krishna-indra-humility.webp', 'rama-exile-reader.webp', 'rama-chitrakuta.webp', 'devi-mahishasura-reader.webp', 'mahishasura-buffalo.webp', 'bhagiratha-ganga-reader.webp', 'bhagiratha-ganga-journey.webp', 'matsya-flood-hero.webp', 'matsya-small-fish.webp', 'matsya-growth.webp', 'matsya-flood-card.webp']);
+const newAssets = new Set(['hanuman-lanka-reader.webp', 'hanuman-ashoka.webp', 'family-hanuman.webp', 'krishna-govardhana-reader.webp', 'krishna-indra-humility.webp', 'rama-exile-reader.webp', 'rama-chitrakuta.webp', 'devi-mahishasura-reader.webp', 'mahishasura-buffalo.webp', 'bhagiratha-ganga-reader.webp', 'bhagiratha-ganga-journey.webp', 'matsya-flood-hero.webp', 'matsya-small-fish.webp', 'matsya-growth.webp', 'matsya-flood-card.webp', 'tripurantaka-hero.webp', 'tripura-three-cities.webp', 'tripurantaka-card.webp']);
 const recovered = { 'home-temple-photograph.webp': 'IMG_9684.JPG', 'temple-photograph.webp': 'IMG_4273.JPG', 'temple-shikhara.webp': 'IMG_3634.JPG', 'lalita-lotus-contributed.webp': 'IMG_3594.JPG', 'lalita-kameshvara-contributed.webp': 'IMG_3632.JPG', 'lalita-radiance.webp': 'IMG_3568.JPG', 'lalita-assembly.webp': 'IMG_3636.JPG' };
 const records = [];
 for (const page of (await readdir('src')).filter(name => name.endsWith('.njk'))) {

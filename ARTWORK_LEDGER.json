@@ -1344,6 +1344,17 @@
     "identity": "An imagined path toward a lakeside forest hermitage"
   },
   {
+    "asset": "tripurantaka-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "One luminous arrow passing through three aligned fortified cities of gold, silver and dark iron beneath a trident and crescent moon",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "One luminous arrow passing through three aligned fortified cities of gold, silver and dark iron beneath a trident and crescent moon"
+  },
+  {
     "asset": "markandeya-shiva-card.webp",
     "visiblePlacement": "stories.njk",
     "alt": "A flower-covered Shiva linga and rudraksha mala within golden light while a noose rests outside the luminous boundary",
@@ -1353,6 +1364,28 @@
     "permission": "Existing approved placement; public redistribution rights not independently established",
     "review": "Existing approved placement; independent iconography review pending",
     "identity": "A flower-covered Shiva linga and rudraksha mala within golden light while a noose rests outside the luminous boundary"
+  },
+  {
+    "asset": "tripurantaka-hero.webp",
+    "visiblePlacement": "tripura-destruction.njk",
+    "alt": "Shiva standing on a cosmic chariot with Brahma as charioteer and aiming one arrow at three aligned flying cities",
+    "caption": "SHIVA DRAWS THE SINGLE ARROWAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Shiva standing on a cosmic chariot with Brahma as charioteer and aiming one arrow at three aligned flying cities"
+  },
+  {
+    "asset": "tripura-three-cities.webp",
+    "visiblePlacement": "tripura-destruction.njk",
+    "alt": "Three immense moving cities of gold, silver and dark iron traveling on separate paths across heaven, sky and earth",
+    "caption": "THE THREE CITIES MOVE ON SEPARATE COURSES · AI-GENERATED NARRATIVE INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Three immense moving cities of gold, silver and dark iron traveling on separate paths across heaven, sky and earth"
   },
   {
     "asset": "temple-shikhara.webp",

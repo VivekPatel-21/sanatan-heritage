@@ -1,0 +1,20 @@
+{
+  "generator": "Built-in Imagegen",
+  "assets": [
+    {
+      "file": "tripurantaka-hero.webp",
+      "use": "Story hero",
+      "promptSummary": "Shiva as Tripurantaka on the cosmic chariot with Brahma as charioteer, one arrow and three aligned cities; respectful non-graphic devotional painting."
+    },
+    {
+      "file": "tripura-three-cities.webp",
+      "use": "Reader illustration",
+      "promptSummary": "Exactly three mobile fortified cities of gold, silver and iron traveling separately across heaven, sky and earth."
+    },
+    {
+      "file": "tripurantaka-card.webp",
+      "use": "Story collection card",
+      "promptSummary": "A single luminous arrow through three aligned city gates, with restrained Shaiva trident and crescent symbolism."
+    }
+  ]
+}
