@@ -1168,6 +1168,28 @@
     "identity": "Unidentified; owner requested no temple attribution"
   },
   {
+    "asset": "shiva-andhakasura-hero.webp",
+    "visiblePlacement": "shiva-andhakasura.njk",
+    "alt": "Four-armed Shiva and two-armed Parvati at Mandara facing Andhaka, whose eyes are open and whose mace is lowered",
+    "caption": "THE CONFRONTATION AT MANDARAAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/andhakasura-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Four-armed Shiva and two-armed Parvati at Mandara facing Andhaka, whose eyes are open and whose mace is lowered"
+  },
+  {
+    "asset": "andhaka-transformation.webp",
+    "visiblePlacement": "shiva-andhakasura.njk",
+    "alt": "Andhaka kneeling with joined palms before four-armed Shiva and two-armed Parvati while his crown and mace rest on the ground",
+    "caption": "THE CROWN AND MACE ARE LAID DOWN · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/andhakasura-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Andhaka kneeling with joined palms before four-armed Shiva and two-armed Parvati while his crown and mace rest on the ground"
+  },
+  {
     "asset": "shiva-halahala.webp",
     "visiblePlacement": "shiva-halahala.njk",
     "alt": "Shiva receiving Halahala in his palm, with Bhavani calmly beside him",
@@ -1265,6 +1287,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "A black stone linga before an infinite column of fire, with a hamsa feather, boar hoofprint and ketaki flower"
+  },
+  {
+    "asset": "andhakasura-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A crown and mace laid beside rudraksha, a white lotus and lamp as a trident shadow reaches toward dawn",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/andhakasura-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A crown and mace laid beside rudraksha, a white lotus and lamp as a trident shadow reaches toward dawn"
   },
   {
     "asset": "rama-exile.webp",

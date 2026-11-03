@@ -84,6 +84,34 @@
     "source": "/sources.html#infinite-shiva-linga"
   },
   {
+    "id": "andhaka",
+    "title": "From delusion to refuge",
+    "description": "Follow Andhaka from power without recognition through conflict, consequence and a changed relationship with Shiva and Parvati.",
+    "story": {
+      "title": "Shiva and Andhakasura",
+      "href": "/shiva-andhakasura.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Shiva Purana",
+      "href": "/mahapuranas.html#shiva"
+    },
+    "terms": [
+      {
+        "title": "Dharma · right relationship",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Guna · qualities of nature",
+        "href": "/philosophy.html#gunas"
+      }
+    ],
+    "source": "/sources.html#shiva-andhakasura"
+  },
+  {
     "id": "lalita",
     "title": "Protection and renewal",
     "description": "Meet Lalita in the Shakta setting of the Lalita Mahatmya.",
@@ -518,12 +546,27 @@
     "id": "ganesha",
     "title": "A boundary, a loss and a new beginning",
     "description": "Follow Ganesha from Parvati's doorway to restoration and his place at the beginning of worship.",
-    "story": { "title": "The Birth of Ganesha", "href": "/ganesha-birth.html" },
-    "deity": { "title": "Meet Ganesha", "href": "/deities.html#ganesha" },
-    "scripture": { "title": "Explore the Shiva Purana", "href": "/mahapuranas.html#shiva" },
+    "story": {
+      "title": "The Birth of Ganesha",
+      "href": "/ganesha-birth.html"
+    },
+    "deity": {
+      "title": "Meet Ganesha",
+      "href": "/deities.html#ganesha"
+    },
+    "scripture": {
+      "title": "Explore the Shiva Purana",
+      "href": "/mahapuranas.html#shiva"
+    },
     "terms": [
-      { "title": "Shakti · divine power", "href": "/glossary.html#shakti" },
-      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" }
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      },
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      }
     ],
     "source": "/sources.html#ganesha-birth"
   },
@@ -531,12 +574,27 @@
     "id": "gajendra",
     "title": "Surrender when strength is exhausted",
     "description": "Follow Gajendra from a struggle in the lake to an appeal that Vishnu answers.",
-    "story": { "title": "Gajendra Moksha", "href": "/gajendra-moksha.html" },
-    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Gajendra Moksha",
+      "href": "/gajendra-moksha.html"
+    },
+    "deity": {
+      "title": "Meet Vishnu",
+      "href": "/deities.html#vishnu"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
-      { "title": "Moksha · liberation", "href": "/glossary.html#moksha" }
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Moksha · liberation",
+        "href": "/glossary.html#moksha"
+      }
     ],
     "source": "/sources.html#gajendra-moksha"
   },
@@ -544,12 +602,27 @@
     "id": "shumbha",
     "title": "Many powers, one Goddess",
     "description": "Follow the Goddess through the conflicts with Chanda, Munda, Raktabija, Shumbha and Nishumbha.",
-    "story": { "title": "Devi and Shumbha–Nishumbha", "href": "/devi-shumbha-nishumbha.html" },
-    "deity": { "title": "Meet Devi", "href": "/deities.html#devi" },
-    "scripture": { "title": "Meet the Markandeya Purana", "href": "/mahapuranas.html#markandeya" },
+    "story": {
+      "title": "Devi and Shumbha–Nishumbha",
+      "href": "/devi-shumbha-nishumbha.html"
+    },
+    "deity": {
+      "title": "Meet Devi",
+      "href": "/deities.html#devi"
+    },
+    "scripture": {
+      "title": "Meet the Markandeya Purana",
+      "href": "/mahapuranas.html#markandeya"
+    },
     "terms": [
-      { "title": "Devi · the Goddess", "href": "/glossary.html#devi" },
-      { "title": "Shakti · divine power", "href": "/glossary.html#shakti" }
+      {
+        "title": "Devi · the Goddess",
+        "href": "/glossary.html#devi"
+      },
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      }
     ],
     "source": "/sources.html#devi-shumbha-nishumbha"
   },
@@ -557,12 +630,27 @@
     "id": "varaha",
     "title": "The Earth raised from the waters",
     "description": "Follow Varaha into the cosmic waters, through the confrontation with Hiranyaksha and the restoration of Earth.",
-    "story": { "title": "Varaha · The Rescue of the Earth", "href": "/varaha-earth.html" },
-    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#varaha" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Varaha · The Rescue of the Earth",
+      "href": "/varaha-earth.html"
+    },
+    "deity": {
+      "title": "Explore Vishnu's avatars",
+      "href": "/avatars.html#varaha"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" },
-      { "title": "Purana · sacred narrative", "href": "/glossary.html#purana" }
+      {
+        "title": "Avatar · divine descent",
+        "href": "/glossary.html#avatar"
+      },
+      {
+        "title": "Purana · sacred narrative",
+        "href": "/glossary.html#purana"
+      }
     ],
     "source": "/sources.html#varaha-earth"
   },
@@ -570,12 +658,27 @@
     "id": "prahlada",
     "title": "Devotion that tyranny cannot command",
     "description": "Follow Prahlada's steadfast devotion and Narasimha's manifestation at the threshold.",
-    "story": { "title": "Prahlada and Narasimha", "href": "/prahlada-narasimha.html" },
-    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#narasimha" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Prahlada and Narasimha",
+      "href": "/prahlada-narasimha.html"
+    },
+    "deity": {
+      "title": "Explore Vishnu's avatars",
+      "href": "/avatars.html#narasimha"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
-      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" }
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Avatar · divine descent",
+        "href": "/glossary.html#avatar"
+      }
     ],
     "source": "/sources.html#prahlada-narasimha"
   },
@@ -583,12 +686,27 @@
     "id": "vamana",
     "title": "A promise measured across the cosmos",
     "description": "Follow Vamana's request, Bali's gift and the revelation of Trivikrama.",
-    "story": { "title": "Vamana and King Bali", "href": "/vamana-king-bali.html" },
-    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#vamana" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Vamana and King Bali",
+      "href": "/vamana-king-bali.html"
+    },
+    "deity": {
+      "title": "Explore Vishnu's avatars",
+      "href": "/avatars.html#vamana"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
-      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" }
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Avatar · divine descent",
+        "href": "/glossary.html#avatar"
+      }
     ],
     "source": "/sources.html#vamana-king-bali"
   },
@@ -596,12 +714,27 @@
     "id": "matsya",
     "title": "Care that carries a world forward",
     "description": "Follow Manu from sheltering a tiny fish to carrying life and sacred knowledge through the cosmic flood.",
-    "story": { "title": "Matsya Avatara · The Great Cosmic Flood", "href": "/matsya-flood.html" },
-    "deity": { "title": "Explore Vishnu's avatars", "href": "/avatars.html#matsya" },
-    "scripture": { "title": "Meet the Matsya Purana", "href": "/mahapuranas.html#matsya" },
+    "story": {
+      "title": "Matsya Avatara · The Great Cosmic Flood",
+      "href": "/matsya-flood.html"
+    },
+    "deity": {
+      "title": "Explore Vishnu's avatars",
+      "href": "/avatars.html#matsya"
+    },
+    "scripture": {
+      "title": "Meet the Matsya Purana",
+      "href": "/mahapuranas.html#matsya"
+    },
     "terms": [
-      { "title": "Avatar · divine descent", "href": "/glossary.html#avatar" },
-      { "title": "Manvantara · a Manu's age", "href": "/manus-manvantaras.html#manu-and-age" }
+      {
+        "title": "Avatar · divine descent",
+        "href": "/glossary.html#avatar"
+      },
+      {
+        "title": "Manvantara · a Manu's age",
+        "href": "/manus-manvantaras.html#manu-and-age"
+      }
     ],
     "source": "/sources.html#matsya-flood"
   },
@@ -609,12 +742,27 @@
     "id": "tripura",
     "title": "Power gathered into one purpose",
     "description": "Follow the three moving cities, the cosmic chariot and Shiva's single arrow from impossible strength to restored balance.",
-    "story": { "title": "Shiva as Tripurantaka", "href": "/tripura-destruction.html" },
-    "deity": { "title": "Meet Shiva", "href": "/deities.html#shiva" },
-    "scripture": { "title": "Explore the Shiva Purana", "href": "/mahapuranas.html#shiva" },
+    "story": {
+      "title": "Shiva as Tripurantaka",
+      "href": "/tripura-destruction.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Shiva Purana",
+      "href": "/mahapuranas.html#shiva"
+    },
     "terms": [
-      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
-      { "title": "Asura · a class of beings", "href": "/glossary.html#asura" }
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Asura · a class of beings",
+        "href": "/glossary.html#asura"
+      }
     ],
     "source": "/sources.html#tripura-destruction"
   },
@@ -622,12 +770,27 @@
     "id": "prithu",
     "title": "Prosperity through stewardship",
     "description": "Follow Prithu from inherited disorder to an agreement with Mother Earth that restores seeds, cultivation and shared prosperity.",
-    "story": { "title": "King Prithu and Mother Earth", "href": "/prithu-earth.html" },
-    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
-    "scripture": { "title": "Meet the Vishnu Purana", "href": "/mahapuranas.html#vishnu" },
+    "story": {
+      "title": "King Prithu and Mother Earth",
+      "href": "/prithu-earth.html"
+    },
+    "deity": {
+      "title": "Meet Vishnu",
+      "href": "/deities.html#vishnu"
+    },
+    "scripture": {
+      "title": "Meet the Vishnu Purana",
+      "href": "/mahapuranas.html#vishnu"
+    },
     "terms": [
-      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" },
-      { "title": "Purushartha · aims of life", "href": "/philosophy.html#purusharthas" }
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      },
+      {
+        "title": "Purushartha · aims of life",
+        "href": "/philosophy.html#purusharthas"
+      }
     ],
     "source": "/sources.html#prithu-earth"
   },
@@ -635,12 +798,27 @@
     "id": "sudama",
     "title": "Friendship beyond circumstance",
     "description": "Follow Sudama from a household with little to Krishna's welcome in Dvaraka and home again with devotion unchanged.",
-    "story": { "title": "Krishna and Sudama", "href": "/krishna-sudama.html" },
-    "deity": { "title": "Meet Krishna", "href": "/deities.html#krishna" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Krishna and Sudama",
+      "href": "/krishna-sudama.html"
+    },
+    "deity": {
+      "title": "Meet Krishna",
+      "href": "/deities.html#krishna"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
-      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" }
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Dharma · responsibility",
+        "href": "/glossary.html#dharma"
+      }
     ],
     "source": "/sources.html#krishna-sudama"
   },
@@ -648,12 +826,27 @@
     "id": "ajamila",
     "title": "Grace that becomes transformation",
     "description": "Follow Ajamila from a name spoken at death through remorse, disciplined change and the instruction given to Yama’s messengers.",
-    "story": { "title": "Ajamila · The Power of Narayana’s Name", "href": "/ajamila.html" },
-    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
-    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "story": {
+      "title": "Ajamila · The Power of Narayana’s Name",
+      "href": "/ajamila.html"
+    },
+    "deity": {
+      "title": "Meet Vishnu",
+      "href": "/deities.html#vishnu"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
     "terms": [
-      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
-      { "title": "Karma · action and consequence", "href": "/glossary.html#karma" }
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Karma · action and consequence",
+        "href": "/glossary.html#karma"
+      }
     ],
     "source": "/sources.html#ajamila"
   }
