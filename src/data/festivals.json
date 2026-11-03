@@ -25,6 +25,7 @@
     "legacyAnchor": "navaratri",
     "detailTemplate": "festivals/navaratri.njk",
     "stories": [
+      { "title": "Mahamaya, Madhu and Kaitabha", "href": "/mahamaya-madhu-kaitabha.html", "connection": "The opening episode of the Devi Mahatmya" },
       { "title": "Devi and Mahishasura", "href": "/devi-mahishasura.html", "connection": "The Goddess confronts Mahishasura" },
       { "title": "Devi and Shumbha–Nishumbha", "href": "/devi-shumbha-nishumbha.html", "connection": "The final episode of the Devi Mahatmya" }
     ]

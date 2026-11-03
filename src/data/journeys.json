@@ -277,6 +277,34 @@
     ]
   },
   {
+    "id": "mahamaya",
+    "title": "The power that awakens",
+    "description": "Begin the Devi Mahatmya with Mahamaya, Vishnu and the defeat of Madhu and Kaitabha.",
+    "story": {
+      "title": "Mahamaya, Madhu and Kaitabha",
+      "href": "/mahamaya-madhu-kaitabha.html"
+    },
+    "deity": {
+      "title": "Meet the Goddess",
+      "href": "/deities.html#devi"
+    },
+    "scripture": {
+      "title": "Enter the Markandeya Purana",
+      "href": "/mahapuranas.html#markandeya"
+    },
+    "terms": [
+      {
+        "title": "Shakti · divine power",
+        "href": "/glossary.html#shakti"
+      },
+      {
+        "title": "Purana · sacred narrative",
+        "href": "/glossary.html#purana"
+      }
+    ],
+    "source": "/sources.html#mahamaya-madhu-kaitabha"
+  },
+  {
     "id": "mahishasura",
     "title": "A radiance united",
     "description": "Follow the Goddess’s encounter with Mahishasura in the Devi Mahatmya.",

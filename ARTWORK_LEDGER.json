@@ -869,6 +869,28 @@
     "identity": "Sri Yantra chart with interlocking triangles, lotus enclosures, outer gates and Sanskrit labels"
   },
   {
+    "asset": "mahamaya-madhu-kaitabha-hero.webp",
+    "visiblePlacement": "mahamaya-madhu-kaitabha.njk",
+    "alt": "Mahamaya rising as violet-gold radiance above sleeping Vishnu on Shesha while four-headed Brahma prays from the lotus and Madhu and Kaitabha approach across the cosmic waters",
+    "caption": "MAHAMAYA AND THE COSMIC SLEEPAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/mahamaya-madhu-kaitabha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Mahamaya rising as violet-gold radiance above sleeping Vishnu on Shesha while four-headed Brahma prays from the lotus and Madhu and Kaitabha approach across the cosmic waters"
+  },
+  {
+    "asset": "vishnu-madhu-kaitabha.webp",
+    "visiblePlacement": "mahamaya-madhu-kaitabha.njk",
+    "alt": "Four-armed Vishnu with conch, discus, mace and lotus confronting the distinct warriors Madhu and Kaitabha on the primordial ocean beneath the vast indigo-gold presence of Mahamaya",
+    "caption": "VISHNU CONFRONTS MADHU AND KAITABHA · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/mahamaya-madhu-kaitabha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Four-armed Vishnu with conch, discus, mace and lotus confronting the distinct warriors Madhu and Kaitabha on the primordial ocean beneath the vast indigo-gold presence of Mahamaya"
+  },
+  {
     "asset": "manus-cycles-of-time.webp",
     "visiblePlacement": "manus-manvantaras.njk",
     "alt": "An imagined mountain valley and winding river beneath a sky of golden star trails",
@@ -1298,6 +1320,17 @@
     "permission": "Existing approved placement; public redistribution rights not independently established",
     "review": "Existing approved placement; independent iconography review pending",
     "identity": "A brahmachari parasol, staff and water vessels beside three luminous footprints leading into a cosmic indigo opening"
+  },
+  {
+    "asset": "mahamaya-madhu-kaitabha-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A white lotus, golden discus and crossed maces beneath a violet-gold veil above the cosmic ocean",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/mahamaya-madhu-kaitabha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A white lotus, golden discus and crossed maces beneath a violet-gold veil above the cosmic ocean"
   },
   {
     "asset": "durga-mahishasura.webp",

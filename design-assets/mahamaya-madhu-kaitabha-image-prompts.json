@@ -1,0 +1,21 @@
+{
+  "mode": "Built-in Imagegen",
+  "editorialDirection": "Respectful contemporary devotional paintings for Devi Mahatmya chapter 1. Preserve Mahamaya as the power of cosmic sleep and awakening, while keeping Vishnu's identity and the narrative roles distinct. No gore, no modern Earth globe, no text.",
+  "assets": [
+    {
+      "file": "mahamaya-madhu-kaitabha-hero.webp",
+      "placement": "Story hero",
+      "prompt": "A respectful Hindu devotional interpretation of Devi Mahatmya chapter 1 on the cosmic ocean before creation. Vishnu, deep blue and four-armed, reclines peacefully upon the many-hooded serpent Shesha above dark indigo waters; a lotus rises from his navel with four-headed Brahma seated upon it in prayer. Mahamaya appears as a majestic luminous Goddess formed from deep blue, violet and gold radiance withdrawing from Vishnu's closed eyes, heart and breath, standing above the water with a compassionate yet sovereign expression. In the far background, the twin asura warriors Madhu and Kaitabha approach Brahma but remain secondary and non-graphic. Mahamaya is not Durga on a lion and not Lalita; she is the cosmic power of sleep, knowledge, delusion and awakening. Museum-quality hand-painted devotional realism, restrained Pahari and manuscript-painting influence, wide 3:2 composition, anatomically clear hands and faces, no battle gore, no text, no watermark."
+    },
+    {
+      "file": "vishnu-madhu-kaitabha.webp",
+      "placement": "Inline battle scene",
+      "prompt": "A respectful symbolic battle scene from Devi Mahatmya chapter 1: awakened Vishnu stands upon the limitless primordial ocean, deep blue, crowned and four-armed, with conch, discus, mace and lotus clearly and correctly placed. Across the water stand the two distinct powerful asura warriors Madhu and Kaitabha, proud but dignified, each with two arms and different armour, no duplicates and no gore. Behind and above them, Mahamaya is suggested as an immense translucent indigo-gold halo and feminine cosmic presence, indicating the power that has turned their pride into delusion without taking Vishnu's role in the combat. Shesha's coils and the distant lotus of Brahma anchor the cosmic setting. Contemporary devotional painting with classical Indian visual language, dramatic but reverent, deep indigo, copper and gold, 3:2 landscape, correct anatomy, no modern planet Earth, no text or watermark."
+    },
+    {
+      "file": "mahamaya-madhu-kaitabha-card.webp",
+      "placement": "Story collection card",
+      "prompt": "A square symbolic devotional still life for Mahamaya, Madhu and Kaitabha: a white lotus rising from midnight-blue cosmic water, a small golden discus resting above two crossed dark iron maces, and a soft violet-gold veil of light lifting from a sleeping serpent coil toward the lotus. The symbols suggest cosmic sleep, awakening and the twin asuras without showing people or violence. Refined museum still life, hand-painted texture, restrained indigo, ivory, copper and gold palette, strong square composition, no readable script, no text, no logo, no watermark."
+    }
+  ]
+}
