@@ -1,5 +1,9 @@
 # Editorial art programme
 
+## Image ratio standard · 3 November 2026
+
+New website imagery should use a true **16:9 landscape master** unless the owner explicitly requests another format. Prepare source masters at 1600×900 or another exact 16:9 size before the responsive image pipeline runs. Existing approved legacy artwork is not retroactively cropped by this rule.
+
 The approved ivory/obsidian journal, Cormorant Garamond/Manrope typography and distinct visible artwork remain the baseline.
 
 For each new narrative, plan different scenes for collection, cover and interior placements. Keep the collection image unique even when its full reader is added. Use conservative traditional attributes, clear anatomy and truthful AI/contribution labels. Preserve creator marks. Quarantine rejected candidates outside src/ and dist/.

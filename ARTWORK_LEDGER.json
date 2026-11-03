@@ -1280,13 +1280,13 @@
   {
     "asset": "infinite-shiva-linga-card.webp",
     "visiblePlacement": "stories.njk",
-    "alt": "A black stone linga before an infinite column of fire, with a hamsa feather, boar hoofprint and ketaki flower",
-    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
-    "origin": "Built-in Imagegen; see design-assets/infinite-shiva-linga-image-prompts.json",
-    "creator": "AI-generated interpretation",
-    "permission": "Created for the owner-authorized implementation",
-    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
-    "identity": "A black stone linga before an infinite column of fire, with a hamsa feather, boar hoofprint and ketaki flower"
+    "alt": "A black stone Shiva linga before an infinite golden column, with a white hamsa feather, boar hoofprints, rudraksha and a pale ketaki flower",
+    "caption": "OWNER-SUPPLIED SYMBOLIC ARTWORK",
+    "origin": "Owner contribution: Cosmic Shiva Lingam Shrine.png",
+    "creator": "Owner-supplied symbolic artwork; creator not independently established",
+    "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
+    "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
+    "identity": "A black stone Shiva linga before an infinite golden column, with a white hamsa feather, boar hoofprints, rudraksha and a pale ketaki flower"
   },
   {
     "asset": "andhakasura-card.webp",
@@ -1412,13 +1412,13 @@
   {
     "asset": "mahamaya-madhu-kaitabha-card.webp",
     "visiblePlacement": "stories.njk",
-    "alt": "A white lotus, golden discus and crossed maces beneath a violet-gold veil above the cosmic ocean",
-    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
-    "origin": "Built-in Imagegen; see design-assets/mahamaya-madhu-kaitabha-image-prompts.json",
-    "creator": "AI-generated interpretation",
-    "permission": "Created for the owner-authorized implementation",
-    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
-    "identity": "A white lotus, golden discus and crossed maces beneath a violet-gold veil above the cosmic ocean"
+    "alt": "A luminous white lotus, golden discus and crossed maces above a coiled cosmic serpent on the dark ocean",
+    "caption": "OWNER-SUPPLIED SYMBOLIC ARTWORK",
+    "origin": "Owner contribution: Celestial Lotus and Serpent Mandala.png",
+    "creator": "Owner-supplied symbolic artwork; creator not independently established",
+    "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
+    "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
+    "identity": "A luminous white lotus, golden discus and crossed maces above a coiled cosmic serpent on the dark ocean"
   },
   {
     "asset": "durga-mahishasura.webp",
@@ -1544,13 +1544,13 @@
   {
     "asset": "prithu-earth-card.webp",
     "visiblePlacement": "stories.njk",
-    "alt": "A royal bow laid beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields",
-    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
-    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
-    "creator": "AI-generated interpretation",
-    "permission": "Created for the owner-authorized implementation",
-    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
-    "identity": "A royal bow laid beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields"
+    "alt": "A royal bow beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields at sunrise",
+    "caption": "OWNER-SUPPLIED SYMBOLIC ARTWORK",
+    "origin": "Owner contribution: Golden Agrarian Tableau at Sunrise.png",
+    "creator": "Owner-supplied symbolic artwork; creator not independently established",
+    "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
+    "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
+    "identity": "A royal bow beside grain, medicinal herbs, green shoots and a luminous cow hoofprint overlooking cultivated fields at sunrise"
   },
   {
     "asset": "markandeya-shiva-card.webp",
@@ -1566,24 +1566,24 @@
   {
     "asset": "krishna-sudama-card.webp",
     "visiblePlacement": "stories.njk",
-    "alt": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk",
-    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
-    "origin": "Built-in Imagegen; see design-assets/krishna-sudama-image-prompts.json",
-    "creator": "AI-generated interpretation",
-    "permission": "Created for the owner-authorized implementation",
-    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
-    "identity": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk"
+    "alt": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk by the water",
+    "caption": "OWNER-SUPPLIED SYMBOLIC ARTWORK",
+    "origin": "Owner contribution: Golden Temple Still Life by the Water.png",
+    "creator": "Owner-supplied symbolic artwork; creator not independently established",
+    "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
+    "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
+    "identity": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk by the water"
   },
   {
     "asset": "ajamila-card.webp",
     "visiblePlacement": "stories.njk",
-    "alt": "A luminous conch and lotus breaking three dark cords before they reach a wooden toy cart beside a river",
-    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
-    "origin": "Built-in Imagegen; see design-assets/ajamila-image-prompts.json",
-    "creator": "AI-generated interpretation",
-    "permission": "Created for the owner-authorized implementation",
-    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
-    "identity": "A luminous conch and lotus breaking three dark cords before they reach a wooden toy cart beside a river"
+    "alt": "A luminous conch and lotus illuminating three knotted cords before a wooden toy cart beside a river at sunset",
+    "caption": "OWNER-SUPPLIED SYMBOLIC ARTWORK",
+    "origin": "Owner contribution: Golden Conch and Riverside Cart.png",
+    "creator": "Owner-supplied symbolic artwork; creator not independently established",
+    "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
+    "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
+    "identity": "A luminous conch and lotus illuminating three knotted cords before a wooden toy cart beside a river at sunset"
   },
   {
     "asset": "tripurantaka-hero.webp",
