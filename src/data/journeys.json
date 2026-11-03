@@ -56,6 +56,34 @@
     "source": "/sources.html#shiva-halahala"
   },
   {
+    "id": "lingodbhava",
+    "title": "The measure that cannot contain Shiva",
+    "description": "Follow Brahma and Vishnu from conflict to the infinite column and Shiva’s teaching on the linga.",
+    "story": {
+      "title": "The Appearance of the Infinite Shiva Linga",
+      "href": "/infinite-shiva-linga.html"
+    },
+    "deity": {
+      "title": "Meet Shiva",
+      "href": "/deities.html#shiva"
+    },
+    "scripture": {
+      "title": "Explore the Shiva Purana",
+      "href": "/mahapuranas.html#shiva"
+    },
+    "terms": [
+      {
+        "title": "Linga · sign and sacred form",
+        "href": "/glossary.html#linga"
+      },
+      {
+        "title": "Purana · sacred narrative",
+        "href": "/glossary.html#purana"
+      }
+    ],
+    "source": "/sources.html#infinite-shiva-linga"
+  },
+  {
     "id": "lalita",
     "title": "Protection and renewal",
     "description": "Meet Lalita in the Shakta setting of the Lalita Mahatmya.",

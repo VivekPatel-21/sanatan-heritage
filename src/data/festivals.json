@@ -11,6 +11,7 @@
     "detailTemplate": "festivals/shivaratri.njk",
     "stories": [
       { "title": "Shiva drinks Halahala", "href": "/shiva-halahala.html", "connection": "Protection through compassion" },
+      { "title": "The Appearance of the Infinite Shiva Linga", "href": "/infinite-shiva-linga.html", "connection": "The limitless column and the sacred form of the linga" },
       { "title": "Shiva and Parvati", "href": "/shiva-parvati.html", "connection": "Devotion, resolve and divine union" }
     ]
   },

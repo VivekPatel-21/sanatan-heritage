@@ -561,6 +561,28 @@
     "caption": "AI-generated still life · Imagined manuscripts"
   },
   {
+    "asset": "infinite-shiva-linga-hero.webp",
+    "visiblePlacement": "infinite-shiva-linga.njk",
+    "alt": "An infinite white-gold column of fire between four-faced Brahma on his hamsa and four-armed Vishnu on Garuda in a cosmic sky",
+    "caption": "THE COLUMN WITHOUT BEGINNING OR ENDAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/infinite-shiva-linga-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An infinite white-gold column of fire between four-faced Brahma on his hamsa and four-armed Vishnu on Garuda in a cosmic sky"
+  },
+  {
+    "asset": "shiva-linga-revelation.webp",
+    "visiblePlacement": "infinite-shiva-linga.njk",
+    "alt": "Shiva with Uma revealed within infinite light while four-armed Vishnu bows and four-faced Brahma stands beside the hamsa with a lowered Ketaki flower",
+    "caption": "THE EMBODIED LORD WITHIN THE BOUNDLESS LIGHT · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/infinite-shiva-linga-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Shiva with Uma revealed within infinite light while four-armed Vishnu bows and four-faced Brahma stands beside the hamsa with a lowered Ketaki flower"
+  },
+  {
     "asset": "jatayu-sacrifice-reader.webp",
     "visiblePlacement": "jatayu-sacrifice.njk",
     "alt": "The aged vulture king Jatayu spreading his wings before Ravana’s airborne chariot as Sita reaches toward her defender",
@@ -1210,6 +1232,17 @@
     "permission": "Existing approved placement; public redistribution rights not independently established",
     "review": "Existing approved placement; independent iconography review pending",
     "identity": "Shiva with Bhavani beside him, receiving the poison from the cosmic ocean"
+  },
+  {
+    "asset": "infinite-shiva-linga-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A black stone linga before an infinite column of fire, with a hamsa feather, boar hoofprint and ketaki flower",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/infinite-shiva-linga-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A black stone linga before an infinite column of fire, with a hamsa feather, boar hoofprint and ketaki flower"
   },
   {
     "asset": "rama-exile.webp",

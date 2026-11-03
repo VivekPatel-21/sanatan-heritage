@@ -1,0 +1,20 @@
+{
+  "mode": "Built-in Imagegen",
+  "purpose": "Unique devotional artwork for The Appearance of the Infinite Shiva Linga reader",
+  "assets": [
+    {
+      "file": "src/assets/images/infinite-shiva-linga-hero.webp",
+      "prompt": "A respectful Indian devotional painting of the infinite white-gold column of fire appearing between Brahma on the hamsa and four-armed Vishnu on Garuda. The column dominates the scene and extends beyond both vertical edges; divine weapons dissolve harmlessly into its radiance. Brahma looks upward, Vishnu downward, both small beside the immeasurable revelation. Deep indigo, copper and white-gold palette; no text or violence.",
+      "refinement": "Removed an unintended peacock feather from Vishnu's crown while preserving the composition and Vaishnava attributes."
+    },
+    {
+      "file": "src/assets/images/shiva-linga-revelation.webp",
+      "prompt": "A classical devotional painting of Shiva with Uma revealed within the infinite pillar of light. Shiva bears ash markings, matted locks, crescent, Ganga motif, third eye, rudraksha, trident and damaru. Vishnu bows with four arms; Brahma stands with hamsa and lowered ketaki flower. The mood is humility, truth and forgiveness rather than punishment.",
+      "refinement": "Corrected Vishnu to exactly four arms: two hands joined, one holding conch and one holding discus; mace resting on the ground and no lotus."
+    },
+    {
+      "file": "src/assets/images/infinite-shiva-linga-card.webp",
+      "prompt": "A square symbolic devotional still life: a polished black Shiva linga centered within a shaft of white-gold fire extending beyond the frame, with a hamsa feather, subtle boar hoofprint, ketaki flower and rudraksha strand on an indigo cosmic stone surface. Elegant, reverent and readable at thumbnail size; no figures or text."
+    }
+  ]
+}
