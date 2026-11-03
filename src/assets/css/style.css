@@ -6199,6 +6199,18 @@ footer p {
 .knowledge-hero { max-width: 1180px; margin: 0 auto; padding: clamp(5rem,10vw,9rem) clamp(1.25rem,5vw,4rem) clamp(4rem,8vw,7rem); border-bottom: 1px solid var(--knowledge-rule); }
 .knowledge-hero h1 { max-width: 900px; margin: 1rem 0 1.5rem; font-size: clamp(3rem,7vw,7.5rem); line-height: .98; }
 .knowledge-hero .lead { max-width: 760px; font-size: clamp(1.15rem,2vw,1.45rem); }
+.philosophy-hero { display: grid; grid-template-columns: minmax(0,.92fr) minmax(340px,1.08fr); gap: clamp(2rem,5vw,5rem); align-items: center; max-width: 1440px; }
+.philosophy-hero h1 { font-size: clamp(3rem,5.5vw,6.4rem); }
+.philosophy-hero-art,.philosophy-inline-art { margin: 0; }
+.philosophy-hero-art img,.philosophy-inline-art img { display: block; width: 100%; height: auto; }
+.philosophy-hero-art figcaption,.philosophy-inline-art figcaption { position: static; display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; color: var(--text-muted); border-bottom: 1px solid var(--knowledge-rule); font-size: .68rem; letter-spacing: .07em; }
+.philosophy-hero-art figcaption span,.philosophy-inline-art figcaption span { text-align: right; }
+.philosophy-map { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 2.5rem; background: var(--knowledge-rule); border: 1px solid var(--knowledge-rule); }
+.philosophy-map article { min-height: 15rem; padding: clamp(1.5rem,3vw,2.5rem); background: var(--background); }
+.philosophy-map article>span { color: var(--accent); font-family: var(--font-serif); font-size: 2rem; }
+.philosophy-map h3 { margin: .7rem 0; font-size: clamp(1.6rem,2.5vw,2.2rem); }
+.philosophy-map a { display: inline-block; margin-top: 1rem; color: var(--accent); text-underline-offset: .25em; }
+.philosophy-inline-art { max-width: 980px; margin: 3rem auto; }
 .knowledge-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin-top: 2rem; }
 .knowledge-actions>a:not(.button) { color: var(--accent); text-underline-offset: .3em; }
 .knowledge-intro { display: grid; grid-template-columns: minmax(220px,.8fr) minmax(300px,1.2fr); gap: clamp(2rem,7vw,8rem); }
@@ -6256,8 +6268,12 @@ footer p {
 .foundation-invitation { padding: clamp(1.5rem,4vw,3rem); margin: 2rem 0; background: var(--surface); border-left: 3px solid var(--accent); }
 .foundation-invitation h2 { margin: .5rem 0 1rem; }
 @media screen and (max-width:760px) {
-  .knowledge-intro,.school-pairs>article>div { grid-template-columns: 1fr; }
+  .knowledge-intro,.school-pairs>article>div,.philosophy-hero { grid-template-columns: 1fr; }
+  .philosophy-hero { padding-top: 4rem; }
+  .philosophy-hero-art figcaption,.philosophy-inline-art figcaption { display: block; }
+  .philosophy-hero-art figcaption span,.philosophy-inline-art figcaption span { display: block; margin-top: .3rem; text-align: left; }
   .knowledge-link-grid,.guna-grid,.aim-grid,.curated-path-grid,.deity-atlas-grid { grid-template-columns: 1fr; }
+  .philosophy-map { grid-template-columns: 1fr; }
   .characteristic-grid { grid-template-columns: 1fr; }
   .characteristic-grid>div:nth-child(odd) { border-right: 0; }
   .reading-method>ol { grid-template-columns: 1fr; }

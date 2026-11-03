@@ -1,0 +1,17 @@
+{
+  "generator": "Built-in Imagegen",
+  "created": "2026-11-03",
+  "assets": [
+    {
+      "file": "philosophy-guide-hero.webp",
+      "use": "Understanding Sanatan Dharma philosophy guide hero",
+      "prompt": "A premium heritage-journal editorial illustration of a serene Indian stone pavilion at dawn. Four pathways enter a circular courtyard; three translucent ivory, terracotta and indigo currents interweave overhead; six open carved gateways reveal distinct horizons. Restrained symbolic motifs suggest responsibility, material support, beauty and liberation. No people, deities, text, glyphs or authoritative diagram. Painterly realism, warm ivory, terracotta, indigo and antique gold, 3:2 landscape."
+    },
+    {
+      "file": "three-gunas-loom.webp",
+      "use": "Three gunas section illustration",
+      "prompt": "A refined painterly-realistic Indian handloom in a quiet stone veranda at dawn. Exactly three primary thread systems—luminous ivory-gold, warm terracotta-red and deep indigo—cross, loosen, tighten and exchange prominence as one unfinished textile. A lamp, shuttle and shaded fold suggest clarity, movement and weight without making any color wholly good or evil. No people, deities, text, glyphs or watermark. 3:2 landscape."
+    }
+  ],
+  "editorial_boundary": "Both images are symbolic editorial interpretations. They are not scriptural diagrams and do not assign fixed moral identities to colors, paths or gateways."
+}
