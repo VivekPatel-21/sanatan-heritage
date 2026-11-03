@@ -748,6 +748,28 @@
     "identity": "Krishna showing mercy to the humbled Kaliya as the Nagapatnis and their children approach with folded hands"
   },
   {
+    "asset": "krishna-sudama-hero.webp",
+    "visiblePlacement": "krishna-sudama.njk",
+    "alt": "Krishna warmly embracing his travel-worn friend Sudama in an imagined Dvaraka palace while Rukmini and attendants welcome him",
+    "caption": "KRISHNA WELCOMES SUDAMAAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/krishna-sudama-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Krishna warmly embracing his travel-worn friend Sudama in an imagined Dvaraka palace while Rukmini and attendants welcome him"
+  },
+  {
+    "asset": "krishna-sudama-gurukula.webp",
+    "visiblePlacement": "krishna-sudama.njk",
+    "alt": "Young Krishna and Sudama sheltering beneath a forest tree in a monsoon storm while protecting gathered firewood, with an imagined gurukula lamp in the distance",
+    "caption": "THE GURUKULA MEMORY · AI-GENERATED NARRATIVE INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/krishna-sudama-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Young Krishna and Sudama sheltering beneath a forest tree in a monsoon storm while protecting gathered firewood, with an imagined gurukula lamp in the distance"
+  },
+  {
     "asset": "lalita-kameshvara-contributed.webp",
     "visiblePlacement": "lalita-bhandasura.njk",
     "alt": "Devotional artwork of Lalita with Kameshvara before a radiant moon",
@@ -1397,6 +1419,17 @@
     "permission": "Existing approved placement; public redistribution rights not independently established",
     "review": "Existing approved placement; independent iconography review pending",
     "identity": "A flower-covered Shiva linga and rudraksha mala within golden light while a noose rests outside the luminous boundary"
+  },
+  {
+    "asset": "krishna-sudama-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/krishna-sudama-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk"
   },
   {
     "asset": "tripurantaka-hero.webp",

@@ -1,0 +1,31 @@
+{
+  "project": "Krishna and Sudama — A Friendship Beyond Wealth",
+  "method": "Built-in image generation; each composition is a distinct contemporary devotional interpretation.",
+  "shared_constraints": [
+    "Respectful Hindu devotional painting with hand-painted texture and premium editorial finish",
+    "Krishna appears two-armed with deep blue skin, yellow silk, a royal Dvaraka crown and gentle expression",
+    "Sudama appears as an adult brahmana scholar, travel-worn and slender, in simple off-white cotton, never mocked or caricatured",
+    "No text, lettering, logos, watermarks, extra limbs, duplicated figures or modern objects",
+    "Architecture and clothing are explicitly imagined rather than archaeological claims"
+  ],
+  "assets": [
+    {
+      "file": "krishna-sudama-hero.webp",
+      "role": "Story hero",
+      "aspect_ratio": "3:2 landscape",
+      "prompt": "Inside an imagined luminous palace hall in ancient Dvaraka, Krishna has just risen from a low royal couch and embraces his travel-worn childhood companion Sudama with unmistakable warmth. Krishna is two-armed, deep blue, in yellow silk and a refined jeweled crown with one peacock feather; Sudama is a slender adult brahmana in plain off-white cotton, dusty from travel, holding a tiny knotted cloth bundle. Rukmini stands nearby with quiet welcome, attendants remain respectfully distant, bronze lamps and sea-blue light soften the hall. The emotional center is mutual friendship, not wealth: Krishna and Sudama are equal in the embrace. Respectful contemporary devotional painting, hand-painted realism, warm gold and indigo palette, premium museum editorial composition, expressive faces, clear hands, 3:2 landscape, no text or watermark."
+    },
+    {
+      "file": "krishna-sudama-gurukula.webp",
+      "role": "Inline narrative image",
+      "aspect_ratio": "3:2 landscape",
+      "prompt": "A remembered night from the gurukula of sage Sandipani: young Krishna and young Sudama, both adolescent students in simple ochre and cream garments, shelter together beneath a large forest tree while protecting a bundle of gathered firewood from a monsoon storm. They hold each other's forearms for steadiness as rain and wind cross a dark grove; dawn begins at the horizon and their teacher's small hermitage lamp glows far away. Krishna is subtly blue, two-armed and without royal ornaments; Sudama is an ordinary devoted student. Friendship, duty and endurance rather than spectacle. Respectful contemporary devotional painting, deep indigo rain with warm amber dawn, hand-painted texture, cinematic yet intimate, clear anatomy, 3:2 landscape, no text or watermark."
+    },
+    {
+      "file": "krishna-sudama-card.webp",
+      "role": "Stories collection card",
+      "aspect_ratio": "1:1 square",
+      "prompt": "A symbolic devotional still life about Krishna and Sudama's friendship: a tiny knotted piece of worn off-white cloth opened to reveal four modest handfuls of flattened rice, placed beside a simple wooden student writing board and a single peacock feather; at the edge, a fold of rich yellow silk meets the humble cloth without covering it. One small bronze lamp casts warm light across an indigo stone surface, with a distant suggestion of sea-blue Dvaraka arches out of focus. No people and no readable writing. Elegant museum still life, hand-painted devotional realism, restrained gold, ivory and indigo, spacious square composition, no text, lettering, logo or watermark."
+    }
+  ]
+}

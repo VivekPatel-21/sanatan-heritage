@@ -574,5 +574,18 @@
       { "title": "Purushartha · aims of life", "href": "/philosophy.html#purusharthas" }
     ],
     "source": "/sources.html#prithu-earth"
+  },
+  {
+    "id": "sudama",
+    "title": "Friendship beyond circumstance",
+    "description": "Follow Sudama from a household with little to Krishna's welcome in Dvaraka and home again with devotion unchanged.",
+    "story": { "title": "Krishna and Sudama", "href": "/krishna-sudama.html" },
+    "deity": { "title": "Meet Krishna", "href": "/deities.html#krishna" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
+      { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" }
+    ],
+    "source": "/sources.html#krishna-sudama"
   }
 ]
