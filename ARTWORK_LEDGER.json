@@ -1,5 +1,27 @@
 [
   {
+    "asset": "ajamila-hero.webp",
+    "visiblePlacement": "ajamila.njk",
+    "alt": "Elderly Ajamila reaching toward his young son Narayana while golden conch, discus and lotus light stops three dark cords at the doorway",
+    "caption": "A NAME OPENS THE THRESHOLDAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ajamila-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Elderly Ajamila reaching toward his young son Narayana while golden conch, discus and lotus light stops three dark cords at the doorway"
+  },
+  {
+    "asset": "ajamila-gangadvara.webp",
+    "visiblePlacement": "ajamila.njk",
+    "alt": "Elderly Ajamila meditating with prayer beads beside the Ganga at dawn near the Himalayan foothills",
+    "caption": "AJAMILA AT GANGADVARA · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ajamila-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Elderly Ajamila meditating with prayer beads beside the Ganga at dawn near the Himalayan foothills"
+  },
+  {
     "asset": "avadhuta-learning-from-nature.webp",
     "visiblePlacement": "avadhuta-teachers.njk",
     "alt": "An imagined unnamed wanderer looking over a river, trees and mountains at dawn",
@@ -1430,6 +1452,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "Four small handfuls of flattened rice in a worn cloth beside a peacock feather, writing board, lamp and yellow silk"
+  },
+  {
+    "asset": "ajamila-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A luminous conch and lotus breaking three dark cords before they reach a wooden toy cart beside a river",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ajamila-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A luminous conch and lotus breaking three dark cords before they reach a wooden toy cart beside a river"
   },
   {
     "asset": "tripurantaka-hero.webp",

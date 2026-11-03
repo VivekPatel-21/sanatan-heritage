@@ -587,5 +587,18 @@
       { "title": "Dharma · responsibility", "href": "/glossary.html#dharma" }
     ],
     "source": "/sources.html#krishna-sudama"
+  },
+  {
+    "id": "ajamila",
+    "title": "Grace that becomes transformation",
+    "description": "Follow Ajamila from a name spoken at death through remorse, disciplined change and the instruction given to Yama’s messengers.",
+    "story": { "title": "Ajamila · The Power of Narayana’s Name", "href": "/ajamila.html" },
+    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
+      { "title": "Karma · action and consequence", "href": "/glossary.html#karma" }
+    ],
+    "source": "/sources.html#ajamila"
   }
 ]

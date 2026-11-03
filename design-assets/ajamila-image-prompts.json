@@ -1,0 +1,31 @@
+{
+  "project": "Ajamila — The Power of Narayana's Name",
+  "method": "Built-in image generation; each composition is a distinct contemporary devotional interpretation.",
+  "shared_constraints": [
+    "Respectful Hindu devotional painting with hand-painted texture and premium editorial finish",
+    "Ajamila is an elderly Indian man in simple worn garments, portrayed with dignity rather than horror or caricature",
+    "The young son Narayana is present only as an innocent child and never endangered or distressed",
+    "Avoid graphic death, hell imagery, gore, terror directed at the child, readable text, logos, watermarks, extra limbs and duplicated figures",
+    "Architecture and clothing are imagined rather than historical claims"
+  ],
+  "assets": [
+    {
+      "file": "ajamila-hero.webp",
+      "role": "Story hero",
+      "aspect_ratio": "3:2 landscape",
+      "prompt": "A respectful symbolic scene from the Bhagavata story of Ajamila: inside a modest ancient north Indian home at twilight, elderly Ajamila lies weak but conscious on a simple low bed and reaches toward his beloved young son Narayana, who stands safely in a distant doorway holding a small wooden toy. As the father calls the child's name, warm golden light enters and forms subtle sacred motifs of conch, discus and lotus in the air; three dark noose-like shadows at the far edge stop before the light and recede, without visible monsters or horror. The child is calm and innocent, the father is dignified, and the emotional focus is the unexpected opening of grace. Contemporary devotional painting, hand-painted realism, deep indigo and warm gold palette, museum editorial composition, expressive but restrained, 3:2 landscape, no text, lettering or watermark."
+    },
+    {
+      "file": "ajamila-gangadvara.webp",
+      "role": "Inline narrative image",
+      "aspect_ratio": "3:2 landscape",
+      "prompt": "Elderly Ajamila after his awakening, seated in quiet disciplined meditation on stone steps beside the Ganga at Gangadvara near the Himalayan foothills. Dawn light touches the river, a modest temple lamp glows beside him, and his simple white garments and prayer beads emphasize repentance, restraint and renewed devotion. No other people, no divine figure, no dramatic miracle; the river path and distant hills suggest a life redirected over time. Respectful contemporary devotional landscape painting, hand-painted texture, calm blue, ivory and muted gold palette, spacious 3:2 composition, clear anatomy, no text or watermark."
+    },
+    {
+      "file": "ajamila-card.webp",
+      "role": "Stories collection card",
+      "aspect_ratio": "1:1 square",
+      "prompt": "A symbolic devotional still life for the story of Ajamila: a luminous white conch and small golden lotus resting on an indigo stone surface, their warm light gently breaking three dark knotted cords before they reach a child's simple wooden toy cart at the edge of the scene. A single oil lamp and a quiet river-blue background suggest remembrance and a second beginning. No people, no readable manuscript, no letters or written name. Refined museum still life, hand-painted devotional realism, restrained gold, ivory and indigo, square composition, no text, logo or watermark."
+    }
+  ]
+}
