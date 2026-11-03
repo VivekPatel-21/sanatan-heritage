@@ -60,6 +60,14 @@ choice.value = 'all'; choice.dispatchEvent(new explorer.window.Event('change'));
 assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 26);
 explorer.window.close();
 
+const festivals = await page('festivals');
+const festivalDoc = festivals.window.document;
+assert.equal(festivalDoc.querySelectorAll('.festival-story-links').length, 9);
+assert.equal(festivalDoc.querySelector('#calendar-bali-pratipada .festival-story-links a').getAttribute('href'), '/vamana-king-bali.html');
+assert.equal(festivalDoc.querySelectorAll('#calendar-navaratri .festival-story-links a').length, 2);
+assert.ok([...festivalDoc.querySelectorAll('.festival-story-links a')].every(link => link.textContent.trim().length > 0));
+festivals.window.close();
+
 const readerDoc = story.window.document;
 const readerSize = readerDoc.querySelector('#reader-size');
 readerSize.value = 'large'; readerSize.dispatchEvent(new story.window.Event('change'));

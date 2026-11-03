@@ -8,7 +8,11 @@
     "keywords": "Shiva Mahashivratri Shivratri",
     "source": "/sources.html#festivals",
     "legacyAnchor": "shivaratri",
-    "detailTemplate": "festivals/shivaratri.njk"
+    "detailTemplate": "festivals/shivaratri.njk",
+    "stories": [
+      { "title": "Shiva drinks Halahala", "href": "/shiva-halahala.html", "connection": "Protection through compassion" },
+      { "title": "Shiva and Parvati", "href": "/shiva-parvati.html", "connection": "Devotion, resolve and divine union" }
+    ]
   },
   {
     "id": "navaratri",
@@ -19,7 +23,11 @@
     "keywords": "Navratri Durga Devi Garba Golu",
     "source": "/sources.html#festivals",
     "legacyAnchor": "navaratri",
-    "detailTemplate": "festivals/navaratri.njk"
+    "detailTemplate": "festivals/navaratri.njk",
+    "stories": [
+      { "title": "Devi and Mahishasura", "href": "/devi-mahishasura.html", "connection": "The Goddess confronts Mahishasura" },
+      { "title": "Devi and Shumbha–Nishumbha", "href": "/devi-shumbha-nishumbha.html", "connection": "The final episode of the Devi Mahatmya" }
+    ]
   },
   {
     "id": "hanuman-jayanti",
@@ -30,7 +38,10 @@
     "keywords": "Hanuman birth Anjaneya",
     "source": "/sources.html#festivals",
     "legacyAnchor": "hanuman-jayanti",
-    "detailTemplate": "festivals/hanuman-jayanti.njk"
+    "detailTemplate": "festivals/hanuman-jayanti.njk",
+    "stories": [
+      { "title": "Hanuman’s journey to Lanka", "href": "/hanuman-lanka.html", "connection": "Courage expressed through devoted service" }
+    ]
   },
   {
     "id": "deepavali",
@@ -87,6 +98,9 @@
     "timing": "",
     "keywords": "Bali Vamana Vishnu Diwali",
     "note": "",
+    "stories": [
+      { "title": "Vamana and King Bali", "href": "/vamana-king-bali.html", "connection": "The gift of three steps and Bali’s promise" }
+    ],
     "details": [
       {
         "heading": "The remembrance of Bali",
@@ -109,6 +123,9 @@
     "timing": "",
     "keywords": "Krishna Govardhan cows",
     "note": "The inspected editorial note identifies the hill near Mathura and Krishna’s raising of it. The festival passage and the full Govardhana narrative remain distinct.",
+    "stories": [
+      { "title": "Krishna and Govardhana", "href": "/krishna-govardhana.html", "connection": "The full story of shelter beneath the hill" }
+    ],
     "details": [
       {
         "heading": "The hill and the pastoral world",
@@ -527,6 +544,10 @@
     "timing": "",
     "keywords": "Holi Dolayatra Dolotsava Krishna Govinda colours colors swing",
     "note": "This is a particular temple account of the Holi season, not an assertion that every Holi celebration follows this rite.",
+    "stories": [
+      { "title": "Krishna and Govardhana", "href": "/krishna-govardhana.html", "connection": "Krishna shelters the people and cattle of Vraja" },
+      { "title": "Krishna and Kaliya", "href": "/krishna-kaliya.html", "connection": "Krishna restores the poisoned Yamuna" }
+    ],
     "details": [
       {
         "heading": "Govinda on the swing",
@@ -571,6 +592,10 @@
     "timing": "",
     "keywords": "Shiva Ashtami Chaturdashi lunar vrata",
     "note": "These recurring observances are not all labeled Maha Shivaratri or Pradosha. The directory does not reproduce the chapter’s detailed ascetic prescriptions.",
+    "stories": [
+      { "title": "Shiva as Tripurantaka", "href": "/tripura-destruction.html", "connection": "Cosmic power gathered to restore balance" },
+      { "title": "Markandeya and Shiva", "href": "/markandeya-shiva.html", "connection": "A devotee seeks refuge in Shiva" }
+    ],
     "details": [
       {
         "heading": "A recurring lunar rhythm",
@@ -593,6 +618,10 @@
     "timing": "",
     "keywords": "Uma Mahesvara Maheshvara Parvati Shiva",
     "note": "This is a recurring year-long vrata in the inspected passage, not one universally fixed annual festival date.",
+    "stories": [
+      { "title": "Shiva and Parvati", "href": "/shiva-parvati.html", "connection": "The full story of devotion, recognition and union" },
+      { "title": "Daksha Yajna and Sati", "href": "/daksha-yajna-sati.html", "connection": "An earlier chapter in the divine household" }
+    ],
     "details": [
       {
         "heading": "Honouring Uma and Shiva together",
@@ -636,6 +665,10 @@
     "reference": "Skanda Purana, Part 7, Vaishnava-khanda, Ayodhya-mahatmya, II.viii.10.18–25, printed pp. 217–218; supplied PDF pp. 223–224.",
     "keywords": "Rama Navami Ayodhya charity",
     "note": "The inspected passage specifies Navami but does not name the month or bright/dark fortnight. No further calendar precision is inferred.",
+    "stories": [
+      { "title": "Rama leaves Ayodhya", "href": "/rama-exile.html", "connection": "Begin Rama’s forest journey" },
+      { "title": "Jatayu’s Sacrifice", "href": "/jatayu-sacrifice.html", "connection": "Courage and dharma within Rama’s search" }
+    ],
     "details": [
       {
         "heading": "A passage within Ayodhya’s sacred geography",
