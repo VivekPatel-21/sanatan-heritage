@@ -21,9 +21,14 @@ for(const name of pages){
   const content=graph['@graph'].find(item=>item['@type']==='Article'||item['@type']==='WebPage');assert.equal(content.url,canonical);
   assert.equal($('meta[name="theme-color"]').attr('content'),site.themeColors.light);
   assert.equal($('link[rel="manifest"]').attr('href'),'/site.webmanifest');
+  assert.equal($('script[src="https://www.googletagmanager.com/gtag/js?id=G-17L9QK6C7F"]').is('[async]'),true,`${name} must load the Google tag asynchronously`);
+  assert.equal($('script[src="/assets/js/google-analytics.js"]').length,1,`${name} must initialize Google Analytics once`);
   assert.equal($('[onsubmit],[onclick],[onerror],[onload]').length,0,'CSP must not rely on inline handlers');
 }
 const manifest=JSON.parse(await readFile('dist/site.webmanifest','utf8'));for(const icon of manifest.icons)assert.ok((await stat('dist'+icon.src)).size>0);
 const robots=await readFile('dist/robots.txt','utf8');assert.ok(robots.includes(site.origin+'/sitemap.xml'));assert.ok(robots.includes(site.indexable?'Allow: /':'Disallow: /'));
-assert.ok((await readFile('dist/_headers','utf8')).includes('X-Content-Type-Options: nosniff'));
+const headers=await readFile('dist/_headers','utf8');
+assert.ok(headers.includes('X-Content-Type-Options: nosniff'));
+assert.ok(headers.includes('script-src \'self\' \'wasm-unsafe-eval\' https://www.googletagmanager.com'));
+assert.ok(headers.includes('https://www.google-analytics.com'));
 console.log(`Passed: ${pages.length} centralized canonical/social/schema pages, 1200×630 JPEG previews (maximum ${maxPreview} bytes), manifest, theme metadata, robots and headers.`);

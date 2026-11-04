@@ -4,6 +4,7 @@ const { chromium } = await import(process.env.SANATAN_PLAYWRIGHT_PATH ? pathToFi
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
+await page.route(/https:\/\/(?:www\.)?(?:googletagmanager|google-analytics)\.com\//, route => route.abort());
 const port = Number(process.env.SANATAN_PORT || 8080);
 const baseUrl = `http://127.0.0.1:${port}`;
 await mkdir('.qa', { recursive: true });

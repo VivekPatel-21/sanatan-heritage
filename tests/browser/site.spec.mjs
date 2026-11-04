@@ -3,6 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import {readdir} from 'node:fs/promises';
 const routes=(await readdir('dist')).filter(name=>name.endsWith('.html'));
 test.beforeEach(async({page},info)=>{
+  await page.route(/https:\/\/(?:www\.)?(?:googletagmanager|google-analytics)\.com\//,route=>route.abort());
   await page.addInitScript(theme=>{if(!localStorage.getItem('sanatan-theme'))localStorage.setItem('sanatan-theme',theme);},info.project.use.colorScheme);
 });
 for(const route of routes)test(`${route}: layout, metadata, security and accessibility`,async({page})=>{
