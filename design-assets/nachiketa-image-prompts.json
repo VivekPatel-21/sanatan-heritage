@@ -1,0 +1,20 @@
+{
+  "mode": "built-in Imagegen",
+  "artworks": [
+    {
+      "asset": "nachiketa-yama-dialogue.webp",
+      "role": "story hero",
+      "prompt": "A respectful devotional editorial painting of young Nachiketa calmly listening to Yama across a sacred fire at twilight. Nachiketa is an early-adolescent seeker in a simple ivory garment and sacred thread. Yama appears as wise regal Dharmaraja, dignified and compassionate, never horrific. Warm firelight, deep blue twilight, coherent anatomy, no text, exact 16:9 composition."
+    },
+    {
+      "asset": "nachiketa-three-nights-card.webp",
+      "role": "three nights chapter",
+      "prompt": "A symbolic devotional still life at a quiet threshold before dawn: exactly three small oil lamps, a simple staff and a neatly folded ivory cloth. No people, no horror, contemplative warm light against cool predawn blue, no text, exact 16:9 composition."
+    },
+    {
+      "asset": "nachiketa-chariot-teaching.webp",
+      "role": "chariot teaching chapter",
+      "prompt": "A refined conceptual devotional painting of the Katha Upanishad chariot teaching: exactly five well-formed horses guided by a focused charioteer holding coherent reins, with a serene passenger seated in the chariot on a dawn road. Balanced motion, no battle, no text, exact 16:9 composition."
+    }
+  ]
+}

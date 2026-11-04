@@ -877,5 +877,18 @@
       }
     ],
     "source": "/sources.html#narada-birth-deeds"
+  },
+  {
+    "id": "nachiketa",
+    "title": "The question beyond death",
+    "description": "Follow Nachiketa from an uncomfortable truth through three nights at Yama’s threshold to a teaching on discernment, the inward road and the deathless Self.",
+    "story": { "title": "Nachiketa and Yama · The Secret of Death", "href": "/nachiketa-yama.html" },
+    "deity": { "title": "Explore the question of self", "href": "/philosophy.html#reading" },
+    "scripture": { "title": "Enter the Upanishads", "href": "/scriptures.html#upanishads" },
+    "terms": [
+      { "title": "Atman · the Self", "href": "/glossary.html#atman" },
+      { "title": "Moksha · liberation", "href": "/glossary.html#moksha" }
+    ],
+    "source": "/sources.html#nachiketa-yama"
   }
 ]

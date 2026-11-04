@@ -990,6 +990,28 @@
     "identity": "Manu standing before an immense luminous fish in a reservoir, with the smaller vessels it has outgrown nearby"
   },
   {
+    "asset": "nachiketa-yama-dialogue.webp",
+    "visiblePlacement": "nachiketa-yama.njk",
+    "alt": "An imagined young Nachiketa listening calmly to Yama across a sacred fire at twilight",
+    "caption": "THE THIRD BOON · AI-GENERATED DEVOTIONAL INTERPRETATION; FIGURES AND SETTING ARE IMAGINED",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined young Nachiketa listening calmly to Yama across a sacred fire at twilight"
+  },
+  {
+    "asset": "nachiketa-chariot-teaching.webp",
+    "visiblePlacement": "nachiketa-yama.njk",
+    "alt": "A charioteer guiding five horses while a serene passenger sits in the chariot on a dawn road",
+    "caption": "THE CHARIOT TEACHING · AI-GENERATED CONCEPTUAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A charioteer guiding five horses while a serene passenger sits in the chariot on a dawn road"
+  },
+  {
     "asset": "narada-journey-hero.webp",
     "visiblePlacement": "narada-birth-deeds.njk",
     "alt": "Narada playing a traditional vina while walking from an earthly river valley toward a luminous celestial horizon",
@@ -1617,6 +1639,17 @@
     "permission": "Owner supplied and explicitly requested publication on this website; underlying rights not independently verified",
     "review": "Owner-supplied artwork visually checked and normalized to 1600×900 (16:9); no specialist review claimed",
     "identity": "A luminous conch and lotus illuminating three knotted cords before a wooden toy cart beside a river at sunset"
+  },
+  {
+    "asset": "nachiketa-three-nights-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "Three lamps beside a staff and folded cloth at a quiet threshold before dawn",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see IMAGE_PROMPTS.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Three lamps beside a staff and folded cloth at a quiet threshold before dawn"
   },
   {
     "asset": "tripurantaka-hero.webp",
