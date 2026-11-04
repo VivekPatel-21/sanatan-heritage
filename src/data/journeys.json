@@ -849,5 +849,33 @@
       }
     ],
     "source": "/sources.html#ajamila"
+  },
+  {
+    "id": "narada",
+    "title": "Guidance born from listening",
+    "description": "Follow Narada from a child serving travelling sages to a teacher who carries devotion between seekers and worlds.",
+    "story": {
+      "title": "The Birth and Deeds of Narada",
+      "href": "/narada-birth-deeds.html"
+    },
+    "deity": {
+      "title": "Meet Narada among the Great Rishis",
+      "href": "/great-rishis.html#narada"
+    },
+    "scripture": {
+      "title": "Enter the Bhagavata Purana",
+      "href": "/mahapuranas.html#bhagavata"
+    },
+    "terms": [
+      {
+        "title": "Bhakti · devotion",
+        "href": "/glossary.html#bhakti"
+      },
+      {
+        "title": "Purana · sacred narrative",
+        "href": "/glossary.html#purana"
+      }
+    ],
+    "source": "/sources.html#narada-birth-deeds"
   }
 ]

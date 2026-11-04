@@ -1,0 +1,21 @@
+{
+  "artDirection": "Premium devotional editorial realism; every master is exactly 1600×900 (16:9). Each artwork has one visible placement.",
+  "images": [
+    {
+      "file": "narada-journey-hero.webp",
+      "placement": "Narada reader hero",
+      "prompt": "Exact 16:9 devotional editorial painting. Adult Devarshi Narada, serene Indian sage in modest ochre clothing, travels on a luminous path joining an earthly river valley to a star-filled celestial horizon. Exactly two arms: left supports the frets of one coherent traditional vina, right plucks its strings. Compassionate, joyful expression; no wings, crowd, extra limbs, text or watermark. Indigo, antique gold and terracotta museum-publication palette."
+    },
+    {
+      "file": "narada-young-listening.webp",
+      "placement": "Narada reader chapter 2",
+      "prompt": "Exact 16:9 scene inspired by Bhagavata Purana 1.5.23–31. A five-year-old Indian boy in a simple cotton dhoti quietly serves and listens to four travelling sages in a forest hermitage during monsoon rain. Exactly five people, each exactly two arms; the child has no vina. Warm lamp against cool rain, humble woven mats and vessels, no text or watermark."
+    },
+    {
+      "file": "narada-guidance-card.webp",
+      "placement": "Story collection card",
+      "prompt": "Exact 16:9 symbolic still life: one complete traditional vina, rudraksha mala, closed manuscript bundle, white lotus and brass lamp on indigo stone beside a river. A luminous path continues toward a distant blue horizon, symbolizing devotion carried as guidance. No people, text or watermark."
+    }
+  ],
+  "review": "Assistant visual review: hero has one adult figure with two arms and one coherent vina; listening scene has one child and four sages with natural two-armed anatomy; card contains no people. No specialist iconography review claimed."
+}

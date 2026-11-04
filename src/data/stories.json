@@ -172,5 +172,11 @@
     "href": "/ajamila.html",
     "minutes": 10,
     "format": "Full story"
+  },
+  "narada": {
+    "title": "The Birth and Deeds of Narada",
+    "href": "/narada-birth-deeds.html",
+    "minutes": 10,
+    "format": "Full story"
   }
 }

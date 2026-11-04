@@ -990,6 +990,28 @@
     "identity": "Manu standing before an immense luminous fish in a reservoir, with the smaller vessels it has outgrown nearby"
   },
   {
+    "asset": "narada-journey-hero.webp",
+    "visiblePlacement": "narada-birth-deeds.njk",
+    "alt": "Narada playing a traditional vina while walking from an earthly river valley toward a luminous celestial horizon",
+    "caption": "DEVOTION CARRIED BETWEEN WORLDSAI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/narada-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "Narada playing a traditional vina while walking from an earthly river valley toward a luminous celestial horizon"
+  },
+  {
+    "asset": "narada-young-listening.webp",
+    "visiblePlacement": "narada-birth-deeds.njk",
+    "alt": "A young boy serving water and listening to four travelling sages in a forest shelter during monsoon rain",
+    "caption": "SERVICE BECOMES LISTENING · AI-GENERATED NARRATIVE INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/narada-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A young boy serving water and listening to four travelling sages in a forest shelter during monsoon rain"
+  },
+  {
     "asset": "philosophy-guide-hero.webp",
     "visiblePlacement": "philosophy.njk",
     "alt": "Four pathways entering a courtyard beneath three interwoven currents, with six open stone gateways beyond",
@@ -1518,6 +1540,17 @@
     "review": "Assistant visual review: human/deity limb counts, attributes and composition checked; imagined settings, no specialist review claimed",
     "alt": "Young Dhruva leaving an imagined palace for a forest path",
     "caption": "AI-GENERATED NARRATIVE INTERPRETATION"
+  },
+  {
+    "asset": "narada-guidance-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A vina, rudraksha mala, manuscript bundle, lotus and lamp beside a luminous path through a river valley",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/narada-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A vina, rudraksha mala, manuscript bundle, lotus and lamp beside a luminous path through a river valley"
   },
   {
     "asset": "kapila-hermitage-path.webp",
