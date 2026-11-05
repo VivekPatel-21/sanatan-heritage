@@ -462,6 +462,28 @@
     "identity": "The restored elephant-headed young Ganesha awakening on a flower-covered platform as Parvati approaches and sacred water is offered"
   },
   {
+    "asset": "gargi-yajnavalkya-assembly.webp",
+    "visiblePlacement": "gargi-yajnavalkya.njk",
+    "alt": "An imagined Gargi Vachaknavi standing to question Yajnavalkya before King Janaka and an assembly of scholars",
+    "caption": "GARGI ADDRESSES THE ASSEMBLY · AI-GENERATED HISTORICAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/gargi-yajnavalkya-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Gargi Vachaknavi standing to question Yajnavalkya before King Janaka and an assembly of scholars"
+  },
+  {
+    "asset": "gargi-woven-worlds.webp",
+    "visiblePlacement": "gargi-yajnavalkya.njk",
+    "alt": "An imagined Gargi questioning Yajnavalkya beneath an abstract artistic metaphor of woven water, air and luminous sky",
+    "caption": "THE WORLDS AS WARP AND WEFT · AI-GENERATED CONCEPTUAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/gargi-yajnavalkya-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Gargi questioning Yajnavalkya beneath an abstract artistic metaphor of woven water, air and luminous sky"
+  },
+  {
     "asset": "rishis-riverside-hermitage.webp",
     "visiblePlacement": "great-rishis.njk",
     "alt": "An imagined forest hermitage beside a river, with woven seats and a wrapped manuscript",
@@ -1683,6 +1705,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "A single blade of grass remaining intact between restrained fire and wind"
+  },
+  {
+    "asset": "gargi-two-questions-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "An imagined Gargi addressing King Janaka’s assembly after Yajnavalkya has answered her two questions",
+    "caption": "AI-GENERATED HISTORICAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/gargi-yajnavalkya-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Gargi addressing King Janaka’s assembly after Yajnavalkya has answered her two questions"
   },
   {
     "asset": "tripurantaka-hero.webp",

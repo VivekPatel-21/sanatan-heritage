@@ -903,5 +903,18 @@
       { "title": "Atman · the Self", "href": "/glossary.html#atman" }
     ],
     "source": "/sources.html#mysterious-yaksha"
+  },
+  {
+    "id": "gargi",
+    "title": "Questioning the ground of existence",
+    "description": "Follow Gargi from a rising sequence of cosmological questions to the two-arrow debate and Yajnavalkya’s teaching on the Imperishable.",
+    "story": { "title": "Gargi and Yajnavalkya · The Great Debate", "href": "/gargi-yajnavalkya.html" },
+    "deity": { "title": "Explore ways of knowing", "href": "/philosophy.html#reading" },
+    "scripture": { "title": "Enter the Upanishads", "href": "/scriptures.html#upanishads" },
+    "terms": [
+      { "title": "Brahman · ultimate reality", "href": "/glossary.html#brahman" },
+      { "title": "Atman · the Self", "href": "/glossary.html#atman" }
+    ],
+    "source": "/sources.html#gargi-yajnavalkya"
   }
 ]
