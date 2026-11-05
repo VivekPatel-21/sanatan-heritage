@@ -130,5 +130,92 @@
     "pronunciation": "Say: A-su-ra",
     "definition": "A class of beings who may cooperate with or oppose the devas in sacred narratives. In Bhagavata Purana 8.7, devas and asuras take part in the ocean churning.",
     "source": "glossary-asura"
+  },
+  {
+    "id": "akshara",
+    "name": "Akshara · akṣara",
+    "devanagari": "अक्षर",
+    "pronunciation": "Say: AK-sha-ra",
+    "definition": "The imperishable. In Gargi’s dialogue with Yajnavalkya, it names the reality that does not pass away; in other contexts, akshara can also mean a syllable or letter.",
+    "source": "gargi-yajnavalkya"
+  },
+  {
+    "id": "shreyas",
+    "name": "Shreyas · śreyas",
+    "devanagari": "श्रेयस्",
+    "pronunciation": "Say: SHRAY-yas",
+    "definition": "The truly beneficial or lasting good. In the Katha Upanishad, Yama distinguishes shreyas from what is merely pleasant.",
+    "source": "nachiketa-yama"
+  },
+  {
+    "id": "preyas",
+    "name": "Preyas · preyas",
+    "devanagari": "प्रेयस्",
+    "pronunciation": "Say: PRAY-yas",
+    "definition": "What is immediately pleasant or attractive. The Katha Upanishad contrasts preyas with shreyas, the path of lasting good.",
+    "source": "nachiketa-yama"
+  },
+  {
+    "id": "sat",
+    "name": "Sat",
+    "devanagari": "सत्",
+    "pronunciation": "Say: SAT",
+    "definition": "Being, existence or the Real. In Chandogya Upanishad 6, Sat is taught as the one reality from which beings arise, by which they live and into which they return.",
+    "source": "shvetaketu-uddalaka"
+  },
+  {
+    "id": "tat-tvam-asi",
+    "name": "Tat Tvam Asi · tat tvam asi",
+    "devanagari": "तत् त्वम् असि",
+    "pronunciation": "Say: TAT TVAM A-si",
+    "definition": "“That you are,” the teaching repeated by Uddalaka to Shvetaketu in Chandogya Upanishad 6. Vedanta traditions interpret the relationship expressed by these words in different ways.",
+    "source": "shvetaketu-uddalaka"
+  },
+  {
+    "id": "akasha",
+    "name": "Akasha · ākāśa",
+    "devanagari": "आकाश",
+    "pronunciation": "Say: aa-KAA-sha",
+    "definition": "Space, sky or the vast expanse. Its philosophical range depends on context; in Gargi’s questioning, the worlds are described as woven in akasha.",
+    "source": "gargi-yajnavalkya"
+  },
+  {
+    "id": "shraddha",
+    "name": "Shraddha · śraddhā",
+    "devanagari": "श्रद्धा",
+    "pronunciation": "Say: SHRUD-dhaa",
+    "definition": "Trust, reverent confidence or faithful resolve. It can describe the inward seriousness that turns a person toward a teaching or sacred undertaking.",
+    "source": "nachiketa-yama"
+  },
+  {
+    "id": "vidya",
+    "name": "Vidya · vidyā",
+    "devanagari": "विद्या",
+    "pronunciation": "Say: VID-yaa",
+    "definition": "Knowledge, learning or insight. In spiritual contexts it may refer to knowledge that dispels ignorance, though its precise meaning varies by text and school.",
+    "source": "nachiketa-yama"
+  },
+  {
+    "id": "avidya",
+    "name": "Avidya · avidyā",
+    "devanagari": "अविद्या",
+    "pronunciation": "Say: a-VID-yaa",
+    "definition": "Ignorance or misapprehension, especially regarding the Self and reality. Hindu philosophical schools explain its nature and removal differently.",
+    "source": "nachiketa-yama"
+  },
+  {
+    "id": "prana",
+    "name": "Prana · prāṇa",
+    "devanagari": "प्राण",
+    "pronunciation": "Say: PRAA-na",
+    "definition": "Vital breath or life force. The word can name breath, vitality or a particular life-function depending on the teaching in which it appears.",
+    "source": "shvetaketu-uddalaka"
+  },
+  {
+    "id": "samsara",
+    "name": "Samsara · saṃsāra",
+    "devanagari": "संसार",
+    "pronunciation": "Say: sum-SAA-ra",
+    "definition": "The continuing cycle of birth, death and rebirth from which moksha is liberation; traditions explain this cycle and liberation in different ways."
   }
 ]
