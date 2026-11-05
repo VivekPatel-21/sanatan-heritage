@@ -1,0 +1,20 @@
+{
+  "mode": "Built-in Imagegen",
+  "assets": [
+    {
+      "file": "src/assets/images/kena-yaksha-gods-hero.webp",
+      "placement": "Story hero",
+      "prompt": "Create an exact 16:9 respectful Hindu devotional editorial painting for the Kena Upanishad story of the mysterious Yaksha. In a Himalayan meadow, show a mysterious non-anthropomorphic white-gold luminous presence at the center. Exactly three devas stand before it: Agni with a warm flame aureole and copper-red garments, Vayu with blue-green flowing garments, and Indra with a crown and lowered vajra. Their expressions move from confidence to wonder. No Uma, no text, no logos, no extra figures. Refined cinematic composition with sacred restraint and traditional Indian visual cues."
+    },
+    {
+      "file": "src/assets/images/kena-blade-grass-card.webp",
+      "placement": "Stories collection card",
+      "prompt": "Create an exact 16:9 symbolic devotional still life for the Kena Upanishad. A single exact blade of dry grass rests on dark stone. Restrained fire approaches from the left and visible wind currents from the right, yet the blade remains intact and perfectly still. No people, no deities, no text, no logos, no additional blades. Deep indigo and warm gold palette, elegant editorial realism, centered composition with safe crop margins."
+    },
+    {
+      "file": "src/assets/images/uma-haimavati-revelation.webp",
+      "placement": "Story chapter 7",
+      "prompt": "Create an exact 16:9 respectful Hindu devotional painting of Uma Haimavati revealing the truth to Indra in the Kena Upanishad. Uma is the central teacher, radiant yet serene, wearing white and pale-gold garments, exactly two arms, one hand in a teaching gesture. Indra has exactly two arms and listens humbly at a respectful distance with his vajra lowered. Himalayan dawn landscape, luminous but not theatrical. No other figures, no Yaksha, no text, no logos. Emphasize Uma's authority as revealer of Brahman and Indra's attentive humility."
+    }
+  ]
+}

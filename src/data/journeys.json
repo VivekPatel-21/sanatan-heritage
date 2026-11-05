@@ -890,5 +890,18 @@
       { "title": "Moksha · liberation", "href": "/glossary.html#moksha" }
     ],
     "source": "/sources.html#nachiketa-yama"
+  },
+  {
+    "id": "yaksha",
+    "title": "Power returned to its source",
+    "description": "Follow the devas from pride in victory through Agni and Vayu’s failed tests to Uma Haimavati’s revelation of Brahman.",
+    "story": { "title": "The Mysterious Yaksha and the Gods", "href": "/mysterious-yaksha.html" },
+    "deity": { "title": "Meet Devi as revealer and teacher", "href": "/deities.html#devi" },
+    "scripture": { "title": "Enter the Upanishads", "href": "/scriptures.html#upanishads" },
+    "terms": [
+      { "title": "Brahman · ultimate reality", "href": "/glossary.html#brahman" },
+      { "title": "Atman · the Self", "href": "/glossary.html#atman" }
+    ],
+    "source": "/sources.html#mysterious-yaksha"
   }
 ]

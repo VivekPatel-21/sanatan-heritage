@@ -184,5 +184,11 @@
     "href": "/nachiketa-yama.html",
     "minutes": 10,
     "format": "Full story"
+  },
+  "yaksha": {
+    "title": "The Mysterious Yaksha and the Gods",
+    "href": "/mysterious-yaksha.html",
+    "minutes": 8,
+    "format": "Full story"
   }
 }

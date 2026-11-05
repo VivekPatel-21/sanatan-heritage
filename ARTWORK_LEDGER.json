@@ -990,6 +990,28 @@
     "identity": "Manu standing before an immense luminous fish in a reservoir, with the smaller vessels it has outgrown nearby"
   },
   {
+    "asset": "kena-yaksha-gods-hero.webp",
+    "visiblePlacement": "mysterious-yaksha.njk",
+    "alt": "An imagined Agni, Vayu and Indra standing before a mysterious white-gold presence in a Himalayan meadow",
+    "caption": "A COMPOSITE DEVOTIONAL INTERPRETATION · THE TEXT PRESENTS THE ENCOUNTERS IN SEQUENCE",
+    "origin": "Built-in Imagegen; see design-assets/kena-yaksha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Agni, Vayu and Indra standing before a mysterious white-gold presence in a Himalayan meadow"
+  },
+  {
+    "asset": "uma-haimavati-revelation.webp",
+    "visiblePlacement": "mysterious-yaksha.njk",
+    "alt": "An imagined Uma Haimavati teaching as Indra listens with his vajra lowered in a Himalayan dawn landscape",
+    "caption": "UMA HAIMAVATI REVEALS THE TRUTH · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/kena-yaksha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Uma Haimavati teaching as Indra listens with his vajra lowered in a Himalayan dawn landscape"
+  },
+  {
     "asset": "nachiketa-yama-dialogue.webp",
     "visiblePlacement": "nachiketa-yama.njk",
     "alt": "An imagined young Nachiketa listening calmly to Yama across a sacred fire at twilight",
@@ -1650,6 +1672,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "Three lamps beside a staff and folded cloth at a quiet threshold before dawn"
+  },
+  {
+    "asset": "kena-blade-grass-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A single blade of grass remaining intact between restrained fire and wind",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/kena-yaksha-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A single blade of grass remaining intact between restrained fire and wind"
   },
   {
     "asset": "tripurantaka-hero.webp",
