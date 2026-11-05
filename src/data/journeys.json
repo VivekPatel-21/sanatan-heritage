@@ -929,5 +929,18 @@
       { "title": "Dharma · fitting responsibility", "href": "/glossary.html#dharma" }
     ],
     "source": "/sources.html#ambarisha-durvasa"
+  },
+  {
+    "id": "shvetaketu",
+    "title": "Seeing the one reality through many forms",
+    "description": "Follow Shvetaketu from confidence in learning through Uddalaka’s examples of clay, nourishment, rivers, seed and salt to the repeated teaching Tat Tvam Asi.",
+    "story": { "title": "Shvetaketu and Uddalaka · Tat Tvam Asi", "href": "/shvetaketu-uddalaka.html" },
+    "deity": { "title": "Explore ways of knowing", "href": "/philosophy.html#reading" },
+    "scripture": { "title": "Enter the Upanishads", "href": "/scriptures.html#upanishads" },
+    "terms": [
+      { "title": "Brahman · ultimate reality", "href": "/glossary.html#brahman" },
+      { "title": "Atman · the Self", "href": "/glossary.html#atman" }
+    ],
+    "source": "/sources.html#shvetaketu-uddalaka"
   }
 ]

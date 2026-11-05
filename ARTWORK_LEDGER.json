@@ -1366,6 +1366,28 @@
     "identity": "Shiva revealing his divine form to Parvati in the forest"
   },
   {
+    "asset": "shvetaketu-uddalaka-hero.webp",
+    "visiblePlacement": "shvetaketu-uddalaka.njk",
+    "alt": "An imagined Uddalaka calmly teaching his son Shvetaketu beneath a banyan tree with a clay pot and banyan fruit nearby",
+    "caption": "UDDALAKA TEACHES SHVETAKETU · AI-GENERATED HISTORICAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/shvetaketu-uddalaka-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Uddalaka calmly teaching his son Shvetaketu beneath a banyan tree with a clay pot and banyan fruit nearby"
+  },
+  {
+    "asset": "shvetaketu-rivers-ocean.webp",
+    "visiblePlacement": "shvetaketu-uddalaka.njk",
+    "alt": "A conceptual painted landscape of many rivers descending through different valleys and converging in one ocean at dawn",
+    "caption": "MANY RIVERS, ONE OCEAN · AI-GENERATED CONCEPTUAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/shvetaketu-uddalaka-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A conceptual painted landscape of many rivers descending through different valleys and converging in one ocean at dawn"
+  },
+  {
     "asset": "story-manuscripts.webp",
     "visiblePlacement": "stories.njk",
     "alt": "An elder storyteller sharing a manuscript with two listeners beneath a banyan tree",
@@ -1749,6 +1771,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "A copper cup of water with tulsi, a covered guest meal and prayer beads within a circle of golden light"
+  },
+  {
+    "asset": "shvetaketu-salt-seed-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A clear bowl of water, salt crystals, an opened banyan fruit with tiny seeds and several clay vessels in an imagined hermitage setting",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/shvetaketu-uddalaka-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A clear bowl of water, salt crystals, an opened banyan fruit with tiny seeds and several clay vessels in an imagined hermitage setting"
   },
   {
     "asset": "tripurantaka-hero.webp",
