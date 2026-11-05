@@ -6209,7 +6209,13 @@ footer p {
 .philosophy-map article { min-height: 15rem; padding: clamp(1.5rem,3vw,2.5rem); background: var(--background); }
 .philosophy-map article>span { color: var(--accent); font-family: var(--font-serif); font-size: 2rem; }
 .philosophy-map h3 { margin: .7rem 0; font-size: clamp(1.6rem,2.5vw,2.2rem); }
-.philosophy-map a { display: inline-block; margin-top: 1rem; color: var(--accent); text-underline-offset: .25em; }
+.philosophy-map a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+  text-underline-offset: .25em;
+}
 .philosophy-inline-art { max-width: 980px; margin: 3rem auto; }
 .knowledge-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin-top: 2rem; }
 .knowledge-actions>a:not(.button) { color: var(--accent); text-underline-offset: .3em; }
