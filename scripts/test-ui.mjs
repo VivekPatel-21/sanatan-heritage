@@ -32,6 +32,13 @@ for (const name of ['glossary','deities']) {
 // Filter combinations and empty recovery must retain honest full-reader destinations.
 const collection = await page('stories');
 const collectionDoc = collection.window.document;
+const storyCards = [...collectionDoc.querySelectorAll('.collection-card')];
+assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), `${storyCards.length} full stories`);
+for (const [filterId, dataKey] of [['deity-filter', 'deity'], ['scripture-filter', 'scripture'], ['theme-filter', 'theme']]) {
+  const options = new Set([...collectionDoc.querySelectorAll(`#${filterId} option`)].map(option => option.value).filter(Boolean));
+  const cardValues = new Set(storyCards.map(card => card.dataset[dataKey]));
+  assert.deepEqual([...cardValues].filter(value => !options.has(value)), [], `${filterId} must include every card value`);
+}
 const deityFilter = collectionDoc.querySelector('#deity-filter');
 deityFilter.value = 'Hanuman'; deityFilter.dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 1);
