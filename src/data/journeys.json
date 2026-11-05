@@ -916,5 +916,18 @@
       { "title": "Atman · the Self", "href": "/glossary.html#atman" }
     ],
     "source": "/sources.html#gargi-yajnavalkya"
+  },
+  {
+    "id": "ambarisha",
+    "title": "Protection returned to mercy",
+    "description": "Follow Ambarisha from a difficult vow through Durvasa’s anger, Vishnu’s protection and a reconciliation completed through prayer and hospitality.",
+    "story": { "title": "Ambarisha and Durvasa", "href": "/ambarisha-durvasa.html" },
+    "deity": { "title": "Meet Vishnu", "href": "/deities.html#vishnu" },
+    "scripture": { "title": "Enter the Bhagavata Purana", "href": "/mahapuranas.html#bhagavata" },
+    "terms": [
+      { "title": "Bhakti · devotion", "href": "/glossary.html#bhakti" },
+      { "title": "Dharma · fitting responsibility", "href": "/glossary.html#dharma" }
+    ],
+    "source": "/sources.html#ambarisha-durvasa"
   }
 ]

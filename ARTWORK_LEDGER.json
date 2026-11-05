@@ -22,6 +22,28 @@
     "identity": "Elderly Ajamila meditating with prayer beads beside the Ganga at dawn near the Himalayan foothills"
   },
   {
+    "asset": "ambarisha-durvasa-hero.webp",
+    "visiblePlacement": "ambarisha-durvasa.njk",
+    "alt": "An imagined King Ambarisha praying calmly as Durvasa’s fiery creation approaches and Sudarshana appears between them",
+    "caption": "ANGER MEETS DIVINE PROTECTION · AI-GENERATED DEVOTIONAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ambarisha-durvasa-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined King Ambarisha praying calmly as Durvasa’s fiery creation approaches and Sudarshana appears between them"
+  },
+  {
+    "asset": "durvasa-sudarshana-journey.webp",
+    "visiblePlacement": "ambarisha-durvasa.njk",
+    "alt": "An imagined Durvasa fleeing across symbolic celestial landscapes as the radiant Sudarshana follows",
+    "caption": "DURVASA’S JOURNEY THROUGH THE WORLDS · AI-GENERATED CONCEPTUAL INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ambarisha-durvasa-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "An imagined Durvasa fleeing across symbolic celestial landscapes as the radiant Sudarshana follows"
+  },
+  {
     "asset": "avadhuta-learning-from-nature.webp",
     "visiblePlacement": "avadhuta-teachers.njk",
     "alt": "An imagined unnamed wanderer looking over a river, trees and mountains at dawn",
@@ -1716,6 +1738,17 @@
     "permission": "Created for the owner-authorized implementation",
     "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
     "identity": "An imagined Gargi addressing King Janaka’s assembly after Yajnavalkya has answered her two questions"
+  },
+  {
+    "asset": "ambarisha-water-card.webp",
+    "visiblePlacement": "stories.njk",
+    "alt": "A copper cup of water with tulsi, a covered guest meal and prayer beads within a circle of golden light",
+    "caption": "AI-GENERATED SYMBOLIC INTERPRETATION",
+    "origin": "Built-in Imagegen; see design-assets/ambarisha-durvasa-image-prompts.json",
+    "creator": "AI-generated interpretation",
+    "permission": "Created for the owner-authorized implementation",
+    "review": "Assistant visual review: two arms/two legs, subject and scene checked; no specialist review claimed",
+    "identity": "A copper cup of water with tulsi, a covered guest meal and prayer beads within a circle of golden light"
   },
   {
     "asset": "tripurantaka-hero.webp",
