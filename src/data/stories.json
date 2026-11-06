@@ -3,216 +3,370 @@
     "title": "Lalita and Bhandasura",
     "href": "/lalita-bhandasura.html",
     "minutes": 6,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "brahmanda-purana"
+    ],
+    "textLayer": "Purana · Lalita Mahatmya"
   },
   "parvati": {
     "title": "Shiva and Parvati",
     "href": "/shiva-parvati.html",
     "minutes": 6,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "daksha": {
     "title": "Daksha Yajna and Sati",
     "href": "/daksha-yajna-sati.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "ganesha": {
     "title": "The Birth of Ganesha",
     "href": "/ganesha-birth.html",
     "minutes": 7,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "kartikeya": {
     "title": "The Birth of Kartikeya",
     "href": "/kartikeya-birth.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "halahala": {
     "title": "Shiva drinks Halahala",
     "href": "/shiva-halahala.html",
     "minutes": 5,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana",
+      "skanda-purana"
+    ],
+    "textLayer": "Purana · Bhagavata reader; Skanda parallel"
   },
   "lingodbhava": {
     "title": "The Appearance of the Infinite Shiva Linga",
     "href": "/infinite-shiva-linga.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "andhaka": {
     "title": "Shiva and Andhakasura — Ignorance, Conflict and Transformation",
     "href": "/shiva-andhakasura.html",
     "minutes": 10,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "hanuman": {
     "title": "Hanuman’s journey to Lanka",
     "href": "/hanuman-lanka.html",
     "minutes": 6,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "valmiki-ramayana"
+    ],
+    "textLayer": "Itihasa · Valmiki Ramayana"
   },
   "govardhana": {
     "title": "Krishna and Govardhana",
     "href": "/krishna-govardhana.html",
     "minutes": 5,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "kaliya": {
     "title": "Krishna and Kaliya — The Serpent of the Yamuna",
     "href": "/krishna-kaliya.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "gajendra": {
     "title": "Gajendra Moksha",
     "href": "/gajendra-moksha.html",
     "minutes": 7,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "rama": {
     "title": "Rama’s exile",
     "href": "/rama-exile.html",
     "minutes": 6,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "valmiki-ramayana"
+    ],
+    "textLayer": "Itihasa · Valmiki Ramayana"
   },
   "mahamaya": {
     "title": "Mahamaya, Madhu and Kaitabha",
     "href": "/mahamaya-madhu-kaitabha.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "markandeya-purana",
+      "devi-mahatmya"
+    ],
+    "textLayer": "Purana · embedded Devi Mahatmya"
   },
   "mahishasura": {
     "title": "Devi and Mahishasura",
     "href": "/devi-mahishasura.html",
     "minutes": 5,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "markandeya-purana",
+      "devi-mahatmya"
+    ],
+    "textLayer": "Purana · embedded Devi Mahatmya"
   },
   "shumbha": {
     "title": "Devi and Shumbha–Nishumbha",
     "href": "/devi-shumbha-nishumbha.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "markandeya-purana",
+      "devi-mahatmya"
+    ],
+    "textLayer": "Purana · embedded Devi Mahatmya"
   },
   "bhagiratha": {
     "title": "Bhagiratha and the Ganga",
     "href": "/bhagiratha-ganga.html",
     "minutes": 5,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "valmiki-ramayana"
+    ],
+    "textLayer": "Itihasa · Valmiki Ramayana"
   },
   "dhruva": {
     "title": "Dhruva’s search for the Divine",
     "href": "/dhruva.html",
     "minutes": 7,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "kapila": {
     "title": "Kapila and Devahuti",
     "href": "/kapila-devahuti.html",
     "minutes": 7,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "varaha": {
     "title": "Varaha — The Rescue of the Earth",
     "href": "/varaha-earth.html",
     "minutes": 7,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "prahlada": {
     "title": "Prahlada and Narasimha — Devotion Against Tyranny",
     "href": "/prahlada-narasimha.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "vamana": {
     "title": "Vamana and King Bali — The Three Steps",
     "href": "/vamana-king-bali.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "markandeya": {
     "title": "Markandeya and Shiva — The Conquest of Death",
     "href": "/markandeya-shiva.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "kalasamhara-tradition",
+      "skanda-purana",
+      "shiva-purana"
+    ],
+    "textLayer": "Devotional tradition · Puranic parallels"
   },
   "jatayu": {
     "title": "Jatayu’s Sacrifice — Courage and Dharma",
     "href": "/jatayu-sacrifice.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "valmiki-ramayana"
+    ],
+    "textLayer": "Itihasa · Valmiki Ramayana"
   },
   "matsya": {
     "title": "Matsya Avatara — The Great Cosmic Flood",
     "href": "/matsya-flood.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "matsya-purana"
+    ],
+    "textLayer": "Purana"
   },
   "tripura": {
     "title": "Shiva as Tripurantaka — The Destruction of Tripura",
     "href": "/tripura-destruction.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shiva-purana"
+    ],
+    "textLayer": "Purana"
   },
   "prithu": {
     "title": "King Prithu and Mother Earth — Righteous Kingship and Prosperity",
     "href": "/prithu-earth.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "vishnu-purana"
+    ],
+    "textLayer": "Purana"
   },
   "sudama": {
     "title": "Krishna and Sudama — A Friendship Beyond Wealth",
     "href": "/krishna-sudama.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "ajamila": {
     "title": "Ajamila — The Power of Narayana’s Name",
     "href": "/ajamila.html",
     "minutes": 10,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "narada": {
     "title": "The Birth and Deeds of Narada",
     "href": "/narada-birth-deeds.html",
     "minutes": 10,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "nachiketa": {
     "title": "Nachiketa and Yama — The Secret of Death",
     "href": "/nachiketa-yama.html",
     "minutes": 10,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "krishna-yajurveda-literature",
+      "upanishads"
+    ],
+    "textLayer": "Upanishad · Katha Upanishad"
   },
   "yaksha": {
     "title": "The Mysterious Yaksha and the Gods",
     "href": "/mysterious-yaksha.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "samaveda-literature",
+      "upanishads"
+    ],
+    "textLayer": "Upanishad · Kena Upanishad"
   },
   "gargi": {
     "title": "Gargi and Yajnavalkya — The Great Debate",
     "href": "/gargi-yajnavalkya.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "shukla-yajurveda-literature",
+      "upanishads"
+    ],
+    "textLayer": "Upanishad · Brihadaranyaka Upanishad"
   },
   "ambarisha": {
     "title": "Ambarisha and Durvasa",
     "href": "/ambarisha-durvasa.html",
     "minutes": 9,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "srimad-bhagavata-purana"
+    ],
+    "textLayer": "Purana"
   },
   "shvetaketu": {
     "title": "Shvetaketu and Uddalaka — Tat Tvam Asi",
     "href": "/shvetaketu-uddalaka.html",
     "minutes": 10,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "samaveda-literature",
+      "upanishads"
+    ],
+    "textLayer": "Upanishad · Chandogya Upanishad"
   },
   "indra": {
     "title": "Indra and Vritra — The Release of the Waters",
     "href": "/indra-vritra.html",
     "minutes": 8,
-    "format": "Full story"
+    "format": "Full story",
+    "collections": [
+      "rigveda-samhita"
+    ],
+    "textLayer": "Samhita · Rigveda hymn"
   }
 }

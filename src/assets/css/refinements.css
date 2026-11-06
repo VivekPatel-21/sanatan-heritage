@@ -194,3 +194,52 @@
 @media screen and (prefers-reduced-transparency:reduce) {
   .site-header { background: var(--surface); backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
+
+/* Scripture story library */
+.legacy-anchor { display: block; scroll-margin-top: var(--header-offset); }
+.scripture-shelves { background: var(--surface-soft); border-block: var(--rule-fine); }
+.scripture-layer-key { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: 0 0 clamp(3rem,6vw,5rem); padding: 1rem 0; border-block: var(--rule-fine); }
+.scripture-layer-key span { padding: .35rem .65rem; border: 1px solid var(--line); color: var(--ink); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
+.scripture-layer-key p { flex: 1 1 24rem; margin: 0; color: var(--muted); font-size: .875rem; text-align: right; }
+.shelf-group { padding-block: clamp(2.5rem,5vw,4rem); border-top: var(--rule-fine); }
+.shelf-group:first-of-type { border-top: 0; padding-top: 0; }
+.shelf-group-heading { display: grid; grid-template-columns: 3rem minmax(0,1fr); gap: 1.25rem; align-items: start; margin-bottom: 2rem; }
+.shelf-group-heading>span { font-family: var(--font-serif); color: var(--detail); font-size: 1.25rem; }
+.shelf-group-heading h3 { margin: 0 0 .6rem; font-size: clamp(1.5rem,2.5vw,2.15rem); }
+.shelf-group-heading p { margin: 0; max-width: 62ch; color: var(--muted); }
+.shelf-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.scripture-shelf-card { display: flex; flex-direction: column; min-height: 17rem; padding: clamp(1.25rem,2.5vw,2rem); color: var(--ink); background: var(--surface); text-decoration: none; }
+.scripture-shelf-card>span { color: var(--detail); font-size: .6875rem; letter-spacing: .1em; line-height: 1.5; text-transform: uppercase; }
+.scripture-shelf-card h4 { margin: auto 0 .75rem; font-size: clamp(1.2rem,1.7vw,1.55rem); line-height: 1.35; }
+.scripture-shelf-card p { margin: 0 0 1.2rem; color: var(--muted); font-size: .9375rem; line-height: 1.65; }
+.scripture-shelf-card small { display: flex; justify-content: space-between; gap: 1rem; padding-top: .85rem; border-top: var(--rule-fine); color: var(--ink); font-size: .8125rem; }
+.scripture-shelf-card b { color: var(--detail); font-weight: 400; }
+.scripture-shelf-card:is(:hover,:focus-visible),.scripture-shelf-card[aria-current='true'] { background: var(--surface-soft); }
+.scripture-shelf-card[aria-current='true'] { box-shadow: inset 0 3px 0 var(--detail); }
+.collection-contexts { margin-bottom: 2rem; }
+.collection-contexts .collection-context { max-width: 56rem; padding: clamp(1.5rem,3vw,2.5rem); border-left: 3px solid var(--detail); background: var(--surface-soft); }
+.collection-contexts .collection-context h2 { margin: .35rem 0 1rem; font-size: clamp(1.75rem,3vw,2.75rem); }
+.collection-contexts .collection-context>p:not(.eyebrow) { color: var(--muted); }
+.collection-contexts .collection-context>a { color: var(--ink); text-underline-offset: .25em; }
+.collection-distinction { padding-top: 1rem; border-top: var(--rule-fine); }
+.scripture-library-controls { grid-template-columns: minmax(0,1.5fr) minmax(15rem,1fr) auto; }
+.scripture-library-page .collection-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.scripture-library-page .collection-card:first-child { grid-column: auto; display: block; padding-bottom: 0; border-bottom: 0; }
+.scripture-library-page .collection-card:first-child .collection-copy { padding-top: 1.5rem; }
+.scripture-library-page .collection-card:first-child h3 { font-size: var(--type-h3); }
+.story-text-layer { margin: 0 0 .45rem !important; color: var(--detail) !important; font-size: .75rem !important; letter-spacing: .06em; line-height: 1.5 !important; text-transform: uppercase; }
+.library-method { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: clamp(2rem,6vw,6rem); border-top: var(--rule-fine); }
+.library-method>div { display: grid; gap: 1rem; }
+.library-method>div p { margin: 0; padding-top: 1rem; border-top: var(--rule-fine); color: var(--muted); }
+.library-method>.tale-card-link { grid-column: 2; }
+
+@media screen and (max-width:1100px) {
+  .shelf-grid,.scripture-library-page .collection-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media screen and (max-width:760px) {
+  .scripture-layer-key p { flex-basis: 100%; text-align: left; }
+  .shelf-group-heading { grid-template-columns: 2rem minmax(0,1fr); }
+  .shelf-grid,.scripture-library-page .collection-grid,.scripture-library-controls,.library-method { grid-template-columns: minmax(0,1fr); }
+  .scripture-shelf-card { min-height: 14rem; }
+  .library-method>.tale-card-link { grid-column: 1; }
+}

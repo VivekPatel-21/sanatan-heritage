@@ -1,7 +1,8 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import {readdir} from 'node:fs/promises';
+import {readdir,readFile} from 'node:fs/promises';
 const routes=(await readdir('dist')).filter(name=>name.endsWith('.html'));
+const storyRoutes=new Set(Object.values(JSON.parse(await readFile('src/data/stories.json','utf8'))).map(story=>story.href.replace(/^\//,'')));
 test.beforeEach(async({page},info)=>{
   await page.route(/https:\/\/(?:www\.)?(?:googletagmanager|google-analytics)\.com\//,route=>route.abort());
   await page.addInitScript(theme=>{if(!localStorage.getItem('sanatan-theme'))localStorage.setItem('sanatan-theme',theme);},info.project.use.colorScheme);
@@ -36,11 +37,27 @@ test('mobile browser theme metadata follows the chosen theme',async({page})=>{
   const chosen=await meta.getAttribute('content');await page.reload();await expect(meta).toHaveAttribute('content',chosen);
 });
 
-test('header disclosures cover every public page and support keyboard dismissal',async({page})=>{
+test('scripture library preserves exact sources and collection return paths',async({page})=>{
+  await page.goto('/stories.html?collection=samaveda-literature#library');
+  await expect(page.locator('.collection-card:visible')).toHaveCount(2);
+  await expect(page.locator('.collection-card:visible .story-text-layer')).toContainText(['Upanishad · Kena Upanishad','Upanishad · Chandogya Upanishad']);
+  await page.locator('#collection-filter').selectOption('krishna-yajurveda-literature');
+  await expect(page.locator('.collection-card:visible')).toHaveCount(1);
+  await expect(page.locator('.collection-card:visible .collection-source')).toContainText('Katha Upanishad');
+  await expect(page.locator('[data-collection-context="krishna-yajurveda-literature"]')).toContainText('not described as a direct passage from the Yajurveda Samhita');
+  await page.locator('.collection-card:visible .tale-card-link').click();
+  await expect(page).toHaveURL(/nachiketa-yama\.html\?collection=krishna-yajurveda-literature/);
+  await expect(page.locator('.tale-back')).toHaveAttribute('href','/stories.html?collection=krishna-yajurveda-literature#library');
+});
+
+test('header disclosures keep core destinations available without listing every story',async({page})=>{
   await page.goto('/fourteen-lokas.html');
   const menu=page.locator('.menu-toggle');if(await menu.isVisible())await menu.click();
   const destinations=await page.locator('#site-nav a').evaluateAll(links=>links.map(a=>a.getAttribute('href')));
-  for(const route of routes.filter(r=>!['404.html','museum-preview.html'].includes(r)))expect(destinations).toContain('/'+route);
+  for(const route of routes.filter(r=>!['404.html','museum-preview.html'].includes(r)&&!storyRoutes.has(r)))expect(destinations).toContain('/'+route);
+  const storyGroup=page.locator('.nav-group').filter({has:page.locator('summary',{hasText:'Stories'})});
+  await expect(storyGroup.locator('a')).toHaveCount(1);
+  await expect(storyGroup.locator('a')).toHaveAttribute('href','/stories.html');
   const groups=page.locator('.nav-group');
   for(let index=0;index<await groups.count();index++){
     const group=groups.nth(index);const summary=group.locator('summary');

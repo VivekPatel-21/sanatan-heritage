@@ -15,6 +15,12 @@ export default async function (config) {
   config.addGlobalData('glossary', JSON.parse(await readFile('src/data/glossary.json', 'utf8')));
   config.addGlobalData('journeys', JSON.parse(await readFile('src/data/journeys.json', 'utf8')));
   config.addGlobalData('storyCatalog', JSON.parse(await readFile('src/data/stories.json', 'utf8')));
+  config.addGlobalData('scriptureCollections', JSON.parse(await readFile('src/data/scriptureCollections.json', 'utf8')));
+  config.addFilter('storyCountForCollection', (stories, collectionId) => {
+    const entries = Object.values(stories || {});
+    if (collectionId === 'all') return entries.length;
+    return entries.filter(story => story.collections?.includes(collectionId)).length;
+  });
   config.addFilter('sourceHref', value => {
     if (!value) return '/sources.html';
     if (value.startsWith('#')) return `/sources.html${value}`;

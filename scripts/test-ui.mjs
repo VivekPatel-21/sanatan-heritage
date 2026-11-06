@@ -3,6 +3,17 @@ import assert from 'node:assert/strict';
 import { JSDOM } from 'jsdom';
 const terms = JSON.parse(await readFile('src/data/glossary.json', 'utf8'));
 const journeyData = JSON.parse(await readFile('src/data/journeys.json', 'utf8'));
+const storyData = JSON.parse(await readFile('src/data/stories.json', 'utf8'));
+const scriptureCollections = JSON.parse(await readFile('src/data/scriptureCollections.json', 'utf8'));
+const collectionRecords = scriptureCollections.categories.flatMap(category => category.collections);
+const collectionIds = new Set(collectionRecords.map(collection => collection.id));
+assert.equal(collectionIds.size, collectionRecords.length);
+assert.ok(Object.values(storyData).every(story => story.collections.length && story.collections.every(id => collectionIds.has(id))));
+assert.ok(collectionRecords.filter(collection => collection.enabled).every(collection => Object.values(storyData).some(story => story.collections.includes(collection.id))));
+assert.ok(collectionRecords.filter(collection => !collection.enabled).every(collection => !Object.values(storyData).some(story => story.collections.includes(collection.id))));
+assert.deepEqual(storyData.nachiketa.collections, ['krishna-yajurveda-literature', 'upanishads']);
+assert.deepEqual(storyData.yaksha.collections, ['samaveda-literature', 'upanishads']);
+assert.ok(['mahamaya','mahishasura','shumbha'].every(key => storyData[key].collections.includes('devi-mahatmya') && storyData[key].collections.includes('markandeya-purana')));
 async function page(name) {
   const dom = new JSDOM(await readFile(`dist/${name}.html`, 'utf8'), { url: `https://sanatan-heritage.test/${name}.html`, runScripts: 'outside-only', pretendToBeVisual: true });
   dom.window.fetch = async () => ({ ok: true, json: async () => terms });
@@ -30,22 +41,24 @@ for (const name of ['glossary','deities']) {
  dom.window.close();
 }
 
-// Filter combinations and empty recovery must retain honest full-reader destinations.
+// Scripture collections must filter one canonical set of story cards and preserve return context.
 const collection = await page('stories');
 const collectionDoc = collection.window.document;
 const storyCards = [...collectionDoc.querySelectorAll('.collection-card')];
 assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), `${storyCards.length} full stories`);
-for (const [filterId, dataKey] of [['deity-filter', 'deity'], ['scripture-filter', 'scripture'], ['theme-filter', 'theme']]) {
-  const options = new Set([...collectionDoc.querySelectorAll(`#${filterId} option`)].map(option => option.value).filter(Boolean));
-  const cardValues = new Set(storyCards.map(card => card.dataset[dataKey]));
-  assert.deepEqual([...cardValues].filter(value => !options.has(value)), [], `${filterId} must include every card value`);
-}
-const deityFilter = collectionDoc.querySelector('#deity-filter');
-deityFilter.value = 'Hanuman'; deityFilter.dispatchEvent(new collection.window.Event('change'));
+assert.equal(collectionDoc.querySelectorAll('[data-collection-link]').length, 15);
+assert.equal(collectionDoc.querySelectorAll('[data-collection-link="atharvaveda-literature"]').length, 0);
+assert.equal(collectionDoc.querySelectorAll('[data-collection-link="mahabharata"]').length, 0);
+const collectionFilter = collectionDoc.querySelector('#collection-filter');
+collectionFilter.value = 'rigveda-samhita'; collectionFilter.dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 1);
-assert.equal(collectionDoc.querySelector('.collection-card:not([hidden]) .tale-card-link').getAttribute('href'), '/hanuman-lanka.html');
-collectionDoc.querySelector('#scripture-filter').value = 'Shiva Purana';
-collectionDoc.querySelector('#scripture-filter').dispatchEvent(new collection.window.Event('change'));
+assert.equal(collectionDoc.querySelector('.collection-card:not([hidden]) .tale-card-link').getAttribute('href'), '/indra-vritra.html?collection=rigveda-samhita');
+assert.ok(collectionDoc.querySelector('[data-collection-context="rigveda-samhita"]').textContent.includes('Samhita'));
+collectionFilter.value = 'devi-mahatmya'; collectionFilter.dispatchEvent(new collection.window.Event('change'));
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 3);
+assert.ok([...collectionDoc.querySelectorAll('.collection-card:not([hidden]) .collection-source')].every(source => source.textContent.includes('Markandeya Purana')));
+collectionDoc.querySelector('#story-search').value = 'not-a-real-story';
+collectionDoc.querySelector('#story-search').dispatchEvent(new collection.window.Event('input'));
 assert.equal(collectionDoc.querySelector('#no-stories').hidden, false);
 collectionDoc.querySelector('#empty-reset').click();
 assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, storyCards.length);

@@ -82,7 +82,7 @@ for (const name of pages) {
   });
   if (!['glossary.html','sources.html','search.html','404.html'].includes(name)) {
     const used = new Set($('.glossary-link').toArray().map(el => $(el).attr('href')?.split('#')[1]));
-    $('main p:not(.eyebrow):not(.collection-source)').each((_, el) => {
+    $('main p:not(.eyebrow):not(.collection-source)').filter((_,el)=>!$(el).closest('a').length).each((_, el) => {
       const visit = node => {
         if (node.type === 'text') {
           let value = node.data; const matches = [];

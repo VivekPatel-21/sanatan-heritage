@@ -1,4 +1,12 @@
 (() => {
+  const collection = new URLSearchParams(location.search).get('collection');
+  if (collection && /^[a-z0-9-]+$/.test(collection)) {
+    const target = `/stories.html?collection=${encodeURIComponent(collection)}#library`;
+    document.querySelectorAll('.breadcrumb a[href="/stories.html"],.tale-back[href="/stories.html"]').forEach(link => {
+      link.href = target;
+      if (link.classList.contains('tale-back')) link.textContent = 'Return to scripture collection';
+    });
+  }
   const article = document.querySelector('.tale-body');
   const tools = document.querySelector('.reader-tools');
   if (!article || !tools) return;

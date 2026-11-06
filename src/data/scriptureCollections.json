@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": "vedic-literature",
+      "title": "Vedic Literature",
+      "number": "01",
+      "description": "Browse by Vedic corpus while keeping Samhita hymns distinct from Brahmana, Aranyaka and Upanishad texts.",
+      "collections": [
+        {
+          "id": "rigveda-samhita",
+          "title": "Rigveda Samhita",
+          "eyebrow": "SAMHITA / HYMNS",
+          "enabled": true,
+          "description": "A story drawn directly from a Rigveda Samhita hymn.",
+          "note": "Rigveda 1.32 is presented on its own terms. Later Puranic Vritra narratives are not merged into it."
+        },
+        {
+          "id": "samaveda-literature",
+          "title": "Samaveda and associated literature",
+          "eyebrow": "UPANISHADS / ASSOCIATED LITERATURE",
+          "enabled": true,
+          "description": "Available readers come from the Kena and Chandogya Upanishads associated with Samaveda literature.",
+          "note": "These are Upanishadic passages, not passages from the Samaveda Samhita."
+        },
+        {
+          "id": "shukla-yajurveda-literature",
+          "title": "Shukla Yajurveda and associated literature",
+          "eyebrow": "UPANISHAD / VAJASANEYI TRADITION",
+          "enabled": true,
+          "description": "The available reader comes from the Brihadaranyaka Upanishad in the Vajasaneyi tradition.",
+          "note": "The source remains the Brihadaranyaka Upanishad; association does not make it a Yajurveda Samhita passage."
+        },
+        {
+          "id": "krishna-yajurveda-literature",
+          "title": "Krishna Yajurveda and associated literature",
+          "eyebrow": "UPANISHAD / KATHA SCHOOL",
+          "enabled": true,
+          "description": "The available reader comes from the Katha Upanishad associated with the Katha school of the Krishna Yajurveda.",
+          "note": "The source remains the Katha Upanishad; it is not described as a direct passage from the Yajurveda Samhita."
+        },
+        {
+          "id": "atharvaveda-literature",
+          "title": "Atharvaveda and associated literature",
+          "eyebrow": "VEDIC CORPUS",
+          "enabled": false,
+          "description": "Reserved for future readers with verified Atharvavedic sources.",
+          "note": "No current story is assigned without an exact verified source."
+        }
+      ]
+    },
+    {
+      "id": "puranic-literature",
+      "title": "Puranic Literature",
+      "number": "02",
+      "description": "Collections follow the text named by each reader. Parallel accounts remain labelled as parallel accounts.",
+      "collections": [
+        {
+          "id": "shiva-purana",
+          "title": "Shiva Purana",
+          "eyebrow": "PURANA / SHAIVA NARRATIVES",
+          "enabled": true,
+          "description": "Readers whose primary source is the Shiva Purana, plus one clearly labelled devotional synthesis with a related Shiva Purana passage.",
+          "note": "A deity’s presence alone never determines this classification."
+        },
+        {
+          "id": "srimad-bhagavata-purana",
+          "title": "Srimad Bhagavata Purana",
+          "eyebrow": "PURANA / BHAGAVATA",
+          "enabled": true,
+          "description": "Readers grounded in named skandhas and chapters of the Srimad Bhagavata Purana.",
+          "note": "Where another Purana has a distinct telling, the card and source notes preserve that distinction."
+        },
+        {
+          "id": "vishnu-purana",
+          "title": "Vishnu Purana",
+          "eyebrow": "PURANA / VAISHNAVA NARRATIVE",
+          "enabled": true,
+          "description": "Readers directly supported by a named Vishnu Purana passage.",
+          "note": "The collection is based on source references, not on whether Vishnu appears in a story."
+        },
+        {
+          "id": "linga-purana",
+          "title": "Linga Purana",
+          "eyebrow": "PURANA",
+          "enabled": false,
+          "description": "Reserved for future readers with verified Linga Purana passages.",
+          "note": "The Infinite Shiva Linga reader is not placed here because its current primary source is the Shiva Purana."
+        },
+        {
+          "id": "skanda-purana",
+          "title": "Skanda Purana",
+          "eyebrow": "PURANA / DISTINCT OR RELATED ACCOUNTS",
+          "enabled": true,
+          "description": "Readers with verified Skanda Purana parallels or related passages.",
+          "note": "These cards state when the canonical reader follows another text or a wider devotional tradition."
+        },
+        {
+          "id": "brahmanda-purana",
+          "title": "Brahmanda Purana",
+          "eyebrow": "PURANA / LALITA MAHATMYA",
+          "enabled": true,
+          "description": "The Lalita Mahatmya reader within the Brahmanda Purana.",
+          "note": "The page follows its own Shakta textual setting."
+        },
+        {
+          "id": "markandeya-purana",
+          "title": "Markandeya Purana",
+          "eyebrow": "PURANA / DEVI MAHATMYA",
+          "enabled": true,
+          "description": "Readers from the Devi Mahatmya embedded within the Markandeya Purana.",
+          "note": "Devi Mahatmya is identified as a text within this Purana, not as a separate Purana."
+        },
+        {
+          "id": "matsya-purana",
+          "title": "Matsya Purana",
+          "eyebrow": "OTHER VERIFIED PURANA",
+          "enabled": true,
+          "description": "A reader directly supported by the Matsya Purana.",
+          "note": "Other flood narratives are not merged into this account."
+        }
+      ]
+    },
+    {
+      "id": "epics",
+      "title": "Epics",
+      "number": "03",
+      "description": "Episodes remain attached to their named epic and textual location.",
+      "collections": [
+        {
+          "id": "valmiki-ramayana",
+          "title": "Valmiki Ramayana",
+          "eyebrow": "ITIHASA / RAMAYANA",
+          "enabled": true,
+          "description": "Readers grounded in named kandas and passages of the Valmiki Ramayana.",
+          "note": "Later retellings and Puranic parallels are not silently inserted."
+        },
+        {
+          "id": "mahabharata",
+          "title": "Mahabharata",
+          "eyebrow": "ITIHASA / MAHABHARATA",
+          "enabled": false,
+          "description": "Reserved for future readers with verified Mahabharata passages.",
+          "note": "No story is assigned merely because a figure also appears in the Mahabharata."
+        }
+      ]
+    },
+    {
+      "id": "other-texts-traditions",
+      "title": "Other Texts and Traditions",
+      "number": "04",
+      "description": "Exact texts and wider traditions that need their own context rather than being flattened into a parent label.",
+      "collections": [
+        {
+          "id": "devi-mahatmya",
+          "title": "Devi Mahatmya",
+          "eyebrow": "EMBEDDED TEXT / MARKANDEYA PURANA",
+          "enabled": true,
+          "description": "The Devi Mahatmya stories currently available in the library.",
+          "note": "Devi Mahatmya is a text within the Markandeya Purana. Both classifications lead to the same canonical story pages."
+        },
+        {
+          "id": "upanishads",
+          "title": "Relevant Upanishads",
+          "eyebrow": "UPANISHADS / EXACT TEXTS NAMED",
+          "enabled": true,
+          "description": "Readers from the Katha, Kena, Brihadaranyaka and Chandogya Upanishads.",
+          "note": "Each card names its exact Upanishad. Vedic association is additional context, never a replacement source."
+        },
+        {
+          "id": "kalasamhara-tradition",
+          "title": "Kalasamhara devotional tradition",
+          "eyebrow": "DEVOTIONAL TRADITION / SOURCE TRANSPARENCY",
+          "enabled": true,
+          "description": "A reader whose familiar narrative is presented as a devotional tradition alongside related but distinct Puranic passages.",
+          "note": "It is not labelled as a literal translation of one Skanda Purana or Shiva Purana chapter."
+        }
+      ]
+    }
+  ]
+}

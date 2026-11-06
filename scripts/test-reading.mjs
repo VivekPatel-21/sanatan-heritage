@@ -50,6 +50,12 @@ assert.ok(blocked.window.document.querySelector('#library-status').textContent.i
 const shared=await open('stories',{query:'?deity=Hanuman&scripture=Ramayana#collection',scripts:['stories']});
 assert.equal(shared.window.document.querySelectorAll('.collection-card:not([hidden])').length,1);
 shared.window.document.querySelector('#clear-filters').click();assert.equal(shared.window.location.search,'');assert.equal(shared.window.location.hash,'#collection');
+const scripture=await open('stories',{query:'?collection=krishna-yajurveda-literature#library',scripts:['stories']});
+assert.equal(scripture.window.document.querySelectorAll('.collection-card:not([hidden])').length,1);
+assert.ok(scripture.window.document.querySelector('.collection-card:not([hidden])').textContent.includes('Katha Upanishad'));
+const fromCollection=await open('hanuman-lanka',{query:'?collection=valmiki-ramayana',scripts:['reader']});
+assert.equal(fromCollection.window.document.querySelector('.tale-back').getAttribute('href'),'/stories.html?collection=valmiki-ramayana#library');
+assert.equal(fromCollection.window.document.querySelector('.tale-back').textContent,'Return to scripture collection');
 const directory=await open('glossary',{query:'?q=%E0%A4%AE%E0%A5%8B%E0%A4%95%E0%A5%8D%E0%A4%B7',scripts:['directory']});assert.equal(directory.window.document.querySelectorAll('[data-directory-item]:not([hidden])').length,1);
 const unknown=await open('deities',{query:'?group=not-a-real-group',scripts:['directory']});assert.equal(unknown.window.document.querySelectorAll('[data-directory-item]:not([hidden])').length,12);
 const search=await open('search',{query:'?q=Hanuman'});let options;
@@ -57,6 +63,6 @@ search.window.PagefindUI=class{constructor(config){options=config;const input=se
 search.window.eval(await readFile('src/assets/js/search.js','utf8'));search.window.document.dispatchEvent(new search.window.Event('DOMContentLoaded'));
 assert.equal(options.showSubResults,false);assert.equal(search.window.document.querySelector('#site-search input').value,'Hanuman');
 const input=search.window.document.querySelector('#site-search input');input.value='Ganga';input.dispatchEvent(new search.window.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,250));assert.equal(new URLSearchParams(search.window.location.search).get('q'),'Ganga');
-for(const dom of [reader,paths,library,legacy,corrupt,blocked,shared,directory,unknown,search])dom.window.close();
+for(const dom of [reader,paths,library,legacy,corrupt,blocked,shared,scripture,fromCollection,directory,unknown,search])dom.window.close();
   assert.equal(catalog.stories.length,36);assert.ok(catalog.stories.every(story=>story.chapters.length>0));
 console.log('Passed: reader/library/path persistence, legacy bookmark migration, corrupt and blocked storage, keyboard focus after library actions, shared filters, and search URL restoration/update.');
