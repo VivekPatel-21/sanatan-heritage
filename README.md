@@ -1,6 +1,6 @@
 # Sanatan Heritage
 
-An illustrated guide to Sanatan Dharma, its divine forms, sacred texts, Sanskrit vocabulary and stories. The collection includes 35 full illustrated stories, with chapter navigation, characters, tradition notes and references collected on a dedicated Sources page.
+An illustrated guide to Sanatan Dharma, its divine forms, sacred texts, Sanskrit vocabulary and stories. The collection includes 36 full illustrated stories, with chapter navigation, characters, tradition notes and references collected on a dedicated Sources page.
 
 ## Run locally
 
@@ -14,7 +14,7 @@ npm run serve
 
 Open http://localhost:8080. Rebuild after editing source files. The site is static: search, filters, theme preferences and glossary cards run in the browser, without a backend.
 
-The Node preview server serves only `dist/`. All 35 collection stories have full illustrated readers. Connected journeys, a festival directory, a sacred places journal and a printable family companion offer further ways to explore. Reader bookmarks and text size are saved on the current device. Glossary listening uses clearly labeled approximate browser speech; voice availability varies by device.
+The Node preview server serves only `dist/`. All 36 collection stories have full illustrated readers. Connected journeys, a festival directory, a sacred places journal and a printable family companion offer further ways to explore. Reader bookmarks and text size are saved on the current device. Glossary listening uses clearly labeled approximate browser speech; voice availability varies by device.
 
 ## Project structure
 

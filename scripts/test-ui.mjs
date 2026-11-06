@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { JSDOM } from 'jsdom';
 const terms = JSON.parse(await readFile('src/data/glossary.json', 'utf8'));
+const journeyData = JSON.parse(await readFile('src/data/journeys.json', 'utf8'));
 async function page(name) {
   const dom = new JSDOM(await readFile(`dist/${name}.html`, 'utf8'), { url: `https://sanatan-heritage.test/${name}.html`, runScripts: 'outside-only', pretendToBeVisual: true });
   dom.window.fetch = async () => ({ ok: true, json: async () => terms });
@@ -47,7 +48,7 @@ collectionDoc.querySelector('#scripture-filter').value = 'Shiva Purana';
 collectionDoc.querySelector('#scripture-filter').dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelector('#no-stories').hidden, false);
 collectionDoc.querySelector('#empty-reset').click();
-  assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 35);
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, storyCards.length);
 assert.equal(collectionDoc.activeElement, collectionDoc.querySelector('#story-search'));
 collection.window.close();
 
@@ -64,7 +65,7 @@ const choice = explorer.window.document.querySelector('#journey-choice');
 choice.value = 'hanuman'; choice.dispatchEvent(new explorer.window.Event('change'));
 assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 1);
 choice.value = 'all'; choice.dispatchEvent(new explorer.window.Event('change'));
-  assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, 35);
+assert.equal(explorer.window.document.querySelectorAll('[data-journey]:not([hidden])').length, journeyData.length);
 explorer.window.close();
 
 const festivals = await page('festivals');

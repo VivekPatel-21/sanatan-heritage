@@ -942,5 +942,18 @@
       { "title": "Atman · the Self", "href": "/glossary.html#atman" }
     ],
     "source": "/sources.html#shvetaketu-uddalaka"
+  },
+  {
+    "id": "indra",
+    "title": "Strength that restores movement",
+    "description": "Follow Rigveda 1.32 from the vajra and the mountain obstruction to the release of the waters and the hymn’s closing praise.",
+    "story": { "title": "Indra and Vritra · The Release of the Waters", "href": "/indra-vritra.html" },
+    "deity": { "title": "Meet the devas in context", "href": "/deities.html#how-many" },
+    "scripture": { "title": "Enter the Vedas", "href": "/scriptures.html#vedas" },
+    "terms": [
+      { "title": "Deva · divine being", "href": "/glossary.html#deva" },
+      { "title": "Asura · a class of beings", "href": "/glossary.html#asura" }
+    ],
+    "source": "/sources.html#indra-vritra"
   }
 ]
