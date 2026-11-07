@@ -28,27 +28,32 @@
     <figure><img alt="An elder storyteller sharing a manuscript with two listeners beneath a banyan tree" src="/assets/images/story-manuscripts.webp"><figcaption>FROM SACRED TEXTS TO SHARED STORIES<span>AI-GENERATED ILLUSTRATION</span></figcaption></figure>
   </section>
 
-  <section class="section scripture-shelves" id="collections" aria-labelledby="collections-title">
-    <div class="section-heading"><div><p class="eyebrow">01 / CHOOSE A COLLECTION</p><h2 id="collections-title">The texts are<br><em>the doorway.</em></h2></div><p>Only collections with a verified reader are open. Empty classifications remain in the data system for future sourced work, but are not presented as available.</p></div>
-    <div class="scripture-layer-key" aria-label="Textual layers"><span>Samhita</span><span>Brahmana</span><span>Aranyaka</span><span>Upanishad</span><p>These layers are related, but they are not interchangeable source labels.</p></div>
-    {% for category in scriptureCollections.categories %}
-    <section class="shelf-group" aria-labelledby="shelf-{{ category.id }}">
-      <div class="shelf-group-heading"><span>{{ category.number }}</span><div><h3 id="shelf-{{ category.id }}">{{ category.title }}</h3><p>{{ category.description }}</p></div></div>
-      <div class="shelf-grid">
-        {% for collection in category.collections %}{% if collection.enabled %}
-        <a class="scripture-shelf-card" href="?collection={{ collection.id }}#library" data-collection-link="{{ collection.id }}">
-          <span>{{ collection.eyebrow }}</span><h4>{{ collection.title }}</h4><p>{{ collection.description }}</p><small>{{ storyCatalog | storyCountForCollection(collection.id) }} {% if (storyCatalog | storyCountForCollection(collection.id)) == 1 %}story{% else %}stories{% endif %} available <b aria-hidden="true">→</b></small>
-        </a>
-        {% endif %}{% endfor %}
+  <section class="section scripture-carousel-section" id="collections" aria-labelledby="collections-title">
+    <div class="scripture-carousel-intro"><p class="eyebrow">01 / CHOOSE A SCRIPTURE</p><h2 id="collections-title">Sacred stories,<br><em>held by their texts.</em></h2><p>Across hymns, dialogues, epics and Puranas, sacred stories carry questions of duty, devotion, courage and liberation. Choose a verified collection to meet each account within its own textual home.</p></div>
+    <div class="scripture-layer-key" aria-label="Textual layers"><span>Samhita</span><span>Brahmana</span><span>Aranyaka</span><span>Upanishad</span><p>Related layers remain distinct source labels throughout this library.</p></div>
+    <div class="scripture-carousel" data-scripture-carousel>
+      <button class="scripture-carousel-arrow scripture-carousel-previous" type="button" aria-label="Previous scripture" aria-controls="scripture-carousel-track"><span aria-hidden="true">←</span></button>
+      <div class="scripture-carousel-viewport" id="scripture-carousel-viewport" role="region" aria-roledescription="carousel" aria-label="Scripture collections" tabindex="0">
+        <div class="scripture-carousel-track" id="scripture-carousel-track">
+          <button class="scripture-carousel-card" type="button" data-collection-link="" data-collection-title="Complete library" aria-pressed="false" aria-controls="library">
+            <span class="scripture-carousel-category">Library index</span><strong>All verified stories</strong><small>{{ storyCatalog | storyCountForCollection('all') }} readers</small><i aria-hidden="true">Complete collection</i>
+          </button>
+          {% for category in scriptureCollections.categories %}{% for collection in category.collections %}{% if collection.enabled %}
+          <button class="scripture-carousel-card" type="button" data-collection-link="{{ collection.id }}" data-collection-title="{{ collection.title }}" aria-pressed="false" aria-controls="library">
+            <span class="scripture-carousel-category">{{ category.title }}</span><strong>{{ collection.title }}</strong><small>{{ storyCatalog | storyCountForCollection(collection.id) }} {% if (storyCatalog | storyCountForCollection(collection.id)) == 1 %}story{% else %}stories{% endif %}</small><i aria-hidden="true">{{ collection.eyebrow }}</i>
+          </button>
+          {% endif %}{% endfor %}{% endfor %}
+        </div>
       </div>
-    </section>
-    {% endfor %}
+      <button class="scripture-carousel-arrow scripture-carousel-next" type="button" aria-label="Next scripture" aria-controls="scripture-carousel-track"><span aria-hidden="true">→</span></button>
+    </div>
+    <p class="scripture-carousel-status" id="scripture-carousel-status" aria-live="polite">Choose a scripture to filter the stories below.</p>
   </section>
 
   <span id="collection" class="legacy-anchor" aria-hidden="true"></span>
   <section class="section collection-section scripture-library-results" id="library" aria-labelledby="library-title">
     <div class="collection-contexts">
-      <section class="collection-context is-active" data-collection-context="all"><p class="eyebrow">ALL VERIFIED READERS</p><h2 id="library-title">The complete library.</h2><p>Every story appears once here, even when more than one verified collection connects to it. Choose a collection above to narrow the shelves.</p></section>
+      <section class="collection-context is-active" data-collection-context="all"><p class="eyebrow">ALL VERIFIED READERS</p><h2 id="library-title">The complete library.</h2><p>Every story appears once here, even when more than one verified collection connects to it. Choose a scripture above to narrow the library.</p></section>
       {% for category in scriptureCollections.categories %}{% for collection in category.collections %}{% if collection.enabled %}
       <section class="collection-context" data-collection-context="{{ collection.id }}" hidden><p class="eyebrow">{{ category.title }} / {{ collection.eyebrow }}</p><h2>{{ collection.title }}</h2><p>{{ collection.description }}</p><p class="collection-distinction"><strong>Source distinction:</strong> {{ collection.note }}</p><a href="#collections">Choose another collection</a></section>
       {% endif %}{% endfor %}{% endfor %}

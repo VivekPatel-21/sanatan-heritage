@@ -197,25 +197,32 @@
 
 /* Scripture story library */
 .legacy-anchor { display: block; scroll-margin-top: var(--header-offset); }
-.scripture-shelves { background: var(--surface-soft); border-block: var(--rule-fine); }
+.scripture-carousel-section { overflow: hidden; background: var(--surface-soft); border-block: var(--rule-fine); }
+.scripture-carousel-intro { display: grid; grid-template-columns: minmax(0,.85fr) minmax(20rem,1.15fr); gap: clamp(2rem,7vw,7rem); align-items: end; margin-bottom: clamp(2rem,5vw,4rem); }
+.scripture-carousel-intro .eyebrow { grid-column: 1/-1; margin-bottom: -1rem; }
+.scripture-carousel-intro h2,.scripture-carousel-intro>p:last-child { margin: 0; }
+.scripture-carousel-intro>p:last-child { max-width: 58ch; color: var(--muted); font-size: clamp(1rem,1.4vw,1.15rem); line-height: 1.8; }
 .scripture-layer-key { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin: 0 0 clamp(3rem,6vw,5rem); padding: 1rem 0; border-block: var(--rule-fine); }
 .scripture-layer-key span { padding: .35rem .65rem; border: 1px solid var(--line); color: var(--ink); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
 .scripture-layer-key p { flex: 1 1 24rem; margin: 0; color: var(--muted); font-size: .875rem; text-align: right; }
-.shelf-group { padding-block: clamp(2.5rem,5vw,4rem); border-top: var(--rule-fine); }
-.shelf-group:first-of-type { border-top: 0; padding-top: 0; }
-.shelf-group-heading { display: grid; grid-template-columns: 3rem minmax(0,1fr); gap: 1.25rem; align-items: start; margin-bottom: 2rem; }
-.shelf-group-heading>span { font-family: var(--font-serif); color: var(--detail); font-size: 1.25rem; }
-.shelf-group-heading h3 { margin: 0 0 .6rem; font-size: clamp(1.5rem,2.5vw,2.15rem); }
-.shelf-group-heading p { margin: 0; max-width: 62ch; color: var(--muted); }
-.shelf-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-.scripture-shelf-card { display: flex; flex-direction: column; min-height: 17rem; padding: clamp(1.25rem,2.5vw,2rem); color: var(--ink); background: var(--surface); text-decoration: none; }
-.scripture-shelf-card>span { color: var(--detail); font-size: .6875rem; letter-spacing: .1em; line-height: 1.5; text-transform: uppercase; }
-.scripture-shelf-card h4 { margin: auto 0 .75rem; font-size: clamp(1.2rem,1.7vw,1.55rem); line-height: 1.35; }
-.scripture-shelf-card p { margin: 0 0 1.2rem; color: var(--muted); font-size: .9375rem; line-height: 1.65; }
-.scripture-shelf-card small { display: flex; justify-content: space-between; gap: 1rem; padding-top: .85rem; border-top: var(--rule-fine); color: var(--ink); font-size: .8125rem; }
-.scripture-shelf-card b { color: var(--detail); font-weight: 400; }
-.scripture-shelf-card:is(:hover,:focus-visible),.scripture-shelf-card[aria-current='true'] { background: var(--surface-soft); }
-.scripture-shelf-card[aria-current='true'] { box-shadow: inset 0 3px 0 var(--detail); }
+.scripture-carousel { position: relative; display: grid; grid-template-columns: 3rem minmax(0,1fr) 3rem; gap: clamp(.5rem,2vw,1.25rem); align-items: center; margin-inline: calc(var(--gutter) * -1); }
+.scripture-carousel-viewport { min-width: 0; overflow-x: auto; padding-block: 1.75rem; scrollbar-width: none; scroll-snap-type: x mandatory; overscroll-behavior-inline: contain; touch-action: pan-x pan-y; }
+.scripture-carousel-viewport::-webkit-scrollbar { display: none; }
+.scripture-carousel-track { display: flex; gap: clamp(.8rem,2vw,1.35rem); width: max-content; padding-inline: max(var(--gutter),calc((100vw - clamp(17rem,31vw,23rem))/2 - 4.5rem)); }
+.scripture-carousel-card { position: relative; display: flex; flex: 0 0 clamp(17rem,31vw,23rem); flex-direction: column; min-height: clamp(17rem,25vw,20rem); padding: clamp(1.35rem,2.5vw,2rem); overflow: hidden; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); background: var(--surface); box-shadow: 0 18px 38px -32px transparent; text-align: left; scroll-snap-align: center; transform: scale(.9); opacity: .62; transition: transform 420ms var(--ease),opacity 420ms var(--ease),border-color 180ms ease,box-shadow 420ms var(--ease),background-color 180ms ease; }
+.scripture-carousel-card::before { position: absolute; inset: 0; border-top: 3px solid transparent; background: linear-gradient(135deg,transparent 66%,color-mix(in srgb,var(--detail) 8%,transparent)); content: ''; pointer-events: none; }
+.scripture-carousel-card:is(:hover,:focus-visible) { opacity: .9; border-color: color-mix(in srgb,var(--detail) 52%,var(--line)); }
+.scripture-carousel-card.is-selected { z-index: 1; border-color: var(--detail); background: color-mix(in srgb,var(--surface) 92%,var(--detail)); box-shadow: var(--shadow-soft); opacity: 1; transform: scale(1); }
+.scripture-carousel-card.is-selected::before { border-top-color: var(--detail); }
+.scripture-carousel-category { position: relative; color: var(--detail); font-size: .6875rem; font-weight: 600; letter-spacing: .11em; line-height: 1.5; text-transform: uppercase; }
+.scripture-carousel-card strong { position: relative; max-width: 18ch; margin: auto 0 1rem; font-family: var(--font-serif); font-size: clamp(1.45rem,2.4vw,2rem); font-weight: 400; line-height: 1.25; }
+.scripture-carousel-card small { position: relative; padding-top: .9rem; border-top: var(--rule-fine); font-size: .875rem; }
+.scripture-carousel-card i { position: relative; margin-top: .55rem; color: var(--muted); font-size: .6875rem; font-style: normal; letter-spacing: .07em; line-height: 1.5; text-transform: uppercase; }
+.scripture-carousel-arrow { display: grid; z-index: 2; width: 3rem; height: 3rem; padding: 0; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--surface); box-shadow: var(--shadow-soft); font-size: 1.2rem; }
+.scripture-carousel-arrow:is(:hover,:focus-visible) { border-color: var(--detail); color: var(--detail); }
+.scripture-carousel-previous { margin-left: var(--gutter); }
+.scripture-carousel-next { margin-right: var(--gutter); }
+.scripture-carousel-status { margin: 1rem auto 0; color: var(--muted); font-size: .875rem; text-align: center; }
 .collection-contexts { margin-bottom: 2rem; }
 .collection-contexts .collection-context { max-width: 56rem; padding: clamp(1.5rem,3vw,2.5rem); border-left: 3px solid var(--detail); background: var(--surface-soft); }
 .collection-contexts .collection-context h2 { margin: .35rem 0 1rem; font-size: clamp(1.75rem,3vw,2.75rem); }
@@ -224,6 +231,8 @@
 .collection-distinction { padding-top: 1rem; border-top: var(--rule-fine); }
 .scripture-library-controls { grid-template-columns: minmax(0,1.5fr) minmax(15rem,1fr) auto; }
 .scripture-library-page .collection-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.scripture-library-page .collection-grid { transition: opacity 180ms ease,transform 180ms ease; }
+.scripture-library-page .collection-grid.is-filtering { opacity: .72; transform: translateY(4px); }
 .scripture-library-page .collection-card:first-child { grid-column: auto; display: block; padding-bottom: 0; border-bottom: 0; }
 .scripture-library-page .collection-card:first-child .collection-copy { padding-top: 1.5rem; }
 .scripture-library-page .collection-card:first-child h3 { font-size: var(--type-h3); }
@@ -234,12 +243,19 @@
 .library-method>.tale-card-link { grid-column: 2; }
 
 @media screen and (max-width:1100px) {
-  .shelf-grid,.scripture-library-page .collection-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .scripture-library-page .collection-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media screen and (max-width:760px) {
+  .scripture-carousel-intro { grid-template-columns: minmax(0,1fr); gap: 1.25rem; }
+  .scripture-carousel-intro .eyebrow { grid-column: 1; margin-bottom: 0; }
   .scripture-layer-key p { flex-basis: 100%; text-align: left; }
-  .shelf-group-heading { grid-template-columns: 2rem minmax(0,1fr); }
-  .shelf-grid,.scripture-library-page .collection-grid,.scripture-library-controls,.library-method { grid-template-columns: minmax(0,1fr); }
-  .scripture-shelf-card { min-height: 14rem; }
+  .scripture-carousel { grid-template-columns: 2.75rem minmax(0,1fr) 2.75rem; gap: .25rem; }
+  .scripture-carousel-arrow { width: 2.75rem; height: 2.75rem; }
+  .scripture-carousel-track { padding-inline: calc((100vw - min(76vw,19rem))/2 - 3rem); }
+  .scripture-carousel-card { flex-basis: min(76vw,19rem); min-height: 16rem; }
+  .scripture-library-page .collection-grid,.scripture-library-controls,.library-method { grid-template-columns: minmax(0,1fr); }
   .library-method>.tale-card-link { grid-column: 1; }
+}
+@media screen and (prefers-reduced-motion:reduce) {
+  .scripture-carousel-card,.scripture-library-page .collection-grid { transition: none; }
 }

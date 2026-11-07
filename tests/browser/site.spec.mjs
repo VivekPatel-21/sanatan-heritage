@@ -38,6 +38,26 @@ test('mobile browser theme metadata follows the chosen theme',async({page})=>{
 });
 
 test('scripture library preserves exact sources and collection return paths',async({page})=>{
+  await page.goto('/stories.html');
+  await expect(page.locator('[data-collection-link="srimad-bhagavata-purana"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('.collection-card:visible')).toHaveCount(14);
+  await expect.poll(()=>page.evaluate(()=>{
+    const viewport=document.querySelector('#scripture-carousel-viewport').getBoundingClientRect();
+    const selected=document.querySelector('.scripture-carousel-card.is-selected').getBoundingClientRect();
+    return Math.round(Math.abs(selected.left+selected.width/2-(viewport.left+viewport.width/2)));
+  })).toBeLessThanOrEqual(4);
+  await page.locator('.scripture-carousel-next').click();
+  await expect(page.locator('[data-collection-link="vishnu-purana"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('.collection-card:visible')).toHaveCount(1);
+  await page.locator('#scripture-carousel-viewport').focus();
+  await page.keyboard.press('ArrowLeft');
+  await expect(page.locator('[data-collection-link="srimad-bhagavata-purana"]')).toHaveAttribute('aria-pressed','true');
+  await page.locator('#scripture-carousel-viewport').dispatchEvent('pointerdown');
+  await page.locator('#scripture-carousel-viewport').evaluate((viewport)=>{
+    const target=document.querySelector('[data-collection-link="upanishads"]');
+    viewport.scrollTo({left:target.offsetLeft-(viewport.clientWidth-target.offsetWidth)/2,behavior:'auto'});
+  });
+  await expect(page.locator('[data-collection-link="upanishads"]')).toHaveAttribute('aria-pressed','true');
   await page.goto('/stories.html?collection=samaveda-literature#library');
   await expect(page.locator('.collection-card:visible')).toHaveCount(2);
   await expect(page.locator('.collection-card:visible .story-text-layer')).toContainText(['Upanishad · Kena Upanishad','Upanishad · Chandogya Upanishad']);

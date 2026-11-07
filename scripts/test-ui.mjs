@@ -45,11 +45,16 @@ for (const name of ['glossary','deities']) {
 const collection = await page('stories');
 const collectionDoc = collection.window.document;
 const storyCards = [...collectionDoc.querySelectorAll('.collection-card')];
-assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), `${storyCards.length} full stories`);
-assert.equal(collectionDoc.querySelectorAll('[data-collection-link]').length, 15);
+assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), '14 stories in Srimad Bhagavata Purana');
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 14);
+assert.equal(collectionDoc.querySelector('[data-collection-link="srimad-bhagavata-purana"]').getAttribute('aria-pressed'), 'true');
+assert.equal(collectionDoc.querySelectorAll('[data-collection-link]').length, 16);
 assert.equal(collectionDoc.querySelectorAll('[data-collection-link="atharvaveda-literature"]').length, 0);
 assert.equal(collectionDoc.querySelectorAll('[data-collection-link="mahabharata"]').length, 0);
 const collectionFilter = collectionDoc.querySelector('#collection-filter');
+collectionDoc.querySelector('.scripture-carousel-next').click();
+assert.equal(collectionFilter.value, 'vishnu-purana');
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 1);
 collectionFilter.value = 'rigveda-samhita'; collectionFilter.dispatchEvent(new collection.window.Event('change'));
 assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 1);
 assert.equal(collectionDoc.querySelector('.collection-card:not([hidden]) .tale-card-link').getAttribute('href'), '/indra-vritra.html?collection=rigveda-samhita');
