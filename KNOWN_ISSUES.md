@@ -1,3 +1,9 @@
+## Latest release audit — November 6, 2026
+
+The previous run for commit fac0331 failed HTML lint because three IDs were duplicated by newly appended source sections. Those duplicates have now been removed, retaining the already-sourced reference component. A source-aware family/places expansion, public artwork caption cleanup, glossary source links and two repeatable CI audits were added. Verify the newest workflow conclusion before claiming the live release is approved.
+
+Current data: 66 generated pages; 36 story records; 41 glossary terms; eight reading paths; 31 festival entries; six family companions; five place guides. Rights evidence still includes owner-confirmation records, which cannot be cleared by a code change. The website does not have a licensed recorded narration service, live tithi-calendar engine, interactive map or newsletter service.
+
 # Known issues and verification limits
 
 ## Public production — 25 October 2026

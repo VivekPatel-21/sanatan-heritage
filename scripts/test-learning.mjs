@@ -52,4 +52,11 @@ const allTerms=JSON.parse(await readFile('src/data/glossary.json','utf8'));
 assert.ok(allTerms.every(t=>typeof t.source==='string'&&t.source.length>0),'All glossary terms should link to source context');
 assert.ok((await readFile('dist/sources.html','utf8')).includes('id="glossary-foundations"'));
 
+const placesDoc=new JSDOM(await readFile('dist/places.html','utf8')).window.document;
+for(const id of ['varanasi','rameswaram','purushottama','ayodhya','govardhana']){
+ const card=placesDoc.querySelector('#'+id);
+ assert.ok(card,'Missing sourced place guide: '+id);
+ assert.ok(card.querySelector('a[href^="/sources.html#"]'),'Missing place-source link: '+id);
+}
+
 console.log('Learning expansion tests passed, including artwork captions, family readers and source notes.');

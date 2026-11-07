@@ -2,10 +2,16 @@
 
 The owner-approved October 21 discovery/readability priorities are implemented; see FEATURES.md and IMPLEMENTATION_REPORT.md. Preserve the approved homepage, page design and supplied logo unless a further change is authorized.
 
+## Current release quality gate
+
+- Confirm a passing GitHub build, lint, static checks, unit tests, browser accessibility tests and Vercel revision check for the same final commit.
+- Review outstanding owner-permission records in docs/ASSET_RIGHTS_REVIEW.csv. Do not treat a caption change as copyright permission.
+- Inspect real Safari, mobile devices, assistive technology and field Core Web Vitals; CI performance data is a local lab measurement.
+
 ## Next formats
 
 - Reviewed story narration with permission for voices/music, transcripts, accessible player controls and listening-position persistence.
-- Family adaptations for the six stories beyond the two current companions, preserving distinctions from the complete narrative.
+- The family companion now has six sourced adaptations; additional age-appropriate stories and optional independent artwork can be expanded following owner review.
 
 ## Later expansion
 

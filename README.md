@@ -87,3 +87,9 @@ Search uses explicit page/story titles and one result per page. The search query
 # Current production
 
 The owner-confirmed public site is [www.shreembala.com](https://www.shreembala.com). Vercel deploys GitHub main using [vercel.json](vercel.json). Canonical origin and indexing live in [site.json](src/data/site.json); no page front matter duplicates the origin. [Production notes](docs/PRODUCTION.md) explain security headers, CI browser/accessibility checks, release verification and the asset-permission checklist.
+
+## Current quality and publication checks (November 2026)
+
+Run `npm ci && npm run build && npm run lint && npm run check && npm test && npm run test:browser` after editing source. Once Chromium is installed, `npm run audit:performance` records a local cold-load lab report (not field Web Vitals), and `npm run audit:rights` summarises unresolved artwork permissions. Both reports are CI artifacts under `.qa/`. Public artwork captions omit the creation/upload method; source provenance must remain in `docs/ASSET_RIGHTS_REVIEW.csv` and should not be treated as proof of cleared rights.
+
+The final GitHub workflow verifies that Vercel serves the same commit in `/release.json`. A pushed commit or passing local build by itself is not proof that production has updated.

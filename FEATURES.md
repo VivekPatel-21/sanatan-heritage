@@ -1,3 +1,9 @@
+## Current repository scope — November 6, 2026
+
+The production candidate now has a 66-page Eleventy build, a 36-entry story catalogue, 41 glossary entries in five topical groups, eight curated reading paths, a 31-entry sourced festival directory, six family reading companions, and five sacred-place journal entries (three of them text-first). Existing narratives and the approved museum design remain intact. Public artwork captions show subject descriptions without method/uploader badges; provenance, credits and unresolved rights evidence remain in the internal source ledger.
+
+CI now performs build, HTML/CSS lint, link/static checks, reader/browser/accessibility tests, a local performance report and an artwork-rights status summary before attempting to verify the matching Vercel commit. These are configured checks, not a claim that the latest workflow has passed. Recorded narration, synchronized account data, dynamic tithi dates, an interactive map and newsletter delivery require separate service/data decisions. Outstanding rights entries must receive genuine permissions before being marked cleared.
+
 # Features and approval status
 
 Latest additions (24 October 2026): beginner journey, synthetic browser read-aloud, contact/correction email drafts, privacy explanation, library backup/import/clear, source-verified journal context, responsive shrine tracking and centralized launch configuration. The site has 30 routes and nine full English readers. Reviewed recordings remain optional future work; no account sync, dynamic tithi calendar or newsletter service has been added. Details: IMPLEMENTATION_REPORT.md and VALIDATION.md. Historical rows below describe earlier milestones.
