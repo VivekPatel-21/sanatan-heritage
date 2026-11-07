@@ -26,7 +26,7 @@ for(const p of ['scriptures','deities','avatars','great-rishis','philosophy','fo
 const html=await readFile('dist/'+p+'.html','utf8');assert.ok(html.includes('learning-connections'),p);
 }
 
-const captionsRe=/\\b(?:AI[\\s-]*generated|owner[\\s-]*(?:supplied|contributed|provided))\\b/i;
+const captionsRe=/\b(?:AI[\s-]*generated|owner[\s-]*(?:supplied|contributed|provided))\b/i;
 const pages=(await (await import('node:fs/promises')).readdir('dist')).filter(name=>name.endsWith('.html'));
 for(const page of pages){
   const html=await readFile('dist/'+page,'utf8');
