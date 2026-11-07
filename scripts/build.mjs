@@ -52,6 +52,31 @@ for (const name of pages) {
   const storyInfo = Object.values(storyCatalog).find(item => item.href === pathName);
   const pageTitle = storyInfo?.title || $('title').text().split('·')[0].trim();
   $('head').append($('<meta>').attr({ 'data-pagefind-meta':'title[content]', content:pageTitle }));
+
+  // Match breadcrumb schema only to navigation actually rendered for readers.
+  const trail = $('nav.breadcrumb').first();
+  if (trail.length) {
+    const items = trail.children('a, span').toArray().map(el => {
+      const label = $(el).text().trim();
+      if (!label || label === '/') return null;
+      const href = $(el).attr('href');
+      const url = new URL(href || (label === 'Home' ? '/' : pathName), origin + '/');
+      if (url.pathname === '/index.html') url.pathname = '/';
+      url.hash = '';
+      return { '@type': 'ListItem', position: 0, name: label, item: url.href };
+    }).filter(Boolean).map((item, index) => ({ ...item, position: index + 1 }));
+    if (items.length >= 2) {
+      const jsonLd = $('script[type="application/ld+json"]').first();
+      const schema = JSON.parse(jsonLd.text());
+      schema['@graph'].push({
+        '@type': 'BreadcrumbList',
+        '@id': origin + (name === 'index.html' ? '/' : '/' + name) + '#breadcrumbs',
+        itemListElement: items
+      });
+      jsonLd.text(JSON.stringify(schema).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026'));
+    }
+  }
+
   const minutes = storyInfo?.minutes || Math.max(1,Math.ceil($('main').text().trim().split(/\s+/).length/200));
   readingCatalog.pages[pathName] = { title:pageTitle, minutes };
   if (storyInfo) readingCatalog.stories.push({ ...storyInfo, chapters:$('.tale-chapter[id]').toArray().map(el=>({id:$(el).attr('id'),title:$(el).find('h2').first().text()})) });
@@ -69,11 +94,12 @@ for (const name of pages) {
     image.attr({ src: largest.path, width: String(largest.width), height: String(largest.height), decoding: 'async' });
     const isHero = image.closest('.exhibit-visual,.museum-object,.hero,.tale-hero,.collection-hero,.scripture-hero,.lalita-hero,.learn-hero').length;
     image.attr('loading', isHero ? 'eager' : 'lazy');
-    if (isHero) image.attr('fetchpriority', 'high');
+    image.attr('fetchpriority', isHero ? 'high' : 'low');
     image.attr('srcset', variants.map(variant => `${variant.path} ${variant.width}w`).join(', '));
     const isReader = image.closest('.tale-inline').length;
     const isLeadCard = image.closest('.collection-card').is(':first-child');
     const sizes = image.closest('.exhibit-visual,.museum-object').length ? '(max-width: 700px) 100vw, 80vw' : image.closest('.museum-doorway').length ? '(max-width: 700px) 90vw, 30vw' : image.closest('.home-panorama').length ? '(max-width: 1320px) 94vw, 1216px' : image.closest('.gallery-photograph').length ? '(max-width: 900px) 92vw, (max-width: 1440px) 57vw, 800px' : isReader ? '(max-width: 760px) 92vw, (max-width: 1100px) calc(92vw - 13rem), 65ch'
+      : image.closest('.museum-chapter').length ? '(max-width: 760px) calc(100vw - 2.5rem), (max-width: 1440px) 43vw, 620px'
       : isLeadCard ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(51vw - 2rem), 630px'
       : image.closest('.deity-card,.collection-card,.scripture-card').length ? '(max-width: 760px) 92vw, (max-width: 1312px) calc(46vw - 1.5rem), 570px'
       : image.closest('.family-art').length ? '(max-width: 760px) 92vw, 65ch'
@@ -156,6 +182,23 @@ for (const name of await readdir('src/assets/js')) {
   const result = await minifyJS(await readFile(`src/assets/js/${name}`, 'utf8'));
   await writeFile(`dist/assets/js/${name}`, result.code);
 }
-await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+pages.filter(name => !['404.html','search.html','museum-preview.html'].includes(name)).map(name => `<url><loc>${origin}/${name === 'index.html' ? '' : name}</loc></url>`).join('')+'</urlset>\n');
+// Publish only indexable canonical URLs and real images embedded on each page.
+// The CI checkout cannot establish meaningful last-modified dates; do not invent them.
+const escapeXml = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const sitemapEntries = [];
+for (const filename of pages) {
+  if (['404.html','search.html','museum-preview.html'].includes(filename)) continue;
+  const page = load(await readFile('dist/' + filename, 'utf8'));
+  if (page('meta[name="robots"][content*="noindex"]').length) continue;
+  const canonical = page('link[rel="canonical"]').attr('href');
+  if (!canonical || !canonical.startsWith(origin + '/')) throw new Error('Invalid sitemap canonical: ' + filename);
+  const images = [...new Set(page('main img[src^="/assets/images/"]').toArray()
+    .map(el => page(el).attr('src')).filter(Boolean))];
+  const imageEntries = images.map(src => '<image:image><image:loc>' + escapeXml(new URL(src, origin).href) + '</image:loc></image:image>').join('');
+  sitemapEntries.push('<url><loc>' + escapeXml(canonical) + '</loc>' + imageEntries + '</url>');
+}
+await writeFile('dist/sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' +
+  sitemapEntries.join('') + '</urlset>\n');
 run(['node_modules/pagefind/lib/runner/bin.cjs', '--site', 'dist']);
 console.log(`Built ${pages.length} pages, responsive WebP images, minified assets and search index.`);

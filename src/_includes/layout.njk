@@ -3,7 +3,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-17L9QK6C7F"></script>
-<script src="/assets/js/google-analytics.js"></script>
+<script src="/assets/js/google-analytics.js" defer></script>
 <meta id="browser-theme" name="theme-color" content="{{ site.themeColors.light }}" data-light="{{ site.themeColors.light }}" data-dark="{{ site.themeColors.dark }}">
 <link rel="manifest" href="/site.webmanifest">
 <title>{{ title }}</title><meta name="description" content="{{ description }}">
@@ -14,7 +14,7 @@
 <link rel="preload" href="/assets/fonts/source-sans-3-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/literata-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
-{% if museumLayout %}<link rel="preload" as="image" href="/assets/images/ambaji-enhanced-poster.webp" fetchpriority="high"><link rel="stylesheet" href="/assets/css/home-museum.css">{% endif %}
+{% if museumLayout %}<link rel="preload" as="image" href="/assets/images/ambaji-enhanced-poster.webp" fetchpriority="high" type="image/webp"><link rel="stylesheet" href="/assets/css/home-museum.css">{% endif %}
 {% if search %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endif %}
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}">

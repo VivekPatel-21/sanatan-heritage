@@ -19,6 +19,7 @@ for(const name of pages){
   const graph=JSON.parse($('script[type="application/ld+json"]').text());assert.equal(graph['@context'],'https://schema.org');
   assert.equal(graph['@graph'].find(item=>item['@type']==='WebSite').url,site.origin+'/');
   const content=graph['@graph'].find(item=>item['@type']==='Article'||item['@type']==='WebPage');assert.equal(content.url,canonical);
+  assert.ok(content.image || content['@type']==='WebPage',`${name}: articles need a social preview image`);
   assert.equal($('meta[name="theme-color"]').attr('content'),site.themeColors.light);
   assert.equal($('link[rel="manifest"]').attr('href'),'/site.webmanifest');
   assert.equal($('script[src="https://www.googletagmanager.com/gtag/js?id=G-17L9QK6C7F"]').is('[async]'),true,`${name} must load the Google tag asynchronously`);

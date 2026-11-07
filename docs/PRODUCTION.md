@@ -21,3 +21,6 @@ The owner reports that some contributed assets still need permission checks. ASS
 Large legacy CSS extraction and moving historical handoff documents are maintenance changes, separate from these production fixes. Preserve the current cascade and approved appearance when tackling them. Recorded audio/further family adaptations remain dependent on reviewed recordings and the owner's source books. No Hindi section is being reintroduced.
 
 References: [Vercel project configuration](https://vercel.com/docs/project-configuration/vercel-json), [Playwright CI](https://playwright.dev/docs/ci), [Playwright accessibility testing](https://playwright.dev/docs/accessibility-testing).
+
+
+The November 6 search and performance release is documented in docs/SEARCH_VISIBILITY_2026-11-06.md. Search Console account metrics cannot be inferred from a deployment; verify the exact GitHub main revision on Vercel after CI.
