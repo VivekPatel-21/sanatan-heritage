@@ -1,12 +1,14 @@
 import {writeFile,mkdir} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 const {chromium}=await import(process.env.SANATAN_PLAYWRIGHT_PATH?pathToFileURL(process.env.SANATAN_PLAYWRIGHT_PATH).href:'playwright');
-const browser=await chromium.launch({channel:'chrome',headless:true});
+const browser=await chromium.launch({headless:true});
 const results=[];
 try{
   for(const width of [375,768,1440]){
     const context=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});
-    const page=await context.newPage();const cdp=await context.newCDPSession(page);
+    const page=await context.newPage();
+    await page.route(/https:\/\/(?:www\.)?(?:googletagmanager|google-analytics)\.com\//, route=>route.abort());
+    const cdp=await context.newCDPSession(page);
     await cdp.send('Network.enable');await cdp.send('Network.setCacheDisabled',{cacheDisabled:true});
     await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:150,downloadThroughput:200000,uploadThroughput:100000});
     await page.addInitScript(()=>{

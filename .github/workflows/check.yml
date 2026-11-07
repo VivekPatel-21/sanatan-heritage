@@ -23,6 +23,8 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+      - run: npm run audit:performance
+      - run: npm run audit:rights
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -30,6 +32,8 @@ jobs:
           path: |
             .qa/playwright-report
             .qa/test-results
+            .qa/performance-report.json
+            .qa/artwork-rights-summary.json
           retention-days: 7
   verify-production:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
