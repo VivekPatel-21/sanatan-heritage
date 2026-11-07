@@ -5,7 +5,8 @@
     "devanagari": "धर्म",
     "pronunciation": "Say: DHAR-ma",
     "definition": "Duty, ethical order and the way of living that sustains life; its meaning depends on context.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "karma",
@@ -13,7 +14,8 @@
     "devanagari": "कर्म",
     "pronunciation": "Say: KAR-ma",
     "definition": "Action, and the consequences of action in teachings about moral cause and effect.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "atman",
@@ -21,7 +23,8 @@
     "devanagari": "आत्मन्",
     "pronunciation": "Say: AAT-man",
     "definition": "The Self; schools differ in their account of its relationship to ultimate reality.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "brahman",
@@ -29,7 +32,8 @@
     "devanagari": "ब्रह्मन्",
     "pronunciation": "Say: BRAH-man",
     "definition": "Ultimate reality in Upanishadic and Vedantic thought. Brahman is distinct from Brahma, the creator deity.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "moksha",
@@ -37,7 +41,8 @@
     "devanagari": "मोक्ष",
     "pronunciation": "Say: MOKE-sha",
     "definition": "Liberation from samsara, the cycle of rebirth; its nature is understood differently across schools.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "bhakti",
@@ -45,7 +50,8 @@
     "devanagari": "भक्ति",
     "pronunciation": "Say: BHAK-ti",
     "definition": "Devotion and loving dedication to the Divine.",
-    "category": "practice"
+    "category": "practice",
+    "source": "glossary-foundations"
   },
   {
     "id": "shakti",
@@ -53,7 +59,8 @@
     "devanagari": "शक्ति",
     "pronunciation": "Say: SHAK-ti",
     "definition": "Power or energy; divine power, especially the Goddess in Shakta traditions.",
-    "category": "divine"
+    "category": "divine",
+    "source": "glossary-foundations"
   },
   {
     "id": "deva",
@@ -61,7 +68,8 @@
     "devanagari": "देव",
     "pronunciation": "Say: DAY-va",
     "definition": "A divine being or god; the feminine form is devi.",
-    "category": "divine"
+    "category": "divine",
+    "source": "glossary-foundations"
   },
   {
     "id": "devi",
@@ -69,7 +77,8 @@
     "devanagari": "देवी",
     "pronunciation": "Say: DAY-vee",
     "definition": "Goddess; also a title for the Divine Mother.",
-    "category": "divine"
+    "category": "divine",
+    "source": "glossary-foundations"
   },
   {
     "id": "tapas",
@@ -77,7 +86,8 @@
     "devanagari": "तपस्",
     "pronunciation": "Say: TA-pas",
     "definition": "Spiritual discipline and austerity, associated with inward effort and transformation.",
-    "category": "practice"
+    "category": "practice",
+    "source": "glossary-foundations"
   },
   {
     "id": "yantra",
@@ -85,7 +95,8 @@
     "devanagari": "यन्त्र",
     "pronunciation": "Say: YAN-tra",
     "definition": "A diagram or device; in worship, a geometric form associated with a deity and contemplation.",
-    "category": "practice"
+    "category": "practice",
+    "source": "glossary-foundations"
   },
   {
     "id": "purana",
@@ -93,7 +104,8 @@
     "devanagari": "पुराण",
     "pronunciation": "Say: pu-RAA-na",
     "definition": "A genre of sacred narrative including divine stories, cosmology, genealogies and teachings.",
-    "category": "texts"
+    "category": "texts",
+    "source": "glossary-foundations"
   },
   {
     "id": "jyotirlinga",
@@ -245,7 +257,8 @@
     "devanagari": "संसार",
     "pronunciation": "Say: sum-SAA-ra",
     "definition": "The continuing cycle of birth, death and rebirth from which moksha is liberation; traditions explain this cycle and liberation in different ways.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-foundations"
   },
   {
     "id": "shruti",
