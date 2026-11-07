@@ -7,6 +7,7 @@ const pages=(await readdir('dist')).filter(name=>name.endsWith('.html'));
 const xml=await readFile('dist/sitemap.xml','utf8');
 assert.match(xml,/xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
 const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match=>match[1].replace(/&amp;/g,'&'));
+const imageSitemapUrls=[...xml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(match=>match[1].replace(/&amp;/g,'&'));
 const pageUrls=new Set(), imageUrls=new Set();
 for(const name of pages){
   const html=await readFile('dist/'+name,'utf8');
@@ -34,7 +35,7 @@ for(const name of pages){
 }
 assert.equal(pageUrls.size,urls.filter(link=>link.endsWith('.html')||link===site.origin+'/').length,'Unexpected sitemap page count');
 assert.ok(imageUrls.size>=100,'Image sitemap unexpectedly small');
-for(const url of imageUrls)assert.ok(urls.includes(url),'Image omitted from sitemap: '+url);
+for(const url of imageUrls)assert.ok(imageSitemapUrls.includes(url),'Image omitted from sitemap: '+url);
 const head=load(await readFile('dist/index.html','utf8'));
 assert.ok(head('script[src="/assets/js/google-analytics.js"][defer]').length,'Analytics bootstrap must be deferred');
 assert.ok(head('link[rel="preload"][as="image"][type="image/webp"]').length,'Homepage poster preload missing');
