@@ -106,6 +106,33 @@ for (const name of pages) {
       [...el.children].forEach(visit);
     });
   }
+  // Display the artwork's subject, not production-method or uploader badges.
+  // Original creator, permissions and source evidence remain in the private editorial ledger.
+  const originBadge = /\\b(?:AI[\\s-]*generated|owner[\\s-]*(?:supplied|contributed|provided))\\b/i;
+  $('figure figcaption').each((_, element) => {
+    const caption = $(element);
+    caption.find('span').each((__, child) => {
+      if (originBadge.test($(child).text()) && !$(child).find('*').length) $(child).remove();
+    });
+    caption.contents().each((__, child) => {
+      if (child.type !== 'text' || !originBadge.test(child.data)) return;
+      child.data = child.data.split(/\\s*[·|]\\s*/).filter(part => !originBadge.test(part)).join(' · ').trim();
+    });
+    if (!caption.text().trim()) caption.remove();
+  });
+  $('.museum-film-footer span').each((_, element) => {
+    const label = $(element);
+    label.text(label.text().split(/\\s*·\\s*/).filter(part => !originBadge.test(part)).join(' · ').trim());
+    if (!label.text()) label.remove();
+  });
+  // Preserve descriptive alternative text, but not origin badges appended to it.
+  $('img[alt]').each((_, element) => {
+    const image = $(element);
+    const text = image.attr('alt') || '';
+    if (!originBadge.test(text)) return;
+    const cleaned = text.split(/\\s*[·—–]\\s*/).filter(part => !originBadge.test(part)).join(' · ').trim();
+    if (cleaned) image.attr('alt', cleaned);
+  });
   await writeFile(`dist/${name}`, await minifyHTML($.html(), { collapseWhitespace: true, removeComments: true, keepClosingSlash: false, removeRedundantAttributes: true }));
 }
 await writeFile('dist/data/reading-catalog.json',JSON.stringify(readingCatalog));

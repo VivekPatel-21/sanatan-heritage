@@ -25,4 +25,19 @@ for(const id of ['avatars','mahapuranas','philosophy'])assert.ok(sources.include
 for(const p of ['scriptures','deities','avatars','great-rishis','philosophy','fourteen-lokas','manus-manvantaras','mahapuranas']){
 const html=await readFile('dist/'+p+'.html','utf8');assert.ok(html.includes('learning-connections'),p);
 }
-console.log('Learning expansion tests passed.');
+
+const captionsRe=/\\b(?:AI[\\s-]*generated|owner[\\s-]*(?:supplied|contributed|provided))\\b/i;
+const pages=(await (await import('node:fs/promises')).readdir('dist')).filter(name=>name.endsWith('.html'));
+for(const page of pages){
+  const html=await readFile('dist/'+page,'utf8');
+  const document=new JSDOM(html).window.document;
+  for(const caption of document.querySelectorAll('figure figcaption, .museum-film-footer span')){
+    assert.ok(!captionsRe.test(caption.textContent),page+': public artwork origin badge remains');
+    assert.ok(caption.textContent.trim(),page+': blank artwork caption');
+  }
+}
+const sourceDoc=new JSDOM(await readFile('dist/sources.html','utf8')).window.document;
+for(const id of ['avatars','mahapuranas','philosophy'])
+  assert.equal(sourceDoc.querySelectorAll('[id="'+id+'"]').length,1,'Duplicate source anchor: '+id);
+
+console.log('Learning expansion tests passed, including public artwork captions and source anchors.');
