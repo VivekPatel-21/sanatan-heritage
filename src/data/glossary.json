@@ -251,96 +251,108 @@
     "id": "shruti",
     "name": "Shruti · śruti",
     "devanagari": "श्रुति",
-    "pronunciation": "Approximate pronunciation: Shruti",
+    "pronunciation": "Say: SHROO-ti",
     "definition": "The Vedic corpus regarded as heard or revealed in the tradition; the Upanishads belong to it.",
-    "category": "texts"
+    "category": "texts",
+    "source": "glossary-study"
   },
   {
     "id": "smriti",
     "name": "Smriti · smṛti",
     "devanagari": "स्मृति",
-    "pronunciation": "Approximate pronunciation: Smriti",
+    "pronunciation": "Say: SMRI-ti",
     "definition": "Remembered textual tradition, a broad grouping including epics and Puranas.",
-    "category": "texts"
+    "category": "texts",
+    "source": "glossary-study"
   },
   {
     "id": "samhita",
     "name": "Samhita · saṃhitā",
     "devanagari": "संहिता",
-    "pronunciation": "Approximate pronunciation: Samhita",
+    "pronunciation": "Say: sam-HI-taa",
     "definition": "A collection; in Vedic study, hymn and mantra collections are distinguished from the associated Upanishads.",
-    "category": "texts"
+    "category": "texts",
+    "source": "glossary-study"
   },
   {
     "id": "rishi",
     "name": "Rishi · ṛṣi",
     "devanagari": "ऋषि",
-    "pronunciation": "Approximate pronunciation: Rishi",
+    "pronunciation": "Say: RI-shi",
     "definition": "A sage or seer, approached through particular textual settings and lineages.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-study"
   },
   {
     "id": "guna",
     "name": "Guna · guṇa",
     "devanagari": "गुण",
-    "pronunciation": "Approximate pronunciation: Guna",
+    "pronunciation": "Say: GOO-na",
     "definition": "A quality of nature; sattva, rajas and tamas are discussed in Bhagavata Purana 11.25.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-study"
   },
   {
     "id": "purushartha",
     "name": "Purushartha · puruṣārtha",
     "devanagari": "पुरुषार्थ",
-    "pronunciation": "Approximate pronunciation: Purushartha",
+    "pronunciation": "Say: pu-ru-SHAAR-tha",
     "definition": "An aim of human life, traditionally understood through dharma, artha, kama and moksha.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-study"
   },
   {
     "id": "darshana",
     "name": "Darshana · darśana",
     "devanagari": "दर्शन",
-    "pronunciation": "Approximate pronunciation: Darshana",
+    "pronunciation": "Say: DAR-sha-na",
     "definition": "A philosophical school or perspective; the six classical systems differ in methods and conclusions.",
-    "category": "ideas"
+    "category": "ideas",
+    "source": "glossary-study"
   },
   {
     "id": "kalpa",
     "name": "Kalpa · kalpa",
     "devanagari": "कल्प",
-    "pronunciation": "Approximate pronunciation: Kalpa",
+    "pronunciation": "Say: KAL-pa",
     "definition": "A cycle identified as a day of Brahma in Bhagavata Purana 3.11.",
-    "category": "cosmos"
+    "category": "cosmos",
+    "source": "glossary-study"
   },
   {
     "id": "manvantara",
     "name": "Manvantara · manvantara",
     "devanagari": "मन्वन्तर",
-    "pronunciation": "Approximate pronunciation: Manvantara",
+    "pronunciation": "Say: man-VAN-ta-ra",
     "definition": "The period of a Manu, discussed in Bhagavata Purana 3.11 and 8.13–14.",
-    "category": "cosmos"
+    "category": "cosmos",
+    "source": "glossary-study"
   },
   {
     "id": "loka",
     "name": "Loka · loka",
     "devanagari": "लोक",
-    "pronunciation": "Approximate pronunciation: Loka",
+    "pronunciation": "Say: LO-ka",
     "definition": "A world or realm; Bhagavata Purana 2.5 describes seven upper and seven lower Lokas.",
-    "category": "cosmos"
+    "category": "cosmos",
+    "source": "glossary-study"
   },
   {
     "id": "yuga",
     "name": "Yuga · yuga",
     "devanagari": "युग",
-    "pronunciation": "Approximate pronunciation: Yuga",
+    "pronunciation": "Say: YOO-ga",
     "definition": "An age in a recurring cycle: Krita, Treta, Dvapara and Kali in Bhagavata Purana 3.11.",
-    "category": "cosmos"
+    "category": "cosmos",
+    "source": "glossary-study"
   },
   {
     "id": "sarga",
     "name": "Sarga · sarga",
     "devanagari": "सर्ग",
-    "pronunciation": "Approximate pronunciation: Sarga",
+    "pronunciation": "Say: SAR-ga",
     "definition": "Primary creation, among the characteristics named for a Purana in Bhagavata 12.7.",
-    "category": "texts"
+    "category": "texts",
+    "source": "glossary-study"
   }
 ]
