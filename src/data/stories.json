@@ -368,5 +368,15 @@
       "rigveda-samhita"
     ],
     "textLayer": "Samhita · Rigveda hymn"
+  },
+  "savitri": {
+    "title": "Savitri and Satyavan — When Wisdom Confronted Death",
+    "href": "/savitri-satyavan.html",
+    "minutes": 13,
+    "format": "Full story",
+    "collections": [
+      "mahabharata"
+    ],
+    "textLayer": "Itihasa · Mahabharata · Vana Parva"
   }
 }

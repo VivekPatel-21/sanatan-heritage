@@ -138,9 +138,9 @@
           "id": "mahabharata",
           "title": "Mahabharata",
           "eyebrow": "ITIHASA / MAHABHARATA",
-          "enabled": false,
-          "description": "Reserved for future readers with verified Mahabharata passages.",
-          "note": "No story is assigned merely because a figure also appears in the Mahabharata."
+          "enabled": true,
+          "description": "The Savitri–Satyavan account in the Vana Parva, following chapters 293–299 in the owner-supplied Gita Press Sanskrit–Hindi edition.",
+          "note": "This epic's verified narrative is kept distinct from Puranic parallels and later Savitri observance traditions."
         }
       ]
     },
