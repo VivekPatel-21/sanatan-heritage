@@ -40,4 +40,16 @@ const sourceDoc=new JSDOM(await readFile('dist/sources.html','utf8')).window.doc
 for(const id of ['avatars','mahapuranas','philosophy'])
   assert.equal(sourceDoc.querySelectorAll('[id="'+id+'"]').length,1,'Duplicate source anchor: '+id);
 
-console.log('Learning expansion tests passed, including public artwork captions and source anchors.');
+
+const familyDoc=new JSDOM(await readFile('dist/family.html','utf8')).window.document;
+for(const id of ['shiva','hanuman','dhruva','rama','krishna','devi']){
+ const section=familyDoc.querySelector('#family-'+id);
+ assert.ok(section,'Missing family companion: '+id);
+ assert.ok(section.querySelectorAll('.family-questions li').length>=3,'Missing discussion questions: '+id);
+ assert.ok(section.querySelector('.collection-source a'),'Missing primary text note: '+id);
+}
+const allTerms=JSON.parse(await readFile('src/data/glossary.json','utf8'));
+assert.ok(allTerms.every(t=>typeof t.source==='string'&&t.source.length>0),'All glossary terms should link to source context');
+assert.ok((await readFile('dist/sources.html','utf8')).includes('id="glossary-foundations"'));
+
+console.log('Learning expansion tests passed, including artwork captions, family readers and source notes.');
