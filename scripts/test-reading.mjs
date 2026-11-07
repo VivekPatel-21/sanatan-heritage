@@ -64,5 +64,8 @@ search.window.eval(await readFile('src/assets/js/search.js','utf8'));search.wind
 assert.equal(options.showSubResults,false);assert.equal(search.window.document.querySelector('#site-search input').value,'Hanuman');
 const input=search.window.document.querySelector('#site-search input');input.value='Ganga';input.dispatchEvent(new search.window.Event('input',{bubbles:true}));await new Promise(r=>setTimeout(r,250));assert.equal(new URLSearchParams(search.window.location.search).get('q'),'Ganga');
 for(const dom of [reader,paths,library,legacy,corrupt,blocked,shared,scripture,fromCollection,directory,unknown,search])dom.window.close();
-  assert.equal(catalog.stories.length,36);assert.ok(catalog.stories.every(story=>story.chapters.length>0));
+const authoredStories=JSON.parse(await readFile('src/data/stories.json','utf8'));
+assert.equal(catalog.stories.length,Object.keys(authoredStories).length,'Every catalog entry should have an accessible reader');
+assert.ok(catalog.stories.every(story=>story.chapters.length>0));
+assert.ok(catalog.stories.some(story=>story.href==='/savitri-satyavan.html'&&story.chapters.length===7),'Savitri must remain in the reading catalog');
 console.log('Passed: reader/library/path persistence, legacy bookmark migration, corrupt and blocked storage, keyboard focus after library actions, shared filters, and search URL restoration/update.');
