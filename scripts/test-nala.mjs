@@ -22,6 +22,17 @@ assert.equal(new Set([card.find('img').attr('src'),$('.tale-hero-art img').attr(
 const sources=load(await readFile('dist/sources.html','utf8'));
 assert.equal(sources('#nala-damayanti').length,1);
 assert.equal(sources('#nala-damayanti .reference-list>li').length,13);
-for(const name of ['nala-damayanti-reunion.webp','nala-damayanti-swan.webp','nala-damayanti-forest.webp'])
+for(const name of ['nala-damayanti-reunion.webp','nala-damayanti-swan.webp','nala-damayanti-swayamvara.webp'])
   await access('dist/assets/images/'+name);
-console.log('Passed: complete Nala reader, Mahabharata collection and three unique illustration placements.');
+const source=await readFile('src/nala-damayanti.njk','utf8');
+const cards=await readFile('src/stories.njk','utf8');
+assert.ok(!source.includes('nala-damayanti-forest.svg'),'Retired vector illustration remains in reader');
+assert.ok(!cards.includes('nala-damayanti-reunion.svg'),'Retired vector illustration remains on card');
+for(const name of ['nala-damayanti-swan.png','nala-damayanti-swayamvara.png','nala-damayanti-reunion.png']){
+ const bytes=await readFile('src/assets/images/'+name);
+ assert.equal(bytes.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Invalid PNG source: '+name);
+}
+assert.equal($('.tale-hero-art img[src*="nala-damayanti-swayamvara"]').length,1);
+assert.equal($('.tale-inline img[src*="nala-damayanti-reunion"]').length,1);
+assert.equal(card.find('img[src*="nala-damayanti-swan"]').length,1);
+console.log('Passed: Nala reader and three separate cinematic PNG placements.');
