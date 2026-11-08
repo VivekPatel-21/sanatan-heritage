@@ -22,7 +22,7 @@ for (const name of await readdir('src/assets/images')) {
   const original = path.join('src/assets/images', name);
   const metadata = await sharp(original).metadata();
   if (name === 'og.png') { await sharp(original).png({ compressionLevel: 9 }).toFile(path.join(directory, name)); continue; }
-  const outputName = name.replace(/\.(png|webp)$/, '.webp');
+  const outputName = name.replace(/\.(png|webp|svg)$/, '.webp');
   const widths = [...new Set([480, 768, 960, 1200, ...(name === "home-temple-photograph.webp" ? [1600, 2000] : []), Math.min(metadata.width, name === "home-temple-photograph.webp" ? 2400 : 1600)].filter(width => width <= metadata.width))].sort((a,b) => a-b);
   const variants = [];
   for (const width of widths) {
