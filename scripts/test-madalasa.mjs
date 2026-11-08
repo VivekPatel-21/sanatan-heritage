@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+import {load} from 'cheerio';
+const catalog=JSON.parse(await readFile('src/data/stories.json','utf8'));
+assert.equal(catalog.madalasa.href,'/madalasa.html');
+assert.deepEqual(catalog.madalasa.collections,['markandeya-purana']);
+const story=load(await readFile('dist/madalasa.html','utf8'));
+const library=load(await readFile('dist/stories.html','utf8'));
+const refs=load(await readFile('dist/sources.html','utf8'));
+const card=library('#story-madalasa');
+assert.equal(story('.tale-chapter').length,11,'Eleven original narrative chapters');
+assert.equal(story('.tale-hero-art img').length,1,'One reader hero');
+assert.equal(story('.tale-inline img').length,2,'Two narrative illustrations');
+assert.equal(story('main img').length,3,'Exactly three images inside the reader');
+assert.equal(card.length,1,'Exactly one story card');
+assert.equal(card.find('img').length,1,'Exactly one separate card image');
+const urls=[story('.tale-hero-art img').attr('src'),...story('.tale-inline img').toArray().map(x=>story(x).attr('src')),card.find('img').attr('src')];
+assert.equal(new Set(urls).size,4,'All four placements require distinct assets');
+assert.ok(urls.every(x=>x?.includes('madalasa-')&&x.endsWith('.webp')),'Expected responsive PNG-derived WebP images');
+assert.ok(card.attr('data-collections').includes('markandeya-purana'));
+assert.equal(story('.tale-contents nav a[href^="#"]').length,13,'Eleven chapters and two supplementary stops');
+assert.equal(refs('#madalasa').length,1,'One unique primary source section');
+assert.equal(refs('#madalasa .reference-list>li').length,10,'Ten grouped canto references');
+assert.ok(refs('#madalasa').text().includes('Pargiter'));
+assert.ok(story('#traditions').text().includes('original English'));
+for(const n of ['madalasa-card.png','madalasa-atman.png','madalasa-sons.png','madalasa-alarka.png']){
+ const image=await readFile('src/assets/images/'+n);
+ assert.equal(image.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Not a real PNG: '+n);
+ await access('dist/assets/images/'+n.replace('.png','.webp'));
+}
+const collection=JSON.parse(await readFile('src/data/scriptureCollections.json','utf8'));
+assert.ok(collection.categories.find(c=>c.id==='puranic-literature').collections.find(c=>c.id==='markandeya-purana').enabled);
+console.log('Passed: source-grounded Madalasa reader, 11 chapters, 4 unique cinematic PNG placements, Markandeya collection and references.');

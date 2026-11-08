@@ -388,5 +388,15 @@
       "mahabharata"
     ],
     "textLayer": "Itihasa · Mahabharata · Vana Parva"
+  },
+  "madalasa": {
+    "title": "Queen Madalasa — The Mother Who Taught the Wisdom of the Self",
+    "href": "/madalasa.html",
+    "minutes": 17,
+    "format": "Full story",
+    "collections": [
+      "markandeya-purana"
+    ],
+    "textLayer": "Purana · Markandeya Purana · Cantos XXIV–XXIX"
   }
 }

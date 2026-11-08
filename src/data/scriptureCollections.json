@@ -107,8 +107,8 @@
           "title": "Markandeya Purana",
           "eyebrow": "PURANA / DEVI MAHATMYA",
           "enabled": true,
-          "description": "Readers from the Devi Mahatmya embedded within the Markandeya Purana.",
-          "note": "Devi Mahatmya is identified as a text within this Purana, not as a separate Purana."
+          "description": "Readers from the Devi Mahatmya and the Madalasa–Alarka teaching episode within the Markandeya Purana.",
+          "note": "Devi Mahatmya and Madalasa’s teachings occupy distinct portions of this Purana; their textual settings are not interchangeable."
         },
         {
           "id": "matsya-purana",
