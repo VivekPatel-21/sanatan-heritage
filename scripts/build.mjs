@@ -165,9 +165,9 @@ await writeFile('dist/data/reading-catalog.json',JSON.stringify(readingCatalog))
 await writeFile('dist/robots.txt',`User-agent: *\n${site.indexable?'Allow: /':'Disallow: /'}\n\nSitemap: ${origin}/sitemap.xml\n`);
 for(const size of [192,512])await sharp('src/assets/brand/sanatan-heritage-logo.webp').resize(size,size,{fit:'contain'}).png().toFile(`dist/assets/brand/icon-${size}.png`);
 await writeFile('dist/site.webmanifest',JSON.stringify({id:'/',name:'Sanatan Heritage',short_name:'Sanatan Heritage',description:'Stories, wisdom and traditions of Sanatan Dharma.',lang:'en',start_url:'/',scope:'/',display:'minimal-ui',background_color:site.themeColors.light,theme_color:site.themeColors.light,icons:[192,512].map(size=>({src:`/assets/brand/icon-${size}.png`,sizes:`${size}x${size}`,type:'image/png',purpose:'any'}))}));
-const security=JSON.parse(await readFile('vercel.json','utf8')).headers[0].headers;
+const security=JSON.parse(await readFile('src/data/responseHeaders.json','utf8'));
 await writeFile('dist/_headers','/*\n'+security.map(({key,value})=>`  ${key}: ${value}`).join('\n')+'\n');
-const revision=process.env.VERCEL_GIT_COMMIT_SHA||process.env.GITHUB_SHA||spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).stdout.trim();
+const revision=process.env.CF_PAGES_COMMIT_SHA||process.env.GITHUB_SHA||spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).stdout.trim();
 await writeFile('dist/release.json',JSON.stringify({revision,origin}));
 const css = new CleanCSS({ level: 1 }).minify((await readFile('src/assets/css/style.css','utf8')) + '\n' + (await readFile('src/assets/css/refinements.css','utf8')) + '\n' + (await readFile('src/assets/css/art-direction.css','utf8')) + '\n' + (await readFile('src/assets/css/features.css','utf8')));
 if (css.errors.length) throw new Error(css.errors.join('\n'));

@@ -23,7 +23,7 @@
     "lint": "htmlhint \"dist/*.html\" && stylelint \"src/assets/css/*.css\"",
     "check": "node scripts/check.mjs",
     "test:browser": "playwright test",
-    "test": "node scripts/test-ui.mjs && node scripts/test-reading.mjs && node scripts/test-exhibit.mjs && node scripts/test-enhancements.mjs && node scripts/test-metadata.mjs && node scripts/test-learning.mjs && node scripts/test-seo.mjs && node scripts/test-savitri.mjs && node scripts/test-nala.mjs && node scripts/test-madalasa.mjs",
+    "test": "node scripts/test-ui.mjs && node scripts/test-reading.mjs && node scripts/test-exhibit.mjs && node scripts/test-enhancements.mjs && node scripts/test-metadata.mjs && node scripts/test-learning.mjs && node scripts/test-seo.mjs && node scripts/test-savitri.mjs && node scripts/test-nala.mjs && node scripts/test-madalasa.mjs && node scripts/test-bhramari.mjs",
     "audit:performance": "node scripts/run-performance-audit.mjs",
     "audit:rights": "node scripts/audit-artwork-rights.mjs"
   },

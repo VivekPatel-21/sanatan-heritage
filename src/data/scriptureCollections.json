@@ -117,6 +117,14 @@
           "enabled": true,
           "description": "A reader directly supported by the Matsya Purana.",
           "note": "Other flood narratives are not merged into this account."
+        },
+        {
+          "id": "devi-bhagavata-purana",
+          "title": "Srimad Devi Bhagavata Purana",
+          "eyebrow": "PURANA / SHAKTA DEVOTION",
+          "enabled": true,
+          "description": "The Bhramari Devi and Aruna account in Book 10, Chapter 13, from the supplied Devi Bhagavata Purana.",
+          "note": "This Book 10 passage is distinct from the Devi Mahatmya in the Markandeya Purana."
         }
       ]
     },

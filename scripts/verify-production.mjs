@@ -5,8 +5,8 @@ if(!expected)throw new Error('Set EXPECTED_REVISION to the GitHub commit being d
 const probe=path=>{const url=new URL(path,site.origin);url.searchParams.set('__release',expected);return url;};
 let release;
 for(let attempt=0;attempt<40;attempt++){
-  try{const response=await fetch(probe('/release.json'),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(response.ok){release=await response.json();if(release.revision===expected)break;}}catch{/* Vercel may still be building the new production version. */}
-  if(attempt===39)throw new Error('Vercel has not served the expected commit. Check the connected project production branch and deployment logs.');
+  try{const response=await fetch(probe('/release.json'),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(response.ok){release=await response.json();if(release.revision===expected)break;}}catch{/* The Cloudflare deployment may still be building or propagating. */}
+  if(attempt===39)throw new Error('Cloudflare has not served the expected commit. Check the Cloudflare Pages/Workers production branch, build settings and deployment logs.');
   await new Promise(resolve=>setTimeout(resolve,10000));
 }
 assert.equal(release.origin,site.origin);
@@ -16,4 +16,4 @@ assert.equal(response.headers.get('referrer-policy'),'strict-origin-when-cross-o
 assert.ok(response.headers.get('content-security-policy')?.includes("script-src 'self'"));
 const html=await response.text();assert.ok(html.includes(site.origin+'/assets/social/index.jpg'));assert.ok(html.includes('application/ld+json'));
 const image=await fetch(probe('/assets/social/index.jpg'),{cache:'no-store'});assert.ok(image.ok);assert.ok(image.headers.get('content-type')?.includes('image/jpeg'));assert.ok((await image.arrayBuffer()).byteLength<300000);
-console.log(`Verified Vercel production commit ${expected}, origin, security headers, structured data and JPEG preview.`);
+console.log(`Verified Cloudflare production commit ${expected}, origin, security headers, structured data and JPEG preview.`);

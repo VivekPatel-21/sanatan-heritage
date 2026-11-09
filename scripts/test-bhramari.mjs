@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+import {load} from 'cheerio';
+const data=JSON.parse(await readFile('src/data/stories.json','utf8'));
+assert.equal(data.bhramari.href,'/bhramari-aruna.html');
+assert.deepEqual(data.bhramari.collections,['devi-bhagavata-purana']);
+const $=load(await readFile('dist/bhramari-aruna.html','utf8'));
+const cards=load(await readFile('dist/stories.html','utf8'));
+const refs=load(await readFile('dist/sources.html','utf8'));
+const card=cards('#story-bhramari-aruna');
+assert.equal($('.tale-chapter').length,11,'Eleven story chapters expected');
+assert.equal($('.tale-hero-art img').length,1);
+assert.equal($('.tale-inline img').length,2);
+assert.equal($('main img').length,3,'Three distinct reader illustrations required');
+assert.equal(card.length,1);
+assert.equal(card.find('img').length,1,'One separate Stories card image required');
+const urls=[$('.tale-hero-art img').attr('src'),...$('.tale-inline img').toArray().map(x=>$(x).attr('src')),card.find('img').attr('src')];
+assert.equal(new Set(urls).size,4,'Four different artworks are required');
+assert.ok(urls.every(x=>x&&x.endsWith('.webp')&&x.includes('bhramari-')));
+assert.ok(card.attr('data-collections').includes('devi-bhagavata-purana'));
+assert.equal($('.tale-contents nav a[href^="#"]').length,13,'11 chapters and two additional sections');
+assert.ok($('a[href="/sources.html#bhramari-aruna"]').length>=2);
+assert.equal(refs('#bhramari-aruna').length,1);
+assert.equal(refs('#bhramari-aruna .reference-list>li').length,11);
+assert.ok(refs('#bhramari-aruna').text().includes('Vijnananda'));
+assert.ok($('#traditions').text().includes('original English prose'));
+for(const name of ['bhramari-card.png','bhramari-manifestation.png','bhramari-aruna-boon.png','bhramari-divine-swarm.png']){
+ const b=await readFile('src/assets/images/'+name);
+ assert.equal(b.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Original must be a PNG: '+name);
+ await access('dist/assets/images/'+name.replace('.png','.webp'));
+}
+const categories=JSON.parse(await readFile('src/data/scriptureCollections.json','utf8'));
+assert.ok(categories.categories.find(c=>c.id==='puranic-literature').collections.find(c=>c.id==='devi-bhagavata-purana').enabled);
+const prod=await readFile('scripts/verify-production.mjs','utf8');
+assert.ok(prod.includes('Cloudflare')&&!prod.includes('Verified Vercel'));
+console.log('Passed: Bhramari and Aruna, source map, four unique PNG artworks, source collection and Cloudflare verification.');
