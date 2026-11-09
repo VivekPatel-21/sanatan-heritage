@@ -4,7 +4,7 @@ import path from 'node:path';
 import { createReadStream } from 'node:fs';
 const root = path.resolve('dist');
 const port = Number(process.env.SANATAN_PORT || 8080);
-const security=JSON.parse(await readFile('vercel.json','utf8')).headers[0].headers;
+const security=JSON.parse(await readFile('src/data/responseHeaders.json','utf8'));
 try { await stat(path.join(root, 'index.html')); } catch { console.error('Build the site before serving it: npm run build'); process.exit(1); }
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.webmanifest':'application/manifest+json', '.jpg':'image/jpeg', '.webp': 'image/webp', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.wasm': 'application/wasm', '.mp4':'video/mp4' };
 const server = http.createServer(async (request, response) => {
