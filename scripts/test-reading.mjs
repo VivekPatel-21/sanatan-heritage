@@ -68,4 +68,9 @@ const authoredStories=JSON.parse(await readFile('src/data/stories.json','utf8'))
 assert.equal(catalog.stories.length,Object.keys(authoredStories).length,'Every catalog entry should have an accessible reader');
 assert.ok(catalog.stories.every(story=>story.chapters.length>0));
 assert.ok(catalog.stories.some(story=>story.href==='/savitri-satyavan.html'&&story.chapters.length===7),'Savitri must remain in the reading catalog');
+// Reader labels cite scripture divisions, not uploaded PDF pagination.
+for (const story of Object.values(authoredStories)) {
+  const html = await readFile('dist' + story.href, 'utf8');
+  assert.doesNotMatch(html, /\bPDF\s*(?:(?:pages?|pp?\.?)\s*\d+|,\s*pp?\.?\s*\d+)/i, story.href + ' exposes PDF page numbers');
+}
 console.log('Passed: reader/library/path persistence, legacy bookmark migration, corrupt and blocked storage, keyboard focus after library actions, shared filters, and search URL restoration/update.');
