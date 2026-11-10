@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+import {load} from 'cheerio';
+const catalog=JSON.parse(await readFile('src/data/stories.json','utf8'));
+assert.equal(catalog.jada.href,'/jada-bharata.html');
+assert.deepEqual(catalog.jada.collections,['srimad-bhagavata-purana']);
+const story=load(await readFile('dist/jada-bharata.html','utf8'));
+const library=load(await readFile('dist/stories.html','utf8'));
+const refs=load(await readFile('dist/sources.html','utf8'));
+const card=library('#story-jada-bharata');
+assert.equal(story('.tale-chapter').length,14,'Fourteen narrative chapters');
+assert.equal(story('.tale-hero-art img').length,1);
+assert.equal(story('.tale-inline img').length,2);
+assert.equal(story('main img').length,3,'Three in-reader illustrations');
+assert.equal(card.length,1);
+assert.equal(card.find('img').length,1,'One separate Stories card artwork');
+const sources=[story('.tale-hero-art img').attr('src'),...story('.tale-inline img').toArray().map(x=>story(x).attr('src')),card.find('img').attr('src')];
+assert.equal(new Set(sources).size,4,'Four unique image placements');
+assert.ok(sources.every(x=>x?.includes('jada-bharata-') && x.endsWith('.webp')));
+assert.ok(card.attr('data-collections').includes('srimad-bhagavata-purana'));
+assert.equal(story('.tale-contents nav a[href^="#"]').length,16,'14 chapters and two supplementary stops');
+assert.equal(refs('#jada-bharata').length,1);
+assert.equal(refs('#jada-bharata .reference-list > li').length,7);
+assert.ok(story('#traditions').text().includes('original English prose'));
+assert.doesNotMatch(story('main').text(),/PDF\s*(?:p\.|pp\.|page)/i,'No PDF page labels');
+for(const name of ['jada-bharata-card.png','jada-bharata-deer.png','jada-bharata-silence.png','jada-bharata-rahugana.png']){
+const b=await readFile('src/assets/images/'+name);
+assert.equal(b.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Original must be PNG: '+name);
+await access('dist/assets/images/'+name.replace('.png','.webp'));
+}
+console.log('Passed: Jada Bharata full reader, unique PNG artwork, citations and collection.');
