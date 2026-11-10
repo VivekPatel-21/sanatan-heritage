@@ -45,8 +45,9 @@ for (const name of ['glossary','deities']) {
 const collection = await page('stories');
 const collectionDoc = collection.window.document;
 const storyCards = [...collectionDoc.querySelectorAll('.collection-card')];
-assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), '14 stories in Srimad Bhagavata Purana');
-assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, 14);
+const bhagavataCount = Object.values(storyData).filter(story => story.collections.includes('srimad-bhagavata-purana')).length;
+assert.equal(collectionDoc.querySelector('#story-count').textContent.trim(), `${bhagavataCount} stories in Srimad Bhagavata Purana`);
+assert.equal(collectionDoc.querySelectorAll('.collection-card:not([hidden])').length, bhagavataCount);
 assert.equal(collectionDoc.querySelector('[data-collection-link="srimad-bhagavata-purana"]').getAttribute('aria-pressed'), 'true');
 assert.equal(collectionDoc.querySelectorAll('[data-collection-link]').length, 1 + collectionRecords.filter(item => item.enabled).length);
 assert.equal(collectionDoc.querySelectorAll('[data-collection-link="atharvaveda-literature"]').length, 0);
