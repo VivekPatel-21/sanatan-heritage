@@ -33,7 +33,7 @@ for(const [slug,heading,question] of [
   assert.equal(storyResponse.status,200,slug+': clean production URL must return HTTP 200');
   const storyHtml=await storyResponse.text();
   const canonicalTag=storyHtml.match(/<link\\b[^>]*\\brel=["']?canonical["']?[^>]*>/i)?.[0] || '';
-  assert.ok(canonicalTag.includes(cleanUrl),slug+': canonical URL must be the clean address');
+  assert.ok(canonicalTag.includes(cleanUrl),slug+': canonical URL must be the clean address. Found: '+JSON.stringify(canonicalTag)+'; nearby link tags: '+JSON.stringify(storyHtml.match(/<link[^>]*canonical[^>]*>/ig)?.slice(0,3) || []));
   assert.ok(storyHtml.includes(heading),slug+': expected story heading missing');
   assert.ok(storyHtml.includes(question),slug+': expected reader introduction missing');
   assert.ok(storyHtml.includes('/sources.html#'+slug),slug+': story source citation link missing');
