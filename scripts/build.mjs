@@ -70,7 +70,7 @@ for (const name of pages) {
       const schema = JSON.parse(jsonLd.text());
       schema['@graph'].push({
         '@type': 'BreadcrumbList',
-        '@id': new URL(page('link[rel="canonical"]').attr('href') || (name === 'index.html' ? '/' : '/' + name.replace(/\.html$/, '')), origin).href + '#breadcrumbs',
+        '@id': new URL($('link[rel="canonical"]').attr('href') || (name === 'index.html' ? '/' : '/' + name.replace(/\.html$/, '')), origin).href + '#breadcrumbs',
         itemListElement: items
       });
       jsonLd.text(JSON.stringify(schema).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026'));
