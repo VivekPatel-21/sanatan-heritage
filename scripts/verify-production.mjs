@@ -32,12 +32,12 @@ for(const [slug,heading,question] of [
   const storyResponse=await fetch(probe('/'+slug),{cache:'no-store',signal:AbortSignal.timeout(15000)});
   assert.equal(storyResponse.status,200,slug+': clean production URL must return HTTP 200');
   const storyHtml=await storyResponse.text();
-  const canonicalTag=storyHtml.match(/<link\\b[^>]*\\brel=["']?canonical["']?[^>]*>/i)?.[0] || '';
+  const canonicalTag=storyHtml.match(/<link[^>]*rel=["']canonical["'][^>]*>/i)?.[0] || '';
   assert.ok(canonicalTag.includes(cleanUrl),slug+': canonical URL must be the clean address. Found: '+JSON.stringify(canonicalTag)+'; nearby link tags: '+JSON.stringify(storyHtml.match(/<link[^>]*canonical[^>]*>/ig)?.slice(0,3) || []));
   assert.ok(storyHtml.includes(heading),slug+': expected story heading missing');
   assert.ok(storyHtml.includes(question),slug+': expected reader introduction missing');
   assert.ok(storyHtml.includes('/sources.html#'+slug),slug+': story source citation link missing');
-  assert.ok(!/<meta\\b[^>]*name=["']?robots["']?[^>]*noindex/i.test(storyHtml),slug+': page must remain indexable');
+  assert.ok(!/<meta[^>]*name=["']?robots["']?[^>]*noindex/i.test(storyHtml),slug+': page must remain indexable');
   console.log('Verified live SEO reader /'+slug+' (HTTP 200, canonical, intro, citations).');
 }
 console.log('Verified live clean sitemap, all three story readers, Cloudflare production commit '+expected+', security headers, schema and JPEG preview.');
