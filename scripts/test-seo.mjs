@@ -33,7 +33,9 @@ for(const name of pages){
   }
   for(const el of $('main img[src^="/assets/images/"]').toArray())imageUrls.add(new URL($(el).attr('src'),site.origin).href);
 }
-assert.equal(pageUrls.size,urls.filter(link=>link.endsWith('.html')||link===site.origin+'/').length,'Unexpected sitemap page count');
+assert.equal(pageUrls.size,urls.length,'Unexpected sitemap page count');
+assert.ok(urls.every(url=>url===site.origin+'/' || !url.endsWith('.html')),'Sitemap must contain final clean URLs, not .html redirects');
+assert.equal(new Set(urls).size,urls.length,'Duplicate canonical URL in sitemap');
 assert.ok(imageUrls.size>=100,'Image sitemap unexpectedly small');
 for(const url of imageUrls)assert.ok(imageSitemapUrls.includes(url),'Image omitted from sitemap: '+url);
 const head=load(await readFile('dist/index.html','utf8'));
