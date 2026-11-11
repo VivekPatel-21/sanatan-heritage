@@ -40,7 +40,9 @@ test('mobile browser theme metadata follows the chosen theme',async({page})=>{
 test('scripture library preserves exact sources and collection return paths',async({page})=>{
   await page.goto('/stories.html');
   await expect(page.locator('[data-collection-link="srimad-bhagavata-purana"]')).toHaveAttribute('aria-pressed','true');
-  await expect(page.locator('.collection-card:visible')).toHaveCount(14);
+  const storyCatalog=JSON.parse(await readFile('src/data/stories.json','utf8'));
+  const expectedBhagavataStories=Object.values(storyCatalog).filter(story=>story.collections?.includes('srimad-bhagavata-purana')).length;
+  await expect(page.locator('.collection-card:visible')).toHaveCount(expectedBhagavataStories);
   await expect.poll(()=>page.evaluate(()=>{
     const viewport=document.querySelector('#scripture-carousel-viewport').getBoundingClientRect();
     const selected=document.querySelector('.scripture-carousel-card.is-selected').getBoundingClientRect();
