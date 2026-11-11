@@ -3,7 +3,7 @@ export const site=JSON.parse(await readFile(new URL('../src/data/site.json',impo
 const origin=new URL(site.origin);
 if(origin.protocol!=='https:'||origin.origin!==site.origin)throw new Error('site.origin must be an HTTPS origin without a path or trailing slash.');
 export const absoluteUrl=value=>new URL(value,site.origin+'/').href;
-export const pagePath=data=>data.page.url==='/index.html'?'/':data.page.url;
+export const pagePath=data=>data.page.url==='/index.html'?'/':data.page.url.replace(/\.html$/,'');
 export const socialPath=data=>`/assets/social/${data.page.url.split('/').pop().replace(/\.html$/,'')||'index'}.jpg`;
 export function structuredData(data){
   const article=Boolean(data.story||data.article);
