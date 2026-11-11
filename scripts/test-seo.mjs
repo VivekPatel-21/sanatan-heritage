@@ -38,6 +38,19 @@ assert.ok(urls.every(url=>url===site.origin+'/' || !url.endsWith('.html')),'Site
 assert.equal(new Set(urls).size,urls.length,'Duplicate canonical URL in sitemap');
 assert.ok(imageUrls.size>=100,'Image sitemap unexpectedly small');
 for(const url of imageUrls)assert.ok(imageSitemapUrls.includes(url),'Image omitted from sitemap: '+url);
+// The featured story readers must answer their main search intent and preserve their exact source references.
+for (const [name,phrase,source] of [
+  ['gajendra-moksha.html','What is Gajendra Moksha?','Skandha 8, chapters 2–4'],
+  ['jatayu-sacrifice.html','Who was Jatayu, and why did he fight Ravana?','Aranya Kanda'],
+  ['kartikeya-birth.html','How was Kartikeya born?','Kumara Khanda, chapters 1–5']
+]) {
+  const story=load(await readFile('dist/'+name,'utf8'));
+  assert.equal(story('main h1').length,1,name+': expected one story H1');
+  assert.ok(story('main h1').text().match(/Gajendra|Jatayu|Kartikeya/),name+': story name missing from heading');
+  assert.ok(story('.tale-introduction').text().includes(phrase),name+': introduction must answer its key question');
+  assert.ok(story('.tale-introduction').text().includes(source),name+': introduction missing scripture location');
+  assert.ok(story('.tale-introduction a[href^="/sources.html#"]').length,name+': missing source link');
+}
 const head=load(await readFile('dist/index.html','utf8'));
 assert.ok(head('script[src="/assets/js/google-analytics.js"][defer]').length,'Analytics bootstrap must be deferred');
 assert.ok(head('link[rel="preload"][as="image"][type="image/webp"]').length,'Homepage poster preload missing');
