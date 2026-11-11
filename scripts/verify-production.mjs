@@ -16,4 +16,28 @@ assert.equal(response.headers.get('referrer-policy'),'strict-origin-when-cross-o
 assert.ok(response.headers.get('content-security-policy')?.includes("script-src 'self'"));
 const html=await response.text();assert.ok(html.includes(site.origin+'/assets/social/index.jpg'));assert.ok(html.includes('application/ld+json'));
 const image=await fetch(probe('/assets/social/index.jpg'),{cache:'no-store'});assert.ok(image.ok);assert.ok(image.headers.get('content-type')?.includes('image/jpeg'));assert.ok((await image.arrayBuffer()).byteLength<300000);
-console.log(`Verified Cloudflare production commit ${expected}, origin, security headers, structured data and JPEG preview.`);
+// Verify the actual production sitemap and the three stories improved this week.
+const sitemapResponse=await fetch(probe('/sitemap.xml'),{cache:'no-store',signal:AbortSignal.timeout(15000)});
+assert.equal(sitemapResponse.status,200,'Production sitemap must return HTTP 200');
+const sitemap=await sitemapResponse.text();
+assert.ok(sitemap.includes('<urlset'),'Sitemap XML is missing its urlset');
+for(const [slug,heading,question] of [
+  ['gajendra-moksha','Gajendra Moksha','What is Gajendra Moksha?'],
+  ['jatayu-sacrifice','Jatayu','Who was Jatayu, and why did he fight Ravana?'],
+  ['kartikeya-birth','Kartikeya','How was Kartikeya born?']
+]){
+  const cleanUrl=site.origin+'/'+slug;
+  assert.ok(sitemap.includes('<loc>'+cleanUrl+'</loc>'),slug+': clean URL missing from production sitemap');
+  assert.ok(!sitemap.includes('<loc>'+cleanUrl+'.html</loc>'),slug+': redirecting .html URL remains in production sitemap');
+  const storyResponse=await fetch(probe('/'+slug),{cache:'no-store',signal:AbortSignal.timeout(15000)});
+  assert.equal(storyResponse.status,200,slug+': clean production URL must return HTTP 200');
+  const storyHtml=await storyResponse.text();
+  const canonicalTag=storyHtml.match(/<link\\b[^>]*\\brel=["']?canonical["']?[^>]*>/i)?.[0] || '';
+  assert.ok(canonicalTag.includes(cleanUrl),slug+': canonical URL must be the clean address');
+  assert.ok(storyHtml.includes(heading),slug+': expected story heading missing');
+  assert.ok(storyHtml.includes(question),slug+': expected reader introduction missing');
+  assert.ok(storyHtml.includes('/sources.html#'+slug),slug+': story source citation link missing');
+  assert.ok(!/<meta\\b[^>]*name=["']?robots["']?[^>]*noindex/i.test(storyHtml),slug+': page must remain indexable');
+  console.log('Verified live SEO reader /'+slug+' (HTTP 200, canonical, intro, citations).');
+}
+console.log('Verified live clean sitemap, all three story readers, Cloudflare production commit '+expected+', security headers, schema and JPEG preview.');
