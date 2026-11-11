@@ -1,0 +1,21 @@
+name: Live Cloudflare smoke verification
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: live-cloudflare-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - run: node scripts/verify-production.mjs
+        env:
+          EXPECTED_REVISION: ${{ github.sha }}
