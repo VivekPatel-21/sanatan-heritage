@@ -70,7 +70,7 @@ for (const name of pages) {
       const schema = JSON.parse(jsonLd.text());
       schema['@graph'].push({
         '@type': 'BreadcrumbList',
-        '@id': origin + (name === 'index.html' ? '/' : '/' + name) + '#breadcrumbs',
+        '@id': new URL(page('link[rel="canonical"]').attr('href') || (name === 'index.html' ? '/' : '/' + name.replace(/\.html$/, '')), origin).href + '#breadcrumbs',
         itemListElement: items
       });
       jsonLd.text(JSON.stringify(schema).replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026'));
@@ -191,7 +191,7 @@ for (const filename of pages) {
   const page = load(await readFile('dist/' + filename, 'utf8'));
   if (page('meta[name="robots"][content*="noindex"]').length) continue;
   const canonical = page('link[rel="canonical"]').attr('href');
-  if (!canonical || !canonical.startsWith(origin + '/')) throw new Error('Invalid sitemap canonical: ' + filename);
+  if (!canonical || !canonical.startsWith(origin + '/') || (canonical !== origin + '/' && canonical.endsWith('.html'))) throw new Error('Invalid sitemap canonical: ' + filename);
   const images = [...new Set(page('main img[src^="/assets/images/"]').toArray()
     .map(el => page(el).attr('src')).filter(Boolean))];
   const imageEntries = images.map(src => '<image:image><image:loc>' + escapeXml(new URL(src, origin).href) + '</image:loc></image:image>').join('');
