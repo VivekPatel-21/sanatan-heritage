@@ -9,7 +9,7 @@ for(const name of pages){
   const source=await readFile(`src/${name.replace(/\.html$/,'.njk')}`,'utf8');
   assert.ok(!source.match(/"canonical"\s*:/),`${name} must not duplicate canonical origins in front matter`);
   const $=load(await readFile(`dist/${name}`,'utf8'));
-  const canonical=site.origin+(name==='index.html'?'/':'/'+name);
+  const canonical=site.origin+(name==='index.html'?'/':'/'+name.replace(/\.html$/,''));
   assert.equal($('link[rel=canonical]').attr('href'),canonical);
   assert.equal($('meta[property="og:url"]').attr('content'),canonical);
   const social=$('meta[property="og:image"]').attr('content');assert.ok(social.startsWith(site.origin+'/assets/social/'));
