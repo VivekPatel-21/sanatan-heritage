@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+import {load} from 'cheerio';
+const catalog=JSON.parse(await readFile('src/data/stories.json','utf8'));
+assert.equal(catalog.shabari.href,'/shabari-rama.html');
+assert.deepEqual(catalog.shabari.collections,['valmiki-ramayana']);
+assert.ok(catalog.shabari.minutes > 0 && catalog.shabari.minutes < 13);
+const story=load(await readFile('dist/shabari-rama.html','utf8'));
+const library=load(await readFile('dist/stories.html','utf8'));
+const refs=load(await readFile('dist/sources.html','utf8'));
+const card=library('#story-shabari-rama');
+assert.equal(story('.tale-chapter').length,9);
+assert.ok(story('.tale-chapter').text().split(/\s+/).filter(Boolean).length < 2100);
+assert.equal(story('.tale-hero-art img').length,1);
+assert.equal(story('.tale-inline img').length,2);
+assert.equal(story('main img').length,3);
+assert.equal(card.length,1);
+assert.equal(card.find('img').length,1);
+const images=[story('.tale-hero-art img').attr('src'),...story('.tale-inline img').toArray().map(x=>story(x).attr('src')),card.find('img').attr('src')];
+assert.equal(new Set(images).size,4);
+assert.ok(images.every(x=>x?.includes('/assets/images/shabari-') && x.endsWith('.webp')));
+assert.ok(card.attr('data-collections').includes('valmiki-ramayana'));
+assert.equal(story('.tale-contents nav a[href^="#"]').length,11);
+assert.equal(refs('#shabari-rama').length,1);
+assert.equal(refs('#shabari-rama .reference-list > li').length,6);
+assert.ok(story('#traditions').text().includes('Griffith'));
+assert.doesNotMatch(story('main').text(),/PDF\s*(?:p\.|pp\.|pages?\s*\d+)/i);
+for(const f of ['shabari-card.png','shabari-welcome.png','shabari-grove.png','shabari-departure.png']){
+ const b=await readFile('src/assets/images/'+f);
+ assert.equal(b.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+ await access('dist/assets/images/'+f.replace('.png','.webp'));
+}
+console.log('Passed: concise Shabari reader, four unique PNG artworks and source-linked story card.');
